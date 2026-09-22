@@ -42,7 +42,7 @@ export default async function PrivacyPage({
               {t(locale, 'privacyLastUpdated')}
             </p>
 
-            <div className="mt-12 prose prose-lg max-w-none text-bodyGray dark:text-white/70 prose-headings:text-charcoal dark:prose-headings:text-white prose-h2:text-2xl prose-h2:font-semibold prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:font-semibold prose-h3:mt-8 prose-h3:mb-3 prose-p:mb-4 prose-ul:my-4 prose-li:my-1">
+            <div className="legal mt-12 max-w-none text-bodyGray dark:text-white/70">
               <div className="glass-strong rounded-3xl p-8 mb-8">
                 <h2 className="!mt-0">Important summary</h2>
                 <ul>

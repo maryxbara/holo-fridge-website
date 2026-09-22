@@ -42,7 +42,7 @@ export default async function TermsPage({
               {t(locale, 'termsLastUpdated')}
             </p>
 
-            <div className="mt-12 prose prose-lg max-w-none text-bodyGray dark:text-white/70 prose-headings:text-charcoal dark:prose-headings:text-white prose-h2:text-2xl prose-h2:font-semibold prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:font-semibold prose-h3:mt-8 prose-h3:mb-3 prose-p:mb-4 prose-ul:my-4 prose-li:my-1">
+            <div className="legal mt-12 max-w-none text-bodyGray dark:text-white/70">
               <p>These Terms of Service (&ldquo;Terms&rdquo;) are an agreement between you and:</p>
               <div className="glass rounded-2xl p-6 my-4">
                 <p className="font-semibold text-charcoal dark:text-white">BML BIG, MB</p>

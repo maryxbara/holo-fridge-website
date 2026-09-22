@@ -53,7 +53,7 @@ export default async function SupportPage({
               href={`mailto:${t(locale, 'supportEmail')}`}
               className="mt-6 inline-block rounded-full bg-deepTurquoise px-8 py-3 text-lg font-semibold text-white shadow-[0_12px_30px_-10px_rgba(50,192,181,0.65)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_36px_-10px_rgba(50,192,181,0.75)]"
             >
-              {t(locale, 'supportEmail')}
+              {t(locale, 'contactUs')}
             </a>
           </div>
 

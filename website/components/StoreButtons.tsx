@@ -46,9 +46,10 @@ export default function StoreButtons({
       <div className="relative">
         <button
           type="button"
-          onClick={() => setShowComingSoon(true)}
+          onClick={() => setShowComingSoon((open) => !open)}
           aria-label="Get Holo Fridge on Google Play"
-          className={`group inline-flex items-center gap-3 rounded-2xl bg-charcoal px-5 ${
+          aria-expanded={showComingSoon}
+          className={`group relative z-50 inline-flex items-center gap-3 rounded-2xl bg-charcoal px-5 ${
             isCompact ? "py-2.5" : "py-3"
           } text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-15px_rgba(38,38,38,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deepTurquoise focus-visible:ring-offset-2 dark:bg-black dark:border dark:border-white/15`}
         >
@@ -77,8 +78,9 @@ export default function StoreButtons({
                 className="rounded-[20px] px-6 py-4 light-bubble dark:hidden"
                 style={{
                   background: "rgba(248, 252, 255, 0.95)",
-                  border: "1.5px solid rgba(166, 245, 232, 0.6)",
-                  boxShadow: "0 8px 32px -8px rgba(50, 192, 181, 0.15)",
+                  border: "1.5px solid rgba(50, 192, 181, 0.55)",
+                  boxShadow:
+                    "0 12px 32px -10px rgba(50,192,181,0.3), 0 0 0 1px rgba(50,192,181,0.12), 0 0 16px rgba(50,192,181,0.4), 0 0 40px rgba(50,192,181,0.26), 0 0 72px rgba(50,192,181,0.16), inset 0 0 22px -8px rgba(50,192,181,0.2)",
                 }}
               >
                 <span className="text-[15px] font-semibold tracking-tightish text-charcoal whitespace-nowrap">
