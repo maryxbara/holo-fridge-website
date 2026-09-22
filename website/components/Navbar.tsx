@@ -122,19 +122,28 @@ export default function Navbar({ locale }: NavbarProps) {
               </svg>
             </button>
             {langOpen && (
-              <div className="absolute right-0 mt-2 w-40 glass-strong rounded-2xl p-2 shadow-lg max-h-80 overflow-y-auto">
+              <div className="absolute right-0 mt-2 w-52 glass-strong rounded-2xl p-1.5 shadow-lg max-h-[min(70vh,22rem)] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {locales.map((loc) => (
                   <Link
                     key={loc}
                     href={`/${loc}`}
                     onClick={() => setLangOpen(false)}
-                    className={`block rounded-xl px-3 py-2 text-sm transition-colors ${
+                    className={`flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm transition-colors ${
                       loc === locale
                         ? "bg-deepTurquoise/10 text-deepTurquoise font-medium"
-                        : "text-charcoal/80 hover:bg-white/60 hover:text-charcoal dark:text-white/85 dark:hover:bg-white/10 dark:hover:text-white"
+                        : "text-charcoal/80 hover:bg-white/60 hover:text-charcoal dark:text-pearl1/80 dark:hover:bg-white/10 dark:hover:text-pearl1"
                     }`}
                   >
-                    {localeNames[loc]}
+                    <span
+                      className={`text-[11px] font-semibold uppercase tracking-wider ${
+                        loc === locale
+                          ? "text-deepTurquoise/70"
+                          : "text-bodyGray/70 dark:text-pearl1/40"
+                      }`}
+                    >
+                      {loc}
+                    </span>
+                    <span className="text-right">{localeNames[loc]}</span>
                   </Link>
                 ))}
               </div>

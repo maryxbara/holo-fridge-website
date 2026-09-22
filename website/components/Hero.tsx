@@ -162,7 +162,7 @@ export default function Hero({ locale }: HeroProps) {
                 {CHIPS.map((c) => (
                   <div
                     key={c.label}
-                    className="snap-start glass-chip rounded-full px-4 py-2.5 text-sm font-medium text-charcoal/90 whitespace-nowrap"
+                    className="snap-start glass-chip rounded-full px-4 py-2.5 text-sm font-medium text-charcoal/90 dark:text-pearl1/90 whitespace-nowrap"
                   >
                     <span
                       className="mr-2 inline-block h-1.5 w-1.5 -translate-y-[1px] rounded-full align-middle"
