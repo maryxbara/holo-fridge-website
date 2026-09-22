@@ -94,7 +94,7 @@ export default function Hero({ locale }: HeroProps) {
           </motion.div>
         </div>
 
-        {/* RIGHT — Holo + phone composition (desktop) */}
+        {/* RIGHT — Holo + phone composition */}
         {/* Fades and lifts in on load; Holo's own float/breathe/sweep run on
             descendants, so they're untouched by this wrapper's transform. */}
         <motion.div
@@ -103,58 +103,15 @@ export default function Hero({ locale }: HeroProps) {
           transition={{ duration: 0.95, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
           className="relative lg:col-span-6"
         >
-          {/* Desktop: Holo + phone with floating chips orbiting around them */}
-          <div className="relative mx-auto hidden h-[640px] w-full max-w-[560px] lg:block">
-            {/* HoloHero — top center-left, large */}
-            <div className="absolute left-1/2 top-0 -translate-x-1/2">
-              <HoloHero size={420} priority withParticles withSweep />
-            </div>
-
-            {/* Phone — sits below/right of Holo */}
-            <div className="absolute bottom-0 right-2 w-[230px]">
-              <PhoneMockup
-                src="/screens/home-hero.png"
-                alt="Holo Fridge home screen showing fridge inventory"
-                priority
-                glow
-              />
-            </div>
-
-            {/* Floating chips — orbiting */}
-            <FloatingChip
-              label={CHIPS[0].label}
-              dot={CHIPS[0].dot}
-              className="absolute left-0 top-[18%]"
-              delay={0.4}
-            />
-            <FloatingChip
-              label={CHIPS[1].label}
-              dot={CHIPS[1].dot}
-              className="absolute right-[-10px] top-[30%]"
-              delay={0.55}
-            />
-            <FloatingChip
-              label={CHIPS[2].label}
-              dot={CHIPS[2].dot}
-              className="absolute left-[-10px] bottom-[28%]"
-              delay={0.7}
-            />
-            <FloatingChip
-              label={CHIPS[3].label}
-              dot={CHIPS[3].dot}
-              className="absolute right-0 bottom-[6%]"
-              delay={0.85}
-            />
-          </div>
-
-          {/* Mobile / tablet — stacked composition + horizontal chip strip */}
-          <div className="relative lg:hidden">
-            <div className="relative mx-auto flex w-full max-w-md items-end justify-center">
+          {/* Same composition at every size: Holo beside the phone, chip strip
+              below. `size` acts as a ceiling, so it scales down on phones. */}
+          <div className="relative">
+            <div className="relative mx-auto flex w-full max-w-md items-end justify-center lg:max-w-xl">
               {/* min-w-0 lets Holo give way instead of shoving the phone off-screen */}
               <div className="relative -mr-6 min-w-0 flex-1">
-                <HoloHero size={320} priority withParticles withSweep />
+                <HoloHero size={420} priority withParticles withSweep />
               </div>
-              <div className="relative -ml-2 -mb-2 w-[42%] max-w-[170px] shrink-0">
+              <div className="relative -ml-2 -mb-2 w-[42%] max-w-[170px] shrink-0 lg:max-w-[215px]">
                 <PhoneMockup
                   src="/screens/home-hero.png"
                   alt="Holo Fridge home screen showing fridge inventory"
@@ -165,7 +122,7 @@ export default function Hero({ locale }: HeroProps) {
             </div>
 
             {/* Chip strip — endless rightward marquee */}
-            <div className="marquee-mask mt-6 -mx-5 overflow-hidden pb-2 sm:-mx-8">
+            <div className="marquee-mask mt-6 -mx-5 overflow-hidden pb-2 sm:-mx-8 lg:mx-0">
               <div className="flex w-max animate-marquee">
                 {[...CHIPS, ...CHIPS, ...CHIPS, ...CHIPS].map((c, i) => (
                   <div
@@ -191,30 +148,3 @@ export default function Hero({ locale }: HeroProps) {
   );
 }
 
-function FloatingChip({
-  label,
-  dot,
-  className = "",
-  delay = 0,
-}: {
-  label: string;
-  dot: string;
-  className?: string;
-  delay?: number;
-}) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 12, scale: 0.96 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay }}
-      className={`glass-chip rounded-full px-4 py-2.5 text-sm font-medium text-charcoal/90 dark:text-pearl1/90 ${className}`}
-      style={{ animation: "float 7s ease-in-out infinite", animationDelay: `${delay}s` }}
-    >
-      <span
-        className="mr-2 inline-block h-1.5 w-1.5 -translate-y-[1px] rounded-full align-middle"
-        style={{ background: dot, boxShadow: `0 0 10px ${dot}AA` }}
-      />
-      {label}
-    </motion.div>
-  );
-}
