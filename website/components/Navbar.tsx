@@ -128,10 +128,10 @@ export default function Navbar({ locale }: NavbarProps) {
                     key={loc}
                     href={`/${loc}`}
                     onClick={() => setLangOpen(false)}
-                    className={`block rounded-xl px-3 py-2 text-right text-sm font-semibold uppercase tracking-wider transition-colors ${
+                    className={`block rounded-xl px-3 py-2 text-center text-sm font-medium uppercase transition-colors ${
                       loc === locale
                         ? "bg-deepTurquoise/10 text-deepTurquoise"
-                        : "text-charcoal/70 hover:bg-white/60 hover:text-charcoal dark:text-pearl1/70 dark:hover:bg-white/10 dark:hover:text-pearl1"
+                        : "text-charcoal/80 hover:bg-white/60 hover:text-charcoal dark:text-pearl1/80 dark:hover:bg-white/10 dark:hover:text-pearl1"
                     }`}
                   >
                     {loc}

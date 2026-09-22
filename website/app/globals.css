@@ -71,11 +71,19 @@
 
 @layer components {
   .glass {
-    background-color: rgba(255, 255, 255, 0.65);
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    backdrop-filter: blur(24px) saturate(140%);
-    -webkit-backdrop-filter: blur(24px) saturate(140%);
-    box-shadow: 0 30px 80px -30px rgba(50, 192, 181, 0.18);
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.75) 0%,
+      rgba(255, 255, 255, 0.3) 55%,
+      rgba(166, 245, 232, 0.28) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(24px) saturate(150%);
+    -webkit-backdrop-filter: blur(24px) saturate(150%);
+    box-shadow:
+      0 30px 80px -30px rgba(50, 192, 181, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.85);
   }
 
   .dark .glass {
@@ -95,11 +103,19 @@
   }
 
   .glass-strong {
-    background-color: rgba(255, 255, 255, 0.78);
-    border: 1px solid rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(28px) saturate(160%);
-    -webkit-backdrop-filter: blur(28px) saturate(160%);
-    box-shadow: 0 40px 100px -30px rgba(50, 192, 181, 0.22);
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.85) 0%,
+      rgba(255, 255, 255, 0.4) 55%,
+      rgba(166, 245, 232, 0.34) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px) saturate(170%);
+    -webkit-backdrop-filter: blur(30px) saturate(170%);
+    box-shadow:
+      0 40px 100px -30px rgba(50, 192, 181, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
   }
 
   .dark .glass-strong {
@@ -119,11 +135,18 @@
   }
 
   .glass-chip {
-    background-color: rgba(255, 255, 255, 0.72);
-    border: 1px solid rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(20px) saturate(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(140%);
-    box-shadow: 0 12px 32px -10px rgba(50, 192, 181, 0.18);
+    background-color: rgba(255, 255, 255, 0.55);
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(166, 245, 232, 0.3) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    box-shadow:
+      0 12px 32px -10px rgba(50, 192, 181, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.85);
   }
 
   .dark .glass-chip {

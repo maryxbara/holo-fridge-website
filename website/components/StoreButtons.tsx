@@ -91,11 +91,11 @@ export default function StoreButtons({
                   backgroundColor: "rgba(10, 16, 16, 0.55)",
                   backgroundImage:
                     "linear-gradient(135deg, rgba(255,255,255,0.11) 0%, rgba(255,255,255,0.025) 55%, rgba(50,192,181,0.06) 100%)",
-                  border: "1.5px solid rgba(166, 245, 232, 0.45)",
+                  border: "1.5px solid rgba(166, 245, 232, 0.7)",
                   backdropFilter: "blur(36px) saturate(165%)",
                   WebkitBackdropFilter: "blur(36px) saturate(165%)",
                   boxShadow:
-                    "0 24px 60px -16px rgba(0,0,0,0.8), 0 0 28px -10px rgba(50,192,181,0.35), inset 0 1px 0 rgba(255,255,255,0.1)",
+                    "0 24px 60px -16px rgba(0,0,0,0.85), 0 0 0 1px rgba(166,245,232,0.18), 0 0 16px rgba(50,192,181,0.5), 0 0 40px rgba(50,192,181,0.32), 0 0 72px rgba(50,192,181,0.18), inset 0 0 22px -6px rgba(166,245,232,0.28), inset 0 1px 0 rgba(255,255,255,0.12)",
                 }}
               >
                 <span className="text-[15px] font-semibold tracking-tightish text-white whitespace-nowrap">
