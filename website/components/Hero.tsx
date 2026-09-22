@@ -106,7 +106,7 @@ export default function Hero({ locale }: HeroProps) {
             {/* Phone — sits below/right of Holo */}
             <div className="absolute bottom-0 right-2 w-[230px]">
               <PhoneMockup
-                src="/screens/home.png"
+                src="/screens/home-hero.png"
                 alt="Holo Fridge home screen showing fridge inventory"
                 priority
                 glow
@@ -148,7 +148,7 @@ export default function Hero({ locale }: HeroProps) {
               </div>
               <div className="relative w-[170px] -ml-2 -mb-2">
                 <PhoneMockup
-                  src="/screens/home.png"
+                  src="/screens/home-hero.png"
                   alt="Holo Fridge home screen showing fridge inventory"
                   priority
                   glow
