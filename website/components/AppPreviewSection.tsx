@@ -41,33 +41,26 @@ export default function AppPreviewSection({ locale }: AppPreviewSectionProps) {
         subtitle={t(locale, 'appPreviewSubtitle')}
       />
 
-      <div className="mt-14">
-        {/* Padding leaves room for the mockup glow — this scroller clips overflow below lg */}
-        <div
-          className="flex snap-x snap-mandatory gap-6 overflow-x-auto px-8 pb-12 pt-8 sm:gap-8 lg:gap-10 lg:overflow-visible [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-        >
-          {SCREENS.map((s, i) => (
-            <div
-              key={s.src}
-              className="snap-center shrink-0 basis-[72%] sm:basis-[44%] lg:basis-0 lg:flex-1"
-            >
-              <Reveal delay={i * 0.12}>
-                <div className="relative mx-auto w-full max-w-[260px] transition-transform duration-700 hover:-translate-y-1.5">
-                  <PhoneMockup
-                    src={s.src}
-                    alt={s.alt}
-                    glow
-                    priority={false}
-                  />
-                </div>
+      <Reveal className="mt-14">
+        {/* Endless slow drift. This clips overflow, so the track pads itself to clear the glow. */}
+        <div className="marquee-mask-wide -mx-5 overflow-hidden sm:-mx-8">
+          <div className="flex w-max animate-marqueeSlow py-16 will-change-transform">
+            {[...SCREENS, ...SCREENS, ...SCREENS, ...SCREENS].map((s, i) => (
+              <div
+                key={`${s.src}-${i}`}
+                /* Copies past the first are visual padding for the loop only */
+                aria-hidden={i >= SCREENS.length}
+                className="mr-10 w-[240px] shrink-0 sm:w-[260px]"
+              >
+                <PhoneMockup src={s.src} alt={s.alt} glow priority={false} />
                 <p className="mt-6 text-center text-sm font-medium text-charcoal/85 dark:text-pearl1/85 sm:text-base">
                   {s.label}
                 </p>
-              </Reveal>
-            </div>
-          ))}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </Reveal>
     </SectionWrapper>
   );
 }

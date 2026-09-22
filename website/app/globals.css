@@ -419,6 +419,25 @@
     margin-bottom: 0;
   }
 
+  /* Wider fade for the mockup marquee — big elements need a longer ramp
+     so the edges read as fading out rather than being clipped */
+  .marquee-mask-wide {
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      #000 16%,
+      #000 84%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      #000 16%,
+      #000 84%,
+      transparent 100%
+    );
+  }
+
   /* Softens the cut edges of the endless chip marquee */
   .marquee-mask {
     mask-image: linear-gradient(
