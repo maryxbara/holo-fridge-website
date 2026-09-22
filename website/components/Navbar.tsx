@@ -232,13 +232,6 @@ export default function Navbar({ locale }: NavbarProps) {
               </div>
             </div>
             
-            <a
-              href="#download"
-              onClick={() => setMobileOpen(false)}
-              className="mt-3 rounded-2xl bg-deepTurquoise px-4 py-3 text-center text-base font-semibold text-white shadow-[0_12px_30px_-10px_rgba(50,192,181,0.65)]"
-            >
-              {t(locale, 'navDownload')}
-            </a>
           </nav>
         </div>
       ) : null}
