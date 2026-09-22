@@ -81,7 +81,7 @@ export default function StoreButtons({
                   boxShadow: "0 8px 32px -8px rgba(50, 192, 181, 0.15)",
                 }}
               >
-                <span className="text-[15px] font-normal text-charcoal/85 whitespace-nowrap">
+                <span className="text-[15px] font-semibold tracking-tightish text-charcoal whitespace-nowrap">
                   {t(locale, 'comingSoon')}
                 </span>
               </div>
@@ -91,14 +91,14 @@ export default function StoreButtons({
                   backgroundColor: "rgba(10, 16, 16, 0.55)",
                   backgroundImage:
                     "linear-gradient(135deg, rgba(255,255,255,0.11) 0%, rgba(255,255,255,0.025) 55%, rgba(50,192,181,0.06) 100%)",
-                  border: "1px solid rgba(255, 255, 255, 0.14)",
+                  border: "1.5px solid rgba(166, 245, 232, 0.45)",
                   backdropFilter: "blur(36px) saturate(165%)",
                   WebkitBackdropFilter: "blur(36px) saturate(165%)",
                   boxShadow:
-                    "0 24px 60px -16px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.1)",
+                    "0 24px 60px -16px rgba(0,0,0,0.8), 0 0 28px -10px rgba(50,192,181,0.35), inset 0 1px 0 rgba(255,255,255,0.1)",
                 }}
               >
-                <span className="text-[15px] font-normal text-white/90 whitespace-nowrap">
+                <span className="text-[15px] font-semibold tracking-tightish text-white whitespace-nowrap">
                   {t(locale, 'comingSoon')}
                 </span>
               </div>

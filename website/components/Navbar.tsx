@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { type Locale, locales, localeNames } from "@/lib/i18n";
+import { type Locale, locales } from "@/lib/i18n";
 import { t } from "@/lib/translations";
 
 type NavbarProps = {
@@ -122,28 +122,19 @@ export default function Navbar({ locale }: NavbarProps) {
               </svg>
             </button>
             {langOpen && (
-              <div className="absolute right-0 mt-2 w-52 glass-strong rounded-2xl p-1.5 shadow-lg max-h-[min(70vh,22rem)] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <div className="absolute right-0 mt-2 w-20 glass-strong rounded-2xl p-1.5 shadow-lg max-h-[min(70vh,22rem)] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {locales.map((loc) => (
                   <Link
                     key={loc}
                     href={`/${loc}`}
                     onClick={() => setLangOpen(false)}
-                    className={`flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm transition-colors ${
+                    className={`block rounded-xl px-3 py-2 text-right text-sm font-semibold uppercase tracking-wider transition-colors ${
                       loc === locale
-                        ? "bg-deepTurquoise/10 text-deepTurquoise font-medium"
-                        : "text-charcoal/80 hover:bg-white/60 hover:text-charcoal dark:text-pearl1/80 dark:hover:bg-white/10 dark:hover:text-pearl1"
+                        ? "bg-deepTurquoise/10 text-deepTurquoise"
+                        : "text-charcoal/70 hover:bg-white/60 hover:text-charcoal dark:text-pearl1/70 dark:hover:bg-white/10 dark:hover:text-pearl1"
                     }`}
                   >
-                    <span
-                      className={`text-[11px] font-semibold uppercase tracking-wider ${
-                        loc === locale
-                          ? "text-deepTurquoise/70"
-                          : "text-bodyGray/70 dark:text-pearl1/40"
-                      }`}
-                    >
-                      {loc}
-                    </span>
-                    <span className="text-right">{localeNames[loc]}</span>
+                    {loc}
                   </Link>
                 ))}
               </div>
