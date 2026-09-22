@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: holo-fridge-website
+    runtime: node
+    plan: starter
+    region: frankfurt
+    rootDir: website
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /en
+    autoDeploy: true
+    domains:
+      - holofridge.com
+      - www.holofridge.com
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      # NEXT_PUBLIC_* values are inlined at build time, so they must be set
+      # here rather than only at runtime.
+      - key: NEXT_PUBLIC_APP_STORE_URL
+        value: https://apps.apple.com/lt/app/holofridge/id6760011328
+      - key: NEXT_PUBLIC_PLAY_STORE_URL
+        value: ""
+      - key: NEXT_PUBLIC_SITE_URL
+        value: https://www.holofridge.com
