@@ -66,10 +66,10 @@ export default function Navbar({ locale }: NavbarProps) {
             alt=""
             width={300}
             height={300}
-            className="h-9 w-auto object-contain"
+            className="h-11 w-auto object-contain"
             priority
           />
-          <span className="hidden whitespace-nowrap text-sm font-semibold tracking-tightish text-charcoal dark:text-pearl1 sm:inline">
+          <span className="hidden whitespace-nowrap text-base font-semibold tracking-tightish text-charcoal dark:text-pearl1 sm:inline">
             Holo Fridge
           </span>
         </Link>

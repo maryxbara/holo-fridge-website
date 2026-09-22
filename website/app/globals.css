@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+  /* Google Play glyph highlights — darkened on light glass so the mark stays legible */
+  :root {
+    --play-hi: #1e8e86;
+    --play-lo: #32c0b5;
+  }
+  .dark {
+    --play-hi: #ffffff;
+    --play-lo: #dde3ea;
+  }
+
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -272,6 +282,41 @@
     color: #2dd4bf;
   }
   
+  /* Phone mockups — soft turquoise halo plus a glowing shell edge */
+  .mockup-glow {
+    background: radial-gradient(
+      55% 45% at 50% 55%,
+      rgba(166, 245, 232, 0.6) 0%,
+      rgba(166, 245, 232, 0) 70%
+    );
+    filter: blur(40px);
+  }
+  .dark .mockup-glow {
+    background: radial-gradient(
+      55% 45% at 50% 55%,
+      rgba(50, 192, 181, 0.4) 0%,
+      rgba(50, 192, 181, 0) 70%
+    );
+    filter: blur(44px);
+  }
+
+  .phone-shell {
+    background: #262626;
+    box-shadow:
+      0 40px 80px -20px rgba(38, 38, 38, 0.3),
+      0 0 0 1px rgba(166, 245, 232, 0.35),
+      0 0 20px rgba(50, 192, 181, 0.35),
+      0 0 52px rgba(50, 192, 181, 0.2);
+  }
+  .dark .phone-shell {
+    background: #1a1b1c;
+    box-shadow:
+      0 40px 80px -20px rgba(0, 0, 0, 0.8),
+      0 0 0 1px rgba(166, 245, 232, 0.2),
+      0 0 22px rgba(50, 192, 181, 0.38),
+      0 0 60px rgba(50, 192, 181, 0.22);
+  }
+
   /* Legal document typography (privacy, terms) */
   .legal {
     font-size: 1rem;

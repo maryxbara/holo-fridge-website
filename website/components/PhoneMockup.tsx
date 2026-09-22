@@ -29,17 +29,11 @@ export default function PhoneMockup({
       {glow ? (
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10 mx-auto"
-          style={{
-            background:
-              "radial-gradient(60% 50% at 50% 60%, rgba(166,245,232,0.55) 0%, rgba(166,245,232,0) 70%)",
-            filter: "blur(40px)",
-            transform: "translateY(8%)",
-          }}
+          className="mockup-glow pointer-events-none absolute -inset-x-10 -inset-y-8"
         />
       ) : null}
       <div
-        className="relative mx-auto overflow-hidden rounded-[2.75rem] bg-[#262626] p-[6px] shadow-[0_40px_80px_-20px_rgba(38,38,38,0.25)]"
+        className="phone-shell relative mx-auto overflow-hidden rounded-[2.75rem] p-[6px]"
         style={{ aspectRatio: "9 / 19.5" }}
       >
         <div
