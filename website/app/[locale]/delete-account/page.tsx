@@ -3,6 +3,7 @@ import { t } from "@/lib/translations";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GlassCard from "@/components/GlassCard";
+import Reveal from "@/components/Reveal";
 import SectionWrapper from "@/components/SectionWrapper";
 import type { Metadata } from "next";
 import { translations } from "@/lib/translations";
@@ -36,11 +37,14 @@ export default async function DeleteAccountPage({
       <main className="relative pt-32 pb-20">
         <SectionWrapper>
           <div className="mx-auto max-w-3xl">
-            <h1 className="text-4xl font-semibold tracking-tightish text-charcoal dark:text-white sm:text-5xl text-center">
-              {t(locale, 'deleteAccountTitle')}
-            </h1>
-            
-            <GlassCard className="mt-12 p-8">
+            <Reveal y={18}>
+              <h1 className="text-4xl font-semibold tracking-tightish text-charcoal dark:text-white sm:text-5xl text-center">
+                {t(locale, 'deleteAccountTitle')}
+              </h1>
+            </Reveal>
+
+            <Reveal delay={0.12} className="mt-12 block">
+            <GlassCard className="p-8">
               <p className="text-lg text-bodyGray dark:text-white/70 mb-6">
                 {t(locale, 'deleteAccountDesc')}
               </p>
@@ -80,6 +84,7 @@ export default async function DeleteAccountPage({
                 </a>
               </p>
             </GlassCard>
+            </Reveal>
           </div>
         </SectionWrapper>
       </main>

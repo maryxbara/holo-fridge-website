@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { type Locale, locales } from "@/lib/i18n";
@@ -49,7 +50,10 @@ export default function Navbar({ locale }: NavbarProps) {
 
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center px-3 sm:px-6">
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: -18 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className={`pointer-events-auto mt-4 flex w-full max-w-5xl items-center justify-between gap-4 rounded-full px-3 py-2 transition-all duration-500 sm:px-4 ${
           scrolled
             ? "glass-strong"
@@ -66,7 +70,7 @@ export default function Navbar({ locale }: NavbarProps) {
             alt=""
             width={300}
             height={300}
-            className="h-11 w-auto object-contain"
+            className="h-11 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
             priority
           />
           <span className="hidden whitespace-nowrap text-base font-semibold tracking-tightish text-charcoal dark:text-pearl1 sm:inline">
@@ -122,7 +126,7 @@ export default function Navbar({ locale }: NavbarProps) {
               </svg>
             </button>
             {langOpen && (
-              <div className="absolute right-0 mt-2 w-20 glass rounded-2xl p-1.5 shadow-[0_18px_40px_-18px_rgba(50,192,181,0.22)] max-h-[min(70vh,22rem)] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <div className="animate-in-soft absolute right-0 mt-2 w-20 glass rounded-2xl p-1.5 shadow-[0_18px_40px_-18px_rgba(50,192,181,0.22)] max-h-[min(70vh,22rem)] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {locales.map((loc) => (
                   <Link
                     key={loc}
@@ -172,11 +176,11 @@ export default function Navbar({ locale }: NavbarProps) {
             </svg>
           </button>
         </div>
-      </div>
+      </motion.div>
 
       {/* Mobile menu — glass sheet, only when open */}
       {mobileOpen ? (
-        <div className="pointer-events-auto fixed inset-x-3 top-20 z-40 glass-strong rounded-3xl p-3 md:hidden">
+        <div className="animate-in-soft pointer-events-auto fixed inset-x-3 top-20 z-40 glass-strong rounded-3xl p-3 md:hidden">
           <nav className="flex flex-col" aria-label="Mobile">
             {NAV_LINKS.map((l) => (
               <a

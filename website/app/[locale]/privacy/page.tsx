@@ -2,6 +2,7 @@ import { isValidLocale, type Locale } from "@/lib/i18n";
 import { t } from "@/lib/translations";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Reveal from "@/components/Reveal";
 import SectionWrapper from "@/components/SectionWrapper";
 import type { Metadata } from "next";
 import { translations } from "@/lib/translations";
@@ -35,12 +36,16 @@ export default async function PrivacyPage({
       <main className="relative pt-32 pb-20">
         <SectionWrapper>
           <div className="mx-auto max-w-4xl">
-            <h1 className="text-4xl font-semibold tracking-tightish text-charcoal dark:text-white sm:text-5xl">
-              {t(locale, 'privacyTitle')}
-            </h1>
-            <p className="mt-4 text-bodyGray dark:text-white/70">
-              {t(locale, 'privacyLastUpdated')}
-            </p>
+            <Reveal y={18}>
+              <h1 className="text-4xl font-semibold tracking-tightish text-charcoal dark:text-white sm:text-5xl">
+                {t(locale, 'privacyTitle')}
+              </h1>
+            </Reveal>
+            <Reveal delay={0.1} y={14}>
+              <p className="mt-4 text-bodyGray dark:text-white/70">
+                {t(locale, 'privacyLastUpdated')}
+              </p>
+            </Reveal>
 
             <div className="legal mt-12 max-w-none text-bodyGray dark:text-white/70">
               <div className="glass-strong rounded-3xl p-8 mb-8">

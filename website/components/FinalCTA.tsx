@@ -1,4 +1,5 @@
 import GlassCard from "./GlassCard";
+import Reveal from "./Reveal";
 import SectionWrapper from "./SectionWrapper";
 import StoreButtons from "./StoreButtons";
 import { type Locale } from "@/lib/i18n";
@@ -23,23 +24,31 @@ export default function FinalCTA({ locale }: FinalCTAProps) {
           variant="strong"
           className="relative mx-auto max-w-3xl !p-10 text-center transition-all duration-700 hover:-translate-y-1 hover:shadow-glassHover sm:!p-14"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-deepTurquoise">
-            {t(locale, 'ctaLabel')}
-          </p>
-          <h2 className="mt-3 text-balance text-4xl font-semibold tracking-tightish text-charcoal dark:text-pearl1 sm:text-5xl">
-            {t(locale, 'ctaTitle')}
-          </h2>
-          <p className="mx-auto mt-5 max-w-xl text-balance text-lg leading-relaxed text-bodyGray dark:text-pearl1/70">
-            {t(locale, 'ctaSubtitle')}
-          </p>
+          <Reveal y={14}>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-deepTurquoise">
+              {t(locale, 'ctaLabel')}
+            </p>
+          </Reveal>
+          <Reveal delay={0.08} y={18}>
+            <h2 className="mt-3 text-balance text-4xl font-semibold tracking-tightish text-charcoal dark:text-pearl1 sm:text-5xl">
+              {t(locale, 'ctaTitle')}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.16} y={18}>
+            <p className="mx-auto mt-5 max-w-xl text-balance text-lg leading-relaxed text-bodyGray dark:text-pearl1/70">
+              {t(locale, 'ctaSubtitle')}
+            </p>
+          </Reveal>
 
-          <div className="mt-8 flex justify-center">
+          <Reveal delay={0.24} className="mt-8 flex justify-center">
             <StoreButtons locale={locale} />
-          </div>
+          </Reveal>
 
-          <p className="mt-5 text-sm text-bodyGray dark:text-pearl1/60">
-            {t(locale, 'heroFreeToStart')}
-          </p>
+          <Reveal delay={0.32} y={12}>
+            <p className="mt-5 text-sm text-bodyGray dark:text-pearl1/60">
+              {t(locale, 'heroFreeToStart')}
+            </p>
+          </Reveal>
         </GlassCard>
       </div>
     </SectionWrapper>
