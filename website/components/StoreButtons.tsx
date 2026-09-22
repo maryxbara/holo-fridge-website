@@ -88,14 +88,14 @@ export default function StoreButtons({
               <div 
                 className="rounded-[20px] px-6 py-4 hidden dark:block"
                 style={{
-                  backgroundColor: "rgba(26, 27, 28, 0.72)",
+                  backgroundColor: "rgba(10, 16, 16, 0.55)",
                   backgroundImage:
-                    "linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.012) 100%)",
-                  border: "1px solid rgba(255, 255, 255, 0.09)",
-                  backdropFilter: "blur(30px) saturate(125%)",
-                  WebkitBackdropFilter: "blur(30px) saturate(125%)",
+                    "linear-gradient(135deg, rgba(255,255,255,0.11) 0%, rgba(255,255,255,0.025) 55%, rgba(50,192,181,0.06) 100%)",
+                  border: "1px solid rgba(255, 255, 255, 0.14)",
+                  backdropFilter: "blur(36px) saturate(165%)",
+                  WebkitBackdropFilter: "blur(36px) saturate(165%)",
                   boxShadow:
-                    "0 24px 60px -16px rgba(0,0,0,0.85), inset 0 1px 0 rgba(255,255,255,0.05)",
+                    "0 24px 60px -16px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.1)",
                 }}
               >
                 <span className="text-[15px] font-normal text-white/90 whitespace-nowrap">
