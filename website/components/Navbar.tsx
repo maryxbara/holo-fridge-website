@@ -122,7 +122,7 @@ export default function Navbar({ locale }: NavbarProps) {
               </svg>
             </button>
             {langOpen && (
-              <div className="absolute right-0 mt-2 w-20 glass-strong rounded-2xl p-1.5 shadow-lg max-h-[min(70vh,22rem)] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <div className="absolute right-0 mt-2 w-20 glass rounded-2xl p-1.5 shadow-[0_18px_40px_-18px_rgba(50,192,181,0.22)] max-h-[min(70vh,22rem)] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {locales.map((loc) => (
                   <Link
                     key={loc}
@@ -131,7 +131,7 @@ export default function Navbar({ locale }: NavbarProps) {
                     className={`block rounded-xl px-3 py-1.5 text-center text-[13px] font-medium uppercase transition-colors ${
                       loc === locale
                         ? "bg-deepTurquoise/10 text-deepTurquoise"
-                        : "text-charcoal/80 hover:bg-white/60 hover:text-charcoal dark:text-pearl1/80 dark:hover:bg-white/10 dark:hover:text-pearl1"
+                        : "text-charcoal/60 hover:bg-white/40 hover:text-charcoal/85 dark:text-pearl1/80 dark:hover:bg-white/10 dark:hover:text-pearl1"
                     }`}
                   >
                     {loc}

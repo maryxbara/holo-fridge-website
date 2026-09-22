@@ -29,7 +29,7 @@ export default function PhoneMockup({
       {glow ? (
         <div
           aria-hidden
-          className="mockup-glow pointer-events-none absolute -inset-x-10 -inset-y-8"
+          className="mockup-glow pointer-events-none absolute -inset-x-6 -inset-y-5"
         />
       ) : null}
       <div

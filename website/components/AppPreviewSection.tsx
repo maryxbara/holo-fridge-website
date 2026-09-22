@@ -41,8 +41,9 @@ export default function AppPreviewSection({ locale }: AppPreviewSectionProps) {
       />
 
       <div className="mt-14">
+        {/* Padding leaves room for the mockup glow — this scroller clips overflow below lg */}
         <div
-          className="flex snap-x snap-mandatory gap-6 overflow-x-auto px-1 pb-8 sm:gap-8 lg:gap-10 lg:overflow-visible [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="flex snap-x snap-mandatory gap-6 overflow-x-auto px-8 pb-12 pt-8 sm:gap-8 lg:gap-10 lg:overflow-visible [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {SCREENS.map((s, i) => (
             <div

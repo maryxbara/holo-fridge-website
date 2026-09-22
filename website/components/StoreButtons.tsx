@@ -27,13 +27,13 @@ export default function StoreButtons({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Download Holo Fridge on the App Store"
-        className={`glass-strong group inline-flex items-center gap-3 rounded-2xl px-5 ${
+        className={`glass-dark group inline-flex items-center gap-3 rounded-2xl px-5 ${
           isCompact ? "py-2.5" : "py-3"
-        } text-charcoal transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-15px_rgba(50,192,181,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deepTurquoise focus-visible:ring-offset-2 dark:text-pearl1`}
+        } text-white transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deepTurquoise focus-visible:ring-offset-2`}
       >
         <AppleGlyph />
         <span className="flex flex-col items-start leading-tight">
-          <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-charcoal/60 dark:text-pearl1/60">
+          <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-white/70">
             {t(locale, 'downloadOnThe')}
           </span>
           <span className={`font-semibold tracking-tight ${isCompact ? "text-base" : "text-lg"}`}>
@@ -49,13 +49,13 @@ export default function StoreButtons({
           onClick={() => setShowComingSoon((open) => !open)}
           aria-label="Get Holo Fridge on Google Play"
           aria-expanded={showComingSoon}
-          className={`glass-strong group relative z-50 inline-flex items-center gap-3 rounded-2xl px-5 ${
+          className={`glass-dark group relative z-50 inline-flex items-center gap-3 rounded-2xl px-5 ${
             isCompact ? "py-2.5" : "py-3"
-          } text-charcoal transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-15px_rgba(50,192,181,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deepTurquoise focus-visible:ring-offset-2 dark:text-pearl1`}
+          } text-white transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deepTurquoise focus-visible:ring-offset-2`}
         >
           <PlayGlyph />
           <span className="flex flex-col items-start leading-tight">
-            <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-charcoal/60 dark:text-pearl1/60">
+            <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-white/70">
               {t(locale, 'getItOn')}
             </span>
             <span className={`font-semibold tracking-tight ${isCompact ? "text-base" : "text-lg"}`}>
@@ -142,7 +142,7 @@ function PlayGlyph() {
           <stop offset="100%" stopColor="#32C0B5" />
         </linearGradient>
         <linearGradient id="play-b" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="var(--play-hi)" />
+          <stop offset="0%" stopColor="#FFFFFF" />
           <stop offset="100%" stopColor="#A6F5E8" />
         </linearGradient>
         <linearGradient id="play-c" x1="0" y1="0" x2="1" y2="1">
@@ -150,8 +150,8 @@ function PlayGlyph() {
           <stop offset="100%" stopColor="#1E8E86" />
         </linearGradient>
         <linearGradient id="play-d" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="var(--play-hi)" />
-          <stop offset="100%" stopColor="var(--play-lo)" />
+          <stop offset="0%" stopColor="#FFFFFF" />
+          <stop offset="100%" stopColor="#DDE3EA" />
         </linearGradient>
       </defs>
       <path d="M3.6 1.5C3.2 1.8 3 2.3 3 2.9v18.2c0 .6.2 1.1.6 1.4l10-10.5L3.6 1.5z" fill="url(#play-a)" />
