@@ -34,8 +34,8 @@ export default async function DeleteAccountPage({
   return (
     <>
       <Navbar locale={locale} />
-      <main className="relative pt-32 pb-20">
-        <SectionWrapper>
+      <main className="relative pb-24 pt-28 sm:pt-32">
+        <SectionWrapper className="!py-0">
           <div className="mx-auto max-w-3xl">
             <Reveal y={18}>
               <h1 className="text-4xl font-semibold tracking-tightish text-charcoal dark:text-white sm:text-5xl text-center">

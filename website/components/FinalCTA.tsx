@@ -41,7 +41,7 @@ export default function FinalCTA({ locale }: FinalCTAProps) {
           </Reveal>
 
           <Reveal delay={0.24} className="mt-8 flex justify-center">
-            <StoreButtons locale={locale} />
+            <StoreButtons locale={locale} className="justify-center" />
           </Reveal>
 
           <Reveal delay={0.32} y={12}>

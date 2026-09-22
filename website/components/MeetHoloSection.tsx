@@ -28,7 +28,9 @@ export default function MeetHoloSection({ locale }: MeetHoloSectionProps) {
           </p>
         </Reveal>
 
-        <Reveal delay={0.24} className="mt-12 sm:mt-14">
+        {/* w-full keeps this from shrink-wrapping to Holo's max size, which is
+            what lets Holo cap itself to the viewport on narrow screens */}
+        <Reveal delay={0.24} className="mt-12 flex w-full justify-center sm:mt-14">
           <HoloHero size={460} priority={false} withParticles withSweep />
         </Reveal>
       </div>

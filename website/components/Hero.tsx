@@ -27,7 +27,7 @@ export default function Hero({ locale }: HeroProps) {
   return (
     <section
       id="top"
-      className="relative w-full overflow-hidden pt-32 pb-20 sm:pt-36 sm:pb-24 lg:pt-40 lg:pb-28"
+      className="relative w-full overflow-hidden pb-20 pt-28 sm:pb-24 sm:pt-36 lg:pb-28 lg:pt-40"
     >
       {/* Decorative pearl/turquoise wash — top-right halo */}
       <div
@@ -143,10 +143,11 @@ export default function Hero({ locale }: HeroProps) {
           {/* Mobile / tablet — stacked composition + horizontal chip strip */}
           <div className="relative lg:hidden">
             <div className="relative mx-auto flex w-full max-w-md items-end justify-center">
-              <div className="relative -mr-6 flex-1">
+              {/* min-w-0 lets Holo give way instead of shoving the phone off-screen */}
+              <div className="relative -mr-6 min-w-0 flex-1">
                 <HoloHero size={320} priority withParticles withSweep />
               </div>
-              <div className="relative w-[170px] -ml-2 -mb-2">
+              <div className="relative -ml-2 -mb-2 w-[42%] max-w-[170px] shrink-0">
                 <PhoneMockup
                   src="/screens/home-hero.png"
                   alt="Holo Fridge home screen showing fridge inventory"

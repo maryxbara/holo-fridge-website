@@ -70,16 +70,16 @@ export default function Navbar({ locale }: NavbarProps) {
             alt=""
             width={300}
             height={300}
-            className="h-11 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+            className="h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
             priority
           />
-          <span className="hidden whitespace-nowrap text-base font-semibold tracking-tightish text-charcoal dark:text-pearl1 sm:inline">
+          <span className="whitespace-nowrap text-[15px] font-semibold tracking-tightish text-charcoal dark:text-pearl1 sm:text-base">
             Holo Fridge
           </span>
         </Link>
 
         <nav
-          className="hidden items-center gap-0.5 md:flex"
+          className="hidden items-center gap-0.5 lg:flex"
           aria-label="Primary"
         >
           {NAV_LINKS.map((l) => (
@@ -98,7 +98,7 @@ export default function Navbar({ locale }: NavbarProps) {
           <button
             type="button"
             onClick={toggleTheme}
-            className="hidden md:inline-flex h-9 w-9 items-center justify-center rounded-full text-charcoal/70 dark:text-pearl1/70 hover:text-charcoal dark:hover:text-pearl1 hover:bg-white/50 dark:hover:bg-white/10 transition-colors"
+            className="hidden lg:inline-flex h-9 w-9 items-center justify-center rounded-full text-charcoal/70 dark:text-pearl1/70 hover:text-charcoal dark:hover:text-pearl1 hover:bg-white/50 dark:hover:bg-white/10 transition-colors"
             aria-label="Toggle theme"
           >
             {isDark ? (
@@ -118,7 +118,7 @@ export default function Navbar({ locale }: NavbarProps) {
             <button
               type="button"
               onClick={() => setLangOpen(!langOpen)}
-              className="hidden md:inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-sm font-medium text-charcoal/80 dark:text-pearl1/80 hover:text-charcoal dark:hover:text-pearl1 transition-colors"
+              className="hidden lg:inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-sm font-medium text-charcoal/80 dark:text-pearl1/80 hover:text-charcoal dark:hover:text-pearl1 transition-colors"
             >
               <span className="uppercase">{locale}</span>
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -156,7 +156,7 @@ export default function Navbar({ locale }: NavbarProps) {
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((o) => !o)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/70 dark:bg-white/10 text-charcoal dark:text-pearl1 backdrop-blur-md md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/70 dark:bg-white/10 text-charcoal dark:text-pearl1 backdrop-blur-md lg:hidden"
           >
             <svg width="18" height="14" viewBox="0 0 18 14" aria-hidden>
               {mobileOpen ? (
@@ -180,7 +180,7 @@ export default function Navbar({ locale }: NavbarProps) {
 
       {/* Mobile menu — glass sheet, only when open */}
       {mobileOpen ? (
-        <div className="animate-in-soft pointer-events-auto fixed inset-x-3 top-20 z-40 glass-strong rounded-3xl p-3 md:hidden">
+        <div className="animate-in-soft pointer-events-auto fixed inset-x-3 top-20 z-40 glass-strong rounded-3xl p-3 lg:hidden">
           <nav className="flex flex-col" aria-label="Mobile">
             {NAV_LINKS.map((l) => (
               <a

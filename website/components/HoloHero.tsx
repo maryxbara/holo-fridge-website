@@ -43,8 +43,10 @@ export default function HoloHero({
 
   return (
     <div
-      className={`relative inline-flex items-center justify-center ${className}`}
-      style={{ width: size, height: size }}
+      // `size` is the ceiling, not a fixed box — it shrinks to fit narrow
+      // viewports, and the children size off it in % so the composition holds.
+      className={`relative inline-flex max-w-full items-center justify-center ${className}`}
+      style={{ width: size, aspectRatio: "1 / 1" }}
       aria-hidden={false}
     >
       {/* Radial glow orb — sits behind Holo */}
@@ -52,8 +54,8 @@ export default function HoloHero({
         aria-hidden
         className="pointer-events-none absolute"
         style={{
-          width: size * 0.85,
-          height: size * 0.85,
+          width: "85%",
+          aspectRatio: "1 / 1",
           background:
             "radial-gradient(circle, rgba(166,245,232,0.55) 0%, rgba(166,245,232,0.32) 35%, rgba(166,245,232,0) 70%)",
           filter: "blur(60px)",
@@ -67,8 +69,8 @@ export default function HoloHero({
         aria-hidden
         className="pointer-events-none absolute"
         style={{
-          width: size * 0.55,
-          height: size * 0.55,
+          width: "55%",
+          aspectRatio: "1 / 1",
           background:
             "radial-gradient(circle, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 70%)",
           filter: "blur(30px)",
@@ -80,7 +82,7 @@ export default function HoloHero({
       {/* Holo character — float + breathe + optional light sweep */}
       <div
         className={`relative z-10 animate-float ${withSweep ? "holo-sweep" : ""}`}
-        style={{ width: size * 0.78, height: size * 0.78 }}
+        style={{ width: "78%", aspectRatio: "1 / 1" }}
       >
         <div
           className="relative h-full w-full animate-breathe"
@@ -102,7 +104,7 @@ export default function HoloHero({
               src={hologramSrc}
               alt="Holo, your friendly holographic fridge companion"
               fill
-              sizes={`${Math.round(size)}px`}
+              sizes={`(max-width: ${size}px) 100vw, ${size}px`}
               priority={priority}
               fetchPriority={priority ? "high" : "auto"}
               loading={priority ? "eager" : "lazy"}
