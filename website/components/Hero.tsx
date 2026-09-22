@@ -95,7 +95,14 @@ export default function Hero({ locale }: HeroProps) {
         </div>
 
         {/* RIGHT — Holo + phone composition (desktop) */}
-        <div className="relative lg:col-span-6">
+        {/* Fades and lifts in on load; Holo's own float/breathe/sweep run on
+            descendants, so they're untouched by this wrapper's transform. */}
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.95, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
+          className="relative lg:col-span-6"
+        >
           {/* Desktop: Holo + phone with floating chips orbiting around them */}
           <div className="relative mx-auto hidden h-[640px] w-full max-w-[560px] lg:block">
             {/* HoloHero — top center-left, large */}
@@ -178,7 +185,7 @@ export default function Hero({ locale }: HeroProps) {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -145,12 +145,6 @@ export default function Navbar({ locale }: NavbarProps) {
             )}
           </div>
 
-          <a
-            href="#download"
-            className="hidden rounded-full bg-deepTurquoise px-5 py-2.5 text-sm font-semibold text-white shadow-[0_12px_30px_-10px_rgba(50,192,181,0.65)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_36px_-10px_rgba(50,192,181,0.75)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deepTurquoise focus-visible:ring-offset-2 sm:inline-flex"
-          >
-            {t(locale, 'navDownload')}
-          </a>
           <button
             type="button"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
