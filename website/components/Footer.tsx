@@ -21,13 +21,13 @@ export default function Footer({ locale }: FooterProps) {
             alt="Holo"
             width={300}
             height={300}
-            className="h-10 w-auto object-contain"
+            className="h-12 w-auto object-contain"
           />
           <div className="flex flex-col">
-            <p className="text-sm font-semibold tracking-tight text-charcoal dark:text-pearl1">
+            <p className="text-base font-semibold tracking-tight text-charcoal dark:text-pearl1">
               Holo Fridge
             </p>
-            <p className="text-xs text-bodyGray dark:text-pearl1/60">
+            <p className="text-[13px] text-bodyGray dark:text-pearl1/60">
               {t(locale, 'footerTagline')}
             </p>
           </div>
@@ -41,7 +41,7 @@ export default function Footer({ locale }: FooterProps) {
             href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-charcoal dark:hover:text-pearl1"
+            className="transition-colors duration-300 hover:text-charcoal dark:hover:text-pearl1"
           >
             {t(locale, 'appStore')}
           </a>
@@ -50,21 +50,21 @@ export default function Footer({ locale }: FooterProps) {
               href={PLAY_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-charcoal dark:hover:text-pearl1"
+              className="transition-colors duration-300 hover:text-charcoal dark:hover:text-pearl1"
             >
               {t(locale, 'googlePlay')}
             </a>
           )}
-          <Link href={`/${locale}/support`} className="hover:text-charcoal dark:hover:text-pearl1">
+          <Link href={`/${locale}/support`} className="transition-colors duration-300 hover:text-charcoal dark:hover:text-pearl1">
             {t(locale, 'footerSupport')}
           </Link>
-          <Link href={`/${locale}/privacy`} className="hover:text-charcoal dark:hover:text-pearl1">
+          <Link href={`/${locale}/privacy`} className="transition-colors duration-300 hover:text-charcoal dark:hover:text-pearl1">
             {t(locale, 'footerPrivacy')}
           </Link>
-          <Link href={`/${locale}/terms`} className="hover:text-charcoal dark:hover:text-pearl1">
+          <Link href={`/${locale}/terms`} className="transition-colors duration-300 hover:text-charcoal dark:hover:text-pearl1">
             {t(locale, 'footerTerms')}
           </Link>
-          <a href="mailto:support@holofridge.com" className="hover:text-charcoal dark:hover:text-pearl1">
+          <a href="mailto:support@holofridge.com" className="transition-colors duration-300 hover:text-charcoal dark:hover:text-pearl1">
             {t(locale, 'footerContact')}
           </a>
         </nav>

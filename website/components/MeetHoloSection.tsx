@@ -1,4 +1,5 @@
 import HoloHero from "./HoloHero";
+import Reveal from "./Reveal";
 import SectionWrapper from "./SectionWrapper";
 import { type Locale } from "@/lib/i18n";
 import { t } from "@/lib/translations";
@@ -22,9 +23,9 @@ export default function MeetHoloSection({ locale }: MeetHoloSectionProps) {
           {t(locale, 'meetHoloDesc')}
         </p>
 
-        <div className="mt-12 sm:mt-14">
+        <Reveal delay={0.15} className="mt-12 sm:mt-14">
           <HoloHero size={460} priority={false} withParticles withSweep />
-        </div>
+        </Reveal>
       </div>
     </SectionWrapper>
   );

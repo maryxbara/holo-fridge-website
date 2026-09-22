@@ -19,10 +19,10 @@ export default function SectionWrapper({
   return (
     <motion.section
       id={id}
-      initial={{ opacity: 0, y: 32 }}
+      initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
       className={`relative w-full py-20 sm:py-28 lg:py-32 ${className}`}
     >
       <div className={`mx-auto w-full max-w-6xl px-5 sm:px-8 ${containerClassName}`}>

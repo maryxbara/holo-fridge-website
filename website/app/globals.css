@@ -419,6 +419,24 @@
     margin-bottom: 0;
   }
 
+  /* Softens the cut edges of the endless chip marquee */
+  .marquee-mask {
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      #000 7%,
+      #000 93%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      #000 7%,
+      #000 93%,
+      transparent 100%
+    );
+  }
+
   .animate-in {
     animation: animateIn 0.2s ease-out;
   }

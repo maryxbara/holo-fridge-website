@@ -1,4 +1,5 @@
 import PhoneMockup from "./PhoneMockup";
+import Reveal from "./Reveal";
 import SectionHeader from "./SectionHeader";
 import SectionWrapper from "./SectionWrapper";
 import { type Locale } from "@/lib/i18n";
@@ -50,17 +51,19 @@ export default function AppPreviewSection({ locale }: AppPreviewSectionProps) {
               key={s.src}
               className="snap-center shrink-0 basis-[72%] sm:basis-[44%] lg:basis-0 lg:flex-1"
             >
-              <div className="relative mx-auto w-full max-w-[260px]">
-                <PhoneMockup
-                  src={s.src}
-                  alt={s.alt}
-                  glow
-                  priority={false}
-                />
-              </div>
-              <p className="mt-6 text-center text-sm font-medium text-charcoal/85 dark:text-pearl1/85 sm:text-base">
-                {s.label}
-              </p>
+              <Reveal delay={i * 0.12}>
+                <div className="relative mx-auto w-full max-w-[260px] transition-transform duration-700 hover:-translate-y-1.5">
+                  <PhoneMockup
+                    src={s.src}
+                    alt={s.alt}
+                    glow
+                    priority={false}
+                  />
+                </div>
+                <p className="mt-6 text-center text-sm font-medium text-charcoal/85 dark:text-pearl1/85 sm:text-base">
+                  {s.label}
+                </p>
+              </Reveal>
             </div>
           ))}
         </div>

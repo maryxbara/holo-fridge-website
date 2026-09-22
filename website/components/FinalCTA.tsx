@@ -21,7 +21,7 @@ export default function FinalCTA({ locale }: FinalCTAProps) {
 
         <GlassCard
           variant="strong"
-          className="relative mx-auto max-w-3xl !p-10 text-center sm:!p-14"
+          className="relative mx-auto max-w-3xl !p-10 text-center transition-all duration-700 hover:-translate-y-1 hover:shadow-glassHover sm:!p-14"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-deepTurquoise">
             {t(locale, 'ctaLabel')}

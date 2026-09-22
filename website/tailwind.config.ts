@@ -40,6 +40,7 @@ const config: Config = {
         floatUp: "floatUp 10s linear infinite",
         lightSweep: "lightSweep 12s ease-in-out infinite",
         drift: "drift 30s linear infinite",
+        marquee: "marquee 42s linear infinite",
       },
       keyframes: {
         float: {
@@ -63,6 +64,11 @@ const config: Config = {
         drift: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
+        },
+        // Rightward scroll. Track holds 4 copies, so -50% lands on an identical frame.
+        marquee: {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
         },
       },
     },

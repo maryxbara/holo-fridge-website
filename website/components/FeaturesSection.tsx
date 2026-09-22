@@ -1,4 +1,5 @@
 import GlassCard from "./GlassCard";
+import Reveal from "./Reveal";
 import SectionHeader from "./SectionHeader";
 import SectionWrapper from "./SectionWrapper";
 import { type Locale } from "@/lib/i18n";
@@ -58,21 +59,20 @@ export default function FeaturesSection({ locale }: FeaturesSectionProps) {
 
       {/* 2x3 grid */}
       <div className="mt-14 grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {FEATURES.map((f) => (
-          <GlassCard
-            key={f.title}
-            className="group h-full transition-all duration-500 hover:-translate-y-1 hover:shadow-glassHover"
-          >
-            <div className="icon-tile inline-flex h-11 w-11 items-center justify-center rounded-2xl">
-              {f.icon}
-            </div>
-            <h3 className="mt-5 text-lg font-semibold tracking-tight text-charcoal dark:text-pearl1">
-              {f.title}
-            </h3>
-            <p className="mt-2 text-base leading-relaxed text-bodyGray dark:text-pearl1/70">
-              {f.body}
-            </p>
-          </GlassCard>
+        {FEATURES.map((f, i) => (
+          <Reveal key={f.title} delay={i * 0.08} className="h-full">
+            <GlassCard className="group h-full transition-all duration-500 hover:-translate-y-1 hover:shadow-glassHover">
+              <div className="icon-tile inline-flex h-11 w-11 items-center justify-center rounded-2xl transition-transform duration-500 group-hover:scale-105">
+                {f.icon}
+              </div>
+              <h3 className="mt-5 text-lg font-semibold tracking-tight text-charcoal dark:text-pearl1">
+                {f.title}
+              </h3>
+              <p className="mt-2 text-base leading-relaxed text-bodyGray dark:text-pearl1/70">
+                {f.body}
+              </p>
+            </GlassCard>
+          </Reveal>
         ))}
       </div>
 

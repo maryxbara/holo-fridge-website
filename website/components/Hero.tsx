@@ -156,13 +156,13 @@ export default function Hero({ locale }: HeroProps) {
               </div>
             </div>
 
-            {/* Chip strip — horizontal scroll, snap, never display:none */}
-            <div className="mt-6 -mx-5 sm:-mx-8">
-              <div className="flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-2 sm:px-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                {CHIPS.map((c) => (
+            {/* Chip strip — endless rightward marquee */}
+            <div className="marquee-mask mt-6 -mx-5 overflow-hidden pb-2 sm:-mx-8">
+              <div className="flex w-max animate-marquee">
+                {[...CHIPS, ...CHIPS, ...CHIPS, ...CHIPS].map((c, i) => (
                   <div
-                    key={c.label}
-                    className="snap-start glass-chip rounded-full px-4 py-2.5 text-sm font-medium text-charcoal/90 dark:text-pearl1/90 whitespace-nowrap"
+                    key={`${c.label}-${i}`}
+                    className="glass-chip mr-3 rounded-full px-4 py-2.5 text-sm font-medium text-charcoal/90 dark:text-pearl1/90 whitespace-nowrap"
                   >
                     <span
                       className="mr-2 inline-block h-1.5 w-1.5 -translate-y-[1px] rounded-full align-middle"
