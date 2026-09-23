@@ -62,6 +62,9 @@ export default function Footer({ locale }: FooterProps) {
           <Link href={`/${locale}/support`} className="transition-colors duration-300 hover:text-charcoal dark:hover:text-pearl1">
             {t(locale, 'footerSupport')}
           </Link>
+          <Link href={`/${locale}/guides`} className="transition-colors duration-300 hover:text-charcoal dark:hover:text-pearl1">
+            Guides
+          </Link>
           <Link href={`/${locale}/privacy`} className="transition-colors duration-300 hover:text-charcoal dark:hover:text-pearl1">
             {t(locale, 'footerPrivacy')}
           </Link>
