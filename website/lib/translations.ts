@@ -90,8 +90,15 @@ export const translations = {
     footerTerms: 'Terms of Use',
     footerContact: 'Contact',
     footerSupport: 'Support',
+    footerGuides: 'Guides',
     footerCopyright: '© {year} Holo Fridge. All rights reserved.',
     footerMadeWith: 'Made with care.',
+    
+    // Guides
+    guidesTitle: 'Guides',
+    guidesSubtitle: 'Practical advice for reducing food waste and making the most of your kitchen.',
+    guidesAvailableInEnglish: 'Guides are currently available in English.',
+    guidesMinRead: 'min read',
     
     // Support Page
     supportTitle: 'Support',
@@ -216,8 +223,15 @@ export const translations = {
     footerTerms: 'Умови використання',
     footerContact: 'Контакти',
     footerSupport: 'Підтримка',
+    footerGuides: 'Поради',
     footerCopyright: '© {year} Holo Fridge. Усі права захищені.',
     footerMadeWith: 'Зроблено з турботою.',
+    
+    // Guides
+    guidesTitle: 'Поради',
+    guidesSubtitle: 'Практичні поради щодо зменшення харчових відходів та ефективного використання вашої кухні.',
+    guidesAvailableInEnglish: 'Поради наразі доступні англійською мовою.',
+    guidesMinRead: 'хв читання',
     
     // Support Page
     supportTitle: 'Підтримка',
@@ -342,8 +356,15 @@ export const translations = {
     footerTerms: 'Termeni de utilizare',
     footerContact: 'Contact',
     footerSupport: 'Suport',
+    footerGuides: 'Ghiduri',
     footerCopyright: '© {year} Holo Fridge. Toate drepturile rezervate.',
     footerMadeWith: 'Făcut cu grijă.',
+    
+    // Guides
+    guidesTitle: 'Ghiduri',
+    guidesSubtitle: 'Sfaturi practice pentru reducerea risipei alimentare și utilizarea eficientă a bucătăriei.',
+    guidesAvailableInEnglish: 'Ghidurile sunt disponibile momentan în engleză.',
+    guidesMinRead: 'min citire',
     
     // Support Page
     supportTitle: 'Suport',
@@ -468,8 +489,15 @@ export const translations = {
     footerTerms: 'Regulamin',
     footerContact: 'Kontakt',
     footerSupport: 'Wsparcie',
+    footerGuides: 'Poradniki',
     footerCopyright: '© {year} Holo Fridge. Wszelkie prawa zastrzeżone.',
     footerMadeWith: 'Stworzone z troską.',
+    
+    // Guides
+    guidesTitle: 'Poradniki',
+    guidesSubtitle: 'Praktyczne porady dotyczące ograniczania marnowania żywności i efektywnego wykorzystania kuchni.',
+    guidesAvailableInEnglish: 'Poradniki są obecnie dostępne w języku angielskim.',
+    guidesMinRead: 'min czytania',
     
     // Support Page
     supportTitle: 'Wsparcie',
@@ -594,8 +622,15 @@ export const translations = {
     footerTerms: 'Nutzungsbedingungen',
     footerContact: 'Kontakt',
     footerSupport: 'Support',
+    footerGuides: 'Ratgeber',
     footerCopyright: '© {year} Holo Fridge. Alle Rechte vorbehalten.',
     footerMadeWith: 'Mit Sorgfalt gemacht.',
+    
+    // Guides
+    guidesTitle: 'Ratgeber',
+    guidesSubtitle: 'Praktische Tipps zur Reduzierung von Lebensmittelverschwendung und effizienten Nutzung Ihrer Küche.',
+    guidesAvailableInEnglish: 'Ratgeber sind derzeit auf Englisch verfügbar.',
+    guidesMinRead: 'Min. Lesezeit',
     
     // Support Page
     supportTitle: 'Support',
@@ -720,8 +755,15 @@ export const translations = {
     footerTerms: 'Términos de uso',
     footerContact: 'Contacto',
     footerSupport: 'Soporte',
+    footerGuides: 'Guías',
     footerCopyright: '© {year} Holo Fridge. Todos los derechos reservados.',
     footerMadeWith: 'Hecho con cuidado.',
+    
+    // Guides
+    guidesTitle: 'Guías',
+    guidesSubtitle: 'Consejos prácticos para reducir el desperdicio de alimentos y aprovechar al máximo tu cocina.',
+    guidesAvailableInEnglish: 'Las guías están disponibles actualmente en inglés.',
+    guidesMinRead: 'min de lectura',
     
     // Support Page
     supportTitle: 'Soporte',
@@ -846,8 +888,15 @@ export const translations = {
     footerTerms: 'Termini di utilizzo',
     footerContact: 'Contatto',
     footerSupport: 'Supporto',
+    footerGuides: 'Guide',
     footerCopyright: '© {year} Holo Fridge. Tutti i diritti riservati.',
     footerMadeWith: 'Fatto con cura.',
+    
+    // Guides
+    guidesTitle: 'Guide',
+    guidesSubtitle: 'Consigli pratici per ridurre lo spreco alimentare e sfruttare al meglio la tua cucina.',
+    guidesAvailableInEnglish: 'Le guide sono attualmente disponibili in inglese.',
+    guidesMinRead: 'min di lettura',
     
     // Support Page
     supportTitle: 'Supporto',
@@ -972,8 +1021,15 @@ export const translations = {
     footerTerms: 'Conditions d\'utilisation',
     footerContact: 'Contact',
     footerSupport: 'Support',
+    footerGuides: 'Guides',
     footerCopyright: '© {year} Holo Fridge. Tous droits réservés.',
     footerMadeWith: 'Fait avec soin.',
+    
+    // Guides
+    guidesTitle: 'Guides',
+    guidesSubtitle: 'Conseils pratiques pour réduire le gaspillage alimentaire et tirer le meilleur parti de votre cuisine.',
+    guidesAvailableInEnglish: 'Les guides sont actuellement disponibles en anglais.',
+    guidesMinRead: 'min de lecture',
     
     // Support Page
     supportTitle: 'Support',
@@ -1098,8 +1154,15 @@ export const translations = {
     footerTerms: 'Условия использования',
     footerContact: 'Контакты',
     footerSupport: 'Поддержка',
+    footerGuides: 'Руководства',
     footerCopyright: '© {year} Holo Fridge. Все права защищены.',
     footerMadeWith: 'Сделано с заботой.',
+    
+    // Guides
+    guidesTitle: 'Руководства',
+    guidesSubtitle: 'Практические советы по сокращению пищевых отходов и эффективному использованию кухни.',
+    guidesAvailableInEnglish: 'Руководства пока доступны на английском языке.',
+    guidesMinRead: 'мин чтения',
     
     // Support Page
     supportTitle: 'Поддержка',
@@ -1224,8 +1287,15 @@ export const translations = {
     footerTerms: 'Naudojimo sąlygos',
     footerContact: 'Kontaktai',
     footerSupport: 'Pagalba',
+    footerGuides: 'Gidai',
     footerCopyright: '© {year} Holo Fridge. Visos teisės saugomos.',
     footerMadeWith: 'Sukurta su rūpesčiu.',
+    
+    // Guides
+    guidesTitle: 'Gidai',
+    guidesSubtitle: 'Praktiniai patarimai, kaip sumažinti maisto švaistymą ir efektyviai naudoti virtuvę.',
+    guidesAvailableInEnglish: 'Gidai šiuo metu prieinami anglų kalba.',
+    guidesMinRead: 'min skaitymo',
     
     // Support Page
     supportTitle: 'Pagalba',
@@ -1350,8 +1420,15 @@ export const translations = {
     footerTerms: 'Gebruiksvoorwaarden',
     footerContact: 'Contact',
     footerSupport: 'Ondersteuning',
+    footerGuides: 'Gidsen',
     footerCopyright: '© {year} Holo Fridge. Alle rechten voorbehouden.',
     footerMadeWith: 'Gemaakt met zorg.',
+    
+    // Guides
+    guidesTitle: 'Gidsen',
+    guidesSubtitle: 'Praktisch advies om voedselverspilling te verminderen en het meeste uit je keuken te halen.',
+    guidesAvailableInEnglish: 'Gidsen zijn momenteel beschikbaar in het Engels.',
+    guidesMinRead: 'min leestijd',
     
     // Support Page
     supportTitle: 'Ondersteuning',
@@ -1476,8 +1553,15 @@ export const translations = {
     footerTerms: 'Användarvillkor',
     footerContact: 'Kontakt',
     footerSupport: 'Support',
+    footerGuides: 'Guider',
     footerCopyright: '© {year} Holo Fridge. Alla rättigheter förbehållna.',
     footerMadeWith: 'Gjort med omsorg.',
+    
+    // Guides
+    guidesTitle: 'Guider',
+    guidesSubtitle: 'Praktiska råd för att minska matsvinn och få ut det mesta av ditt kök.',
+    guidesAvailableInEnglish: 'Guider finns för närvarande på engelska.',
+    guidesMinRead: 'min läsning',
     
     // Support Page
     supportTitle: 'Support',
@@ -1602,8 +1686,15 @@ export const translations = {
     footerTerms: 'Brugsvilkår',
     footerContact: 'Kontakt',
     footerSupport: 'Support',
+    footerGuides: 'Guider',
     footerCopyright: '© {year} Holo Fridge. Alle rettigheder forbeholdes.',
     footerMadeWith: 'Lavet med omhu.',
+    
+    // Guides
+    guidesTitle: 'Guider',
+    guidesSubtitle: 'Praktiske råd til at reducere madspild og få mest muligt ud af dit køkken.',
+    guidesAvailableInEnglish: 'Guider er i øjeblikket tilgængelige på engelsk.',
+    guidesMinRead: 'min læsning',
     
     // Support Page
     supportTitle: 'Support',
@@ -1728,8 +1819,15 @@ export const translations = {
     footerTerms: 'Käyttöehdot',
     footerContact: 'Yhteystiedot',
     footerSupport: 'Tuki',
+    footerGuides: 'Oppaat',
     footerCopyright: '© {year} Holo Fridge. Kaikki oikeudet pidätetään.',
     footerMadeWith: 'Tehty huolella.',
+    
+    // Guides
+    guidesTitle: 'Oppaat',
+    guidesSubtitle: 'Käytännön neuvoja ruokahävikin vähentämiseen ja keittiön tehokkaaseen käyttöön.',
+    guidesAvailableInEnglish: 'Oppaat ovat tällä hetkellä saatavilla englanniksi.',
+    guidesMinRead: 'min lukuaika',
     
     // Support Page
     supportTitle: 'Tuki',
@@ -1854,8 +1952,15 @@ export const translations = {
     footerTerms: 'Termos de Uso',
     footerContact: 'Contato',
     footerSupport: 'Suporte',
+    footerGuides: 'Guias',
     footerCopyright: '© {year} Holo Fridge. Todos os direitos reservados.',
     footerMadeWith: 'Feito com cuidado.',
+    
+    // Guides
+    guidesTitle: 'Guias',
+    guidesSubtitle: 'Dicas práticas para reduzir o desperdício de alimentos e aproveitar ao máximo sua cozinha.',
+    guidesAvailableInEnglish: 'Os guias estão atualmente disponíveis em inglês.',
+    guidesMinRead: 'min de leitura',
     
     // Support Page
     supportTitle: 'Suporte',

@@ -1,5 +1,6 @@
 import { isValidLocale, type Locale } from "@/lib/i18n";
 import { getGuidesForLocale, type Guide } from "@/lib/guides";
+import { t } from "@/lib/translations";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
@@ -42,7 +43,7 @@ function GuideCard({ guide, locale }: { guide: Guide; locale: Locale }) {
         {guide.description}
       </p>
       <p className="mt-4 text-sm text-bodyGray/80 dark:text-white/50">
-        {guide.readingMinutes} min read
+        {guide.readingMinutes} {t(locale, 'guidesMinRead')}
       </p>
     </Link>
   );
@@ -72,20 +73,19 @@ export default async function GuidesIndexPage({
           <div className="mx-auto max-w-3xl">
             <Reveal y={18}>
               <h1 className="text-4xl font-semibold tracking-tightish text-charcoal dark:text-white sm:text-5xl">
-                Guides
+                {t(locale, 'guidesTitle')}
               </h1>
             </Reveal>
             <Reveal delay={0.1} y={18}>
               <p className="mt-4 text-lg text-bodyGray dark:text-white/70">
-                Practical advice for reducing food waste and making the most of
-                your kitchen.
+                {t(locale, 'guidesSubtitle')}
               </p>
             </Reveal>
 
             {showEnglishNote && (
               <Reveal delay={0.15} y={14}>
                 <p className="mt-6 text-sm text-bodyGray dark:text-white/60 italic">
-                  Guides are currently available in English.
+                  {t(locale, 'guidesAvailableInEnglish')}
                 </p>
               </Reveal>
             )}
