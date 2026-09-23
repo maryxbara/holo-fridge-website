@@ -14,10 +14,12 @@ const RESUME_DELAY = 2600;
 
 export default function MockupCarousel({ screens }: { screens: Screen[] }) {
   const scrollerRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const el = scrollerRef.current;
-    if (!el) return;
+    const track = trackRef.current;
+    if (!el || !track) return;
 
     // One copy wide. Scrolling a whole copy lands on an identical frame, so
     // we can jump back by that much without anything visibly moving.
@@ -69,6 +71,10 @@ export default function MockupCarousel({ screens }: { screens: Screen[] }) {
           el.scrollLeft = pos;
           lastWritten = el.scrollLeft;
         }
+        // scrollLeft lands on whole device pixels, so at this speed most frames
+        // wouldn't move at all and the strip would tick along in jerks. Carry
+        // the leftover fraction on the track instead, where it can render.
+        track.style.transform = `translate3d(${el.scrollLeft - pos}px, 0, 0)`;
       }
       raf = requestAnimationFrame(tick);
     };
@@ -87,6 +93,7 @@ export default function MockupCarousel({ screens }: { screens: Screen[] }) {
     return () => {
       cancelAnimationFrame(raf);
       io.disconnect();
+      track.style.transform = "";
       window.removeEventListener("resize", recenter);
       for (const evt of ["pointerdown", "touchstart", "wheel", "keydown"]) {
         el.removeEventListener(evt, hold);
@@ -102,7 +109,7 @@ export default function MockupCarousel({ screens }: { screens: Screen[] }) {
         className="flex overflow-x-auto overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {/* Padding lives on the track so the glow isn't clipped by the scroller */}
-        <div className="flex py-16">
+        <div ref={trackRef} className="flex py-16 will-change-transform">
           {Array.from({ length: COPIES }).flatMap((_, copy) =>
             screens.map((s) => (
               <div
