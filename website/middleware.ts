@@ -51,9 +51,12 @@ function getLocale(request: NextRequest): Locale {
   }
 
   // Where the visitor is, as reported by the edge in front of us.
+  // cf-ipcountry comes first because it's the one our own edge sets and
+  // overwrites — a visitor can't forge it. The other two are fallbacks for
+  // if we ever move hosts, and are only consulted when it's absent.
   const country = (
-    request.headers.get('x-vercel-ip-country') ??
     request.headers.get('cf-ipcountry') ??
+    request.headers.get('x-vercel-ip-country') ??
     request.headers.get('cloudfront-viewer-country')
   )?.toUpperCase();
   const countryLocale = country && LOCALE_BY_COUNTRY.get(country);
