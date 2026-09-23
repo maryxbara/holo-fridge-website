@@ -111,13 +111,18 @@ export default function MockupCarousel({ screens }: { screens: Screen[] }) {
         {/* Padding lives on the track so the glow isn't clipped by the scroller */}
         <div ref={trackRef} className="flex py-16 will-change-transform">
           {Array.from({ length: COPIES }).flatMap((_, copy) =>
-            screens.map((s) => (
+            screens.map((s, screenIdx) => (
               <div
                 key={`${copy}-${s.src}`}
                 aria-hidden={copy > 0}
                 className="mr-8 w-[230px] shrink-0 sm:mr-10 sm:w-[260px]"
               >
-                <PhoneMockup src={s.src} alt={s.alt} glow priority={false} />
+                <PhoneMockup
+                  src={s.src}
+                  alt={s.alt}
+                  glow
+                  priority={copy === 1 && screenIdx < 3}
+                />
                 <p className="mt-6 text-center text-sm font-medium text-charcoal/85 dark:text-pearl1/85 sm:text-base">
                   {s.label}
                 </p>
