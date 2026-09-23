@@ -1,14 +1,57 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { locales, defaultLocale, isValidLocale } from './lib/i18n';
+import { Locale, locales, defaultLocale, isValidLocale } from './lib/i18n';
+
+/**
+ * Which of our languages to serve a visitor based on where they are.
+ * Countries where none of the fifteen is clearly dominant — Switzerland,
+ * Belgium, Canada, Luxembourg — are left out on purpose, so those visitors
+ * keep whatever their browser asks for instead of being guessed at.
+ */
+const COUNTRIES_BY_LOCALE: Record<string, string[]> = {
+  uk: ['UA'],
+  pl: ['PL'],
+  lt: ['LT'],
+  fi: ['FI'],
+  sv: ['SE', 'AX'],
+  da: ['DK', 'GL', 'FO'],
+  nl: ['NL', 'SR', 'AW', 'CW', 'SX', 'BQ'],
+  de: ['DE', 'AT', 'LI'],
+  it: ['IT', 'SM', 'VA'],
+  ro: ['RO', 'MD'],
+  ru: ['RU', 'BY', 'KZ', 'KG'],
+  // 'SV' below is El Salvador, not Swedish.
+  es: [
+    'ES', 'MX', 'AR', 'CO', 'PE', 'VE', 'CL', 'EC', 'GT', 'CU',
+    'BO', 'DO', 'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY', 'GQ',
+  ],
+  pt: ['PT', 'BR', 'AO', 'MZ', 'CV', 'GW', 'ST', 'TL'],
+  fr: [
+    'FR', 'MC', 'SN', 'CI', 'ML', 'BF', 'NE', 'TG',
+    'BJ', 'GA', 'CG', 'CD', 'GN', 'TD', 'MG', 'HT',
+  ],
+};
+
+const LOCALE_BY_COUNTRY = new Map<string, Locale>(
+  Object.entries(COUNTRIES_BY_LOCALE).flatMap(([locale, countries]) =>
+    countries.map((country) => [country, locale as Locale] as const)
+  )
+);
 
 function getLocale(request: NextRequest): string {
-  // Check for locale in cookie
+  // An explicit pick from the language switcher outranks any guesswork.
   const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value;
   if (cookieLocale && isValidLocale(cookieLocale)) {
     return cookieLocale;
   }
 
-  // Check Accept-Language header
+  // Where the visitor is, as reported by the edge in front of us.
+  const country = request.headers.get('cf-ipcountry')?.toUpperCase();
+  const countryLocale = country && LOCALE_BY_COUNTRY.get(country);
+  if (countryLocale) {
+    return countryLocale;
+  }
+
+  // No mapping for that country — fall back to what the browser asks for.
   const acceptLanguage = request.headers.get('Accept-Language');
   if (acceptLanguage) {
     const browserLocales = acceptLanguage
