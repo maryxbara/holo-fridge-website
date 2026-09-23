@@ -4,6 +4,7 @@ import "../globals.css";
 import { locales, type Locale, isValidLocale } from "@/lib/i18n";
 import { translations } from "@/lib/translations";
 import { notFound } from "next/navigation";
+import { StructuredData } from "@/app/structured-data";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic", "latin-ext"],
@@ -31,15 +32,6 @@ export async function generateMetadata({
     title: t.siteTitle,
     description: t.siteDescription,
     applicationName: "Holo Fridge",
-    keywords: [
-      "Holo Fridge",
-      "smart fridge app",
-      "food tracking",
-      "reduce food waste",
-      "AI recipes",
-      "shopping list app",
-      "kitchen assistant",
-    ],
     authors: [{ name: "Holo Fridge" }],
     openGraph: {
       type: "website",
@@ -95,6 +87,7 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="font-sans antialiased text-charcoal dark:text-pearl1">
+        <StructuredData />
         {children}
       </body>
     </html>
