@@ -22,6 +22,12 @@ export default function Navbar({ locale }: NavbarProps) {
     setIsDark(isDarkMode);
   }, []);
 
+  // Remembers the choice so the middleware sends "/" here next time instead of
+  // guessing from the visitor's country. Cookie name matches middleware.ts.
+  const rememberLocale = (loc: Locale) => {
+    document.cookie = `holo_locale=${loc}; Path=/; Max-Age=31536000; SameSite=Lax`;
+  };
+
   const toggleTheme = () => {
     const newTheme = !isDark;
     setIsDark(newTheme);
@@ -131,7 +137,10 @@ export default function Navbar({ locale }: NavbarProps) {
                   <Link
                     key={loc}
                     href={`/${loc}`}
-                    onClick={() => setLangOpen(false)}
+                    onClick={() => {
+                      rememberLocale(loc);
+                      setLangOpen(false);
+                    }}
                     className={`block rounded-xl px-3 py-1.5 text-center text-[13px] font-medium uppercase transition-colors ${
                       loc === locale
                         ? "bg-deepTurquoise/10 text-deepTurquoise"
@@ -219,7 +228,10 @@ export default function Navbar({ locale }: NavbarProps) {
                   <Link
                     key={loc}
                     href={`/${loc}`}
-                    onClick={() => setMobileOpen(false)}
+                    onClick={() => {
+                      rememberLocale(loc);
+                      setMobileOpen(false);
+                    }}
                     className={`rounded-xl px-3 py-2 text-center text-sm transition-colors ${
                       loc === locale
                         ? "bg-deepTurquoise/10 text-deepTurquoise font-medium"

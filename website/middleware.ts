@@ -51,7 +51,11 @@ function getLocale(request: NextRequest): Locale {
   }
 
   // Where the visitor is, as reported by the edge in front of us.
-  const country = request.headers.get('cf-ipcountry')?.toUpperCase();
+  const country = (
+    request.headers.get('x-vercel-ip-country') ??
+    request.headers.get('cf-ipcountry') ??
+    request.headers.get('cloudfront-viewer-country')
+  )?.toUpperCase();
   const countryLocale = country && LOCALE_BY_COUNTRY.get(country);
   if (countryLocale) {
     return countryLocale;
