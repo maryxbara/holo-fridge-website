@@ -37,9 +37,15 @@ const LOCALE_BY_COUNTRY = new Map<string, Locale>(
   )
 );
 
-function getLocale(request: NextRequest): string {
+/** Written by the language switcher; see Navbar.tsx. */
+const LOCALE_COOKIE = 'holo_locale';
+
+const BOT_UA =
+  /bot|crawl|spider|slurp|GPTBot|ClaudeBot|anthropic|PerplexityBot|Google-Extended|Applebot|Bingbot|facebookexternalhit/i;
+
+function getLocale(request: NextRequest): Locale {
   // An explicit pick from the language switcher outranks any guesswork.
-  const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value;
+  const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value;
   if (cookieLocale && isValidLocale(cookieLocale)) {
     return cookieLocale;
   }
@@ -52,15 +58,12 @@ function getLocale(request: NextRequest): string {
   }
 
   // No mapping for that country — fall back to what the browser asks for.
-  const acceptLanguage = request.headers.get('Accept-Language');
+  const acceptLanguage = request.headers.get('accept-language');
   if (acceptLanguage) {
-    const browserLocales = acceptLanguage
-      .split(',')
-      .map((lang) => lang.split(';')[0].trim().substring(0, 2).toLowerCase());
-    
-    for (const browserLocale of browserLocales) {
-      if (isValidLocale(browserLocale)) {
-        return browserLocale;
+    for (const entry of acceptLanguage.split(',')) {
+      const code = entry.split(';')[0].trim().slice(0, 2).toLowerCase();
+      if (isValidLocale(code)) {
+        return code;
       }
     }
   }
@@ -76,7 +79,8 @@ export function middleware(request: NextRequest) {
     pathname.startsWith('/_next') ||
     pathname.startsWith('/api') ||
     pathname.includes('.') ||
-    pathname.startsWith('/favicon')
+    pathname.startsWith('/favicon') ||
+    pathname.startsWith('/google')
   ) {
     return NextResponse.next();
   }
@@ -90,11 +94,18 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Redirect to locale-prefixed path
-  const locale = getLocale(request);
-  const newUrl = new URL(`/${locale}${pathname}`, request.url);
-  
-  return NextResponse.redirect(newUrl);
+  const prefixed = (locale: string) =>
+    new URL(pathname === '/' ? `/${locale}` : `/${locale}${pathname}`, request.url);
+
+  // Crawlers are served the English copy in place. Redirecting them would make
+  // the indexed URL depend on whichever country the crawl came from.
+  if (BOT_UA.test(request.headers.get('user-agent') ?? '')) {
+    return NextResponse.rewrite(prefixed(defaultLocale));
+  }
+
+  // 307 keeps this a temporary redirect — the destination varies per visitor,
+  // so it must never be cached or memorised as permanent.
+  return NextResponse.redirect(prefixed(getLocale(request)), 307);
 }
 
 export const config = {
