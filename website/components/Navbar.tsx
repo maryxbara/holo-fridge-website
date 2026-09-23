@@ -41,10 +41,10 @@ export default function Navbar({ locale }: NavbarProps) {
   };
 
   const NAV_LINKS = [
-    { href: "#features", label: t(locale, 'navFeatures') },
-    { href: "#how-it-works", label: t(locale, 'navHowItWorks') },
-    { href: "#meet-holo", label: t(locale, 'navMeetHolo') },
-    { href: "#download", label: t(locale, 'navDownload') },
+    { href: `/${locale}#features`, label: t(locale, 'navFeatures') },
+    { href: `/${locale}#how-it-works`, label: t(locale, 'navHowItWorks') },
+    { href: `/${locale}#meet-holo`, label: t(locale, 'navMeetHolo') },
+    { href: `/${locale}#download`, label: t(locale, 'navDownload') },
   ];
 
   useEffect(() => {
