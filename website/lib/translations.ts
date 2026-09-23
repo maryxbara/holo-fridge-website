@@ -100,6 +100,11 @@ export const translations = {
     guidesAvailableInEnglish: 'Guides are currently available in English.',
     guidesMinRead: 'min read',
     
+    // Theme
+    lightMode: 'Light mode',
+    darkMode: 'Dark mode',
+    language: 'Language',
+    
     // Support Page
     supportTitle: 'Support',
     supportSubtitle: 'For any questions or help, reach us anytime — we reply within 24 hours.',
@@ -232,6 +237,11 @@ export const translations = {
     guidesSubtitle: 'Практичні поради щодо зменшення харчових відходів та ефективного використання вашої кухні.',
     guidesAvailableInEnglish: 'Поради наразі доступні англійською мовою.',
     guidesMinRead: 'хв читання',
+    
+    // Theme
+    lightMode: 'Світла тема',
+    darkMode: 'Темна тема',
+    language: 'Мова',
     
     // Support Page
     supportTitle: 'Підтримка',
@@ -366,6 +376,11 @@ export const translations = {
     guidesAvailableInEnglish: 'Ghidurile sunt disponibile momentan în engleză.',
     guidesMinRead: 'min citire',
     
+    // Theme
+    lightMode: 'Mod luminos',
+    darkMode: 'Mod întunecat',
+    language: 'Limbă',
+    
     // Support Page
     supportTitle: 'Suport',
     supportSubtitle: 'Pentru orice întrebări sau ajutor, contactează-ne oricând — răspundem în 24 de ore.',
@@ -498,6 +513,11 @@ export const translations = {
     guidesSubtitle: 'Praktyczne porady dotyczące ograniczania marnowania żywności i efektywnego wykorzystania kuchni.',
     guidesAvailableInEnglish: 'Poradniki są obecnie dostępne w języku angielskim.',
     guidesMinRead: 'min czytania',
+    
+    // Theme
+    lightMode: 'Tryb jasny',
+    darkMode: 'Tryb ciemny',
+    language: 'Język',
     
     // Support Page
     supportTitle: 'Wsparcie',
@@ -632,6 +652,11 @@ export const translations = {
     guidesAvailableInEnglish: 'Ratgeber sind derzeit auf Englisch verfügbar.',
     guidesMinRead: 'Min. Lesezeit',
     
+    // Theme
+    lightMode: 'Heller Modus',
+    darkMode: 'Dunkler Modus',
+    language: 'Sprache',
+    
     // Support Page
     supportTitle: 'Support',
     supportSubtitle: 'Bei Fragen oder Hilfe, kontaktiere uns jederzeit — wir antworten innerhalb von 24 Stunden.',
@@ -764,6 +789,11 @@ export const translations = {
     guidesSubtitle: 'Consejos prácticos para reducir el desperdicio de alimentos y aprovechar al máximo tu cocina.',
     guidesAvailableInEnglish: 'Las guías están disponibles actualmente en inglés.',
     guidesMinRead: 'min de lectura',
+    
+    // Theme
+    lightMode: 'Modo claro',
+    darkMode: 'Modo oscuro',
+    language: 'Idioma',
     
     // Support Page
     supportTitle: 'Soporte',
@@ -898,6 +928,11 @@ export const translations = {
     guidesAvailableInEnglish: 'Le guide sono attualmente disponibili in inglese.',
     guidesMinRead: 'min di lettura',
     
+    // Theme
+    lightMode: 'Modalità chiara',
+    darkMode: 'Modalità scura',
+    language: 'Lingua',
+    
     // Support Page
     supportTitle: 'Supporto',
     supportSubtitle: 'Per qualsiasi domanda o aiuto, contattaci in qualsiasi momento — rispondiamo entro 24 ore.',
@@ -1030,6 +1065,11 @@ export const translations = {
     guidesSubtitle: 'Conseils pratiques pour réduire le gaspillage alimentaire et tirer le meilleur parti de votre cuisine.',
     guidesAvailableInEnglish: 'Les guides sont actuellement disponibles en anglais.',
     guidesMinRead: 'min de lecture',
+    
+    // Theme
+    lightMode: 'Mode clair',
+    darkMode: 'Mode sombre',
+    language: 'Langue',
     
     // Support Page
     supportTitle: 'Support',
@@ -1164,6 +1204,11 @@ export const translations = {
     guidesAvailableInEnglish: 'Руководства пока доступны на английском языке.',
     guidesMinRead: 'мин чтения',
     
+    // Theme
+    lightMode: 'Светлая тема',
+    darkMode: 'Тёмная тема',
+    language: 'Язык',
+    
     // Support Page
     supportTitle: 'Поддержка',
     supportSubtitle: 'По любым вопросам обращайтесь к нам в любое время — мы отвечаем в течение 24 часов.',
@@ -1296,6 +1341,11 @@ export const translations = {
     guidesSubtitle: 'Praktiniai patarimai, kaip sumažinti maisto švaistymą ir efektyviai naudoti virtuvę.',
     guidesAvailableInEnglish: 'Gidai šiuo metu prieinami anglų kalba.',
     guidesMinRead: 'min skaitymo',
+    
+    // Theme
+    lightMode: 'Šviesi tema',
+    darkMode: 'Tamsi tema',
+    language: 'Kalba',
     
     // Support Page
     supportTitle: 'Pagalba',
@@ -1430,6 +1480,11 @@ export const translations = {
     guidesAvailableInEnglish: 'Gidsen zijn momenteel beschikbaar in het Engels.',
     guidesMinRead: 'min leestijd',
     
+    // Theme
+    lightMode: 'Lichte modus',
+    darkMode: 'Donkere modus',
+    language: 'Taal',
+    
     // Support Page
     supportTitle: 'Ondersteuning',
     supportSubtitle: 'Voor vragen of hulp, neem op elk moment contact met ons op — we reageren binnen 24 uur.',
@@ -1562,6 +1617,11 @@ export const translations = {
     guidesSubtitle: 'Praktiska råd för att minska matsvinn och få ut det mesta av ditt kök.',
     guidesAvailableInEnglish: 'Guider finns för närvarande på engelska.',
     guidesMinRead: 'min läsning',
+    
+    // Theme
+    lightMode: 'Ljust läge',
+    darkMode: 'Mörkt läge',
+    language: 'Språk',
     
     // Support Page
     supportTitle: 'Support',
@@ -1696,6 +1756,11 @@ export const translations = {
     guidesAvailableInEnglish: 'Guider er i øjeblikket tilgængelige på engelsk.',
     guidesMinRead: 'min læsning',
     
+    // Theme
+    lightMode: 'Lys tilstand',
+    darkMode: 'Mørk tilstand',
+    language: 'Sprog',
+    
     // Support Page
     supportTitle: 'Support',
     supportSubtitle: 'For spørgsmål eller hjælp, kontakt os når som helst — vi svarer inden for 24 timer.',
@@ -1829,6 +1894,11 @@ export const translations = {
     guidesAvailableInEnglish: 'Oppaat ovat tällä hetkellä saatavilla englanniksi.',
     guidesMinRead: 'min lukuaika',
     
+    // Theme
+    lightMode: 'Vaalea tila',
+    darkMode: 'Tumma tila',
+    language: 'Kieli',
+    
     // Support Page
     supportTitle: 'Tuki',
     supportSubtitle: 'Kysymyksissä tai avun tarpeessa ota yhteyttä milloin tahansa — vastaamme 24 tunnin sisällä.',
@@ -1961,6 +2031,11 @@ export const translations = {
     guidesSubtitle: 'Dicas práticas para reduzir o desperdício de alimentos e aproveitar ao máximo sua cozinha.',
     guidesAvailableInEnglish: 'Os guias estão atualmente disponíveis em inglês.',
     guidesMinRead: 'min de leitura',
+    
+    // Theme
+    lightMode: 'Modo claro',
+    darkMode: 'Modo escuro',
+    language: 'Idioma',
     
     // Support Page
     supportTitle: 'Suporte',
