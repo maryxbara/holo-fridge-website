@@ -38,7 +38,7 @@ export default function PhoneMockup({
           className="phone-shell absolute inset-0 overflow-hidden rounded-[2.75rem] p-[6px]"
         >
           <div
-            className="relative h-full w-full overflow-hidden rounded-[2.4rem] bg-black shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]"
+            className="relative h-full w-full overflow-hidden rounded-[2.4rem] bg-[#f8f7f5] dark:bg-black shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]"
           >
             <Image
               src={src}

@@ -95,12 +95,8 @@ export default function Hero({ locale }: HeroProps) {
         </div>
 
         {/* RIGHT — Holo + phone composition */}
-        {/* Fades and lifts in on load; Holo's own float/breathe/sweep run on
-            descendants, so they're untouched by this wrapper's transform. */}
-        <motion.div
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.95, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
+        {/* Visible immediately — no fade delay so images don't flash black first */}
+        <div
           className="relative lg:col-span-6"
         >
           {/* Same composition at every size: Holo beside the phone, chip strip
@@ -142,7 +138,7 @@ export default function Hero({ locale }: HeroProps) {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
