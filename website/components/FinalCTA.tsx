@@ -11,7 +11,7 @@ type FinalCTAProps = {
 };
 
 /**
- * Final CTA. The turquoise underline under "Holo" is the same device as the
+ * Final CTA. "Holo." is set in turquoise, the same accent as the
  * ad end card.
  */
 export default function FinalCTA({ locale }: FinalCTAProps) {
@@ -34,7 +34,7 @@ export default function FinalCTA({ locale }: FinalCTAProps) {
               {t(locale, "ctaTitle")}
             </h2>
             <p className="mt-5 text-balance text-xl leading-relaxed text-charcoal dark:text-pearl1 sm:text-2xl">
-              <span className="accent-underline">{t(locale, "ctaBrand")}</span>{" "}
+              <span className="font-semibold text-deepTurquoise">{t(locale, "ctaBrand")}</span>{" "}
               <span className="text-bodyGray dark:text-pearl1/70">{t(locale, "ctaTagline")}</span>
             </p>
 
