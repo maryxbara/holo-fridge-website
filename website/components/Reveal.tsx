@@ -1,31 +1,36 @@
 "use client";
 
-import { motion } from "framer-motion";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
+import { useInView } from "@/lib/useInView";
 
 type RevealProps = {
   children: ReactNode;
-  /** Stagger offset in seconds — pass index * 0.08 for a soft cascade. */
+  /** Stagger offset in seconds — pass index * 0.06 for a soft cascade. */
   delay?: number;
   y?: number;
   className?: string;
 };
 
+/** Fade-up on scroll at 400 ms, once. Pure CSS transition; see .reveal in globals.css. */
 export default function Reveal({
   children,
   delay = 0,
-  y = 26,
+  y = 16,
   className = "",
 }: RevealProps) {
+  const { ref, inView } = useInView<HTMLDivElement>();
+  const style = {
+    transitionDelay: delay ? `${delay}s` : undefined,
+    "--reveal-y": `${y}px`,
+  } as CSSProperties;
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1], delay }}
-      className={className}
+    <div
+      ref={ref}
+      className={`reveal ${inView ? "is-shown" : ""} ${className}`}
+      style={style}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

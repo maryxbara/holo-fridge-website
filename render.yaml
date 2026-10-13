@@ -18,8 +18,17 @@ services:
       # NEXT_PUBLIC_* values are inlined at build time, so they must be set
       # here rather than only at runtime.
       - key: NEXT_PUBLIC_APP_STORE_URL
-        value: https://apps.apple.com/lt/app/holofridge/id6760011328
+        value: https://apps.apple.com/app/id6760011328
       - key: NEXT_PUBLIC_PLAY_STORE_URL
         value: ""
       - key: NEXT_PUBLIC_SITE_URL
         value: https://www.holofridge.com
+      # Proof strip under the hero button renders only when BOTH are set.
+      # Fill with the real App Store figures — never a placeholder.
+      - key: NEXT_PUBLIC_APP_RATING
+        value: ""
+      - key: NEXT_PUBLIC_APP_RATING_COUNT
+        value: ""
+      # Meta Pixel for the domain. Loads only after the visitor allows it.
+      - key: NEXT_PUBLIC_META_PIXEL_ID
+        value: ""

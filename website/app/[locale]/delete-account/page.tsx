@@ -18,7 +18,7 @@ export async function generateMetadata({
   const trans = translations[validLocale];
 
   return {
-    title: `${trans.deleteAccountTitle} | Holo Fridge`,
+    title: `${trans.deleteAccountTitle} | Holo`,
     description: 'How to delete your Holo Fridge account',
   };
 }

@@ -4,95 +4,94 @@ export type TranslationKey = keyof typeof translations.en;
 
 export const translations = {
   en: {
+    // ------------------------------------------------------------------
+    // Homepage copy — English master (holofridge.com — Upgrade Spec).
+    // Other languages are translated from this by a native speaker after
+    // approval. Until a language is reviewed it serves this English text:
+    // keys that exist only here fall back to `en` in getTranslation().
+    // Tone: no exclamation marks, no "smart", sentence case.
+    // ------------------------------------------------------------------
+
     // Meta
-    siteTitle: 'Holo Fridge - Smart Food & Fridge Assistant',
-    siteDescription: 'Holo Fridge helps you track food, reduce waste, discover recipes, and build smarter shopping lists.',
+    siteTitle: 'Holo — Not just a fridge app',
+    siteDescription: 'Holo knows what\'s in your fridge, what\'s running out, and what\'s for dinner. Free to start on iOS.',
     
     // Navbar
-    navFeatures: 'Features',
     navHowItWorks: 'How it works',
     navMeetHolo: 'Meet Holo',
-    navDownload: 'Download',
     navSupport: 'Support',
+    navGetHolo: 'Get Holo',
     navPrivacy: 'Privacy Policy',
     navTerms: 'Terms of Use',
     
     // Hero
-    heroNowAvailable: 'Now available',
-    heroTitle1: 'Your fridge,',
-    heroTitle2: 'finally smart.',
-    heroSubtitle: 'Track what you have, cook from it, waste less, and shop smarter — with Holo by your side.',
+    heroTitle: 'The part of your week you stop thinking about.',
+    heroSubtitle: 'Holo knows what\'s in your fridge, what\'s running out, and what\'s for dinner. Not just a fridge app.',
     heroFreeToStart: 'Free to start. Premium features available inside the app.',
     
-    // Chips
-    chipExpireSoon: '3 products expire soon',
-    chipRecipeReady: 'Recipe ready in 15 min',
-    chipShoppingUpdated: 'Shopping list updated',
-    chipDinnerIdeas: 'Holo found dinner ideas',
+    // Proof strip — rendered only when NEXT_PUBLIC_APP_RATING and
+    // NEXT_PUBLIC_APP_RATING_COUNT are set. Never a placeholder.
+    proofRating: '{rating} on the App Store',
+    proofRatingCount: '{count} ratings',
     
-    // Store Buttons
-    downloadOnThe: 'Download on the',
+    // Store buttons
+    storeCtaApple: 'Get Holo on the App Store',
+    storeCtaPlay: 'Get Holo on Google Play',
     appStore: 'App Store',
-    getItOn: 'Get it on',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Sound familiar?',
-    problemSubtitle: 'Your fridge is full — but dinner feels impossible',
-    problemItem1Title: 'Forgotten food',
-    problemItem1Desc: 'Items get pushed to the back and expire before you remember them.',
-    problemItem2Title: 'No idea what to cook',
-    problemItem2Desc: 'You have ingredients but no idea what to make.',
-    problemItem3Title: 'Wasted money',
-    problemItem3Desc: 'You buy duplicates or forget what you actually need.',
+    // Problems
+    problemKicker: 'Every week, the same three problems',
+    problemTitle: 'A full fridge. Nothing for dinner.',
+    problem1Title: 'It was fresh on Monday.',
+    problem1Desc: 'Food goes to the back, then to the bin.',
+    problem2Title: 'What\'s for dinner?',
+    problem2Desc: 'The question that lands on you at five, every day.',
+    problem3Title: 'You pay for food you never eat.',
+    problem3Desc: 'Doubles, forgotten items, a receipt that keeps growing.',
     
-    // Features Section
-    featuresLabel: 'Features',
-    featuresTitle: 'Everything you need to run a smarter kitchen',
-    featuresSubtitle: 'From tracking to cooking to shopping — Holo handles it all.',
-    feature1Title: 'Smart Inventory',
-    feature1Desc: 'Know exactly what\'s in your fridge, freezer, and pantry — and when it expires.',
-    feature2Title: 'AI Recipes',
-    feature2Desc: 'Get personalized recipe ideas based on what you already have.',
-    feature3Title: 'Shopping Lists',
-    feature3Desc: 'Build lists that sync across devices and check off as you shop.',
-    feature4Title: 'Expiry Alerts',
-    feature4Desc: 'Never forget about that yogurt again. Get notified before food goes bad.',
-    feature5Title: 'Family Sharing',
-    feature5Desc: 'Share lists and inventory with your household. Everyone stays in sync.',
-    feature6Title: 'Voice & Photo Input',
-    feature6Desc: 'Add items by voice or photo. No typing required.',
+    // What Holo does
+    featuresKicker: 'What Holo does',
+    featuresTitle: 'Three things, done quietly',
+    featureATitle: 'Knows what you have',
+    featureADesc: 'Fridge, freezer, pantry. Added by photo or voice, kept up to date without you.',
+    featureBTitle: 'Knows what\'s for dinner',
+    featureBDesc: 'A recipe from what\'s already there, before anything expires.',
+    featureCTitle: 'Knows what\'s running out',
+    featureCDesc: 'The list writes itself. One tap to confirm. Shared with the household.',
     
-    // App Preview Section
-    appPreviewLabel: 'How it works',
-    appPreviewTitle: 'Simple steps to an organized kitchen',
-    appPreviewSubtitle: 'Getting started takes less than a minute.',
-    appPreviewStep1Title: 'Add your food',
-    appPreviewStep1Desc: 'Scan, type, or speak — add items however works for you.',
-    appPreviewStep2Title: 'Get suggestions',
-    appPreviewStep2Desc: 'Holo suggests recipes, alerts you about expiring items, and keeps your lists up to date.',
-    appPreviewStep3Title: 'Cook & shop smarter',
-    appPreviewStep3Desc: 'Use what you have, waste less, and never forget what you need.',
+    // How it works
+    howKicker: 'How it works',
+    howTitle: 'Set up once. Under a minute.',
+    howStep1: 'Photograph your fridge. Holo lists it.',
+    howStep2: 'Say what\'s for dinner, or let Holo decide.',
+    howStep3: 'The list is ready before you are.',
+    howStep4: 'Ask Holo anything about your kitchen.',
     
-    // Meet Holo Section
-    meetHoloLabel: 'Meet Holo',
-    meetHoloTitle: 'Your friendly kitchen assistant',
-    meetHoloDesc: 'Holo is here to help you stay organized, reduce waste, and make cooking feel effortless. Think of Holo as a calm, helpful presence in your kitchen — always ready with a suggestion, never judging.',
+    // Meet Holo
+    meetHoloTitle: 'Meet Holo',
+    meetHoloDesc: 'Calm, precise, never judging. Holo is the presence in your kitchen that remembers everything so you don\'t have to.',
+    meetHoloCaption: 'Holo, the quiet one.',
     
     // Final CTA
-    ctaLabel: 'Get Holo Fridge',
-    ctaTitle: 'Ready to make your fridge smart?',
-    ctaSubtitle: 'Start organizing your kitchen today. Download Holo Fridge and make your food feel effortless.',
+    ctaTitle: 'Control, calm, and a smaller receipt.',
+    ctaBrand: 'Holo.',
+    ctaTagline: 'Not just a fridge app.',
     
     // Footer
-    footerTagline: 'Smart food, organized kitchens.',
+    footerTagline: 'Not just a fridge app.',
     footerPrivacy: 'Privacy Policy',
     footerTerms: 'Terms of Use',
     footerContact: 'Contact',
     footerSupport: 'Support',
     footerGuides: 'Guides',
-    footerCopyright: '© {year} Holo Fridge. All rights reserved.',
-    footerMadeWith: 'Made with care.',
+    footerCopyright: '© {year} Holo. All rights reserved.',
+    footerMadeIn: 'Made in Lithuania.',
+    
+    // Consent (Meta Pixel) — decline by default; nothing is set until allowed
+    consentText: 'Holo uses a Meta pixel to see which ads bring people here. Nothing is stored unless you allow it.',
+    consentAllow: 'Allow',
+    consentDecline: 'Decline',
     
     // Guides
     guidesTitle: 'Guides',
@@ -338,9 +337,6 @@ export const translations = {
     privacySection13Intro: 'For privacy questions, requests, or complaints:',
     privacyContactEmail: 'Email:',
     
-    // Coming Soon
-    comingSoon: 'Coming soon!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Delete your Holo Fridge account',
     deleteAccountDesc: 'You can permanently delete your account and all associated data directly in the app:',
@@ -352,95 +348,27 @@ export const translations = {
   },
   
   uk: {
-    // Meta
-    siteTitle: 'Holo Fridge - Розумний помічник для їжі та холодильника',
-    siteDescription: 'Holo Fridge допомагає відстежувати продукти, зменшувати відходи, відкривати рецепти та створювати розумніші списки покупок.',
-    
     // Navbar
-    navFeatures: 'Функції',
     navHowItWorks: 'Як це працює',
     navMeetHolo: 'Познайомтесь з Holo',
-    navDownload: 'Завантажити',
     navSupport: 'Підтримка',
     navPrivacy: 'Політика конфіденційності',
     navTerms: 'Умови використання',
     
     // Hero
-    heroNowAvailable: 'Вже доступно',
-    heroTitle1: 'Ваш холодильник,',
-    heroTitle2: 'нарешті розумний.',
-    heroSubtitle: 'Відстежуйте, що у вас є, готуйте з цього, витрачайте менше та купуйте розумніше — з Holo поруч.',
     heroFreeToStart: 'Безкоштовний старт. Преміум-функції доступні в додатку.',
     
-    // Chips
-    chipExpireSoon: '3 продукти скоро зіпсуються',
-    chipRecipeReady: 'Рецепт готовий за 15 хв',
-    chipShoppingUpdated: 'Список покупок оновлено',
-    chipDinnerIdeas: 'Holo знайшов ідеї для вечері',
-    
     // Store Buttons
-    downloadOnThe: 'Завантажити в',
     appStore: 'App Store',
-    getItOn: 'Отримати в',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Знайоме?',
-    problemSubtitle: 'Ваш холодильник повний — але вечеря здається неможливою',
-    problemItem1Title: 'Забуті продукти',
-    problemItem1Desc: 'Продукти заштовхуються назад і псуються, перш ніж ви про них згадаєте.',
-    problemItem2Title: 'Не знаєш, що готувати',
-    problemItem2Desc: 'У вас є інгредієнти, але немає ідей, що приготувати.',
-    problemItem3Title: 'Витрачені гроші',
-    problemItem3Desc: 'Ви купуєте дублікати або забуваєте, що вам насправді потрібно.',
-    
-    // Features Section
-    featuresLabel: 'Функції',
-    featuresTitle: 'Все, що потрібно для розумнішої кухні',
-    featuresSubtitle: 'Від відстеження до приготування та покупок — Holo впорається з усім.',
-    feature1Title: 'Розумний інвентар',
-    feature1Desc: 'Знайте точно, що є у вашому холодильнику, морозильнику та коморі — і коли термін придатності закінчується.',
-    feature2Title: 'AI Рецепти',
-    feature2Desc: 'Отримуйте персоналізовані ідеї рецептів на основі того, що у вас вже є.',
-    feature3Title: 'Списки покупок',
-    feature3Desc: 'Створюйте списки, які синхронізуються між пристроями, та відмічайте під час покупок.',
-    feature4Title: 'Сповіщення про термін',
-    feature4Desc: 'Ніколи більше не забувайте про той йогурт. Отримуйте сповіщення до того, як їжа зіпсується.',
-    feature5Title: 'Сімейний доступ',
-    feature5Desc: 'Діліться списками та інвентарем з домогосподарством. Усі залишаються в курсі.',
-    feature6Title: 'Голос і фото',
-    feature6Desc: 'Додавайте продукти голосом або фото. Друкувати не потрібно.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Як це працює',
-    appPreviewTitle: 'Прості кроки до організованої кухні',
-    appPreviewSubtitle: 'Початок роботи займає менше хвилини.',
-    appPreviewStep1Title: 'Додайте свою їжу',
-    appPreviewStep1Desc: 'Скануйте, друкуйте або говоріть — додавайте продукти як вам зручно.',
-    appPreviewStep2Title: 'Отримуйте пропозиції',
-    appPreviewStep2Desc: 'Holo пропонує рецепти, попереджає про продукти, що закінчуються, та підтримує ваші списки в актуальному стані.',
-    appPreviewStep3Title: 'Готуйте та купуйте розумніше',
-    appPreviewStep3Desc: 'Використовуйте те, що маєте, витрачайте менше та ніколи не забувайте, що вам потрібно.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Познайомтесь з Holo',
-    meetHoloTitle: 'Ваш дружній кухонний помічник',
-    meetHoloDesc: 'Holo тут, щоб допомогти вам залишатися організованими, зменшувати відходи та робити приготування їжі легким. Думайте про Holo як про спокійну, корисну присутність на вашій кухні — завжди готову з пропозицією, ніколи не засуджуючи.',
-    
-    // Final CTA
-    ctaLabel: 'Отримати Holo Fridge',
-    ctaTitle: 'Готові зробити ваш холодильник розумним?',
-    ctaSubtitle: 'Почніть організовувати свою кухню сьогодні. Завантажте Holo Fridge і зробіть вашу їжу легкою.',
-    
     // Footer
-    footerTagline: 'Розумна їжа, організовані кухні.',
     footerPrivacy: 'Політика конфіденційності',
     footerTerms: 'Умови використання',
     footerContact: 'Контакти',
     footerSupport: 'Підтримка',
     footerGuides: 'Поради',
-    footerCopyright: '© {year} Holo Fridge. Усі права захищені.',
-    footerMadeWith: 'Зроблено з турботою.',
+    footerCopyright: '© {year} Holo. Усі права захищені.',
     
     // Guides
     guidesTitle: 'Поради',
@@ -686,9 +614,6 @@ export const translations = {
     privacySection13Intro: 'Для запитань, запитів або скарг щодо конфіденційності:',
     privacyContactEmail: 'Електронна пошта:',
     
-    // Coming Soon
-    comingSoon: 'Скоро!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Видалити обліковий запис Holo Fridge',
     deleteAccountDesc: 'Ви можете назавжди видалити свій обліковий запис та всі пов\'язані дані безпосередньо в додатку:',
@@ -700,95 +625,27 @@ export const translations = {
   },
   
   ro: {
-    // Meta
-    siteTitle: 'Holo Fridge - Asistent inteligent pentru alimente și frigider',
-    siteDescription: 'Holo Fridge te ajută să urmărești alimentele, să reduci risipa, să descoperi rețete și să creezi liste de cumpărături mai inteligente.',
-    
     // Navbar
-    navFeatures: 'Caracteristici',
     navHowItWorks: 'Cum funcționează',
     navMeetHolo: 'Cunoaște-l pe Holo',
-    navDownload: 'Descarcă',
     navSupport: 'Suport',
     navPrivacy: 'Politica de confidențialitate',
     navTerms: 'Termeni de utilizare',
     
     // Hero
-    heroNowAvailable: 'Disponibil acum',
-    heroTitle1: 'Frigiderul tău,',
-    heroTitle2: 'în sfârșit inteligent.',
-    heroSubtitle: 'Urmărește ce ai, gătește din asta, risipește mai puțin și cumpără mai inteligent — cu Holo alături.',
     heroFreeToStart: 'Gratuit la start. Funcții premium disponibile în aplicație.',
     
-    // Chips
-    chipExpireSoon: '3 produse expiră curând',
-    chipRecipeReady: 'Rețetă gata în 15 min',
-    chipShoppingUpdated: 'Lista de cumpărături actualizată',
-    chipDinnerIdeas: 'Holo a găsit idei pentru cină',
-    
     // Store Buttons
-    downloadOnThe: 'Descarcă din',
     appStore: 'App Store',
-    getItOn: 'Obține de pe',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Sună cunoscut?',
-    problemSubtitle: 'Frigiderul tău e plin — dar cina pare imposibilă',
-    problemItem1Title: 'Alimente uitate',
-    problemItem1Desc: 'Produsele sunt împinse în spate și expiră înainte să îți amintești de ele.',
-    problemItem2Title: 'Nu știi ce să gătești',
-    problemItem2Desc: 'Ai ingrediente dar nicio idee ce să gătești.',
-    problemItem3Title: 'Bani irosiți',
-    problemItem3Desc: 'Cumperi duplicate sau uiți ce ai nevoie de fapt.',
-    
-    // Features Section
-    featuresLabel: 'Caracteristici',
-    featuresTitle: 'Tot ce ai nevoie pentru o bucătărie mai inteligentă',
-    featuresSubtitle: 'De la urmărire la gătit și cumpărături — Holo se ocupă de tot.',
-    feature1Title: 'Inventar inteligent',
-    feature1Desc: 'Știi exact ce ai în frigider, congelator și cămară — și când expiră.',
-    feature2Title: 'Rețete AI',
-    feature2Desc: 'Primești idei de rețete personalizate bazate pe ce ai deja.',
-    feature3Title: 'Liste de cumpărături',
-    feature3Desc: 'Creezi liste care se sincronizează între dispozitive și bifezi pe măsură ce cumperi.',
-    feature4Title: 'Alerte de expirare',
-    feature4Desc: 'Nu mai uita niciodată de iaurtul ăla. Primești notificări înainte să se strice mâncarea.',
-    feature5Title: 'Partajare în familie',
-    feature5Desc: 'Partajează liste și inventar cu familia. Toți rămân sincronizați.',
-    feature6Title: 'Voce și foto',
-    feature6Desc: 'Adaugă produse prin voce sau foto. Fără să tastezi.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Cum funcționează',
-    appPreviewTitle: 'Pași simpli către o bucătărie organizată',
-    appPreviewSubtitle: 'Să începi durează mai puțin de un minut.',
-    appPreviewStep1Title: 'Adaugă-ți alimentele',
-    appPreviewStep1Desc: 'Scanează, tastează sau vorbește — adaugă produse cum îți convine.',
-    appPreviewStep2Title: 'Primește sugestii',
-    appPreviewStep2Desc: 'Holo sugerează rețete, te avertizează despre produsele care expiră și îți ține listele actualizate.',
-    appPreviewStep3Title: 'Gătește și cumpără mai inteligent',
-    appPreviewStep3Desc: 'Folosește ce ai, risipește mai puțin și nu uita niciodată ce ai nevoie.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Cunoaște-l pe Holo',
-    meetHoloTitle: 'Asistentul tău prietenos de bucătărie',
-    meetHoloDesc: 'Holo e aici să te ajute să stai organizat, să reduci risipa și să faci gătitul fără efort. Gândește-te la Holo ca la o prezență calmă și utilă în bucătărie — mereu gata cu o sugestie, fără să judece.',
-    
-    // Final CTA
-    ctaLabel: 'Obține Holo Fridge',
-    ctaTitle: 'Gata să-ți faci frigiderul inteligent?',
-    ctaSubtitle: 'Începe să-ți organizezi bucătăria azi. Descarcă Holo Fridge și fă mâncarea să pară fără efort.',
-    
     // Footer
-    footerTagline: 'Alimente inteligente, bucătării organizate.',
     footerPrivacy: 'Politica de confidențialitate',
     footerTerms: 'Termeni de utilizare',
     footerContact: 'Contact',
     footerSupport: 'Suport',
     footerGuides: 'Ghiduri',
-    footerCopyright: '© {year} Holo Fridge. Toate drepturile rezervate.',
-    footerMadeWith: 'Făcut cu grijă.',
+    footerCopyright: '© {year} Holo. Toate drepturile rezervate.',
     
     // Guides
     guidesTitle: 'Ghiduri',
@@ -1034,9 +891,6 @@ export const translations = {
     privacySection13Intro: 'Pentru întrebări, solicitări sau plângeri privind confidențialitatea:',
     privacyContactEmail: 'Email:',
 
-    // Coming Soon
-    comingSoon: 'În curând!',
-
     // Delete Account Page
     deleteAccountTitle: 'Șterge contul Holo Fridge',
     deleteAccountDesc: 'Poți șterge permanent contul și toate datele asociate direct din aplicație:',
@@ -1048,95 +902,27 @@ export const translations = {
   },
   
   pl: {
-    // Meta
-    siteTitle: 'Holo Fridge - Inteligentny asystent do jedzenia i lodówki',
-    siteDescription: 'Holo Fridge pomaga śledzić jedzenie, ograniczać marnowanie, odkrywać przepisy i tworzyć mądrzejsze listy zakupów.',
-    
     // Navbar
-    navFeatures: 'Funkcje',
     navHowItWorks: 'Jak to działa',
     navMeetHolo: 'Poznaj Holo',
-    navDownload: 'Pobierz',
     navSupport: 'Wsparcie',
     navPrivacy: 'Polityka prywatności',
     navTerms: 'Regulamin',
     
     // Hero
-    heroNowAvailable: 'Już dostępne',
-    heroTitle1: 'Twoja lodówka,',
-    heroTitle2: 'wreszcie inteligentna.',
-    heroSubtitle: 'Śledź co masz, gotuj z tego, marnuj mniej i kupuj mądrzej — z Holo u boku.',
     heroFreeToStart: 'Start za darmo. Funkcje premium dostępne w aplikacji.',
     
-    // Chips
-    chipExpireSoon: '3 produkty wkrótce się przeterminują',
-    chipRecipeReady: 'Przepis gotowy w 15 min',
-    chipShoppingUpdated: 'Lista zakupów zaktualizowana',
-    chipDinnerIdeas: 'Holo znalazł pomysły na kolację',
-    
     // Store Buttons
-    downloadOnThe: 'Pobierz z',
     appStore: 'App Store',
-    getItOn: 'Pobierz z',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Brzmi znajomo?',
-    problemSubtitle: 'Twoja lodówka jest pełna — ale kolacja wydaje się niemożliwa',
-    problemItem1Title: 'Zapomniane jedzenie',
-    problemItem1Desc: 'Produkty zostają zepchnięte w tył i przeterminowują się, zanim o nich przypomnisz.',
-    problemItem2Title: 'Nie wiesz, co ugotować',
-    problemItem2Desc: 'Masz składniki, ale nie wiesz co przygotować.',
-    problemItem3Title: 'Zmarnowane pieniądze',
-    problemItem3Desc: 'Kupujesz duplikaty lub zapominasz czego naprawdę potrzebujesz.',
-    
-    // Features Section
-    featuresLabel: 'Funkcje',
-    featuresTitle: 'Wszystko czego potrzebujesz do mądrzejszej kuchni',
-    featuresSubtitle: 'Od śledzenia przez gotowanie po zakupy — Holo zajmie się wszystkim.',
-    feature1Title: 'Inteligentny inwentarz',
-    feature1Desc: 'Wiedz dokładnie co masz w lodówce, zamrażarce i spiżarni — i kiedy się kończy.',
-    feature2Title: 'Przepisy AI',
-    feature2Desc: 'Otrzymuj spersonalizowane pomysły na przepisy na podstawie tego co już masz.',
-    feature3Title: 'Listy zakupów',
-    feature3Desc: 'Twórz listy synchronizowane między urządzeniami i odznaczaj podczas zakupów.',
-    feature4Title: 'Alerty przydatności',
-    feature4Desc: 'Nigdy więcej nie zapomnij o tym jogurcie. Otrzymuj powiadomienia zanim jedzenie się zepsuje.',
-    feature5Title: 'Udostępnianie rodzinne',
-    feature5Desc: 'Udostępniaj listy i inwentarz domownikom. Wszyscy są zsynchronizowani.',
-    feature6Title: 'Głos i zdjęcia',
-    feature6Desc: 'Dodawaj produkty głosem lub zdjęciem. Bez pisania.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Jak to działa',
-    appPreviewTitle: 'Proste kroki do zorganizowanej kuchni',
-    appPreviewSubtitle: 'Rozpoczęcie zajmuje mniej niż minutę.',
-    appPreviewStep1Title: 'Dodaj swoje jedzenie',
-    appPreviewStep1Desc: 'Skanuj, pisz lub mów — dodawaj produkty jak ci wygodnie.',
-    appPreviewStep2Title: 'Otrzymuj sugestie',
-    appPreviewStep2Desc: 'Holo sugeruje przepisy, ostrzega o produktach bliskich przeterminowania i aktualizuje twoje listy.',
-    appPreviewStep3Title: 'Gotuj i kupuj mądrzej',
-    appPreviewStep3Desc: 'Wykorzystuj co masz, marnuj mniej i nigdy nie zapominaj czego potrzebujesz.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Poznaj Holo',
-    meetHoloTitle: 'Twój przyjazny asystent kuchenny',
-    meetHoloDesc: 'Holo jest tutaj, aby pomóc ci być zorganizowanym, ograniczać marnowanie i sprawić, że gotowanie będzie łatwe. Myśl o Holo jak o spokojnej, pomocnej obecności w twojej kuchni — zawsze gotowej z sugestią, nigdy nie oceniającej.',
-    
-    // Final CTA
-    ctaLabel: 'Pobierz Holo Fridge',
-    ctaTitle: 'Gotowy uczynić swoją lodówkę inteligentną?',
-    ctaSubtitle: 'Zacznij organizować swoją kuchnię już dziś. Pobierz Holo Fridge i spraw, by jedzenie było łatwe.',
-    
     // Footer
-    footerTagline: 'Inteligentne jedzenie, zorganizowane kuchnie.',
     footerPrivacy: 'Polityka prywatności',
     footerTerms: 'Regulamin',
     footerContact: 'Kontakt',
     footerSupport: 'Wsparcie',
     footerGuides: 'Poradniki',
-    footerCopyright: '© {year} Holo Fridge. Wszelkie prawa zastrzeżone.',
-    footerMadeWith: 'Stworzone z troską.',
+    footerCopyright: '© {year} Holo. Wszelkie prawa zastrzeżone.',
     
     // Guides
     guidesTitle: 'Poradniki',
@@ -1382,9 +1168,6 @@ export const translations = {
     privacySection13Intro: 'W sprawie pytań, żądań lub skarg dotyczących prywatności:',
     privacyContactEmail: 'E-mail:',
     
-    // Coming Soon
-    comingSoon: 'Wkrótce!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Usuń konto Holo Fridge',
     deleteAccountDesc: 'Możesz trwale usunąć swoje konto i wszystkie powiązane dane bezpośrednio w aplikacji:',
@@ -1396,95 +1179,27 @@ export const translations = {
   },
   
   de: {
-    // Meta
-    siteTitle: 'Holo Fridge - Intelligenter Lebensmittel- & Kühlschrank-Assistent',
-    siteDescription: 'Holo Fridge hilft dir, Lebensmittel zu verfolgen, Verschwendung zu reduzieren, Rezepte zu entdecken und intelligentere Einkaufslisten zu erstellen.',
-    
     // Navbar
-    navFeatures: 'Funktionen',
     navHowItWorks: 'So funktioniert\'s',
     navMeetHolo: 'Triff Holo',
-    navDownload: 'Herunterladen',
     navSupport: 'Support',
     navPrivacy: 'Datenschutz',
     navTerms: 'Nutzungsbedingungen',
     
     // Hero
-    heroNowAvailable: 'Jetzt verfügbar',
-    heroTitle1: 'Dein Kühlschrank,',
-    heroTitle2: 'endlich intelligent.',
-    heroSubtitle: 'Verfolge, was du hast, koche damit, verschwende weniger und kaufe klüger ein — mit Holo an deiner Seite.',
     heroFreeToStart: 'Kostenlos starten. Premium-Funktionen in der App verfügbar.',
     
-    // Chips
-    chipExpireSoon: '3 Produkte laufen bald ab',
-    chipRecipeReady: 'Rezept in 15 Min fertig',
-    chipShoppingUpdated: 'Einkaufsliste aktualisiert',
-    chipDinnerIdeas: 'Holo hat Abendessen-Ideen',
-    
     // Store Buttons
-    downloadOnThe: 'Laden im',
     appStore: 'App Store',
-    getItOn: 'Jetzt bei',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Kommt dir bekannt vor?',
-    problemSubtitle: 'Dein Kühlschrank ist voll — aber das Abendessen scheint unmöglich',
-    problemItem1Title: 'Vergessene Lebensmittel',
-    problemItem1Desc: 'Produkte werden nach hinten geschoben und verderben, bevor du dich erinnerst.',
-    problemItem2Title: 'Keine Idee, was kochen',
-    problemItem2Desc: 'Du hast Zutaten, aber keine Idee, was du kochen sollst.',
-    problemItem3Title: 'Verschwendetes Geld',
-    problemItem3Desc: 'Du kaufst Duplikate oder vergisst, was du wirklich brauchst.',
-    
-    // Features Section
-    featuresLabel: 'Funktionen',
-    featuresTitle: 'Alles, was du für eine intelligentere Küche brauchst',
-    featuresSubtitle: 'Vom Verfolgen übers Kochen bis zum Einkaufen — Holo erledigt alles.',
-    feature1Title: 'Intelligentes Inventar',
-    feature1Desc: 'Wisse genau, was in deinem Kühlschrank, Gefrierfach und Vorratsschrank ist — und wann es abläuft.',
-    feature2Title: 'KI-Rezepte',
-    feature2Desc: 'Erhalte personalisierte Rezeptideen basierend auf dem, was du bereits hast.',
-    feature3Title: 'Einkaufslisten',
-    feature3Desc: 'Erstelle Listen, die sich zwischen Geräten synchronisieren und hake beim Einkaufen ab.',
-    feature4Title: 'Ablauf-Warnungen',
-    feature4Desc: 'Vergiss nie wieder diesen Joghurt. Erhalte Benachrichtigungen, bevor Lebensmittel schlecht werden.',
-    feature5Title: 'Familienfreigabe',
-    feature5Desc: 'Teile Listen und Inventar mit deinem Haushalt. Alle bleiben synchron.',
-    feature6Title: 'Sprache & Foto',
-    feature6Desc: 'Füge Artikel per Sprache oder Foto hinzu. Kein Tippen nötig.',
-    
-    // App Preview Section
-    appPreviewLabel: 'So funktioniert\'s',
-    appPreviewTitle: 'Einfache Schritte zu einer organisierten Küche',
-    appPreviewSubtitle: 'Der Einstieg dauert weniger als eine Minute.',
-    appPreviewStep1Title: 'Füge deine Lebensmittel hinzu',
-    appPreviewStep1Desc: 'Scannen, tippen oder sprechen — füge Artikel hinzu, wie es dir passt.',
-    appPreviewStep2Title: 'Erhalte Vorschläge',
-    appPreviewStep2Desc: 'Holo schlägt Rezepte vor, warnt dich bei ablaufenden Artikeln und hält deine Listen aktuell.',
-    appPreviewStep3Title: 'Koche & kaufe klüger',
-    appPreviewStep3Desc: 'Nutze, was du hast, verschwende weniger und vergiss nie, was du brauchst.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Triff Holo',
-    meetHoloTitle: 'Dein freundlicher Küchenassistent',
-    meetHoloDesc: 'Holo ist hier, um dir zu helfen, organisiert zu bleiben, Verschwendung zu reduzieren und das Kochen mühelos zu gestalten. Denke an Holo als ruhige, hilfreiche Präsenz in deiner Küche — immer bereit mit einem Vorschlag, ohne zu urteilen.',
-    
-    // Final CTA
-    ctaLabel: 'Holo Fridge holen',
-    ctaTitle: 'Bereit, deinen Kühlschrank intelligent zu machen?',
-    ctaSubtitle: 'Beginne heute, deine Küche zu organisieren. Lade Holo Fridge herunter und mache dein Essen mühelos.',
-    
     // Footer
-    footerTagline: 'Intelligentes Essen, organisierte Küchen.',
     footerPrivacy: 'Datenschutz',
     footerTerms: 'Nutzungsbedingungen',
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Ratgeber',
-    footerCopyright: '© {year} Holo Fridge. Alle Rechte vorbehalten.',
-    footerMadeWith: 'Mit Sorgfalt gemacht.',
+    footerCopyright: '© {year} Holo. Alle Rechte vorbehalten.',
     
     // Guides
     guidesTitle: 'Ratgeber',
@@ -1730,9 +1445,6 @@ export const translations = {
     privacySection13Intro: 'Für Datenschutzfragen, -anfragen oder -beschwerden:',
     privacyContactEmail: 'E-Mail:',
     
-    // Coming Soon
-    comingSoon: 'Demnächst!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Holo Fridge Konto löschen',
     deleteAccountDesc: 'Du kannst dein Konto und alle zugehörigen Daten dauerhaft direkt in der App löschen:',
@@ -1744,95 +1456,27 @@ export const translations = {
   },
   
   es: {
-    // Meta
-    siteTitle: 'Holo Fridge - Asistente inteligente de alimentos y nevera',
-    siteDescription: 'Holo Fridge te ayuda a rastrear alimentos, reducir desperdicios, descubrir recetas y crear listas de compras más inteligentes.',
-    
     // Navbar
-    navFeatures: 'Características',
     navHowItWorks: 'Cómo funciona',
     navMeetHolo: 'Conoce a Holo',
-    navDownload: 'Descargar',
     navSupport: 'Soporte',
     navPrivacy: 'Política de privacidad',
     navTerms: 'Términos de uso',
     
     // Hero
-    heroNowAvailable: 'Ya disponible',
-    heroTitle1: 'Tu nevera,',
-    heroTitle2: 'finalmente inteligente.',
-    heroSubtitle: 'Rastrea lo que tienes, cocina con ello, desperdicia menos y compra más inteligente — con Holo a tu lado.',
     heroFreeToStart: 'Gratis para empezar. Funciones premium disponibles en la app.',
     
-    // Chips
-    chipExpireSoon: '3 productos caducan pronto',
-    chipRecipeReady: 'Receta lista en 15 min',
-    chipShoppingUpdated: 'Lista de compras actualizada',
-    chipDinnerIdeas: 'Holo encontró ideas para cenar',
-    
     // Store Buttons
-    downloadOnThe: 'Descargar en',
     appStore: 'App Store',
-    getItOn: 'Disponible en',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: '¿Te suena familiar?',
-    problemSubtitle: 'Tu nevera está llena — pero la cena parece imposible',
-    problemItem1Title: 'Alimentos olvidados',
-    problemItem1Desc: 'Los productos se quedan al fondo y caducan antes de que los recuerdes.',
-    problemItem2Title: 'Sin idea de qué cocinar',
-    problemItem2Desc: 'Tienes ingredientes pero no sabes qué preparar.',
-    problemItem3Title: 'Dinero desperdiciado',
-    problemItem3Desc: 'Compras duplicados u olvidas lo que realmente necesitas.',
-    
-    // Features Section
-    featuresLabel: 'Características',
-    featuresTitle: 'Todo lo que necesitas para una cocina más inteligente',
-    featuresSubtitle: 'Desde el seguimiento hasta cocinar y comprar — Holo se encarga de todo.',
-    feature1Title: 'Inventario inteligente',
-    feature1Desc: 'Sabe exactamente qué hay en tu nevera, congelador y despensa — y cuándo caduca.',
-    feature2Title: 'Recetas IA',
-    feature2Desc: 'Obtén ideas de recetas personalizadas basadas en lo que ya tienes.',
-    feature3Title: 'Listas de compras',
-    feature3Desc: 'Crea listas que se sincronizan entre dispositivos y marca mientras compras.',
-    feature4Title: 'Alertas de caducidad',
-    feature4Desc: 'Nunca más olvides ese yogur. Recibe notificaciones antes de que la comida se eche a perder.',
-    feature5Title: 'Compartir en familia',
-    feature5Desc: 'Comparte listas e inventario con tu hogar. Todos permanecen sincronizados.',
-    feature6Title: 'Voz y foto',
-    feature6Desc: 'Añade artículos por voz o foto. Sin necesidad de escribir.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Cómo funciona',
-    appPreviewTitle: 'Pasos simples hacia una cocina organizada',
-    appPreviewSubtitle: 'Empezar toma menos de un minuto.',
-    appPreviewStep1Title: 'Añade tu comida',
-    appPreviewStep1Desc: 'Escanea, escribe o habla — añade artículos como te convenga.',
-    appPreviewStep2Title: 'Recibe sugerencias',
-    appPreviewStep2Desc: 'Holo sugiere recetas, te alerta sobre artículos que caducan y mantiene tus listas actualizadas.',
-    appPreviewStep3Title: 'Cocina y compra más inteligente',
-    appPreviewStep3Desc: 'Usa lo que tienes, desperdicia menos y nunca olvides lo que necesitas.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Conoce a Holo',
-    meetHoloTitle: 'Tu asistente de cocina amigable',
-    meetHoloDesc: 'Holo está aquí para ayudarte a mantenerte organizado, reducir desperdicios y hacer que cocinar sea fácil. Piensa en Holo como una presencia tranquila y útil en tu cocina — siempre listo con una sugerencia, sin juzgar.',
-    
-    // Final CTA
-    ctaLabel: 'Obtener Holo Fridge',
-    ctaTitle: '¿Listo para hacer tu nevera inteligente?',
-    ctaSubtitle: 'Empieza a organizar tu cocina hoy. Descarga Holo Fridge y haz que tu comida sea fácil.',
-    
     // Footer
-    footerTagline: 'Comida inteligente, cocinas organizadas.',
     footerPrivacy: 'Política de privacidad',
     footerTerms: 'Términos de uso',
     footerContact: 'Contacto',
     footerSupport: 'Soporte',
     footerGuides: 'Guías',
-    footerCopyright: '© {year} Holo Fridge. Todos los derechos reservados.',
-    footerMadeWith: 'Hecho con cuidado.',
+    footerCopyright: '© {year} Holo. Todos los derechos reservados.',
     
     // Guides
     guidesTitle: 'Guías',
@@ -2078,9 +1722,6 @@ export const translations = {
     privacySection13Intro: 'Para preguntas, solicitudes o quejas sobre privacidad:',
     privacyContactEmail: 'Correo electrónico:',
 
-    // Coming Soon
-    comingSoon: '¡Próximamente!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Eliminar tu cuenta de Holo Fridge',
     deleteAccountDesc: 'Puedes eliminar permanentemente tu cuenta y todos los datos asociados directamente en la app:',
@@ -2092,95 +1733,27 @@ export const translations = {
   },
   
   it: {
-    // Meta
-    siteTitle: 'Holo Fridge - Assistente intelligente per cibo e frigorifero',
-    siteDescription: 'Holo Fridge ti aiuta a tracciare il cibo, ridurre gli sprechi, scoprire ricette e creare liste della spesa più intelligenti.',
-    
     // Navbar
-    navFeatures: 'Caratteristiche',
     navHowItWorks: 'Come funziona',
     navMeetHolo: 'Conosci Holo',
-    navDownload: 'Scarica',
     navSupport: 'Supporto',
     navPrivacy: 'Privacy Policy',
     navTerms: 'Termini di utilizzo',
     
     // Hero
-    heroNowAvailable: 'Disponibile ora',
-    heroTitle1: 'Il tuo frigorifero,',
-    heroTitle2: 'finalmente intelligente.',
-    heroSubtitle: 'Traccia cosa hai, cucina con quello, spreca meno e fai acquisti più intelligenti — con Holo al tuo fianco.',
     heroFreeToStart: 'Gratuito per iniziare. Funzioni premium disponibili nell\'app.',
     
-    // Chips
-    chipExpireSoon: '3 prodotti scadono presto',
-    chipRecipeReady: 'Ricetta pronta in 15 min',
-    chipShoppingUpdated: 'Lista della spesa aggiornata',
-    chipDinnerIdeas: 'Holo ha trovato idee per cena',
-    
     // Store Buttons
-    downloadOnThe: 'Scarica su',
     appStore: 'App Store',
-    getItOn: 'Disponibile su',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Ti suona familiare?',
-    problemSubtitle: 'Il tuo frigorifero è pieno — ma la cena sembra impossibile',
-    problemItem1Title: 'Cibo dimenticato',
-    problemItem1Desc: 'I prodotti vengono spinti in fondo e scadono prima che te ne ricordi.',
-    problemItem2Title: 'Nessuna idea su cosa cucinare',
-    problemItem2Desc: 'Hai ingredienti ma non sai cosa preparare.',
-    problemItem3Title: 'Soldi sprecati',
-    problemItem3Desc: 'Compri duplicati o dimentichi cosa ti serve davvero.',
-    
-    // Features Section
-    featuresLabel: 'Caratteristiche',
-    featuresTitle: 'Tutto ciò di cui hai bisogno per una cucina più intelligente',
-    featuresSubtitle: 'Dal tracciamento alla cucina agli acquisti — Holo gestisce tutto.',
-    feature1Title: 'Inventario intelligente',
-    feature1Desc: 'Sai esattamente cosa c\'è nel frigorifero, freezer e dispensa — e quando scade.',
-    feature2Title: 'Ricette AI',
-    feature2Desc: 'Ottieni idee di ricette personalizzate basate su ciò che già hai.',
-    feature3Title: 'Liste della spesa',
-    feature3Desc: 'Crea liste che si sincronizzano tra dispositivi e spunta mentre fai acquisti.',
-    feature4Title: 'Avvisi di scadenza',
-    feature4Desc: 'Non dimenticare mai più quello yogurt. Ricevi notifiche prima che il cibo vada a male.',
-    feature5Title: 'Condivisione familiare',
-    feature5Desc: 'Condividi liste e inventario con la tua famiglia. Tutti restano sincronizzati.',
-    feature6Title: 'Voce e foto',
-    feature6Desc: 'Aggiungi articoli con voce o foto. Senza digitare.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Come funziona',
-    appPreviewTitle: 'Semplici passi verso una cucina organizzata',
-    appPreviewSubtitle: 'Iniziare richiede meno di un minuto.',
-    appPreviewStep1Title: 'Aggiungi il tuo cibo',
-    appPreviewStep1Desc: 'Scansiona, digita o parla — aggiungi articoli come preferisci.',
-    appPreviewStep2Title: 'Ricevi suggerimenti',
-    appPreviewStep2Desc: 'Holo suggerisce ricette, ti avvisa degli articoli in scadenza e mantiene le tue liste aggiornate.',
-    appPreviewStep3Title: 'Cucina e acquista in modo più intelligente',
-    appPreviewStep3Desc: 'Usa quello che hai, spreca meno e non dimenticare mai cosa ti serve.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Conosci Holo',
-    meetHoloTitle: 'Il tuo amichevole assistente di cucina',
-    meetHoloDesc: 'Holo è qui per aiutarti a restare organizzato, ridurre gli sprechi e rendere la cucina senza sforzo. Pensa a Holo come una presenza calma e utile nella tua cucina — sempre pronto con un suggerimento, mai giudicante.',
-    
-    // Final CTA
-    ctaLabel: 'Ottieni Holo Fridge',
-    ctaTitle: 'Pronto a rendere il tuo frigorifero intelligente?',
-    ctaSubtitle: 'Inizia a organizzare la tua cucina oggi. Scarica Holo Fridge e rendi il tuo cibo senza sforzo.',
-    
     // Footer
-    footerTagline: 'Cibo intelligente, cucine organizzate.',
     footerPrivacy: 'Privacy Policy',
     footerTerms: 'Termini di utilizzo',
     footerContact: 'Contatto',
     footerSupport: 'Supporto',
     footerGuides: 'Guide',
-    footerCopyright: '© {year} Holo Fridge. Tutti i diritti riservati.',
-    footerMadeWith: 'Fatto con cura.',
+    footerCopyright: '© {year} Holo. Tutti i diritti riservati.',
     
     // Guides
     guidesTitle: 'Guide',
@@ -2426,9 +1999,6 @@ export const translations = {
     privacySection13Intro: 'Per domande, richieste o reclami sulla privacy:',
     privacyContactEmail: 'Email:',
 
-    // Coming Soon
-    comingSoon: 'Prossimamente!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Elimina il tuo account Holo Fridge',
     deleteAccountDesc: 'Puoi eliminare permanentemente il tuo account e tutti i dati associati direttamente nell\'app:',
@@ -2440,95 +2010,27 @@ export const translations = {
   },
   
   fr: {
-    // Meta
-    siteTitle: 'Holo Fridge - Assistant intelligent pour aliments et réfrigérateur',
-    siteDescription: 'Holo Fridge vous aide à suivre vos aliments, réduire le gaspillage, découvrir des recettes et créer des listes de courses plus intelligentes.',
-    
     // Navbar
-    navFeatures: 'Fonctionnalités',
     navHowItWorks: 'Comment ça marche',
     navMeetHolo: 'Rencontrez Holo',
-    navDownload: 'Télécharger',
     navSupport: 'Support',
     navPrivacy: 'Politique de confidentialité',
     navTerms: 'Conditions d\'utilisation',
     
     // Hero
-    heroNowAvailable: 'Disponible maintenant',
-    heroTitle1: 'Votre réfrigérateur,',
-    heroTitle2: 'enfin intelligent.',
-    heroSubtitle: 'Suivez ce que vous avez, cuisinez avec, gaspillez moins et faites des achats plus malins — avec Holo à vos côtés.',
     heroFreeToStart: 'Gratuit pour commencer. Fonctions premium disponibles dans l\'app.',
     
-    // Chips
-    chipExpireSoon: '3 produits expirent bientôt',
-    chipRecipeReady: 'Recette prête en 15 min',
-    chipShoppingUpdated: 'Liste de courses mise à jour',
-    chipDinnerIdeas: 'Holo a trouvé des idées de dîner',
-    
     // Store Buttons
-    downloadOnThe: 'Télécharger sur',
     appStore: 'App Store',
-    getItOn: 'Disponible sur',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Ça vous dit quelque chose?',
-    problemSubtitle: 'Votre réfrigérateur est plein — mais le dîner semble impossible',
-    problemItem1Title: 'Aliments oubliés',
-    problemItem1Desc: 'Les produits sont poussés au fond et périment avant que vous vous en souveniez.',
-    problemItem2Title: 'Aucune idée quoi cuisiner',
-    problemItem2Desc: 'Vous avez des ingrédients mais aucune idée de quoi préparer.',
-    problemItem3Title: 'Argent gaspillé',
-    problemItem3Desc: 'Vous achetez des doublons ou oubliez ce dont vous avez vraiment besoin.',
-    
-    // Features Section
-    featuresLabel: 'Fonctionnalités',
-    featuresTitle: 'Tout ce dont vous avez besoin pour une cuisine plus intelligente',
-    featuresSubtitle: 'Du suivi à la cuisine en passant par les achats — Holo gère tout.',
-    feature1Title: 'Inventaire intelligent',
-    feature1Desc: 'Sachez exactement ce qu\'il y a dans votre réfrigérateur, congélateur et garde-manger — et quand ça expire.',
-    feature2Title: 'Recettes IA',
-    feature2Desc: 'Obtenez des idées de recettes personnalisées basées sur ce que vous avez déjà.',
-    feature3Title: 'Listes de courses',
-    feature3Desc: 'Créez des listes qui se synchronisent entre les appareils et cochez en faisant vos achats.',
-    feature4Title: 'Alertes d\'expiration',
-    feature4Desc: 'N\'oubliez plus jamais ce yaourt. Recevez des notifications avant que les aliments ne se gâtent.',
-    feature5Title: 'Partage familial',
-    feature5Desc: 'Partagez listes et inventaire avec votre foyer. Tout le monde reste synchronisé.',
-    feature6Title: 'Voix et photo',
-    feature6Desc: 'Ajoutez des articles par voix ou photo. Sans taper.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Comment ça marche',
-    appPreviewTitle: 'Des étapes simples vers une cuisine organisée',
-    appPreviewSubtitle: 'Commencer prend moins d\'une minute.',
-    appPreviewStep1Title: 'Ajoutez vos aliments',
-    appPreviewStep1Desc: 'Scannez, tapez ou parlez — ajoutez des articles comme bon vous semble.',
-    appPreviewStep2Title: 'Recevez des suggestions',
-    appPreviewStep2Desc: 'Holo suggère des recettes, vous alerte sur les articles qui expirent et maintient vos listes à jour.',
-    appPreviewStep3Title: 'Cuisinez et achetez plus malin',
-    appPreviewStep3Desc: 'Utilisez ce que vous avez, gaspillez moins et n\'oubliez jamais ce dont vous avez besoin.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Rencontrez Holo',
-    meetHoloTitle: 'Votre assistant de cuisine amical',
-    meetHoloDesc: 'Holo est là pour vous aider à rester organisé, réduire le gaspillage et rendre la cuisine sans effort. Pensez à Holo comme une présence calme et utile dans votre cuisine — toujours prêt avec une suggestion, sans jamais juger.',
-    
-    // Final CTA
-    ctaLabel: 'Obtenir Holo Fridge',
-    ctaTitle: 'Prêt à rendre votre réfrigérateur intelligent?',
-    ctaSubtitle: 'Commencez à organiser votre cuisine aujourd\'hui. Téléchargez Holo Fridge et rendez votre alimentation sans effort.',
-    
     // Footer
-    footerTagline: 'Alimentation intelligente, cuisines organisées.',
     footerPrivacy: 'Politique de confidentialité',
     footerTerms: 'Conditions d\'utilisation',
     footerContact: 'Contact',
     footerSupport: 'Support',
     footerGuides: 'Guides',
-    footerCopyright: '© {year} Holo Fridge. Tous droits réservés.',
-    footerMadeWith: 'Fait avec soin.',
+    footerCopyright: '© {year} Holo. Tous droits réservés.',
     
     // Guides
     guidesTitle: 'Guides',
@@ -2774,9 +2276,6 @@ export const translations = {
     privacySection13Intro: 'Pour les questions, demandes ou plaintes relatives à la confidentialité :',
     privacyContactEmail: 'E-mail :',
 
-    // Coming Soon
-    comingSoon: 'Bientôt!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Supprimer votre compte Holo Fridge',
     deleteAccountDesc: 'Vous pouvez supprimer définitivement votre compte et toutes les données associées directement dans l\'app:',
@@ -2788,95 +2287,27 @@ export const translations = {
   },
   
   ru: {
-    // Meta
-    siteTitle: 'Holo Fridge - Умный помощник для еды и холодильника',
-    siteDescription: 'Holo Fridge помогает отслеживать продукты, сокращать отходы, находить рецепты и составлять умные списки покупок.',
-    
     // Navbar
-    navFeatures: 'Функции',
     navHowItWorks: 'Как это работает',
     navMeetHolo: 'Познакомьтесь с Holo',
-    navDownload: 'Скачать',
     navSupport: 'Поддержка',
     navPrivacy: 'Политика конфиденциальности',
     navTerms: 'Условия использования',
     
     // Hero
-    heroNowAvailable: 'Уже доступно',
-    heroTitle1: 'Ваш холодильник,',
-    heroTitle2: 'наконец-то умный.',
-    heroSubtitle: 'Отслеживайте, что у вас есть, готовьте из этого, тратьте меньше и покупайте умнее — с Holo рядом.',
     heroFreeToStart: 'Бесплатный старт. Премиум-функции доступны в приложении.',
     
-    // Chips
-    chipExpireSoon: '3 продукта скоро испортятся',
-    chipRecipeReady: 'Рецепт готов за 15 мин',
-    chipShoppingUpdated: 'Список покупок обновлён',
-    chipDinnerIdeas: 'Holo нашёл идеи для ужина',
-    
     // Store Buttons
-    downloadOnThe: 'Загрузить в',
     appStore: 'App Store',
-    getItOn: 'Доступно в',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Знакомо?',
-    problemSubtitle: 'Ваш холодильник полон — но ужин кажется невозможным',
-    problemItem1Title: 'Забытые продукты',
-    problemItem1Desc: 'Продукты задвигаются назад и портятся, прежде чем вы о них вспомните.',
-    problemItem2Title: 'Не знаете, что готовить',
-    problemItem2Desc: 'У вас есть ингредиенты, но нет идей, что приготовить.',
-    problemItem3Title: 'Потраченные деньги',
-    problemItem3Desc: 'Вы покупаете дубликаты или забываете, что вам действительно нужно.',
-    
-    // Features Section
-    featuresLabel: 'Функции',
-    featuresTitle: 'Всё, что нужно для более умной кухни',
-    featuresSubtitle: 'От отслеживания до готовки и покупок — Holo справится со всем.',
-    feature1Title: 'Умный инвентарь',
-    feature1Desc: 'Знайте точно, что есть в вашем холодильнике, морозилке и кладовой — и когда истекает срок.',
-    feature2Title: 'ИИ-рецепты',
-    feature2Desc: 'Получайте персонализированные идеи рецептов на основе того, что у вас уже есть.',
-    feature3Title: 'Списки покупок',
-    feature3Desc: 'Создавайте списки, которые синхронизируются между устройствами, и отмечайте во время покупок.',
-    feature4Title: 'Уведомления о сроке',
-    feature4Desc: 'Больше никогда не забывайте о том йогурте. Получайте уведомления до того, как еда испортится.',
-    feature5Title: 'Семейный доступ',
-    feature5Desc: 'Делитесь списками и инвентарём с домочадцами. Все остаются в курсе.',
-    feature6Title: 'Голос и фото',
-    feature6Desc: 'Добавляйте продукты голосом или фото. Печатать не нужно.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Как это работает',
-    appPreviewTitle: 'Простые шаги к организованной кухне',
-    appPreviewSubtitle: 'Начать работу займёт меньше минуты.',
-    appPreviewStep1Title: 'Добавьте свою еду',
-    appPreviewStep1Desc: 'Сканируйте, печатайте или говорите — добавляйте продукты как вам удобно.',
-    appPreviewStep2Title: 'Получайте предложения',
-    appPreviewStep2Desc: 'Holo предлагает рецепты, предупреждает о продуктах с истекающим сроком и поддерживает ваши списки актуальными.',
-    appPreviewStep3Title: 'Готовьте и покупайте умнее',
-    appPreviewStep3Desc: 'Используйте то, что имеете, тратьте меньше и никогда не забывайте, что вам нужно.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Познакомьтесь с Holo',
-    meetHoloTitle: 'Ваш дружелюбный кухонный помощник',
-    meetHoloDesc: 'Holo здесь, чтобы помочь вам оставаться организованными, сокращать отходы и делать готовку лёгкой. Думайте о Holo как о спокойном, полезном присутствии на вашей кухне — всегда готовом с предложением, никогда не осуждающем.',
-    
-    // Final CTA
-    ctaLabel: 'Получить Holo Fridge',
-    ctaTitle: 'Готовы сделать ваш холодильник умным?',
-    ctaSubtitle: 'Начните организовывать свою кухню сегодня. Скачайте Holo Fridge и сделайте вашу еду лёгкой.',
-    
     // Footer
-    footerTagline: 'Умная еда, организованные кухни.',
     footerPrivacy: 'Политика конфиденциальности',
     footerTerms: 'Условия использования',
     footerContact: 'Контакты',
     footerSupport: 'Поддержка',
     footerGuides: 'Руководства',
-    footerCopyright: '© {year} Holo Fridge. Все права защищены.',
-    footerMadeWith: 'Сделано с заботой.',
+    footerCopyright: '© {year} Holo. Все права защищены.',
     
     // Guides
     guidesTitle: 'Руководства',
@@ -3122,9 +2553,6 @@ export const translations = {
     privacySection13Intro: 'По вопросам, запросам или жалобам, связанным с конфиденциальностью:',
     privacyContactEmail: 'Электронная почта:',
 
-    // Coming Soon
-    comingSoon: 'Скоро!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Удалить учётную запись Holo Fridge',
     deleteAccountDesc: 'Вы можете навсегда удалить свою учётную запись и все связанные данные прямо в приложении:',
@@ -3136,95 +2564,27 @@ export const translations = {
   },
   
   lt: {
-    // Meta
-    siteTitle: 'Holo Fridge - Išmanusis maisto ir šaldytuvo asistentas',
-    siteDescription: 'Holo Fridge padeda sekti maistą, mažinti atliekas, atrasti receptus ir kurti protingesnius pirkinių sąrašus.',
-    
     // Navbar
-    navFeatures: 'Funkcijos',
     navHowItWorks: 'Kaip tai veikia',
     navMeetHolo: 'Susipažink su Holo',
-    navDownload: 'Atsisiųsti',
     navSupport: 'Pagalba',
     navPrivacy: 'Privatumo politika',
     navTerms: 'Naudojimo sąlygos',
     
     // Hero
-    heroNowAvailable: 'Jau galima',
-    heroTitle1: 'Tavo šaldytuvas,',
-    heroTitle2: 'pagaliau protingas.',
-    heroSubtitle: 'Sek, ką turi, gamink iš to, švaisty mažiau ir pirk protingiau — su Holo šalia.',
     heroFreeToStart: 'Nemokamas startas. Premium funkcijos programėlėje.',
     
-    // Chips
-    chipExpireSoon: '3 produktai greitai baigs galioti',
-    chipRecipeReady: 'Receptas paruoštas per 15 min',
-    chipShoppingUpdated: 'Pirkinių sąrašas atnaujintas',
-    chipDinnerIdeas: 'Holo rado vakarienės idėjų',
-    
     // Store Buttons
-    downloadOnThe: 'Parsisiųsti iš',
     appStore: 'App Store',
-    getItOn: 'Gauti iš',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Skamba pažįstamai?',
-    problemSubtitle: 'Tavo šaldytuvas pilnas — bet vakarienė atrodo neįmanoma',
-    problemItem1Title: 'Pamirštas maistas',
-    problemItem1Desc: 'Produktai nustumiami į galą ir sugenda, kol prisimeni.',
-    problemItem2Title: 'Nežinote, ką gaminti',
-    problemItem2Desc: 'Turi ingredientų, bet nežinai, ką gaminti.',
-    problemItem3Title: 'Švaistyti pinigai',
-    problemItem3Desc: 'Perki dublikatus arba pamiršti, ko iš tikrųjų reikia.',
-    
-    // Features Section
-    featuresLabel: 'Funkcijos',
-    featuresTitle: 'Viskas, ko reikia protingesnei virtuvei',
-    featuresSubtitle: 'Nuo sekimo iki gaminimo ir apsipirkimo — Holo pasirūpins viskuo.',
-    feature1Title: 'Išmanus inventorius',
-    feature1Desc: 'Žinok tiksliai, kas yra tavo šaldytuve, šaldiklyje ir sandėliuke — ir kada baigia galioti.',
-    feature2Title: 'AI receptai',
-    feature2Desc: 'Gauk personalizuotas receptų idėjas pagal tai, ką jau turi.',
-    feature3Title: 'Pirkinių sąrašai',
-    feature3Desc: 'Kurk sąrašus, kurie sinchronizuojasi tarp įrenginių, ir žymėk perkant.',
-    feature4Title: 'Galiojimo įspėjimai',
-    feature4Desc: 'Niekada daugiau nepamiršk to jogurto. Gauk pranešimus prieš maistui sugedant.',
-    feature5Title: 'Šeimos dalijimasis',
-    feature5Desc: 'Dalinkis sąrašais ir inventoriumi su namų ūkiu. Visi lieka sinchronizuoti.',
-    feature6Title: 'Balsas ir nuotrauka',
-    feature6Desc: 'Pridėk produktus balsu arba nuotrauka. Nereikia rašyti.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Kaip tai veikia',
-    appPreviewTitle: 'Paprasti žingsniai link organizuotos virtuvės',
-    appPreviewSubtitle: 'Pradėti užtrunka mažiau nei minutę.',
-    appPreviewStep1Title: 'Pridėk savo maistą',
-    appPreviewStep1Desc: 'Skenuok, rašyk ar kalbėk — pridėk produktus kaip tau patogiau.',
-    appPreviewStep2Title: 'Gauk pasiūlymus',
-    appPreviewStep2Desc: 'Holo siūlo receptus, įspėja apie besibaigiantį galiojimą ir laiko tavo sąrašus atnaujintus.',
-    appPreviewStep3Title: 'Gamink ir pirk protingiau',
-    appPreviewStep3Desc: 'Naudok, ką turi, švaisty mažiau ir niekada nepamiršk, ko reikia.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Susipažink su Holo',
-    meetHoloTitle: 'Tavo draugiškas virtuvės asistentas',
-    meetHoloDesc: 'Holo čia, kad padėtų tau būti organizuotam, mažinti atliekas ir padaryti gaminimą lengvą. Galvok apie Holo kaip ramią, naudingą būtybę tavo virtuvėje — visada pasiruošusią su pasiūlymu, niekada neteisiančią.',
-    
-    // Final CTA
-    ctaLabel: 'Gauti Holo Fridge',
-    ctaTitle: 'Pasiruošęs padaryti šaldytuvą protingą?',
-    ctaSubtitle: 'Pradėk organizuoti savo virtuvę šiandien. Atsisiųsk Holo Fridge ir padaryk maistą lengvą.',
-    
     // Footer
-    footerTagline: 'Protingas maistas, organizuotos virtuvės.',
     footerPrivacy: 'Privatumo politika',
     footerTerms: 'Naudojimo sąlygos',
     footerContact: 'Kontaktai',
     footerSupport: 'Pagalba',
     footerGuides: 'Gidai',
-    footerCopyright: '© {year} Holo Fridge. Visos teisės saugomos.',
-    footerMadeWith: 'Sukurta su rūpesčiu.',
+    footerCopyright: '© {year} Holo. Visos teisės saugomos.',
     
     // Guides
     guidesTitle: 'Gidai',
@@ -3470,9 +2830,6 @@ export const translations = {
     privacySection13Intro: 'Privatumo klausimais, prašymais ar skundais:',
     privacyContactEmail: 'El. paštas:',
 
-    // Coming Soon
-    comingSoon: 'Greitai!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Ištrinti Holo Fridge paskyrą',
     deleteAccountDesc: 'Galite visam laikui ištrinti savo paskyrą ir visus susijusius duomenis tiesiogiai programėlėje:',
@@ -3484,95 +2841,27 @@ export const translations = {
   },
   
   nl: {
-    // Meta
-    siteTitle: 'Holo Fridge - Slimme voedsel- en koelkastassistent',
-    siteDescription: 'Holo Fridge helpt je voedsel bij te houden, verspilling te verminderen, recepten te ontdekken en slimmere boodschappenlijsten te maken.',
-    
     // Navbar
-    navFeatures: 'Functies',
     navHowItWorks: 'Hoe het werkt',
     navMeetHolo: 'Maak kennis met Holo',
-    navDownload: 'Downloaden',
     navSupport: 'Ondersteuning',
     navPrivacy: 'Privacybeleid',
     navTerms: 'Gebruiksvoorwaarden',
     
     // Hero
-    heroNowAvailable: 'Nu beschikbaar',
-    heroTitle1: 'Je koelkast,',
-    heroTitle2: 'eindelijk slim.',
-    heroSubtitle: 'Houd bij wat je hebt, kook ermee, verspil minder en shop slimmer — met Holo aan je zijde.',
     heroFreeToStart: 'Gratis starten. Premiumfuncties beschikbaar in de app.',
     
-    // Chips
-    chipExpireSoon: '3 producten verlopen binnenkort',
-    chipRecipeReady: 'Recept klaar in 15 min',
-    chipShoppingUpdated: 'Boodschappenlijst bijgewerkt',
-    chipDinnerIdeas: 'Holo heeft dinerideeën gevonden',
-    
     // Store Buttons
-    downloadOnThe: 'Download in de',
     appStore: 'App Store',
-    getItOn: 'Verkrijgbaar op',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Klinkt bekend?',
-    problemSubtitle: 'Je koelkast is vol — maar het avondeten lijkt onmogelijk',
-    problemItem1Title: 'Vergeten voedsel',
-    problemItem1Desc: 'Producten worden naar achteren geduwd en bederven voordat je ze herinnert.',
-    problemItem2Title: 'Geen idee wat te koken',
-    problemItem2Desc: 'Je hebt ingrediënten maar geen idee wat je moet maken.',
-    problemItem3Title: 'Verspild geld',
-    problemItem3Desc: 'Je koopt duplicaten of vergeet wat je echt nodig hebt.',
-    
-    // Features Section
-    featuresLabel: 'Functies',
-    featuresTitle: 'Alles wat je nodig hebt voor een slimmere keuken',
-    featuresSubtitle: 'Van bijhouden tot koken tot boodschappen — Holo regelt het allemaal.',
-    feature1Title: 'Slimme inventaris',
-    feature1Desc: 'Weet precies wat er in je koelkast, vriezer en voorraadkast zit — en wanneer het verloopt.',
-    feature2Title: 'AI-recepten',
-    feature2Desc: 'Krijg gepersonaliseerde receptideeën op basis van wat je al hebt.',
-    feature3Title: 'Boodschappenlijsten',
-    feature3Desc: 'Maak lijsten die synchroniseren tussen apparaten en vink af terwijl je winkelt.',
-    feature4Title: 'Houdbaarheidswaarschuwingen',
-    feature4Desc: 'Vergeet die yoghurt nooit meer. Krijg meldingen voordat voedsel bederft.',
-    feature5Title: 'Gezinsdeling',
-    feature5Desc: 'Deel lijsten en inventaris met je huishouden. Iedereen blijft gesynchroniseerd.',
-    feature6Title: 'Stem en foto',
-    feature6Desc: 'Voeg items toe met stem of foto. Geen typen nodig.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Hoe het werkt',
-    appPreviewTitle: 'Eenvoudige stappen naar een georganiseerde keuken',
-    appPreviewSubtitle: 'Beginnen duurt minder dan een minuut.',
-    appPreviewStep1Title: 'Voeg je voedsel toe',
-    appPreviewStep1Desc: 'Scan, typ of spreek — voeg items toe zoals het jou uitkomt.',
-    appPreviewStep2Title: 'Ontvang suggesties',
-    appPreviewStep2Desc: 'Holo stelt recepten voor, waarschuwt je voor verlopende items en houdt je lijsten up-to-date.',
-    appPreviewStep3Title: 'Kook en shop slimmer',
-    appPreviewStep3Desc: 'Gebruik wat je hebt, verspil minder en vergeet nooit wat je nodig hebt.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Maak kennis met Holo',
-    meetHoloTitle: 'Je vriendelijke keukenassistent',
-    meetHoloDesc: 'Holo is er om je te helpen georganiseerd te blijven, verspilling te verminderen en koken moeiteloos te maken. Zie Holo als een rustige, behulpzame aanwezigheid in je keuken — altijd klaar met een suggestie, nooit oordelend.',
-    
-    // Final CTA
-    ctaLabel: 'Download Holo Fridge',
-    ctaTitle: 'Klaar om je koelkast slim te maken?',
-    ctaSubtitle: 'Begin vandaag met het organiseren van je keuken. Download Holo Fridge en maak je eten moeiteloos.',
-    
     // Footer
-    footerTagline: 'Slim voedsel, georganiseerde keukens.',
     footerPrivacy: 'Privacybeleid',
     footerTerms: 'Gebruiksvoorwaarden',
     footerContact: 'Contact',
     footerSupport: 'Ondersteuning',
     footerGuides: 'Gidsen',
-    footerCopyright: '© {year} Holo Fridge. Alle rechten voorbehouden.',
-    footerMadeWith: 'Gemaakt met zorg.',
+    footerCopyright: '© {year} Holo. Alle rechten voorbehouden.',
     
     // Guides
     guidesTitle: 'Gidsen',
@@ -3818,9 +3107,6 @@ export const translations = {
     privacySection13Intro: 'Voor privacyvragen, verzoeken of klachten:',
     privacyContactEmail: 'E-mail:',
 
-    // Coming Soon
-    comingSoon: 'Binnenkort!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Verwijder je Holo Fridge account',
     deleteAccountDesc: 'Je kunt je account en alle bijbehorende gegevens permanent verwijderen direct in de app:',
@@ -3832,95 +3118,27 @@ export const translations = {
   },
   
   sv: {
-    // Meta
-    siteTitle: 'Holo Fridge - Smart mat- och kylskåpsassistent',
-    siteDescription: 'Holo Fridge hjälper dig spåra mat, minska svinn, upptäcka recept och skapa smartare inköpslistor.',
-    
     // Navbar
-    navFeatures: 'Funktioner',
     navHowItWorks: 'Hur det fungerar',
     navMeetHolo: 'Möt Holo',
-    navDownload: 'Ladda ner',
     navSupport: 'Support',
     navPrivacy: 'Integritetspolicy',
     navTerms: 'Användarvillkor',
     
     // Hero
-    heroNowAvailable: 'Tillgänglig nu',
-    heroTitle1: 'Ditt kylskåp,',
-    heroTitle2: 'äntligen smart.',
-    heroSubtitle: 'Spåra vad du har, laga mat av det, slösa mindre och handla smartare — med Holo vid din sida.',
     heroFreeToStart: 'Gratis att börja. Premiumfunktioner tillgängliga i appen.',
     
-    // Chips
-    chipExpireSoon: '3 produkter går ut snart',
-    chipRecipeReady: 'Recept klart på 15 min',
-    chipShoppingUpdated: 'Inköpslista uppdaterad',
-    chipDinnerIdeas: 'Holo hittade middagsidéer',
-    
     // Store Buttons
-    downloadOnThe: 'Ladda ner från',
     appStore: 'App Store',
-    getItOn: 'Hämta på',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Låter bekant?',
-    problemSubtitle: 'Ditt kylskåp är fullt — men middagen känns omöjlig',
-    problemItem1Title: 'Bortglömd mat',
-    problemItem1Desc: 'Produkter skjuts bakåt och förstörs innan du kommer ihåg dem.',
-    problemItem2Title: 'Ingen aning vad man ska laga',
-    problemItem2Desc: 'Du har ingredienser men ingen aning om vad du ska laga.',
-    problemItem3Title: 'Bortkastade pengar',
-    problemItem3Desc: 'Du köper dubbletter eller glömmer vad du verkligen behöver.',
-    
-    // Features Section
-    featuresLabel: 'Funktioner',
-    featuresTitle: 'Allt du behöver för ett smartare kök',
-    featuresSubtitle: 'Från spårning till matlagning till shopping — Holo hanterar allt.',
-    feature1Title: 'Smart inventering',
-    feature1Desc: 'Vet exakt vad som finns i kylskåp, frys och skafferi — och när det går ut.',
-    feature2Title: 'AI-recept',
-    feature2Desc: 'Få personliga receptidéer baserat på vad du redan har.',
-    feature3Title: 'Inköpslistor',
-    feature3Desc: 'Skapa listor som synkas mellan enheter och bocka av medan du handlar.',
-    feature4Title: 'Utgångsvarningar',
-    feature4Desc: 'Glöm aldrig den där yoghurten igen. Få notiser innan maten förstörs.',
-    feature5Title: 'Familjedelning',
-    feature5Desc: 'Dela listor och inventering med hushållet. Alla hålls synkade.',
-    feature6Title: 'Röst och foto',
-    feature6Desc: 'Lägg till artiklar med röst eller foto. Ingen skrivning behövs.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Hur det fungerar',
-    appPreviewTitle: 'Enkla steg till ett organiserat kök',
-    appPreviewSubtitle: 'Att komma igång tar mindre än en minut.',
-    appPreviewStep1Title: 'Lägg till din mat',
-    appPreviewStep1Desc: 'Skanna, skriv eller prata — lägg till artiklar hur det passar dig.',
-    appPreviewStep2Title: 'Få förslag',
-    appPreviewStep2Desc: 'Holo föreslår recept, varnar för utgående artiklar och håller listorna uppdaterade.',
-    appPreviewStep3Title: 'Laga och handla smartare',
-    appPreviewStep3Desc: 'Använd vad du har, slösa mindre och glöm aldrig vad du behöver.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Möt Holo',
-    meetHoloTitle: 'Din vänliga köksassistent',
-    meetHoloDesc: 'Holo finns här för att hjälpa dig hålla ordning, minska svinn och göra matlagning enkel. Tänk på Holo som en lugn, hjälpsam närvaro i ditt kök — alltid redo med ett förslag, aldrig dömande.',
-    
-    // Final CTA
-    ctaLabel: 'Hämta Holo Fridge',
-    ctaTitle: 'Redo att göra ditt kylskåp smart?',
-    ctaSubtitle: 'Börja organisera ditt kök idag. Ladda ner Holo Fridge och gör din mat enkel.',
-    
     // Footer
-    footerTagline: 'Smart mat, organiserade kök.',
     footerPrivacy: 'Integritetspolicy',
     footerTerms: 'Användarvillkor',
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Guider',
-    footerCopyright: '© {year} Holo Fridge. Alla rättigheter förbehållna.',
-    footerMadeWith: 'Gjort med omsorg.',
+    footerCopyright: '© {year} Holo. Alla rättigheter förbehållna.',
     
     // Guides
     guidesTitle: 'Guider',
@@ -4166,9 +3384,6 @@ export const translations = {
     privacySection13Intro: 'För integritetsfrågor, förfrågningar eller klagomål:',
     privacyContactEmail: 'E-post:',
 
-    // Coming Soon
-    comingSoon: 'Kommer snart!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Ta bort ditt Holo Fridge-konto',
     deleteAccountDesc: 'Du kan permanent ta bort ditt konto och all tillhörande data direkt i appen:',
@@ -4180,95 +3395,27 @@ export const translations = {
   },
   
   da: {
-    // Meta
-    siteTitle: 'Holo Fridge - Smart mad- og køleskabsassistent',
-    siteDescription: 'Holo Fridge hjælper dig med at holde styr på mad, reducere spild, opdage opskrifter og lave smartere indkøbslister.',
-    
     // Navbar
-    navFeatures: 'Funktioner',
     navHowItWorks: 'Sådan virker det',
     navMeetHolo: 'Mød Holo',
-    navDownload: 'Download',
     navSupport: 'Support',
     navPrivacy: 'Privatlivspolitik',
     navTerms: 'Brugsvilkår',
     
     // Hero
-    heroNowAvailable: 'Tilgængelig nu',
-    heroTitle1: 'Dit køleskab,',
-    heroTitle2: 'endelig smart.',
-    heroSubtitle: 'Hold styr på hvad du har, lav mad af det, spild mindre og shop smartere — med Holo ved din side.',
     heroFreeToStart: 'Gratis at starte. Premiumfunktioner tilgængelige i appen.',
     
-    // Chips
-    chipExpireSoon: '3 produkter udløber snart',
-    chipRecipeReady: 'Opskrift klar på 15 min',
-    chipShoppingUpdated: 'Indkøbsliste opdateret',
-    chipDinnerIdeas: 'Holo fandt aftensmadsidéer',
-    
     // Store Buttons
-    downloadOnThe: 'Download fra',
     appStore: 'App Store',
-    getItOn: 'Hent den på',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Lyder det bekendt?',
-    problemSubtitle: 'Dit køleskab er fuldt — men aftensmaden virker umulig',
-    problemItem1Title: 'Glemt mad',
-    problemItem1Desc: 'Produkter skubbes bagud og bliver dårlige før du husker dem.',
-    problemItem2Title: 'Ingen idé om hvad man skal lave',
-    problemItem2Desc: 'Du har ingredienser, men ingen idé om hvad du skal lave.',
-    problemItem3Title: 'Spildte penge',
-    problemItem3Desc: 'Du køber dubletter eller glemmer hvad du virkelig har brug for.',
-    
-    // Features Section
-    featuresLabel: 'Funktioner',
-    featuresTitle: 'Alt hvad du behøver til et smartere køkken',
-    featuresSubtitle: 'Fra sporing til madlavning til indkøb — Holo klarer det hele.',
-    feature1Title: 'Smart inventar',
-    feature1Desc: 'Ved præcis hvad der er i køleskab, fryser og spisekammer — og hvornår det udløber.',
-    feature2Title: 'AI-opskrifter',
-    feature2Desc: 'Få personlige opskriftsidéer baseret på hvad du allerede har.',
-    feature3Title: 'Indkøbslister',
-    feature3Desc: 'Opret lister der synkroniserer på tværs af enheder og afkryds mens du handler.',
-    feature4Title: 'Udløbsadvarsler',
-    feature4Desc: 'Glem aldrig den yoghurt igen. Få besked før maden bliver dårlig.',
-    feature5Title: 'Familiedeling',
-    feature5Desc: 'Del lister og inventar med husstanden. Alle holdes synkroniserede.',
-    feature6Title: 'Stemme og foto',
-    feature6Desc: 'Tilføj varer med stemme eller foto. Ingen indtastning nødvendig.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Sådan virker det',
-    appPreviewTitle: 'Simple trin til et organiseret køkken',
-    appPreviewSubtitle: 'At komme i gang tager mindre end et minut.',
-    appPreviewStep1Title: 'Tilføj din mad',
-    appPreviewStep1Desc: 'Scan, skriv eller tal — tilføj varer som det passer dig.',
-    appPreviewStep2Title: 'Få forslag',
-    appPreviewStep2Desc: 'Holo foreslår opskrifter, advarer om udløbende varer og holder dine lister opdaterede.',
-    appPreviewStep3Title: 'Lav mad og shop smartere',
-    appPreviewStep3Desc: 'Brug hvad du har, spild mindre og glem aldrig hvad du har brug for.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Mød Holo',
-    meetHoloTitle: 'Din venlige køkkenassistent',
-    meetHoloDesc: 'Holo er her for at hjælpe dig med at holde orden, reducere spild og gøre madlavning ubesværet. Tænk på Holo som en rolig, hjælpsom tilstedeværelse i dit køkken — altid klar med et forslag, aldrig dømmende.',
-    
-    // Final CTA
-    ctaLabel: 'Hent Holo Fridge',
-    ctaTitle: 'Klar til at gøre dit køleskab smart?',
-    ctaSubtitle: 'Begynd at organisere dit køkken i dag. Download Holo Fridge og gør din mad ubesværet.',
-    
     // Footer
-    footerTagline: 'Smart mad, organiserede køkkener.',
     footerPrivacy: 'Privatlivspolitik',
     footerTerms: 'Brugsvilkår',
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Guider',
-    footerCopyright: '© {year} Holo Fridge. Alle rettigheder forbeholdes.',
-    footerMadeWith: 'Lavet med omhu.',
+    footerCopyright: '© {year} Holo. Alle rettigheder forbeholdes.',
     
     // Guides
     guidesTitle: 'Guider',
@@ -4514,9 +3661,6 @@ export const translations = {
     privacySection13Intro: 'Vedrørende privatlivsspørgsmål, anmodninger eller klager:',
     privacyContactEmail: 'E-mail:',
 
-    // Coming Soon
-    comingSoon: 'Kommer snart!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Slet din Holo Fridge-konto',
     deleteAccountDesc: 'Du kan permanent slette din konto og alle tilknyttede data direkte i appen:',
@@ -4528,95 +3672,27 @@ export const translations = {
   },
   
   fi: {
-    // Meta
-    siteTitle: 'Holo Fridge - Älykäs ruoka- ja jääkaappiavustaja',
-    siteDescription: 'Holo Fridge auttaa sinua seuraamaan ruokaa, vähentämään hävikkiä, löytämään reseptejä ja luomaan älykkäämpiä ostoslistoja.',
-    
     // Navbar
-    navFeatures: 'Ominaisuudet',
     navHowItWorks: 'Miten se toimii',
     navMeetHolo: 'Tapaa Holo',
-    navDownload: 'Lataa',
     navSupport: 'Tuki',
     navPrivacy: 'Tietosuojakäytäntö',
     navTerms: 'Käyttöehdot',
     
     // Hero
-    heroNowAvailable: 'Nyt saatavilla',
-    heroTitle1: 'Jääkaappisi,',
-    heroTitle2: 'vihdoin älykäs.',
-    heroSubtitle: 'Seuraa mitä sinulla on, kokkaa siitä, tuhlaa vähemmän ja osta älykkäämmin — Holo rinnallasi.',
     heroFreeToStart: 'Ilmainen aloitus. Premium-ominaisuudet sovelluksessa.',
     
-    // Chips
-    chipExpireSoon: '3 tuotetta vanhenee pian',
-    chipRecipeReady: 'Resepti valmis 15 min',
-    chipShoppingUpdated: 'Ostoslista päivitetty',
-    chipDinnerIdeas: 'Holo löysi illallisideoita',
-    
     // Store Buttons
-    downloadOnThe: 'Lataa',
     appStore: 'App Storesta',
-    getItOn: 'Saatavilla',
     googlePlay: 'Google Playsta',
     
-    // Problem Section
-    problemTitle: 'Kuulostaako tutulta?',
-    problemSubtitle: 'Jääkaappisi on täynnä — mutta illallinen tuntuu mahdottomalta',
-    problemItem1Title: 'Unohdettu ruoka',
-    problemItem1Desc: 'Tuotteet työnnetään taakse ja pilaantuvat ennen kuin muistat ne.',
-    problemItem2Title: 'Ei aavistustakaan mitä laittaa',
-    problemItem2Desc: 'Sinulla on aineksia, mutta ei aavistustakaan mitä tehdä.',
-    problemItem3Title: 'Hukkaan heitetty raha',
-    problemItem3Desc: 'Ostat tuplia tai unohdat mitä oikeasti tarvitset.',
-    
-    // Features Section
-    featuresLabel: 'Ominaisuudet',
-    featuresTitle: 'Kaikki mitä tarvitset älykkäämpään keittiöön',
-    featuresSubtitle: 'Seurannasta kokkaamiseen ja ostoksiin — Holo hoitaa kaiken.',
-    feature1Title: 'Älykäs inventaario',
-    feature1Desc: 'Tiedät tarkalleen mitä jääkaapissa, pakastimessa ja ruokavarastossa on — ja milloin se vanhenee.',
-    feature2Title: 'AI-reseptit',
-    feature2Desc: 'Saat henkilökohtaisia resepti-ideoita sen perusteella mitä sinulla jo on.',
-    feature3Title: 'Ostoslistat',
-    feature3Desc: 'Luo listoja jotka synkronoituvat laitteiden välillä ja rastita ostoksia tehdessäsi.',
-    feature4Title: 'Vanhentumisvaroitukset',
-    feature4Desc: 'Älä enää unohda sitä jogurttia. Saat ilmoitukset ennen kuin ruoka pilaantuu.',
-    feature5Title: 'Perhejako',
-    feature5Desc: 'Jaa listoja ja inventaariota kotitaloutesi kanssa. Kaikki pysyvät synkassa.',
-    feature6Title: 'Ääni ja kuva',
-    feature6Desc: 'Lisää tuotteita äänellä tai kuvalla. Ei kirjoittamista.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Miten se toimii',
-    appPreviewTitle: 'Yksinkertaiset askeleet järjestettyyn keittiöön',
-    appPreviewSubtitle: 'Aloittaminen vie alle minuutin.',
-    appPreviewStep1Title: 'Lisää ruokasi',
-    appPreviewStep1Desc: 'Skannaa, kirjoita tai puhu — lisää tuotteita miten sinulle sopii.',
-    appPreviewStep2Title: 'Saa ehdotuksia',
-    appPreviewStep2Desc: 'Holo ehdottaa reseptejä, varoittaa vanhentuvista tuotteista ja pitää listasi ajan tasalla.',
-    appPreviewStep3Title: 'Kokkaa ja osta älykkäämmin',
-    appPreviewStep3Desc: 'Käytä mitä sinulla on, tuhlaa vähemmän äläkä koskaan unohda mitä tarvitset.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Tapaa Holo',
-    meetHoloTitle: 'Ystävällinen keittiöavustajasi',
-    meetHoloDesc: 'Holo on täällä auttaakseen sinua pysymään järjestelmällisenä, vähentämään hävikkiä ja tekemään kokkaamisesta vaivatonta. Ajattele Holoa rauhallisena, avuliaana läsnäolona keittiössäsi — aina valmiina ehdottamaan, ei koskaan tuomitsemaan.',
-    
-    // Final CTA
-    ctaLabel: 'Hanki Holo Fridge',
-    ctaTitle: 'Valmis tekemään jääkaapistasi älykkään?',
-    ctaSubtitle: 'Aloita keittiösi järjestäminen tänään. Lataa Holo Fridge ja tee ruuasta vaivatonta.',
-    
     // Footer
-    footerTagline: 'Älykästä ruokaa, järjestettyjä keittiöitä.',
     footerPrivacy: 'Tietosuojakäytäntö',
     footerTerms: 'Käyttöehdot',
     footerContact: 'Yhteystiedot',
     footerSupport: 'Tuki',
     footerGuides: 'Oppaat',
-    footerCopyright: '© {year} Holo Fridge. Kaikki oikeudet pidätetään.',
-    footerMadeWith: 'Tehty huolella.',
+    footerCopyright: '© {year} Holo. Kaikki oikeudet pidätetään.',
     
     // Guides
     guidesTitle: 'Oppaat',
@@ -4862,9 +3938,6 @@ export const translations = {
     privacySection13Intro: 'Yksityisyyskysymyksiin, pyyntöihin tai valituksiin:',
     privacyContactEmail: 'Sähköposti:',
 
-    // Coming Soon
-    comingSoon: 'Tulossa pian!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Poista Holo Fridge -tilisi',
     deleteAccountDesc: 'Voit poistaa tilisi ja kaikki siihen liittyvät tiedot pysyvästi suoraan sovelluksessa:',
@@ -4876,95 +3949,27 @@ export const translations = {
   },
   
   pt: {
-    // Meta
-    siteTitle: 'Holo Fridge - Assistente inteligente de comida e geladeira',
-    siteDescription: 'Holo Fridge ajuda você a rastrear alimentos, reduzir desperdício, descobrir receitas e criar listas de compras mais inteligentes.',
-    
     // Navbar
-    navFeatures: 'Recursos',
     navHowItWorks: 'Como funciona',
     navMeetHolo: 'Conheça o Holo',
-    navDownload: 'Baixar',
     navSupport: 'Suporte',
     navPrivacy: 'Política de Privacidade',
     navTerms: 'Termos de Uso',
     
     // Hero
-    heroNowAvailable: 'Disponível agora',
-    heroTitle1: 'Sua geladeira,',
-    heroTitle2: 'finalmente inteligente.',
-    heroSubtitle: 'Acompanhe o que você tem, cozinhe com isso, desperdice menos e compre de forma mais inteligente — com Holo ao seu lado.',
     heroFreeToStart: 'Grátis para começar. Recursos premium disponíveis no app.',
     
-    // Chips
-    chipExpireSoon: '3 produtos vencem em breve',
-    chipRecipeReady: 'Receita pronta em 15 min',
-    chipShoppingUpdated: 'Lista de compras atualizada',
-    chipDinnerIdeas: 'Holo encontrou ideias para o jantar',
-    
     // Store Buttons
-    downloadOnThe: 'Baixe na',
     appStore: 'App Store',
-    getItOn: 'Disponível no',
     googlePlay: 'Google Play',
     
-    // Problem Section
-    problemTitle: 'Parece familiar?',
-    problemSubtitle: 'Sua geladeira está cheia — mas o jantar parece impossível',
-    problemItem1Title: 'Comida esquecida',
-    problemItem1Desc: 'Produtos são empurrados para trás e estragam antes de você lembrar.',
-    problemItem2Title: 'Sem ideia do que cozinhar',
-    problemItem2Desc: 'Você tem ingredientes mas não sabe o que fazer.',
-    problemItem3Title: 'Dinheiro desperdiçado',
-    problemItem3Desc: 'Você compra duplicatas ou esquece do que realmente precisa.',
-    
-    // Features Section
-    featuresLabel: 'Recursos',
-    featuresTitle: 'Tudo que você precisa para uma cozinha mais inteligente',
-    featuresSubtitle: 'Do rastreamento ao cozinhar às compras — Holo cuida de tudo.',
-    feature1Title: 'Inventário inteligente',
-    feature1Desc: 'Saiba exatamente o que está na geladeira, freezer e despensa — e quando vence.',
-    feature2Title: 'Receitas IA',
-    feature2Desc: 'Receba ideias de receitas personalizadas baseadas no que você já tem.',
-    feature3Title: 'Listas de compras',
-    feature3Desc: 'Crie listas que sincronizam entre dispositivos e marque enquanto compra.',
-    feature4Title: 'Alertas de validade',
-    feature4Desc: 'Nunca mais esqueça daquele iogurte. Receba notificações antes da comida estragar.',
-    feature5Title: 'Compartilhamento familiar',
-    feature5Desc: 'Compartilhe listas e inventário com sua família. Todos ficam sincronizados.',
-    feature6Title: 'Voz e foto',
-    feature6Desc: 'Adicione itens por voz ou foto. Sem necessidade de digitar.',
-    
-    // App Preview Section
-    appPreviewLabel: 'Como funciona',
-    appPreviewTitle: 'Passos simples para uma cozinha organizada',
-    appPreviewSubtitle: 'Começar leva menos de um minuto.',
-    appPreviewStep1Title: 'Adicione sua comida',
-    appPreviewStep1Desc: 'Escaneie, digite ou fale — adicione itens como preferir.',
-    appPreviewStep2Title: 'Receba sugestões',
-    appPreviewStep2Desc: 'Holo sugere receitas, alerta sobre itens vencendo e mantém suas listas atualizadas.',
-    appPreviewStep3Title: 'Cozinhe e compre de forma inteligente',
-    appPreviewStep3Desc: 'Use o que você tem, desperdice menos e nunca esqueça do que precisa.',
-    
-    // Meet Holo Section
-    meetHoloLabel: 'Conheça o Holo',
-    meetHoloTitle: 'Seu assistente de cozinha amigável',
-    meetHoloDesc: 'Holo está aqui para ajudá-lo a se manter organizado, reduzir desperdício e tornar a culinária fácil. Pense no Holo como uma presença calma e útil na sua cozinha — sempre pronto com uma sugestão, nunca julgando.',
-    
-    // Final CTA
-    ctaLabel: 'Obtenha o Holo Fridge',
-    ctaTitle: 'Pronto para tornar sua geladeira inteligente?',
-    ctaSubtitle: 'Comece a organizar sua cozinha hoje. Baixe o Holo Fridge e torne sua comida fácil.',
-    
     // Footer
-    footerTagline: 'Comida inteligente, cozinhas organizadas.',
     footerPrivacy: 'Política de Privacidade',
     footerTerms: 'Termos de Uso',
     footerContact: 'Contato',
     footerSupport: 'Suporte',
     footerGuides: 'Guias',
-    footerCopyright: '© {year} Holo Fridge. Todos os direitos reservados.',
-    footerMadeWith: 'Feito com cuidado.',
+    footerCopyright: '© {year} Holo. Todos os direitos reservados.',
     
     // Guides
     guidesTitle: 'Guias',
@@ -5210,9 +4215,6 @@ export const translations = {
     privacySection13Intro: 'Para perguntas, solicitações ou reclamações sobre privacidade:',
     privacyContactEmail: 'E-mail:',
 
-    // Coming Soon
-    comingSoon: 'Em breve!',
-    
     // Delete Account Page
     deleteAccountTitle: 'Excluir sua conta Holo Fridge',
     deleteAccountDesc: 'Você pode excluir permanentemente sua conta e todos os dados associados diretamente no app:',
@@ -5225,7 +4227,10 @@ export const translations = {
 } as const;
 
 export function getTranslation(locale: Locale, key: TranslationKey): string {
-  return translations[locale]?.[key] || translations.en[key] || key;
+  // Homepage copy is English-master only until a native speaker reviews a
+  // language, so a locale may legitimately lack a key. Serve English then.
+  const table = translations[locale] as Partial<Record<TranslationKey, string>> | undefined;
+  return table?.[key] || translations.en[key] || key;
 }
 
 export function t(locale: Locale, key: TranslationKey, replacements?: Record<string, string>): string {

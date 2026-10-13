@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Visual rules (holofridge.com — Upgrade Spec):
+  ivory background, warm grey type, one turquoise accent used on links and
+  the single underline in the final CTA. No gradients, no glow floors,
+  nothing that loops. Motion is a 400 ms fade-up, once.
+*/
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -11,327 +18,150 @@
   }
 
   body {
-    color: #262626;
-    background-color: #f8fcff;
-    background-image:
-      radial-gradient(
-        1100px 700px at 88% -10%,
-        rgba(166, 245, 232, 0.45),
-        transparent 60%
-      ),
-      radial-gradient(
-        900px 600px at -10% 30%,
-        rgba(166, 245, 232, 0.18),
-        transparent 60%
-      ),
-      linear-gradient(180deg, #f8fcff 0%, #ecf5f7 50%, #f5f7fa 100%);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    color: #24221f;
+    background-color: #f7f5f0;
     min-height: 100vh;
   }
 
-  /* Dark mode — matches Holo Fridge app */
   .dark body {
-    color: #ffffff;
-    background-color: #000000;
-    background-image:
-      radial-gradient(
-        620px 620px at 82% 4%,
-        rgba(168, 148, 62, 0.42),
-        transparent 62%
-      ),
-      radial-gradient(
-        700px 700px at 6% 96%,
-        rgba(22, 92, 88, 0.38),
-        transparent 64%
-      ),
-      radial-gradient(
-        900px 700px at 50% 50%,
-        rgba(14, 26, 26, 0.5),
-        transparent 70%
-      ),
-      linear-gradient(180deg, #000000 0%, #050706 50%, #000000 100%);
+    color: #f3f1ec;
+    background-color: #0f0e0c;
   }
 
+  ::selection {
+    background-color: rgba(50, 192, 181, 0.22);
+    color: #24221f;
+  }
   .dark ::selection {
-    background-color: rgba(45, 212, 191, 0.4);
+    background-color: rgba(50, 192, 181, 0.35);
     color: #ffffff;
   }
 
   /* sticky-navbar-safe scroll anchors */
   section[id] {
-    scroll-margin-top: 96px;
+    scroll-margin-top: 88px;
   }
 
-  ::selection {
-    background-color: rgba(50, 192, 181, 0.25);
-    color: #262626;
+  /* Links carry the accent. Darker shade of the same hue for AA contrast on ivory. */
+  a.link {
+    color: #1e8e86;
+    text-decoration: underline;
+    text-decoration-color: rgba(50, 192, 181, 0.45);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 200ms ease;
+  }
+  a.link:hover {
+    text-decoration-color: #32c0b5;
+  }
+  .dark a.link {
+    color: #5fd3c9;
   }
 }
 
 @layer components {
-  .glass {
-    background-color: rgba(255, 255, 255, 0.5);
-    background-image: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.75) 0%,
-      rgba(255, 255, 255, 0.3) 55%,
-      rgba(166, 245, 232, 0.28) 100%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(24px) saturate(150%);
-    -webkit-backdrop-filter: blur(24px) saturate(150%);
-    box-shadow:
-      0 30px 80px -30px rgba(50, 192, 181, 0.25),
-      inset 0 1px 0 rgba(255, 255, 255, 0.85);
-  }
-
-  .dark .glass {
-    background-color: rgba(8, 14, 14, 0.42);
-    background-image: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.08) 0%,
-      rgba(255, 255, 255, 0.015) 55%,
-      rgba(50, 192, 181, 0.04) 100%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(30px) saturate(150%);
-    -webkit-backdrop-filter: blur(30px) saturate(150%);
-    box-shadow:
-      0 30px 80px -30px rgba(0, 0, 0, 0.7),
-      inset 0 1px 0 rgba(255, 255, 255, 0.07);
-  }
-
+  /* Quiet card — flat ivory surface with a hairline. Replaces the old glass. */
+  .glass,
   .glass-strong {
-    background-color: rgba(255, 255, 255, 0.6);
-    background-image: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.85) 0%,
-      rgba(255, 255, 255, 0.4) 55%,
-      rgba(166, 245, 232, 0.34) 100%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(30px) saturate(170%);
-    -webkit-backdrop-filter: blur(30px) saturate(170%);
+    background-color: #ffffff;
+    border: 1px solid #e4e0d7;
     box-shadow:
-      0 40px 100px -30px rgba(50, 192, 181, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      0 1px 2px rgba(36, 34, 31, 0.04),
+      0 8px 24px -16px rgba(36, 34, 31, 0.18);
+  }
+  .glass-strong {
+    background-color: #fcfbf8;
   }
 
+  .dark .glass,
   .dark .glass-strong {
-    background-color: rgba(10, 16, 16, 0.55);
-    background-image: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.11) 0%,
-      rgba(255, 255, 255, 0.025) 55%,
-      rgba(50, 192, 181, 0.06) 100%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(36px) saturate(165%);
-    -webkit-backdrop-filter: blur(36px) saturate(165%);
-    box-shadow:
-      0 40px 100px -30px rgba(0, 0, 0, 0.8),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  }
-
-  /* Smoked-glass variant — stays black in both themes (store buttons) */
-  .glass-dark {
-    background-color: rgba(10, 11, 12, 0.94);
-    background-image: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.13) 0%,
-      rgba(255, 255, 255, 0.03) 55%,
-      rgba(50, 192, 181, 0.09) 100%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(24px) saturate(150%);
-    -webkit-backdrop-filter: blur(24px) saturate(150%);
-    box-shadow:
-      0 20px 46px -18px rgba(38, 38, 38, 0.55),
-      inset 0 1px 0 rgba(255, 255, 255, 0.14);
-  }
-
-  .dark .glass-dark {
-    background-color: rgba(10, 13, 13, 0.62);
-    border: 1px solid rgba(255, 255, 255, 0.13);
-    box-shadow:
-      0 22px 52px -18px rgba(0, 0, 0, 0.85),
-      inset 0 1px 0 rgba(255, 255, 255, 0.11);
-  }
-
-  .glass-chip {
-    background-color: rgba(255, 255, 255, 0.55);
-    background-image: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.8) 0%,
-      rgba(166, 245, 232, 0.3) 100%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(20px) saturate(150%);
-    -webkit-backdrop-filter: blur(20px) saturate(150%);
-    box-shadow:
-      0 12px 32px -10px rgba(50, 192, 181, 0.25),
-      inset 0 1px 0 rgba(255, 255, 255, 0.85);
-  }
-
-  .dark .glass-chip {
-    background-color: rgba(8, 14, 14, 0.45);
-    background-image: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.02) 100%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(24px) saturate(150%);
-    -webkit-backdrop-filter: blur(24px) saturate(150%);
-    box-shadow:
-      0 12px 32px -12px rgba(0, 0, 0, 0.6),
-      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    background-color: #161513;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 32px -20px rgba(0, 0, 0, 0.8);
   }
 
   .text-balance {
     text-wrap: balance;
   }
 
-  /* Holo light sweep — subtle iridescent pass across the hologram */
-  .holo-sweep {
-    position: relative;
-  }
-  .holo-sweep::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background: linear-gradient(
-      115deg,
-      transparent 30%,
-      rgba(166, 245, 232, 0.55) 48%,
-      rgba(255, 255, 255, 0.7) 50%,
-      rgba(166, 245, 232, 0.55) 52%,
-      transparent 70%
+  /* Hero: faint turquoise glow at 10 % behind the single mockup. The only glow on the page. */
+  .hero-glow {
+    background: radial-gradient(
+      60% 55% at 50% 50%,
+      rgba(50, 192, 181, 0.1) 0%,
+      rgba(50, 192, 181, 0) 100%
     );
-    background-size: 250% 100%;
-    background-position: -150% 0;
-    mix-blend-mode: screen;
-    opacity: 0.45;
-    animation: lightSweep 12s ease-in-out infinite;
+  }
+  .dark .hero-glow {
+    background: radial-gradient(
+      60% 55% at 50% 50%,
+      rgba(50, 192, 181, 0.14) 0%,
+      rgba(50, 192, 181, 0) 100%
+    );
   }
 
-  /* Marquee fade mask for the drift strip */
-  .drift-mask {
-    -webkit-mask-image: linear-gradient(
-      to right,
-      transparent,
-      black 8%,
-      black 92%,
-      transparent
-    );
-    mask-image: linear-gradient(
-      to right,
-      transparent,
-      black 8%,
-      black 92%,
-      transparent
-    );
+  /* Phone slab — thin warm-black bezel, no glow. */
+  .phone-shell {
+    background: #1a1917;
+    box-shadow:
+      0 24px 48px -24px rgba(36, 34, 31, 0.35),
+      0 0 0 1px rgba(36, 34, 31, 0.06);
+  }
+  .dark .phone-shell {
+    background: #1a1917;
+    box-shadow:
+      0 24px 48px -24px rgba(0, 0, 0, 0.8),
+      0 0 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  /* Motion — fade-up on scroll at 400 ms, once (components/Reveal.tsx). */
+  .reveal {
+    opacity: 0;
+    transform: translateY(var(--reveal-y, 16px));
+    transition:
+      opacity 400ms cubic-bezier(0, 0, 0.2, 1),
+      transform 400ms cubic-bezier(0, 0, 0.2, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-shown {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Mockups — 2-second slow push-in as they scroll into view, once. */
+  .push-in {
+    transform: scale(0.96);
+    transition: transform 2000ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  .push-in.is-shown {
+    transform: scale(1);
+  }
+
+  /* Hero copy — fade-up on mount, 400 ms. Pure CSS so no JS gates first paint. */
+  .hero-in {
+    animation: heroIn 400ms cubic-bezier(0, 0, 0.2, 1) both;
+  }
+  @keyframes heroIn {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* The one accent device: a single underline under "Holo" in the final CTA. */
+  .accent-underline {
+    background-image: linear-gradient(#32c0b5, #32c0b5);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: 0 92%;
+    padding-bottom: 0.08em;
   }
 }
 
 @layer utilities {
-  .pearl-bg {
-    background-image: linear-gradient(180deg, #f8fcff 0%, #ecf5f7 50%, #f5f7fa 100%);
-  }
-
-  /* Decorative section halos — warm amber in dark, matching the app */
-  .halo-glow {
-    background: radial-gradient(
-      circle,
-      rgba(166, 245, 232, 0.55) 0%,
-      rgba(166, 245, 232, 0) 70%
-    );
-  }
-  .dark .halo-glow {
-    background: radial-gradient(
-      circle,
-      rgba(168, 148, 62, 0.3) 0%,
-      rgba(168, 148, 62, 0) 70%
-    );
-  }
-
-  .halo-glow-card {
-    background: radial-gradient(
-      60% 70% at 50% 50%,
-      rgba(166, 245, 232, 0.55) 0%,
-      rgba(166, 245, 232, 0) 70%
-    );
-  }
-  .dark .halo-glow-card {
-    background: radial-gradient(
-      60% 70% at 50% 50%,
-      rgba(22, 92, 88, 0.55) 0%,
-      rgba(22, 92, 88, 0) 70%
-    );
-  }
-
-  /* Feature icon tiles */
-  .icon-tile {
-    background: linear-gradient(
-      135deg,
-      rgba(166, 245, 232, 0.55) 0%,
-      rgba(255, 255, 255, 0.6) 100%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    box-shadow: 0 10px 30px -12px rgba(50, 192, 181, 0.4);
-    color: #1e8e86;
-  }
-  .dark .icon-tile {
-    background-color: rgba(50, 192, 181, 0.1);
-    background-image: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.14) 0%,
-      rgba(50, 192, 181, 0.1) 100%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
-    color: #2dd4bf;
-  }
-  
-  /* Phone mockups — soft turquoise halo plus a glowing shell edge */
-  .mockup-glow {
-    background: radial-gradient(
-      55% 45% at 50% 55%,
-      rgba(166, 245, 232, 0.6) 0%,
-      rgba(166, 245, 232, 0) 70%
-    );
-    filter: blur(40px);
-  }
-  .dark .mockup-glow {
-    background: radial-gradient(
-      55% 45% at 50% 55%,
-      rgba(50, 192, 181, 0.4) 0%,
-      rgba(50, 192, 181, 0) 70%
-    );
-    filter: blur(44px);
-  }
-
-  .phone-shell {
-    background: #262626;
-    box-shadow:
-      0 40px 80px -20px rgba(38, 38, 38, 0.3),
-      0 0 0 1px rgba(166, 245, 232, 0.35),
-      0 0 20px rgba(50, 192, 181, 0.35),
-      0 0 52px rgba(50, 192, 181, 0.2);
-  }
-  .dark .phone-shell {
-    background: #1a1b1c;
-    box-shadow:
-      0 40px 80px -20px rgba(0, 0, 0, 0.8),
-      0 0 0 1px rgba(166, 245, 232, 0.2),
-      0 0 22px rgba(50, 192, 181, 0.38),
-      0 0 60px rgba(50, 192, 181, 0.22);
-  }
-
   /* Legal document typography (privacy, terms) */
   .legal {
     font-size: 1rem;
@@ -341,11 +171,11 @@
     margin-top: 3.5rem;
     margin-bottom: 1.25rem;
     padding-bottom: 0.625rem;
-    border-bottom: 1px solid rgba(221, 227, 234, 0.9);
+    border-bottom: 1px solid #e4e0d7;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: -0.02em;
-    color: #262626;
+    color: #24221f;
   }
   .dark .legal h2 {
     border-bottom-color: rgba(255, 255, 255, 0.1);
@@ -357,7 +187,7 @@
     font-size: 1.125rem;
     font-weight: 600;
     letter-spacing: -0.01em;
-    color: #262626;
+    color: #24221f;
   }
   .dark .legal h3 {
     color: #fff;
@@ -378,15 +208,17 @@
     content: "";
     position: absolute;
     left: -1.25rem;
-    top: 0.72em;
-    width: 5px;
-    height: 5px;
-    border-radius: 9999px;
-    background: #32c0b5;
+    top: 0.8em;
+    width: 10px;
+    height: 1px;
+    background: #6f6a62;
+  }
+  .dark .legal li::before {
+    background: rgba(243, 241, 236, 0.5);
   }
   .legal strong {
     font-weight: 600;
-    color: #262626;
+    color: #24221f;
   }
   .dark .legal strong {
     color: #fff;
@@ -396,7 +228,7 @@
     font-weight: 500;
   }
   .dark .legal a {
-    color: #2dd4bf;
+    color: #5fd3c9;
   }
   .legal a:hover {
     text-decoration: underline;
@@ -419,92 +251,21 @@
     margin-bottom: 0;
   }
 
-  /* Wider fade for the mockup marquee — big elements need a longer ramp
-     so the edges read as fading out rather than being clipped */
-  .marquee-mask-wide {
-    mask-image: linear-gradient(
-      to right,
-      transparent 0%,
-      #000 16%,
-      #000 84%,
-      transparent 100%
-    );
-    -webkit-mask-image: linear-gradient(
-      to right,
-      transparent 0%,
-      #000 16%,
-      #000 84%,
-      transparent 100%
-    );
-  }
-
-  /* Softens the cut edges of the endless chip marquee */
-  .marquee-mask {
-    mask-image: linear-gradient(
-      to right,
-      transparent 0%,
-      #000 7%,
-      #000 93%,
-      transparent 100%
-    );
-    -webkit-mask-image: linear-gradient(
-      to right,
-      transparent 0%,
-      #000 7%,
-      #000 93%,
-      transparent 100%
-    );
-  }
-
-  .animate-in {
-    animation: animateIn 0.2s ease-out;
-  }
-
-  /* Soft drop-in for panels that mount on demand (mobile menu, dropdowns) */
+  /* Soft drop-in for panels that mount on demand (mobile menu, dropdowns). 200 ms, once. */
   .animate-in-soft {
-    animation: animateInSoft 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    animation: animateInSoft 200ms cubic-bezier(0, 0, 0.2, 1);
   }
 
   @keyframes animateInSoft {
     from {
       opacity: 0;
-      transform: translateY(-10px) scale(0.985);
+      transform: translateY(-6px);
     }
     to {
       opacity: 1;
-      transform: translateY(0) scale(1);
+      transform: translateY(0);
     }
   }
-  
-  @keyframes animateIn {
-    from {
-      opacity: 0;
-      transform: translateX(-50%) translateY(-8px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-    }
-  }
-}
-
-/* Particles — drifting upward near Holo */
-.holo-particle {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 9999px;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(166, 245, 232, 0.85) 45%,
-    rgba(166, 245, 232, 0) 80%
-  );
-  filter: blur(0.5px);
-  pointer-events: none;
-  animation: floatUp 10s linear infinite;
-  opacity: 0;
-  will-change: transform, opacity;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -515,8 +276,5 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
-  }
-  .holo-particle {
-    display: none;
   }
 }

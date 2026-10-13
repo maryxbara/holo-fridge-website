@@ -1,57 +1,59 @@
+"use client";
+
 import Image from "next/image";
+import { useInView } from "@/lib/useInView";
 
 type PhoneMockupProps = {
   src: string;
   alt: string;
-  width?: number;
-  height?: number;
   priority?: boolean;
   className?: string;
-  /** When true, renders an additional turquoise radial glow underneath the phone. */
-  glow?: boolean;
+  /** Responsive `sizes` hint for next/image. */
+  sizes?: string;
+  /** 2-second slow push-in as the mockup scrolls into view. Once. */
+  pushIn?: boolean;
 };
 
 /**
- * Minimal iPhone-style slab — no notch, no Dynamic Island, no camera cutout.
- * Aspect ratio locked to 9 / 19.5 via padding-bottom for cross-browser support.
+ * Minimal phone slab — thin warm-black bezel, no notch, no glow.
+ * The aspect box (9 : 19.5) reserves space before the image loads, so the
+ * hero never shifts layout.
  */
 export default function PhoneMockup({
   src,
   alt,
-  width = 1170,
-  height = 2532,
   priority = false,
   className = "",
-  glow = false,
+  sizes = "(max-width: 640px) 60vw, (max-width: 1024px) 30vw, 300px",
+  pushIn = false,
 }: PhoneMockupProps) {
-  return (
-    <div className={`relative ${className}`}>
-      {glow ? (
-        <div
-          aria-hidden
-          className="mockup-glow pointer-events-none absolute -inset-x-6 -inset-y-5"
-        />
-      ) : null}
-      {/* Aspect ratio container using padding-bottom for full browser support */}
-      <div className="relative w-full" style={{ paddingBottom: "216.67%" }}>
-        <div
-          className="phone-shell absolute inset-0 overflow-hidden rounded-[2.75rem] p-[6px]"
-        >
-          <div
-            className="relative h-full w-full overflow-hidden rounded-[2.4rem] bg-[#f8f7f5] dark:bg-black shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]"
-          >
-            <Image
-              src={src}
-              alt={alt}
-              fill
-              sizes="(max-width: 640px) 70vw, (max-width: 1024px) 30vw, 320px"
-              priority={priority}
-              loading={priority ? "eager" : "lazy"}
-              className="object-cover"
-            />
-          </div>
+  const { ref, inView } = useInView<HTMLDivElement>("-10% 0px");
+
+  const slab = (
+    <div className="relative w-full" style={{ aspectRatio: "9 / 19.5" }}>
+      <div className="phone-shell absolute inset-0 overflow-hidden rounded-[2.5rem] p-[6px]">
+        <div className="relative h-full w-full overflow-hidden rounded-[2.15rem] bg-[#0f0e0c]">
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            sizes={sizes}
+            priority={priority}
+            loading={priority ? "eager" : "lazy"}
+            className="object-cover"
+          />
         </div>
       </div>
+    </div>
+  );
+
+  if (!pushIn) {
+    return <div className={`relative ${className}`}>{slab}</div>;
+  }
+
+  return (
+    <div ref={ref} className={`push-in relative ${inView ? "is-shown" : ""} ${className}`}>
+      {slab}
     </div>
   );
 }

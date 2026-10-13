@@ -4,10 +4,10 @@
 // RULES for this file:
 // - No aggregateRating until it is pulled from real App Store / Play data.
 // - No numbers, statistics or claims that are not true today.
-// - Update APP_STORE_URL / PLAY_STORE_URL below — these are placeholders.
 
 const BASE_URL = "https://www.holofridge.com";
-const APP_STORE_URL = "https://apps.apple.com/lt/app/holofridge/id6760011328";
+// Neutral link — redirects to the visitor's own storefront.
+const APP_STORE_URL = "https://apps.apple.com/app/id6760011328";
 const PLAY_STORE_URL = ""; // Not yet available
 
 const organization = {
@@ -26,8 +26,8 @@ const softwareApplication = {
   "@context": "https://schema.org",
   "@type": ["SoftwareApplication", "MobileApplication"],
   "@id": `${BASE_URL}/#app`,
-  name: "Holo Fridge",
-  alternateName: "Holo",
+  name: "Holo",
+  alternateName: "Holo Fridge",
   url: BASE_URL,
   applicationCategory: "LifestyleApplication",
   applicationSubCategory: "Food & Home Management",
@@ -65,10 +65,10 @@ const faq = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is Holo Fridge?",
+      name: "What is Holo?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Holo Fridge is a food and home management app for iPhone. It keeps track of what you have, warns you before food expires, suggests meals from your ingredients, and shares one shopping list across the household.",
+        text: "Holo is a food and home management app for iPhone. It keeps track of what you have, warns you before food expires, suggests meals from your ingredients, and shares one shopping list across the household.",
       },
     },
     {
@@ -105,7 +105,7 @@ const faq = {
     },
     {
       "@type": "Question",
-      name: "Is Holo Fridge free?",
+      name: "Is Holo free?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Holo is free to download on the App Store. Premium features are available as an in-app subscription. An Android version is in preparation.",

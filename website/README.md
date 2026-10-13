@@ -1,10 +1,13 @@
-# Holo Fridge — Landing Site
+# Holo — holofridge.com
 
-Production-ready, luxury-minimal landing page for the Holo Fridge mobile app.
-Built with Next.js 14 (App Router) + TypeScript + Tailwind CSS + Framer Motion.
+Landing site for the Holo iOS app. Next.js 14 (App Router) + TypeScript +
+Tailwind CSS. No animation library — motion is CSS plus one
+IntersectionObserver hook.
 
-The visual hero is **Holo**, the holographic fridge companion — the website's
-entire identity is designed around Holo's pearl-and-turquoise aesthetic.
+The site has one job: catch the person who saw an ad, searched the name,
+and needs ten seconds of reassurance before tapping the store button.
+One message, identical to the ad end card: **Holo. Not just a fridge app.**
+Design and copy rules come from `../holofridge.com — Upgrade Spec.md`.
 
 ---
 
@@ -13,7 +16,7 @@ entire identity is designed around Holo's pearl-and-turquoise aesthetic.
 ```bash
 cd website
 npm install
-npm run dev    # http://localhost:3000
+npm run dev    # http://localhost:3000  (redirects to /en)
 ```
 
 Build for production:
@@ -27,100 +30,74 @@ npm run start
 
 ## Deploy
 
-### Vercel (recommended, one-line)
+Deployed on Render from `../render.yaml` (Node 20, `npm ci && npm run build`).
+`NEXT_PUBLIC_*` values are inlined at build time, so they live in
+`render.yaml`, not only in the Render dashboard.
 
-```bash
-vercel --prod
-```
+---
 
-The included `next.config.mjs` and Edge-runtime `app/opengraph-image.tsx`
-work on Vercel out of the box. No extra configuration needed.
+## Environment
 
-### Any other Node host
+| Variable | Purpose |
+| --- | --- |
+| `NEXT_PUBLIC_APP_STORE_URL` | Neutral App Store link (`https://apps.apple.com/app/id6760011328`). Redirects by storefront. Append `?pt=…&ct=website&mt=8` once the Apple Ads account is live. |
+| `NEXT_PUBLIC_PLAY_STORE_URL` | Empty until Android ships. The Play button renders only when set. |
+| `NEXT_PUBLIC_SITE_URL` | Canonical origin for metadata, hreflang and OG. |
+| `NEXT_PUBLIC_APP_RATING` / `NEXT_PUBLIC_APP_RATING_COUNT` | Proof strip under the hero button. Renders only when **both** are set. Real figures only — never a placeholder. |
+| `NEXT_PUBLIC_META_PIXEL_ID` | Meta Pixel for the domain. Nothing loads until the visitor taps "Allow" (decline-by-default consent bar). `PageView` on load, `ViewContent` on store-button click. |
 
-`npm run build` produces a standard Next.js production bundle. Deploy the
-output of `.next/` along with `public/` and `package.json` to any host that
-supports Node 18+ (Cloudflare Pages, Netlify, Render, Railway, etc.).
+See `.env.example`.
 
 ---
 
 ## Brand tokens
 
-These match the Holo Fridge mobile app's design system. They live in
-[`tailwind.config.ts`](tailwind.config.ts) and are also documented in
+Defined in [`tailwind.config.ts`](tailwind.config.ts) and
 [`app/globals.css`](app/globals.css).
 
-| Token            | Value                                               | Use                  |
-| ---------------- | --------------------------------------------------- | -------------------- |
-| `deepTurquoise`  | `#32C0B5`                                           | Primary accent       |
-| `glowTurquoise`  | `#A6F5E8`                                           | Hologram glow        |
-| Pearl gradient   | `#F8FCFF → #ECF5F7 → #F5F7FA`                       | Page background      |
-| `charcoal`       | `#262626`                                           | Headings             |
-| `bodyGray`       | `#6B7280`                                           | Body copy            |
-| `divider`        | `#DDE3EA`                                           | Subtle dividers      |
-| Glass card       | `rgba(255,255,255,0.65)` + `blur(24px) saturate(140%)` | Premium surfaces |
-| Glass shadow     | `0 30px 80px -30px rgba(50,192,181,0.18)`           | Glass card lift      |
+| Token | Value | Use |
+| --- | --- | --- |
+| `ivory` | `#F7F5F0` | Page background |
+| `ivoryDeep` | `#EFECE5` | Meet Holo band, hover surfaces |
+| `divider` / `ivoryLine` | `#E4E0D7` | Hairlines |
+| `charcoal` | `#24221F` | Headings, primary text |
+| `bodyGray` | `#6F6A62` | Body copy |
+| `deepTurquoise` | `#32C0B5` | **Only** on links and the single underline under "Holo" in the final CTA |
+| `ink` / `inkDeep` | `#0F0E0C` / `#161513` | Dark theme surfaces |
+
+Rules: no gradients, no emoji, no rounded-badge icons (1-px line icons if
+any), sentence case, no exclamation marks, no "smart". Typeface: Inter.
+
+Motion: fade-up on scroll at 400 ms, once (`.reveal`). Mockups get a
+2-second push-in on scroll (`.push-in`). Nothing bounces, nothing loops.
 
 ---
 
-## Replace the Holo hologram
+## Copy and languages
 
-Drop a transparent-background PNG of the Holo character at:
-
-```
-public/holo-hologram.png
-```
-
-This single asset is used in:
-
-- The Hero (right column, large)
-- The Meet Holo section (centered, ~480px)
-- The Open Graph preview image (1200×630)
-
-If the file is missing at runtime, [`components/HoloHero.tsx`](components/HoloHero.tsx)
-falls back to a pure radial-glow placeholder with a `TODO` marker. The
-landing page **never** falls back to the logo for the hologram — the
-brand identity depends on the real Holo character render.
-
-The logo (`public/holo-logo.png`) is used **only** for the navbar mark,
-the footer mark, and the favicon. Drop in a different logo there if needed.
+`lib/translations.ts` holds the strings. The homepage copy is an **English
+master** that lives only in the `en` block. Other locales are translated by
+a native speaker after approval; until then a locale that lacks a key
+serves the English text (`getTranslation()` falls back to `en`). Legal,
+support and guide strings remain translated per locale.
 
 ---
 
-## Replace the app screenshots
+## Assets
 
-App preview screens live in `public/screens/`:
+| File | Used in |
+| --- | --- |
+| `public/screens/home-hero.png` | Hero mockup (LCP image) and the OG image |
+| `public/screens/add-item.png` | How it works · 01 |
+| `public/screens/recipes.png` | How it works · 02 |
+| `public/screens/shopping-list.png` | How it works · 03 |
+| `public/screens/holo.png` | How it works · 04 |
+| `public/holo-hologram.png` | Meet Holo (the one place the mascot appears, ≤ 320 px) |
+| `public/holo-logo.png` | Navbar and footer mark |
 
-| File                       | Used in                       |
-| -------------------------- | ----------------------------- |
-| `public/screens/home.png`     | Hero phone mockup + App Preview |
-| `public/screens/recipes.png`  | App Preview                   |
-| `public/screens/shopping.png` | App Preview                   |
-| `public/screens/holo.png`     | App Preview                   |
-| `public/screens/add-item.png` | (available; not used yet)     |
-
-Replace any of these with a new PNG using the same filename. The
-[`PhoneMockup`](components/PhoneMockup.tsx) component crops them to
-`9 / 19.5` automatically — supply 1170×2532 (or any 9:19.5 aspect)
-images for crisp results.
-
----
-
-## Set the App Store / Google Play links
-
-Edit `.env.local`:
-
-```bash
-NEXT_PUBLIC_APP_STORE_URL=https://apps.apple.com/app/your-app-id
-NEXT_PUBLIC_PLAY_STORE_URL=https://play.google.com/store/apps/details?id=your.app.id
-NEXT_PUBLIC_SITE_URL=https://holofridge.app
-```
-
-`StoreButtons` and the Footer read these at build time, so you only
-need to redeploy after changing them — no code edits required.
-
-The default values are `#`, so the buttons remain inert until you
-populate real URLs.
+The "How it works" slots are to be swapped for the new mockup set when it is
+ready: home (inventory), expiring-soon, dinner suggestion, shared list on two
+phones. `PhoneMockup` crops to 9 : 19.5 — supply 1170 × 2532 images.
 
 ---
 
@@ -129,57 +106,43 @@ populate real URLs.
 ```
 website/
   app/
-    layout.tsx              Inter font, metadata, OG/Twitter
-    page.tsx                composes all sections
-    globals.css             pearl bg, .glass, keyframes, reduced-motion
-    opengraph-image.tsx     1200x630 OG (Edge runtime)
-    icon.tsx                favicon
+    [locale]/
+      layout.tsx            Inter (unicode-range subsets), <title>, description, OG, Pixel
+      page.tsx              homepage; hreflang + canonical per locale
+      icon.tsx              favicon (under [locale] so the middleware doesn't redirect it)
+      opengraph-image.tsx   1200×630: hero mockup on ivory + tagline (Edge runtime)
+      support/ guides/ privacy/ terms/ delete-account/
+    globals.css             tokens, .glass card, .reveal/.push-in motion, legal typography
+    structured-data.tsx     JSON-LD (Organization, SoftwareApplication, FAQ)
+    sitemap.ts  robots.ts
   components/
-    Navbar.tsx              sticky glass pill (visible after 80px scroll)
-    Hero.tsx                headline, store buttons, Holo, phone, floating chips
-    HoloHero.tsx            Holo + radial glow + particles + float/breathe/sweep
-    PhoneMockup.tsx         notch-less rounded slab, 9:19.5
-    SectionWrapper.tsx      motion.section scroll fade-in
-    SectionHeader.tsx       shared title+subtitle primitive
-    GlassCard.tsx           glass surface
-    StoreButtons.tsx        env-driven inline SVG badges
-    ProblemSection.tsx
-    FeaturesSection.tsx     2x3 grid + seamless drift strip
-    AppPreviewSection.tsx
-    MeetHoloSection.tsx
-    FinalCTA.tsx
+    Navbar.tsx              server wrapper (resolves strings) → NavbarClient.tsx
+    Hero.tsx                H1, sub, one store button, pricing line, ProofStrip, mockup card
+    ProofStrip.tsx          rating + count; renders only when both env vars are set
+    StoreButtons.tsx        App Store (+ Play when URL set) → StoreLink.tsx fires ViewContent
+    ProblemSection.tsx      three problems
+    FeaturesSection.tsx     "What Holo does" — three cards, 1-px line icons
+    HowItWorksSection.tsx   four static mockups with push-in
+    MeetHoloSection.tsx     mascot on a dark-ivory band
+    FinalCTA.tsx            "Holo." with the single turquoise underline
     Footer.tsx
-  public/
-    holo-logo.png           navbar + footer mark + favicon source
-    holo-hologram.png       hero + meet-holo + OG (transparent PNG)
-    screens/                app screenshots
-  .env.local                store / site URLs
-  tailwind.config.ts        brand tokens, keyframes
-  next.config.mjs           AVIF/WebP image formats
+    MetaPixel.tsx           consent bar + pixel loader
+    Reveal.tsx  SectionWrapper.tsx  SectionHeader.tsx  GlassCard.tsx  PhoneMockup.tsx
+  lib/
+    i18n.ts  translations.ts  site.ts (env constants)  tracking.ts  useInView.ts
+  middleware.ts             locale redirect (cookie → country → Accept-Language)
 ```
 
 ---
 
-## Performance
+## Performance notes
 
-- All animations are CSS-first; Framer Motion only handles scroll fade-ins
-  and Hero stagger. No WebGL, no Three.js, no autoplay carousels.
-- `next/image` serves AVIF/WebP automatically when `sharp` is installed
-  (it is, as a runtime dep).
-- All non-hero sections are server-rendered; only Navbar, Hero, HoloHero,
-  and SectionWrapper are client components.
-- The Holo hologram is preloaded with `priority` in the Hero. Other
-  screenshots lazy-load.
-- `prefers-reduced-motion: reduce` disables all hologram animations,
-  particles, and the chip-strip drift via a single rule in `globals.css`.
-
----
-
-## Accessibility
-
-- Semantic landmarks (`<header>`, `<main>`, `<footer>`, `<nav>`).
-- Visible focus rings on every interactive element (deepTurquoise).
-- `prefers-reduced-motion` honored throughout.
-- Color contrast on body copy is WCAG AA against the pearl background.
-- Skip-able anchors with `scroll-margin-top: 96px` so the sticky navbar
-  never covers section headings.
+- Client components never import `lib/translations.ts`; strings are passed
+  as props from server components so the 15-language table stays out of the
+  browser bundle (~140 KB gzipped saved).
+- Inter is loaded with `preload: false`; each subset has a unicode-range so a
+  page downloads only the glyphs it uses.
+- The hero mockup is the LCP element: `priority`, fixed aspect box (no layout
+  shift), not animated.
+- Lighthouse mobile (local production build): performance 98, accessibility
+  100, best practices 100, SEO 100, CLS 0.01.

@@ -1,146 +1,61 @@
-"use client";
-
-import { motion } from "framer-motion";
-import HoloHero from "./HoloHero";
 import PhoneMockup from "./PhoneMockup";
+import ProofStrip from "./ProofStrip";
 import StoreButtons from "./StoreButtons";
 import { type Locale } from "@/lib/i18n";
 import { t } from "@/lib/translations";
-
-const fadeUp = {
-  initial: { opacity: 0, y: 24 },
-  animate: { opacity: 1, y: 0 },
-};
 
 type HeroProps = {
   locale: Locale;
 };
 
+/**
+ * Hero: ivory, one home-screen mockup on a quiet card with a 10 % turquoise
+ * glow behind it. No mascot here — Holo lives in "Meet Holo". One button.
+ * Copy fades up on mount with a CSS animation (.hero-in); the mockup is not
+ * animated so the LCP image paints immediately.
+ */
 export default function Hero({ locale }: HeroProps) {
-  const CHIPS = [
-    { label: t(locale, 'chipExpireSoon'), dot: "#FFB867" },
-    { label: t(locale, 'chipRecipeReady'), dot: "#32C0B5" },
-    { label: t(locale, 'chipShoppingUpdated'), dot: "#A6F5E8" },
-    { label: t(locale, 'chipDinnerIdeas'), dot: "#32C0B5" },
-  ];
-
   return (
-    <section
-      id="top"
-      className="relative w-full overflow-hidden pb-20 pt-28 sm:pb-24 sm:pt-36 lg:pb-28 lg:pt-40"
-    >
-      {/* Decorative pearl/turquoise wash — top-right halo */}
-      <div
-        aria-hidden
-        className="halo-glow pointer-events-none absolute -top-32 right-[-20%] h-[680px] w-[680px] rounded-full"
-        style={{ filter: "blur(40px)" }}
-      />
+    <section id="top" className="relative w-full pb-12 pt-24 sm:pb-20 sm:pt-32 lg:pb-24 lg:pt-36">
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-10 px-5 sm:px-8 lg:grid-cols-12 lg:gap-8">
+        {/* Copy */}
+        <div className="relative z-10 max-w-xl lg:col-span-7">
+          <h1 className="hero-in text-balance text-[44px] font-semibold leading-[1.04] tracking-tightish text-charcoal dark:text-[#f3f1ec] sm:text-[52px] lg:text-[60px]">
+            {t(locale, "heroTitle")}
+          </h1>
 
-      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:gap-10">
-        {/* LEFT — copy + CTAs */}
-        <div className="relative z-10 lg:col-span-6">
-          <motion.div
-            initial="initial"
-            animate="animate"
-            transition={{ staggerChildren: 0.08, delayChildren: 0.05 }}
-            className="max-w-xl"
+          <p
+            className="hero-in mt-6 max-w-lg text-balance text-lg leading-relaxed text-bodyGray dark:text-[#f3f1ec]/70 sm:text-xl"
+            style={{ animationDelay: "60ms" }}
           >
-            <motion.div
-              variants={fadeUp}
-              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-              className="inline-flex items-center gap-2 rounded-full border border-white/60 dark:border-white/20 bg-white/70 dark:bg-white/10 px-3 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-deepTurquoise backdrop-blur-md"
-            >
-              <span className="h-1.5 w-1.5 rounded-full bg-deepTurquoise shadow-[0_0_10px_rgba(50,192,181,0.9)]" />
-              {t(locale, 'heroNowAvailable')}
-            </motion.div>
+            {t(locale, "heroSubtitle")}
+          </p>
 
-            <motion.h1
-              variants={fadeUp}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-5 text-balance text-[40px] font-semibold leading-[1.05] tracking-tightish text-charcoal dark:text-pearl1 sm:text-[56px] lg:text-[64px] xl:text-[72px]"
-            >
-              {t(locale, 'heroTitle1')}{" "}
-              <span className="relative inline-block">
-                <span
-                  className="bg-clip-text text-transparent"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(120deg, #32C0B5 0%, #A6F5E8 60%, #32C0B5 100%)",
-                  }}
-                >
-                  {t(locale, 'heroTitle2')}
-                </span>
-              </span>
-            </motion.h1>
-
-            <motion.p
-              variants={fadeUp}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-5 max-w-lg text-balance text-lg leading-relaxed text-bodyGray dark:text-pearl1/70 sm:text-xl"
-            >
-              {t(locale, 'heroSubtitle')}
-            </motion.p>
-
-            <motion.div
-              variants={fadeUp}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-8"
-            >
-              <StoreButtons locale={locale} />
-              <p className="mt-3 text-xs text-bodyGray dark:text-pearl1/60">
-                {t(locale, 'heroFreeToStart')}
-              </p>
-            </motion.div>
-          </motion.div>
+          <div className="hero-in mt-8" style={{ animationDelay: "120ms" }}>
+            <StoreButtons locale={locale} />
+            <p className="mt-3 text-sm text-bodyGray dark:text-[#f3f1ec]/60">
+              {t(locale, "heroFreeToStart")}
+            </p>
+            <ProofStrip locale={locale} className="mt-3" />
+          </div>
         </div>
 
-        {/* RIGHT — Holo + phone composition */}
-        {/* Visible immediately — no fade delay so images don't flash black first */}
-        <div
-          className="relative lg:col-span-6"
-        >
-          {/* Same composition at every size: Holo beside the phone, chip strip
-              below. `size` acts as a ceiling, so it scales down on phones. */}
-          <div className="relative">
-            <div className="relative mx-auto flex w-full max-w-md items-end justify-center lg:max-w-xl">
-              {/* min-w-0 lets Holo give way instead of shoving the phone off-screen */}
-              <div className="relative -mr-6 min-w-0 flex-1">
-                <HoloHero size={420} priority withParticles withSweep />
-              </div>
-              <div className="relative -ml-2 -mb-2 w-[42%] max-w-[170px] shrink-0 lg:max-w-[215px]">
-                <PhoneMockup
-                  src="/screens/home-hero.png"
-                  alt="Holo Fridge home screen showing fridge inventory"
-                  priority
-                  glow
-                />
-              </div>
-            </div>
-
-            {/* Chip strip — endless rightward marquee */}
-            <div className="marquee-mask mt-6 -mx-5 overflow-hidden pb-2 sm:-mx-8 lg:mx-0">
-              <div className="flex w-max animate-marquee">
-                {[...CHIPS, ...CHIPS, ...CHIPS, ...CHIPS].map((c, i) => (
-                  <div
-                    key={`${c.label}-${i}`}
-                    className="glass-chip mr-3 rounded-full px-4 py-2.5 text-sm font-medium text-charcoal/90 dark:text-pearl1/90 whitespace-nowrap"
-                  >
-                    <span
-                      className="mr-2 inline-block h-1.5 w-1.5 -translate-y-[1px] rounded-full align-middle"
-                      style={{
-                        background: c.dot,
-                        boxShadow: `0 0 10px ${c.dot}AA`,
-                      }}
-                    />
-                    {c.label}
-                  </div>
-                ))}
-              </div>
-            </div>
+        {/* Mockup — visible immediately, no fade */}
+        <div className="relative lg:col-span-5">
+          {/* On phones the card is capped so the mockup is cropped — the top of the
+              home screen is the message; the full phone would cost a whole scroll. */}
+          <div className="glass-strong relative mx-auto max-h-[360px] w-full max-w-sm overflow-hidden rounded-[2rem] px-8 pt-8 sm:max-h-none sm:max-w-md sm:px-12 sm:pt-10 lg:ml-auto lg:max-w-none">
+            <div aria-hidden className="hero-glow pointer-events-none absolute inset-0" />
+            <PhoneMockup
+              src="/screens/home-hero.png"
+              alt="Holo home screen: fridge overview with items, expiring-soon count and categories"
+              priority
+              sizes="(max-width: 640px) 70vw, (max-width: 1024px) 40vw, 360px"
+              className="relative mx-auto w-[86%] max-w-[320px] translate-y-5 sm:translate-y-6"
+            />
           </div>
         </div>
       </div>
     </section>
   );
 }
-

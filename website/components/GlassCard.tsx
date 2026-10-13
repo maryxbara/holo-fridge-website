@@ -5,10 +5,14 @@ type GlassCardProps = HTMLAttributes<HTMLDivElement> & {
   variant?: "default" | "strong";
 };
 
+/**
+ * Quiet card: flat surface, hairline border, low warm shadow.
+ * The name is historical — the glass treatment was retired with the ivory
+ * redesign, but inner pages still import it under this name.
+ */
 const GlassCard = forwardRef<HTMLDivElement, GlassCardProps>(
   ({ className = "", variant = "default", children, ...rest }, ref) => {
-    const base =
-      variant === "strong" ? "glass-strong" : "glass";
+    const base = variant === "strong" ? "glass-strong" : "glass";
     return (
       <div
         ref={ref}

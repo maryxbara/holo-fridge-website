@@ -1,4 +1,4 @@
-# Holo Fridge
+# Holo — Not just a fridge app
 
 > Holo is a calm, intelligent food and home management app for iPhone (Android in preparation). It tracks what is in your fridge, freezer and pantry, reminds you before food expires, suggests meals from what you already have, and keeps the household on one shared shopping list.
 

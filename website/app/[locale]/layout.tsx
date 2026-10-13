@@ -1,18 +1,22 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
-import { locales, type Locale, isValidLocale } from "@/lib/i18n";
-import { translations } from "@/lib/translations";
+import { locales, isValidLocale } from "@/lib/i18n";
+import { t } from "@/lib/translations";
 import { notFound } from "next/navigation";
 import { StructuredData } from "@/app/structured-data";
+import MetaPixel from "@/components/MetaPixel";
+import { SITE_URL } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic", "latin-ext"],
   display: "swap",
   variable: "--font-inter",
+  // No <link rel=preload> for all three subsets on every page: each subset is
+  // declared with a unicode-range, so the browser fetches only what the page's
+  // glyphs need and the hero image is not competing with ~150 KB of fonts.
+  preload: false,
 });
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.holofridge.com";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -25,32 +29,35 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const validLocale = isValidLocale(locale) ? locale : 'en';
-  const t = translations[validLocale];
+  const title = t(validLocale, 'siteTitle');
+  const description = t(validLocale, 'siteDescription');
 
   return {
-    metadataBase: new URL(siteUrl),
-    title: t.siteTitle,
-    description: t.siteDescription,
-    applicationName: "Holo Fridge",
-    authors: [{ name: "Holo Fridge" }],
+    metadataBase: new URL(SITE_URL),
+    title,
+    description,
+    applicationName: "Holo",
+    authors: [{ name: "Holo" }],
+    // og:image / twitter:image come from app/[locale]/opengraph-image.tsx
+    // (file convention), so they are not repeated here.
     openGraph: {
       type: "website",
-      url: siteUrl,
-      siteName: "Holo Fridge",
-      title: t.siteTitle,
-      description: t.siteDescription,
+      url: `${SITE_URL}/${validLocale}`,
+      siteName: "Holo",
+      title,
+      description,
     },
     twitter: {
       card: "summary_large_image",
-      title: t.siteTitle,
-      description: t.siteDescription,
+      title,
+      description,
     },
     robots: { index: true, follow: true },
   };
 }
 
 export const viewport: Viewport = {
-  themeColor: "#F8FCFF",
+  themeColor: "#F7F5F0",
   width: "device-width",
   initialScale: 1,
 };
@@ -71,6 +78,10 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={inter.variable} suppressHydrationWarning>
       <head>
+        {/* Scroll reveals are gated on JS; without it, show everything. */}
+        <noscript>
+          <style>{`.reveal{opacity:1!important;transform:none!important}.push-in{transform:none!important}`}</style>
+        </noscript>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -86,9 +97,16 @@ export default async function LocaleLayout({
           }}
         />
       </head>
-      <body className="font-sans antialiased text-charcoal dark:text-pearl1">
+      <body className="font-sans antialiased text-charcoal dark:text-[#f3f1ec]">
         <StructuredData />
         {children}
+        <MetaPixel
+          labels={{
+            text: t(locale, "consentText"),
+            allow: t(locale, "consentAllow"),
+            decline: t(locale, "consentDecline"),
+          }}
+        />
       </body>
     </html>
   );

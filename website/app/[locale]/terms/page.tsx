@@ -17,7 +17,7 @@ export async function generateMetadata({
   const trans = translations[validLocale];
 
   return {
-    title: `${trans.termsTitle} | Holo Fridge`,
+    title: `${trans.termsTitle} | Holo`,
     description: 'Terms of Service for Holo Fridge',
   };
 }

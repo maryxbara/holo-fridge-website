@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 
 type SectionWrapperProps = {
@@ -10,6 +7,10 @@ type SectionWrapperProps = {
   containerClassName?: string;
 };
 
+/**
+ * Plain section shell. Motion lives on the content (Reveal), not the section,
+ * so each block fades up exactly once as it enters the viewport.
+ */
 export default function SectionWrapper({
   id,
   children,
@@ -17,17 +18,13 @@ export default function SectionWrapper({
   containerClassName = "",
 }: SectionWrapperProps) {
   return (
-    <motion.section
+    <section
       id={id}
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-      className={`relative w-full py-20 sm:py-28 lg:py-32 ${className}`}
+      className={`relative w-full py-16 sm:py-24 lg:py-28 ${className}`}
     >
       <div className={`mx-auto w-full max-w-6xl px-5 sm:px-8 ${containerClassName}`}>
         {children}
       </div>
-    </motion.section>
+    </section>
   );
 }
