@@ -65,7 +65,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'How it works',
-    appPreviewTitle: 'Simple steps to a calmer kitchen',
+    appPreviewTitle: 'Simple steps to an organized kitchen',
     appPreviewSubtitle: 'Getting started takes less than a minute.',
     appPreviewStep1Title: 'Add your food',
     appPreviewStep1Desc: 'Scan, type, or speak — add items however works for you.',
@@ -85,7 +85,7 @@ export const translations = {
     ctaSubtitle: 'Start organizing your kitchen today. Download Holo Fridge and make your food feel effortless.',
     
     // Footer
-    footerTagline: 'Smart food, calmer kitchens.',
+    footerTagline: 'Smart food, organized kitchens.',
     footerPrivacy: 'Privacy Policy',
     footerTerms: 'Terms of Use',
     footerContact: 'Contact',
@@ -413,7 +413,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Як це працює',
-    appPreviewTitle: 'Прості кроки до спокійнішої кухні',
+    appPreviewTitle: 'Прості кроки до організованої кухні',
     appPreviewSubtitle: 'Початок роботи займає менше хвилини.',
     appPreviewStep1Title: 'Додайте свою їжу',
     appPreviewStep1Desc: 'Скануйте, друкуйте або говоріть — додавайте продукти як вам зручно.',
@@ -433,7 +433,7 @@ export const translations = {
     ctaSubtitle: 'Почніть організовувати свою кухню сьогодні. Завантажте Holo Fridge і зробіть вашу їжу легкою.',
     
     // Footer
-    footerTagline: 'Розумна їжа, спокійніші кухні.',
+    footerTagline: 'Розумна їжа, організовані кухні.',
     footerPrivacy: 'Політика конфіденційності',
     footerTerms: 'Умови використання',
     footerContact: 'Контакти',
@@ -761,7 +761,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Cum funcționează',
-    appPreviewTitle: 'Pași simpli către o bucătărie mai calmă',
+    appPreviewTitle: 'Pași simpli către o bucătărie organizată',
     appPreviewSubtitle: 'Să începi durează mai puțin de un minut.',
     appPreviewStep1Title: 'Adaugă-ți alimentele',
     appPreviewStep1Desc: 'Scanează, tastează sau vorbește — adaugă produse cum îți convine.',
@@ -781,7 +781,7 @@ export const translations = {
     ctaSubtitle: 'Începe să-ți organizezi bucătăria azi. Descarcă Holo Fridge și fă mâncarea să pară fără efort.',
     
     // Footer
-    footerTagline: 'Alimente inteligente, bucătării mai calme.',
+    footerTagline: 'Alimente inteligente, bucătării organizate.',
     footerPrivacy: 'Politica de confidențialitate',
     footerTerms: 'Termeni de utilizare',
     footerContact: 'Contact',
@@ -1109,7 +1109,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Jak to działa',
-    appPreviewTitle: 'Proste kroki do spokojniejszej kuchni',
+    appPreviewTitle: 'Proste kroki do zorganizowanej kuchni',
     appPreviewSubtitle: 'Rozpoczęcie zajmuje mniej niż minutę.',
     appPreviewStep1Title: 'Dodaj swoje jedzenie',
     appPreviewStep1Desc: 'Skanuj, pisz lub mów — dodawaj produkty jak ci wygodnie.',
@@ -1129,7 +1129,7 @@ export const translations = {
     ctaSubtitle: 'Zacznij organizować swoją kuchnię już dziś. Pobierz Holo Fridge i spraw, by jedzenie było łatwe.',
     
     // Footer
-    footerTagline: 'Inteligentne jedzenie, spokojniejsze kuchnie.',
+    footerTagline: 'Inteligentne jedzenie, zorganizowane kuchnie.',
     footerPrivacy: 'Polityka prywatności',
     footerTerms: 'Regulamin',
     footerContact: 'Kontakt',
@@ -1457,7 +1457,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'So funktioniert\'s',
-    appPreviewTitle: 'Einfache Schritte zu einer ruhigeren Küche',
+    appPreviewTitle: 'Einfache Schritte zu einer organisierten Küche',
     appPreviewSubtitle: 'Der Einstieg dauert weniger als eine Minute.',
     appPreviewStep1Title: 'Füge deine Lebensmittel hinzu',
     appPreviewStep1Desc: 'Scannen, tippen oder sprechen — füge Artikel hinzu, wie es dir passt.',
@@ -1477,7 +1477,7 @@ export const translations = {
     ctaSubtitle: 'Beginne heute, deine Küche zu organisieren. Lade Holo Fridge herunter und mache dein Essen mühelos.',
     
     // Footer
-    footerTagline: 'Intelligentes Essen, ruhigere Küchen.',
+    footerTagline: 'Intelligentes Essen, organisierte Küchen.',
     footerPrivacy: 'Datenschutz',
     footerTerms: 'Nutzungsbedingungen',
     footerContact: 'Kontakt',
@@ -1805,7 +1805,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Cómo funciona',
-    appPreviewTitle: 'Pasos simples hacia una cocina más tranquila',
+    appPreviewTitle: 'Pasos simples hacia una cocina organizada',
     appPreviewSubtitle: 'Empezar toma menos de un minuto.',
     appPreviewStep1Title: 'Añade tu comida',
     appPreviewStep1Desc: 'Escanea, escribe o habla — añade artículos como te convenga.',
@@ -1825,7 +1825,7 @@ export const translations = {
     ctaSubtitle: 'Empieza a organizar tu cocina hoy. Descarga Holo Fridge y haz que tu comida sea fácil.',
     
     // Footer
-    footerTagline: 'Comida inteligente, cocinas más tranquilas.',
+    footerTagline: 'Comida inteligente, cocinas organizadas.',
     footerPrivacy: 'Política de privacidad',
     footerTerms: 'Términos de uso',
     footerContact: 'Contacto',
@@ -2153,7 +2153,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Come funziona',
-    appPreviewTitle: 'Semplici passi verso una cucina più serena',
+    appPreviewTitle: 'Semplici passi verso una cucina organizzata',
     appPreviewSubtitle: 'Iniziare richiede meno di un minuto.',
     appPreviewStep1Title: 'Aggiungi il tuo cibo',
     appPreviewStep1Desc: 'Scansiona, digita o parla — aggiungi articoli come preferisci.',
@@ -2173,7 +2173,7 @@ export const translations = {
     ctaSubtitle: 'Inizia a organizzare la tua cucina oggi. Scarica Holo Fridge e rendi il tuo cibo senza sforzo.',
     
     // Footer
-    footerTagline: 'Cibo intelligente, cucine più serene.',
+    footerTagline: 'Cibo intelligente, cucine organizzate.',
     footerPrivacy: 'Privacy Policy',
     footerTerms: 'Termini di utilizzo',
     footerContact: 'Contatto',
@@ -2501,7 +2501,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Comment ça marche',
-    appPreviewTitle: 'Des étapes simples vers une cuisine plus sereine',
+    appPreviewTitle: 'Des étapes simples vers une cuisine organisée',
     appPreviewSubtitle: 'Commencer prend moins d\'une minute.',
     appPreviewStep1Title: 'Ajoutez vos aliments',
     appPreviewStep1Desc: 'Scannez, tapez ou parlez — ajoutez des articles comme bon vous semble.',
@@ -2521,7 +2521,7 @@ export const translations = {
     ctaSubtitle: 'Commencez à organiser votre cuisine aujourd\'hui. Téléchargez Holo Fridge et rendez votre alimentation sans effort.',
     
     // Footer
-    footerTagline: 'Alimentation intelligente, cuisines plus sereines.',
+    footerTagline: 'Alimentation intelligente, cuisines organisées.',
     footerPrivacy: 'Politique de confidentialité',
     footerTerms: 'Conditions d\'utilisation',
     footerContact: 'Contact',
@@ -2849,7 +2849,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Как это работает',
-    appPreviewTitle: 'Простые шаги к более спокойной кухне',
+    appPreviewTitle: 'Простые шаги к организованной кухне',
     appPreviewSubtitle: 'Начать работу займёт меньше минуты.',
     appPreviewStep1Title: 'Добавьте свою еду',
     appPreviewStep1Desc: 'Сканируйте, печатайте или говорите — добавляйте продукты как вам удобно.',
@@ -2869,7 +2869,7 @@ export const translations = {
     ctaSubtitle: 'Начните организовывать свою кухню сегодня. Скачайте Holo Fridge и сделайте вашу еду лёгкой.',
     
     // Footer
-    footerTagline: 'Умная еда, спокойные кухни.',
+    footerTagline: 'Умная еда, организованные кухни.',
     footerPrivacy: 'Политика конфиденциальности',
     footerTerms: 'Условия использования',
     footerContact: 'Контакты',
@@ -3197,7 +3197,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Kaip tai veikia',
-    appPreviewTitle: 'Paprasti žingsniai link ramesnės virtuvės',
+    appPreviewTitle: 'Paprasti žingsniai link organizuotos virtuvės',
     appPreviewSubtitle: 'Pradėti užtrunka mažiau nei minutę.',
     appPreviewStep1Title: 'Pridėk savo maistą',
     appPreviewStep1Desc: 'Skenuok, rašyk ar kalbėk — pridėk produktus kaip tau patogiau.',
@@ -3217,7 +3217,7 @@ export const translations = {
     ctaSubtitle: 'Pradėk organizuoti savo virtuvę šiandien. Atsisiųsk Holo Fridge ir padaryk maistą lengvą.',
     
     // Footer
-    footerTagline: 'Protingas maistas, ramesnės virtuvės.',
+    footerTagline: 'Protingas maistas, organizuotos virtuvės.',
     footerPrivacy: 'Privatumo politika',
     footerTerms: 'Naudojimo sąlygos',
     footerContact: 'Kontaktai',
@@ -3545,7 +3545,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Hoe het werkt',
-    appPreviewTitle: 'Eenvoudige stappen naar een rustiger keuken',
+    appPreviewTitle: 'Eenvoudige stappen naar een georganiseerde keuken',
     appPreviewSubtitle: 'Beginnen duurt minder dan een minuut.',
     appPreviewStep1Title: 'Voeg je voedsel toe',
     appPreviewStep1Desc: 'Scan, typ of spreek — voeg items toe zoals het jou uitkomt.',
@@ -3565,7 +3565,7 @@ export const translations = {
     ctaSubtitle: 'Begin vandaag met het organiseren van je keuken. Download Holo Fridge en maak je eten moeiteloos.',
     
     // Footer
-    footerTagline: 'Slim voedsel, rustigere keukens.',
+    footerTagline: 'Slim voedsel, georganiseerde keukens.',
     footerPrivacy: 'Privacybeleid',
     footerTerms: 'Gebruiksvoorwaarden',
     footerContact: 'Contact',
@@ -3893,7 +3893,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Hur det fungerar',
-    appPreviewTitle: 'Enkla steg till ett lugnare kök',
+    appPreviewTitle: 'Enkla steg till ett organiserat kök',
     appPreviewSubtitle: 'Att komma igång tar mindre än en minut.',
     appPreviewStep1Title: 'Lägg till din mat',
     appPreviewStep1Desc: 'Skanna, skriv eller prata — lägg till artiklar hur det passar dig.',
@@ -3913,7 +3913,7 @@ export const translations = {
     ctaSubtitle: 'Börja organisera ditt kök idag. Ladda ner Holo Fridge och gör din mat enkel.',
     
     // Footer
-    footerTagline: 'Smart mat, lugnare kök.',
+    footerTagline: 'Smart mat, organiserade kök.',
     footerPrivacy: 'Integritetspolicy',
     footerTerms: 'Användarvillkor',
     footerContact: 'Kontakt',
@@ -4241,7 +4241,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Sådan virker det',
-    appPreviewTitle: 'Simple trin til et roligere køkken',
+    appPreviewTitle: 'Simple trin til et organiseret køkken',
     appPreviewSubtitle: 'At komme i gang tager mindre end et minut.',
     appPreviewStep1Title: 'Tilføj din mad',
     appPreviewStep1Desc: 'Scan, skriv eller tal — tilføj varer som det passer dig.',
@@ -4261,7 +4261,7 @@ export const translations = {
     ctaSubtitle: 'Begynd at organisere dit køkken i dag. Download Holo Fridge og gør din mad ubesværet.',
     
     // Footer
-    footerTagline: 'Smart mad, roligere køkkener.',
+    footerTagline: 'Smart mad, organiserede køkkener.',
     footerPrivacy: 'Privatlivspolitik',
     footerTerms: 'Brugsvilkår',
     footerContact: 'Kontakt',
@@ -4589,7 +4589,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Miten se toimii',
-    appPreviewTitle: 'Yksinkertaiset askeleet rauhallisempaan keittiöön',
+    appPreviewTitle: 'Yksinkertaiset askeleet järjestettyyn keittiöön',
     appPreviewSubtitle: 'Aloittaminen vie alle minuutin.',
     appPreviewStep1Title: 'Lisää ruokasi',
     appPreviewStep1Desc: 'Skannaa, kirjoita tai puhu — lisää tuotteita miten sinulle sopii.',
@@ -4609,7 +4609,7 @@ export const translations = {
     ctaSubtitle: 'Aloita keittiösi järjestäminen tänään. Lataa Holo Fridge ja tee ruuasta vaivatonta.',
     
     // Footer
-    footerTagline: 'Älykästä ruokaa, rauhallisempia keittiöitä.',
+    footerTagline: 'Älykästä ruokaa, järjestettyjä keittiöitä.',
     footerPrivacy: 'Tietosuojakäytäntö',
     footerTerms: 'Käyttöehdot',
     footerContact: 'Yhteystiedot',
@@ -4937,7 +4937,7 @@ export const translations = {
     
     // App Preview Section
     appPreviewLabel: 'Como funciona',
-    appPreviewTitle: 'Passos simples para uma cozinha mais tranquila',
+    appPreviewTitle: 'Passos simples para uma cozinha organizada',
     appPreviewSubtitle: 'Começar leva menos de um minuto.',
     appPreviewStep1Title: 'Adicione sua comida',
     appPreviewStep1Desc: 'Escaneie, digite ou fale — adicione itens como preferir.',
@@ -4957,7 +4957,7 @@ export const translations = {
     ctaSubtitle: 'Comece a organizar sua cozinha hoje. Baixe o Holo Fridge e torne sua comida fácil.',
     
     // Footer
-    footerTagline: 'Comida inteligente, cozinhas mais tranquilas.',
+    footerTagline: 'Comida inteligente, cozinhas organizadas.',
     footerPrivacy: 'Política de Privacidade',
     footerTerms: 'Termos de Uso',
     footerContact: 'Contato',
