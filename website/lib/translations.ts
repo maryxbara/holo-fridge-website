@@ -43,7 +43,7 @@ export const translations = {
     problemItem1Desc: 'Items get pushed to the back and expire before you remember them.',
     problemItem2Title: 'No idea what to cook',
     problemItem2Desc: 'You have ingredients but no idea what to make.',
-    problemItem3Title: 'Wasted trips',
+    problemItem3Title: 'Wasted money',
     problemItem3Desc: 'You buy duplicates or forget what you actually need.',
     
     // Features Section
@@ -391,7 +391,7 @@ export const translations = {
     problemItem1Desc: 'Продукти заштовхуються назад і псуються, перш ніж ви про них згадаєте.',
     problemItem2Title: 'Не знаєш, що готувати',
     problemItem2Desc: 'У вас є інгредієнти, але немає ідей, що приготувати.',
-    problemItem3Title: 'Марні походи',
+    problemItem3Title: 'Витрачені гроші',
     problemItem3Desc: 'Ви купуєте дублікати або забуваєте, що вам насправді потрібно.',
     
     // Features Section
@@ -739,7 +739,7 @@ export const translations = {
     problemItem1Desc: 'Produsele sunt împinse în spate și expiră înainte să îți amintești de ele.',
     problemItem2Title: 'Nu știi ce să gătești',
     problemItem2Desc: 'Ai ingrediente dar nicio idee ce să gătești.',
-    problemItem3Title: 'Drumuri inutile',
+    problemItem3Title: 'Bani irosiți',
     problemItem3Desc: 'Cumperi duplicate sau uiți ce ai nevoie de fapt.',
     
     // Features Section
@@ -1087,7 +1087,7 @@ export const translations = {
     problemItem1Desc: 'Produkty zostają zepchnięte w tył i przeterminowują się, zanim o nich przypomnisz.',
     problemItem2Title: 'Nie wiesz, co ugotować',
     problemItem2Desc: 'Masz składniki, ale nie wiesz co przygotować.',
-    problemItem3Title: 'Zmarnowane wyprawy',
+    problemItem3Title: 'Zmarnowane pieniądze',
     problemItem3Desc: 'Kupujesz duplikaty lub zapominasz czego naprawdę potrzebujesz.',
     
     // Features Section
@@ -1435,7 +1435,7 @@ export const translations = {
     problemItem1Desc: 'Produkte werden nach hinten geschoben und verderben, bevor du dich erinnerst.',
     problemItem2Title: 'Keine Idee, was kochen',
     problemItem2Desc: 'Du hast Zutaten, aber keine Idee, was du kochen sollst.',
-    problemItem3Title: 'Vergeudete Einkäufe',
+    problemItem3Title: 'Verschwendetes Geld',
     problemItem3Desc: 'Du kaufst Duplikate oder vergisst, was du wirklich brauchst.',
     
     // Features Section
@@ -1783,7 +1783,7 @@ export const translations = {
     problemItem1Desc: 'Los productos se quedan al fondo y caducan antes de que los recuerdes.',
     problemItem2Title: 'Sin idea de qué cocinar',
     problemItem2Desc: 'Tienes ingredientes pero no sabes qué preparar.',
-    problemItem3Title: 'Viajes desperdiciados',
+    problemItem3Title: 'Dinero desperdiciado',
     problemItem3Desc: 'Compras duplicados u olvidas lo que realmente necesitas.',
     
     // Features Section
@@ -2131,7 +2131,7 @@ export const translations = {
     problemItem1Desc: 'I prodotti vengono spinti in fondo e scadono prima che te ne ricordi.',
     problemItem2Title: 'Nessuna idea su cosa cucinare',
     problemItem2Desc: 'Hai ingredienti ma non sai cosa preparare.',
-    problemItem3Title: 'Viaggi sprecati',
+    problemItem3Title: 'Soldi sprecati',
     problemItem3Desc: 'Compri duplicati o dimentichi cosa ti serve davvero.',
     
     // Features Section
@@ -2479,7 +2479,7 @@ export const translations = {
     problemItem1Desc: 'Les produits sont poussés au fond et périment avant que vous vous en souveniez.',
     problemItem2Title: 'Aucune idée quoi cuisiner',
     problemItem2Desc: 'Vous avez des ingrédients mais aucune idée de quoi préparer.',
-    problemItem3Title: 'Déplacements gaspillés',
+    problemItem3Title: 'Argent gaspillé',
     problemItem3Desc: 'Vous achetez des doublons ou oubliez ce dont vous avez vraiment besoin.',
     
     // Features Section
@@ -2827,7 +2827,7 @@ export const translations = {
     problemItem1Desc: 'Продукты задвигаются назад и портятся, прежде чем вы о них вспомните.',
     problemItem2Title: 'Не знаете, что готовить',
     problemItem2Desc: 'У вас есть ингредиенты, но нет идей, что приготовить.',
-    problemItem3Title: 'Бесполезные походы',
+    problemItem3Title: 'Потраченные деньги',
     problemItem3Desc: 'Вы покупаете дубликаты или забываете, что вам действительно нужно.',
     
     // Features Section
@@ -3175,7 +3175,7 @@ export const translations = {
     problemItem1Desc: 'Produktai nustumiami į galą ir sugenda, kol prisimeni.',
     problemItem2Title: 'Nežinote, ką gaminti',
     problemItem2Desc: 'Turi ingredientų, bet nežinai, ką gaminti.',
-    problemItem3Title: 'Švaistomos kelionės',
+    problemItem3Title: 'Švaistyti pinigai',
     problemItem3Desc: 'Perki dublikatus arba pamiršti, ko iš tikrųjų reikia.',
     
     // Features Section
@@ -3523,7 +3523,7 @@ export const translations = {
     problemItem1Desc: 'Producten worden naar achteren geduwd en bederven voordat je ze herinnert.',
     problemItem2Title: 'Geen idee wat te koken',
     problemItem2Desc: 'Je hebt ingrediënten maar geen idee wat je moet maken.',
-    problemItem3Title: 'Verspilde uitstapjes',
+    problemItem3Title: 'Verspild geld',
     problemItem3Desc: 'Je koopt duplicaten of vergeet wat je echt nodig hebt.',
     
     // Features Section
@@ -3871,7 +3871,7 @@ export const translations = {
     problemItem1Desc: 'Produkter skjuts bakåt och förstörs innan du kommer ihåg dem.',
     problemItem2Title: 'Ingen aning vad man ska laga',
     problemItem2Desc: 'Du har ingredienser men ingen aning om vad du ska laga.',
-    problemItem3Title: 'Bortkastade turer',
+    problemItem3Title: 'Bortkastade pengar',
     problemItem3Desc: 'Du köper dubbletter eller glömmer vad du verkligen behöver.',
     
     // Features Section
@@ -4219,7 +4219,7 @@ export const translations = {
     problemItem1Desc: 'Produkter skubbes bagud og bliver dårlige før du husker dem.',
     problemItem2Title: 'Ingen idé om hvad man skal lave',
     problemItem2Desc: 'Du har ingredienser, men ingen idé om hvad du skal lave.',
-    problemItem3Title: 'Spildte ture',
+    problemItem3Title: 'Spildte penge',
     problemItem3Desc: 'Du køber dubletter eller glemmer hvad du virkelig har brug for.',
     
     // Features Section
@@ -4567,7 +4567,7 @@ export const translations = {
     problemItem1Desc: 'Tuotteet työnnetään taakse ja pilaantuvat ennen kuin muistat ne.',
     problemItem2Title: 'Ei aavistustakaan mitä laittaa',
     problemItem2Desc: 'Sinulla on aineksia, mutta ei aavistustakaan mitä tehdä.',
-    problemItem3Title: 'Turhat kauppamatkat',
+    problemItem3Title: 'Hukkaan heitetty raha',
     problemItem3Desc: 'Ostat tuplia tai unohdat mitä oikeasti tarvitset.',
     
     // Features Section
@@ -4915,7 +4915,7 @@ export const translations = {
     problemItem1Desc: 'Produtos são empurrados para trás e estragam antes de você lembrar.',
     problemItem2Title: 'Sem ideia do que cozinhar',
     problemItem2Desc: 'Você tem ingredientes mas não sabe o que fazer.',
-    problemItem3Title: 'Viagens desperdiçadas',
+    problemItem3Title: 'Dinheiro desperdiçado',
     problemItem3Desc: 'Você compra duplicatas ou esquece do que realmente precisa.',
     
     // Features Section
