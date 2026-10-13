@@ -2,6 +2,7 @@ import PhoneMockup from "./PhoneMockup";
 import Reveal from "./Reveal";
 import SectionHeader from "./SectionHeader";
 import SectionWrapper from "./SectionWrapper";
+import { SCREEN_PLACEHOLDERS } from "@/lib/screen-placeholders";
 import { type Locale } from "@/lib/i18n";
 import { t } from "@/lib/translations";
 
@@ -52,6 +53,8 @@ export default function HowItWorksSection({ locale }: HowItWorksSectionProps) {
               alt={s.alt}
               glow
               pushIn
+              eager
+              blurDataURL={SCREEN_PLACEHOLDERS[s.src]}
               sizes="(max-width: 640px) 42vw, (max-width: 1024px) 40vw, 230px"
               className="w-full max-w-[230px]"
             />

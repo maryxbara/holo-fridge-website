@@ -14,6 +14,10 @@ type PhoneMockupProps = {
   glow?: boolean;
   /** 2-second slow push-in as the mockup scrolls into view. Once. */
   pushIn?: boolean;
+  /** Tiny blurred preview shown until the screenshot loads (lib/screen-placeholders). */
+  blurDataURL?: string;
+  /** Start loading immediately instead of when near the viewport. */
+  eager?: boolean;
 };
 
 /**
@@ -30,6 +34,8 @@ export default function PhoneMockup({
   sizes = "(max-width: 640px) 60vw, (max-width: 1024px) 30vw, 300px",
   glow = false,
   pushIn = false,
+  blurDataURL,
+  eager = false,
 }: PhoneMockupProps) {
   const { ref, inView } = useInView<HTMLDivElement>("-10% 0px");
 
@@ -52,7 +58,9 @@ export default function PhoneMockup({
               fill
               sizes={sizes}
               priority={priority}
-              loading={priority ? "eager" : "lazy"}
+              loading={priority || eager ? "eager" : "lazy"}
+              placeholder={blurDataURL ? "blur" : "empty"}
+              blurDataURL={blurDataURL}
               className="object-cover"
             />
           </div>

@@ -1,4 +1,5 @@
 import PhoneMockup from "./PhoneMockup";
+import { SCREEN_PLACEHOLDERS } from "@/lib/screen-placeholders";
 import ProofStrip from "./ProofStrip";
 import StoreButtons from "./StoreButtons";
 import { type Locale } from "@/lib/i18n";
@@ -54,6 +55,7 @@ export default function Hero({ locale }: HeroProps) {
         <div className="relative flex justify-center lg:col-span-5 lg:justify-end">
           <PhoneMockup
             src="/screens/home-hero.png"
+            blurDataURL={SCREEN_PLACEHOLDERS["/screens/home-hero.png"]}
             alt="Holo home screen: fridge overview with items, expiring-soon count and categories"
             priority
             glow
