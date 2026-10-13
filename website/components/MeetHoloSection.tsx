@@ -16,10 +16,12 @@ export default function MeetHoloSection({ locale }: MeetHoloSectionProps) {
   return (
     <SectionWrapper id="meet-holo" className="!py-24 sm:!py-32">
       <div className="relative flex flex-col items-center text-center">
-        <Reveal>
+        <Reveal y={18}>
           <h2 className="text-balance text-4xl font-semibold tracking-tightish text-charcoal dark:text-pearl1 sm:text-5xl">
             {t(locale, "meetHoloTitle")}
           </h2>
+        </Reveal>
+        <Reveal delay={0.08} y={18}>
           <p className="mx-auto mt-5 max-w-xl text-balance text-lg leading-relaxed text-bodyGray dark:text-pearl1/70 sm:text-xl">
             {t(locale, "meetHoloDesc")}
           </p>
@@ -27,7 +29,7 @@ export default function MeetHoloSection({ locale }: MeetHoloSectionProps) {
 
         {/* w-full keeps this from shrink-wrapping to Holo's max size, which is
             what lets Holo cap itself to the viewport on narrow screens */}
-        <Reveal delay={0.1} className="mt-10 flex w-full flex-col items-center sm:mt-12">
+        <Reveal delay={0.16} className="mt-10 flex w-full flex-col items-center sm:mt-12">
           <HoloHero size={420} priority={false} withParticles withSweep />
           <p className="mt-2 text-sm text-bodyGray dark:text-pearl1/60">
             {t(locale, "meetHoloCaption")}

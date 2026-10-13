@@ -15,26 +15,30 @@ export default function SectionHeader({
 }: SectionHeaderProps) {
   const isCenter = align === "center";
   return (
-    <Reveal
-      className={isCenter ? "mx-auto max-w-2xl text-center" : "max-w-2xl text-left"}
-    >
+    <div className={isCenter ? "mx-auto max-w-2xl text-center" : "max-w-2xl text-left"}>
       {eyebrow ? (
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-deepTurquoise">
-          {eyebrow}
-        </p>
+        <Reveal y={14}>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-deepTurquoise">
+            {eyebrow}
+          </p>
+        </Reveal>
       ) : null}
-      <h2 className="mt-3 text-balance text-4xl font-semibold tracking-tightish text-charcoal dark:text-pearl1 sm:text-5xl">
-        {title}
-      </h2>
+      <Reveal delay={0.08} y={18}>
+        <h2 className="mt-3 text-balance text-4xl font-semibold tracking-tightish text-charcoal dark:text-pearl1 sm:text-5xl">
+          {title}
+        </h2>
+      </Reveal>
       {subtitle ? (
-        <p
-          className={`mt-4 text-balance text-lg leading-relaxed text-bodyGray dark:text-pearl1/70 ${
-            isCenter ? "mx-auto max-w-xl" : "max-w-xl"
-          }`}
-        >
-          {subtitle}
-        </p>
+        <Reveal delay={0.16} y={18}>
+          <p
+            className={`mt-4 text-balance text-lg leading-relaxed text-bodyGray dark:text-pearl1/70 ${
+              isCenter ? "mx-auto max-w-xl" : "max-w-xl"
+            }`}
+          >
+            {subtitle}
+          </p>
+        </Reveal>
       ) : null}
-    </Reveal>
+    </div>
   );
 }

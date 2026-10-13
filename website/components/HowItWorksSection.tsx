@@ -1,4 +1,4 @@
-import PhoneMockup from "./PhoneMockup";
+import MockupCarousel from "./MockupCarousel";
 import Reveal from "./Reveal";
 import SectionHeader from "./SectionHeader";
 import SectionWrapper from "./SectionWrapper";
@@ -11,11 +11,9 @@ type HowItWorksSectionProps = {
 };
 
 /**
- * Four slots, one per step, each a static image with a 2-second push-in on
- * scroll. No carousel, no autoplay loop.
- *
- * TODO(mockups): swap for the new set when ready —
- *   1 home (inventory) · 2 expiring-soon · 3 dinner suggestion · 4 shared list on two phones
+ * The four steps as a slowly drifting strip of glowing mockups — the house
+ * style from the original holofridge.com. Visitors can swipe or scroll it;
+ * the drift resumes a moment after they let go.
  */
 export default function HowItWorksSection({ locale }: HowItWorksSectionProps) {
   const STEPS = [
@@ -39,36 +37,15 @@ export default function HowItWorksSection({ locale }: HowItWorksSectionProps) {
       label: t(locale, "howStep4"),
       alt: "Holo chat screen answering a question about the kitchen",
     },
-  ];
+  ].map((s) => ({ ...s, blurDataURL: SCREEN_PLACEHOLDERS[s.src] }));
 
   return (
-    <SectionWrapper id="how-it-works">
+    <SectionWrapper id="how-it-works" containerClassName="max-w-7xl">
       <SectionHeader eyebrow={t(locale, "howKicker")} title={t(locale, "howTitle")} />
 
-      <ol className="mt-12 grid grid-cols-2 gap-x-5 gap-y-12 sm:mt-14 sm:gap-x-8 lg:grid-cols-4">
-        {STEPS.map((s, i) => (
-          <li key={s.src} className="flex flex-col items-center">
-            <PhoneMockup
-              src={s.src}
-              alt={s.alt}
-              glow
-              pushIn
-              eager
-              blurDataURL={SCREEN_PLACEHOLDERS[s.src]}
-              sizes="(max-width: 640px) 42vw, (max-width: 1024px) 40vw, 230px"
-              className="w-full max-w-[230px]"
-            />
-            <Reveal className="mt-6 w-full max-w-[230px] text-center" delay={0.06}>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-deepTurquoise">
-                {String(i + 1).padStart(2, "0")}
-              </p>
-              <p className="mt-2 text-balance text-[15px] font-medium leading-snug text-charcoal/85 dark:text-pearl1/85 sm:text-base">
-                {s.label}
-              </p>
-            </Reveal>
-          </li>
-        ))}
-      </ol>
+      <Reveal className="mt-6 sm:mt-8">
+        <MockupCarousel screens={STEPS} />
+      </Reveal>
     </SectionWrapper>
   );
 }

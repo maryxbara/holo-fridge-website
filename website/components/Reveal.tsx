@@ -11,14 +11,14 @@ type RevealProps = {
   className?: string;
 };
 
-/** Fade-up on scroll at 400 ms, once. Pure CSS transition; see .reveal in globals.css. */
+/** Fade-up on scroll, once. Pure CSS transition; see .reveal in globals.css. */
 export default function Reveal({
   children,
   delay = 0,
-  y = 16,
+  y = 26,
   className = "",
 }: RevealProps) {
-  const { ref, inView } = useInView<HTMLDivElement>();
+  const { ref, inView } = useInView<HTMLDivElement>("-60px 0px");
   const style = {
     transitionDelay: delay ? `${delay}s` : undefined,
     "--reveal-y": `${y}px`,

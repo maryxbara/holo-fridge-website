@@ -74,7 +74,7 @@ export default function NavbarClient({ locale, labels }: NavbarClientProps) {
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center px-3 sm:px-6">
       <div
-        className={`pointer-events-auto mt-4 flex w-full max-w-5xl items-center justify-between gap-4 rounded-full px-3 py-2 transition-all duration-500 sm:px-4 ${
+        className={`nav-in pointer-events-auto mt-4 flex w-full max-w-5xl items-center justify-between gap-4 rounded-full px-3 py-2 transition-all duration-500 sm:px-4 ${
           scrolled ? "glass-strong" : "border border-transparent bg-white/0 shadow-none"
         }`}
       >
