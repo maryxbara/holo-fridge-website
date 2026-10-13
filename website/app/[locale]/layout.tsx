@@ -38,6 +38,9 @@ export async function generateMetadata({
     description,
     applicationName: "Holo",
     authors: [{ name: "Holo" }],
+    category: "food",
+    // Safari on iPhone shows the native "Open in App Store" banner
+    itunes: { appId: "6760011328" },
     // og:image / twitter:image come from app/[locale]/opengraph-image.tsx
     // (file convention), so they are not repeated here.
     openGraph: {

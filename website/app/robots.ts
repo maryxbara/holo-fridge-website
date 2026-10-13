@@ -14,6 +14,12 @@ const AI_CRAWLERS = [
   "PerplexityBot",     // Perplexity
   "Google-Extended",   // Gemini / Google AI features
   "Applebot-Extended", // Apple Intelligence
+  "Meta-ExternalAgent", // Meta AI
+  "Applebot",          // Siri / Spotlight suggestions
+  "DuckAssistBot",     // DuckDuckGo AI answers
+  "MistralAI-User",    // Le Chat browsing
+  "YouBot",            // You.com
+  "cohere-ai",
   "Amazonbot",
   "Bytespider",
   "CCBot",             // Common Crawl (feeds many open models)

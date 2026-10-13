@@ -84,8 +84,8 @@ export const translations = {
     footerContact: 'Contact',
     footerSupport: 'Support',
     footerGuides: 'Guides',
-    footerCopyright: '© {year} Holo. Made with love.',
-    footerMadeIn: 'Holo Fridge',
+    footerCopyright: '© {year} Holo Fridge',
+    footerMadeIn: 'Made with love',
     
     // Consent (Meta Pixel) — decline by default; nothing is set until allowed
     consentText: 'Holo uses a Meta pixel to see which ads bring people here. Nothing is stored unless you allow it.',
@@ -387,7 +387,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Не просто застосунок для холодильника.',
     footerTagline: 'Не просто застосунок для холодильника.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Зроблено з любов\'ю',
     consentText: 'Holo використовує піксель Meta, щоб бачити, яка реклама приводить людей сюди. Нічого не зберігається без вашого дозволу.',
     consentAllow: 'Дозволити',
     consentDecline: 'Відхилити',
@@ -411,7 +411,7 @@ export const translations = {
     footerContact: 'Контакти',
     footerSupport: 'Підтримка',
     footerGuides: 'Поради',
-    footerCopyright: '© {year} Holo. Зроблено з любов\'ю.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Поради',
@@ -708,7 +708,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Nu doar o aplicație pentru frigider.',
     footerTagline: 'Nu doar o aplicație pentru frigider.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Făcut cu drag',
     consentText: 'Holo folosește un pixel Meta ca să vadă ce reclame aduc oamenii aici. Nimic nu este stocat fără acordul tău.',
     consentAllow: 'Permite',
     consentDecline: 'Refuză',
@@ -732,7 +732,7 @@ export const translations = {
     footerContact: 'Contact',
     footerSupport: 'Suport',
     footerGuides: 'Ghiduri',
-    footerCopyright: '© {year} Holo. Făcut cu drag.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Ghiduri',
@@ -1029,7 +1029,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Nie tylko aplikacja do lodówki.',
     footerTagline: 'Nie tylko aplikacja do lodówki.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Stworzone z miłością',
     consentText: 'Holo używa piksela Meta, by sprawdzić, które reklamy przyprowadzają tu ludzi. Nic nie jest zapisywane bez twojej zgody.',
     consentAllow: 'Zezwól',
     consentDecline: 'Odrzuć',
@@ -1053,7 +1053,7 @@ export const translations = {
     footerContact: 'Kontakt',
     footerSupport: 'Wsparcie',
     footerGuides: 'Poradniki',
-    footerCopyright: '© {year} Holo. Stworzone z miłością.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Poradniki',
@@ -1350,7 +1350,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Nicht nur eine Kühlschrank-App.',
     footerTagline: 'Nicht nur eine Kühlschrank-App.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Mit Liebe gemacht',
     consentText: 'Holo nutzt ein Meta-Pixel, um zu sehen, welche Anzeigen Menschen hierher bringen. Ohne deine Zustimmung wird nichts gespeichert.',
     consentAllow: 'Erlauben',
     consentDecline: 'Ablehnen',
@@ -1374,7 +1374,7 @@ export const translations = {
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Ratgeber',
-    footerCopyright: '© {year} Holo. Mit Liebe gemacht.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Ratgeber',
@@ -1671,7 +1671,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'No es solo una app para la nevera.',
     footerTagline: 'No es solo una app para la nevera.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Hecho con cariño',
     consentText: 'Holo usa un píxel de Meta para ver qué anuncios traen gente hasta aquí. No se guarda nada sin tu permiso.',
     consentAllow: 'Permitir',
     consentDecline: 'Rechazar',
@@ -1695,7 +1695,7 @@ export const translations = {
     footerContact: 'Contacto',
     footerSupport: 'Soporte',
     footerGuides: 'Guías',
-    footerCopyright: '© {year} Holo. Hecho con cariño.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Guías',
@@ -1992,7 +1992,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Non solo un\'app per il frigo.',
     footerTagline: 'Non solo un\'app per il frigo.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Fatto con amore',
     consentText: 'Holo usa un pixel Meta per capire quali annunci portano le persone qui. Niente viene salvato senza il tuo consenso.',
     consentAllow: 'Consenti',
     consentDecline: 'Rifiuta',
@@ -2016,7 +2016,7 @@ export const translations = {
     footerContact: 'Contatto',
     footerSupport: 'Supporto',
     footerGuides: 'Guide',
-    footerCopyright: '© {year} Holo. Fatto con amore.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Guide',
@@ -2313,7 +2313,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Pas juste une app pour le frigo.',
     footerTagline: 'Pas juste une app pour le frigo.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Fait avec amour',
     consentText: 'Holo utilise un pixel Meta pour savoir quelles publicités amènent les gens ici. Rien n\'est enregistré sans votre accord.',
     consentAllow: 'Autoriser',
     consentDecline: 'Refuser',
@@ -2337,7 +2337,7 @@ export const translations = {
     footerContact: 'Contact',
     footerSupport: 'Support',
     footerGuides: 'Guides',
-    footerCopyright: '© {year} Holo. Fait avec amour.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Guides',
@@ -2634,7 +2634,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Не просто приложение для холодильника.',
     footerTagline: 'Не просто приложение для холодильника.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Сделано с любовью',
     consentText: 'Holo использует пиксель Meta, чтобы видеть, какая реклама приводит сюда людей. Без вашего разрешения ничего не сохраняется.',
     consentAllow: 'Разрешить',
     consentDecline: 'Отклонить',
@@ -2658,7 +2658,7 @@ export const translations = {
     footerContact: 'Контакты',
     footerSupport: 'Поддержка',
     footerGuides: 'Руководства',
-    footerCopyright: '© {year} Holo. Сделано с любовью.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Руководства',
@@ -2955,7 +2955,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Ne tik šaldytuvo programėlė.',
     footerTagline: 'Ne tik šaldytuvo programėlė.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Sukurta su meile',
     consentText: 'Holo naudoja Meta pikselį, kad matytų, kurios reklamos atveda žmones čia. Be jūsų sutikimo niekas nesaugoma.',
     consentAllow: 'Leisti',
     consentDecline: 'Atmesti',
@@ -2979,7 +2979,7 @@ export const translations = {
     footerContact: 'Kontaktai',
     footerSupport: 'Pagalba',
     footerGuides: 'Gidai',
-    footerCopyright: '© {year} Holo. Sukurta su meile.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Gidai',
@@ -3276,7 +3276,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Niet zomaar een koelkast-app.',
     footerTagline: 'Niet zomaar een koelkast-app.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Met liefde gemaakt',
     consentText: 'Holo gebruikt een Meta-pixel om te zien welke advertenties mensen hierheen brengen. Er wordt niets opgeslagen zonder jouw toestemming.',
     consentAllow: 'Toestaan',
     consentDecline: 'Weigeren',
@@ -3300,7 +3300,7 @@ export const translations = {
     footerContact: 'Contact',
     footerSupport: 'Ondersteuning',
     footerGuides: 'Gidsen',
-    footerCopyright: '© {year} Holo. Met liefde gemaakt.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Gidsen',
@@ -3597,7 +3597,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Inte bara en kylskåpsapp.',
     footerTagline: 'Inte bara en kylskåpsapp.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Gjord med kärlek',
     consentText: 'Holo använder en Meta-pixel för att se vilka annonser som leder folk hit. Inget sparas utan ditt godkännande.',
     consentAllow: 'Tillåt',
     consentDecline: 'Avböj',
@@ -3621,7 +3621,7 @@ export const translations = {
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Guider',
-    footerCopyright: '© {year} Holo. Gjord med kärlek.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Guider',
@@ -3918,7 +3918,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Ikke bare en køleskabsapp.',
     footerTagline: 'Ikke bare en køleskabsapp.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Lavet med kærlighed',
     consentText: 'Holo bruger en Meta-pixel til at se, hvilke annoncer der bringer folk hertil. Intet gemmes uden din tilladelse.',
     consentAllow: 'Tillad',
     consentDecline: 'Afvis',
@@ -3942,7 +3942,7 @@ export const translations = {
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Guider',
-    footerCopyright: '© {year} Holo. Lavet med kærlighed.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Guider',
@@ -4239,7 +4239,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Ei vain jääkaappisovellus.',
     footerTagline: 'Ei vain jääkaappisovellus.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Tehty rakkaudella',
     consentText: 'Holo käyttää Meta-pikseliä nähdäkseen, mitkä mainokset tuovat ihmisiä tänne. Mitään ei tallenneta ilman lupaasi.',
     consentAllow: 'Salli',
     consentDecline: 'Kiellä',
@@ -4263,7 +4263,7 @@ export const translations = {
     footerContact: 'Yhteystiedot',
     footerSupport: 'Tuki',
     footerGuides: 'Oppaat',
-    footerCopyright: '© {year} Holo. Tehty rakkaudella.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Oppaat',
@@ -4560,7 +4560,7 @@ export const translations = {
     ctaBrand: 'Holo.',
     ctaTagline: 'Não é só um app de geladeira.',
     footerTagline: 'Não é só um app de geladeira.',
-    footerMadeIn: 'Holo Fridge',
+    footerMadeIn: 'Feito com amor',
     consentText: 'O Holo usa um pixel da Meta para ver quais anúncios trazem as pessoas até aqui. Nada é salvo sem a sua permissão.',
     consentAllow: 'Permitir',
     consentDecline: 'Recusar',
@@ -4584,7 +4584,7 @@ export const translations = {
     footerContact: 'Contato',
     footerSupport: 'Suporte',
     footerGuides: 'Guias',
-    footerCopyright: '© {year} Holo. Feito com amor.',
+    footerCopyright: '© {year} Holo Fridge',
     
     // Guides
     guidesTitle: 'Guias',

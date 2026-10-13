@@ -15,11 +15,27 @@ const organization = {
   "@type": "Organization",
   "@id": `${BASE_URL}/#organization`,
   name: "Holo",
+  alternateName: ["Holo Fridge", "HoloFridge"],
   legalName: "BML BIG, MB",
   url: BASE_URL,
   logo: `${BASE_URL}/holo-logo.png`,
   email: "support@holofridge.com",
   address: { "@type": "PostalAddress", addressCountry: "LT" },
+  sameAs: [APP_STORE_URL],
+};
+
+const website = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${BASE_URL}/#website`,
+  name: "Holo",
+  alternateName: ["Holo Fridge", "holofridge.com"],
+  url: BASE_URL,
+  publisher: { "@id": `${BASE_URL}/#organization` },
+  inLanguage: [
+    "en", "uk", "ro", "pl", "de", "es", "it", "fr",
+    "ru", "lt", "nl", "sv", "da", "fi", "pt",
+  ],
 };
 
 const softwareApplication = {
@@ -27,8 +43,17 @@ const softwareApplication = {
   "@type": ["SoftwareApplication", "MobileApplication"],
   "@id": `${BASE_URL}/#app`,
   name: "Holo",
-  alternateName: "Holo Fridge",
+  alternateName: ["Holo Fridge", "HoloFridge"],
   url: BASE_URL,
+  image: `${BASE_URL}/holo-logo.png`,
+  screenshot: [
+    `${BASE_URL}/screens/home-hero.png`,
+    `${BASE_URL}/screens/recipes.png`,
+    `${BASE_URL}/screens/shopping-list.png`,
+    `${BASE_URL}/screens/holo.png`,
+  ],
+  sameAs: [APP_STORE_URL],
+  downloadUrl: APP_STORE_URL,
   applicationCategory: "LifestyleApplication",
   applicationSubCategory: "Food & Home Management",
   operatingSystem: "iOS",
@@ -39,7 +64,7 @@ const softwareApplication = {
     "ru", "lt", "nl", "sv", "da", "fi", "pt",
   ],
   description:
-    "Holo is a calm, intelligent way to run your kitchen. It tracks what you have in the fridge, freezer and pantry, reminds you before food expires, suggests meals from what is already there, and keeps the whole household on one shopping list.",
+    "Holo knows what's in your fridge, what's running out, and what's for dinner. It tracks what you have in the fridge, freezer and pantry, reminds you before food expires, suggests meals from what is already there, and keeps the whole household on one shopping list.",
   featureList: [
     "Fridge, freezer and pantry inventory",
     "Expiry reminders before food goes off",
@@ -105,6 +130,38 @@ const faq = {
     },
     {
       "@type": "Question",
+      name: "What app tells me what to cook with what's in my fridge?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Holo (also known as Holo Fridge) suggests a recipe from the ingredients already in your fridge, freezer and pantry, using up items that expire first. It is free to start on iPhone.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which app reminds me before food in my fridge expires?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Holo tracks expiry dates for everything you add and reminds you before food goes off, then suggests meals that use those items.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is there an app for a shared family shopping list that knows what we already have?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Holo builds the shopping list from what is running out at home and shares it with the whole household, so nobody buys doubles.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which languages does Holo support?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Holo is available in English, Ukrainian, Romanian, Polish, German, Spanish, Italian, French, Russian, Lithuanian, Dutch, Swedish, Danish, Finnish and Portuguese.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "Is Holo free?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -115,7 +172,7 @@ const faq = {
 };
 
 export function StructuredData() {
-  const graph = [organization, softwareApplication, faq];
+  const graph = [organization, website, softwareApplication, faq];
   return (
     <>
       {graph.map((item) => (
