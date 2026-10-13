@@ -44,21 +44,22 @@ export default function HowItWorksSection({ locale }: HowItWorksSectionProps) {
     <SectionWrapper id="how-it-works">
       <SectionHeader eyebrow={t(locale, "howKicker")} title={t(locale, "howTitle")} />
 
-      <ol className="mt-12 grid grid-cols-2 gap-x-5 gap-y-10 sm:mt-14 sm:gap-x-8 lg:grid-cols-4">
+      <ol className="mt-12 grid grid-cols-2 gap-x-5 gap-y-12 sm:mt-14 sm:gap-x-8 lg:grid-cols-4">
         {STEPS.map((s, i) => (
           <li key={s.src} className="flex flex-col items-center">
             <PhoneMockup
               src={s.src}
               alt={s.alt}
+              glow
               pushIn
-              sizes="(max-width: 640px) 42vw, (max-width: 1024px) 40vw, 220px"
-              className="w-full max-w-[220px]"
+              sizes="(max-width: 640px) 42vw, (max-width: 1024px) 40vw, 230px"
+              className="w-full max-w-[230px]"
             />
-            <Reveal className="mt-6 w-full max-w-[220px]" delay={0.06}>
-              <p className="text-xs font-medium tabular-nums text-bodyGray dark:text-[#f3f1ec]/50">
+            <Reveal className="mt-6 w-full max-w-[230px] text-center" delay={0.06}>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-deepTurquoise">
                 {String(i + 1).padStart(2, "0")}
               </p>
-              <p className="mt-1.5 text-balance text-[15px] font-medium leading-snug text-charcoal dark:text-[#f3f1ec] sm:text-base">
+              <p className="mt-2 text-balance text-[15px] font-medium leading-snug text-charcoal/85 dark:text-pearl1/85 sm:text-base">
                 {s.label}
               </p>
             </Reveal>

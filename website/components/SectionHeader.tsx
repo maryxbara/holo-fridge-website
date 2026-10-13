@@ -19,16 +19,16 @@ export default function SectionHeader({
       className={isCenter ? "mx-auto max-w-2xl text-center" : "max-w-2xl text-left"}
     >
       {eyebrow ? (
-        <p className="text-sm font-medium text-bodyGray dark:text-[#f3f1ec]/60">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-deepTurquoise">
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="mt-3 text-balance text-[32px] font-semibold leading-[1.1] tracking-tightish text-charcoal dark:text-[#f3f1ec] sm:text-[40px]">
+      <h2 className="mt-3 text-balance text-4xl font-semibold tracking-tightish text-charcoal dark:text-pearl1 sm:text-5xl">
         {title}
       </h2>
       {subtitle ? (
         <p
-          className={`mt-4 text-balance text-lg leading-relaxed text-bodyGray dark:text-[#f3f1ec]/70 ${
+          className={`mt-4 text-balance text-lg leading-relaxed text-bodyGray dark:text-pearl1/70 ${
             isCenter ? "mx-auto max-w-xl" : "max-w-xl"
           }`}
         >

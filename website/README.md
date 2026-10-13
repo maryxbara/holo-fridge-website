@@ -57,19 +57,21 @@ Defined in [`tailwind.config.ts`](tailwind.config.ts) and
 
 | Token | Value | Use |
 | --- | --- | --- |
-| `ivory` | `#F7F5F0` | Page background |
-| `ivoryDeep` | `#EFECE5` | Meet Holo band, hover surfaces |
-| `divider` / `ivoryLine` | `#E4E0D7` | Hairlines |
-| `charcoal` | `#24221F` | Headings, primary text |
-| `bodyGray` | `#6F6A62` | Body copy |
-| `deepTurquoise` | `#32C0B5` | **Only** on links and the single underline under "Holo" in the final CTA |
-| `ink` / `inkDeep` | `#0F0E0C` / `#161513` | Dark theme surfaces |
+| `pearl1` / `pearl2` / `pearl3` | `#F8FCFF` / `#ECF5F7` / `#F5F7FA` | Page gradient background |
+| `deepTurquoise` | `#32C0B5` | Eyebrows, dots, accents, the underline under "Holo" |
+| `glowTurquoise` | `#A6F5E8` | Halos, hologram orb, mockup glow |
+| `charcoal` | `#262626` | Headings, primary text |
+| `bodyGray` | `#6B7280` | Body copy |
+| `divider` | `#DDE3EA` | Hairlines |
 
-Rules: no gradients, no emoji, no rounded-badge icons (1-px line icons if
-any), sentence case, no exclamation marks, no "smart". Typeface: Inter.
+Surfaces: `.glass` / `.glass-strong` cards, `.glass-dark` buttons,
+`.icon-tile` feature icons, `.phone-shell` + `.mockup-glow` for screenshots,
+`.halo-glow` / `.halo-glow-card` for ambient light. Copy rules: sentence
+case, no exclamation marks, no "smart". Typeface: Inter.
 
 Motion: fade-up on scroll at 400 ms, once (`.reveal`). Mockups get a
-2-second push-in on scroll (`.push-in`). Nothing bounces, nothing loops.
+2-second push-in on scroll (`.push-in`). Holo in Meet Holo floats, breathes
+and gets a light sweep (`HoloHero`).
 
 ---
 
@@ -110,9 +112,9 @@ website/
       layout.tsx            Inter (unicode-range subsets), <title>, description, OG, Pixel
       page.tsx              homepage; hreflang + canonical per locale
       icon.tsx              favicon (under [locale] so the middleware doesn't redirect it)
-      opengraph-image.tsx   1200×630: hero mockup on ivory + tagline (Edge runtime)
+      opengraph-image.tsx   1200×630: hero mockup on the pearl gradient + tagline (Edge runtime)
       support/ guides/ privacy/ terms/ delete-account/
-    globals.css             tokens, .glass card, .reveal/.push-in motion, legal typography
+    globals.css             tokens, glass surfaces, halos, .reveal/.push-in motion, legal typography
     structured-data.tsx     JSON-LD (Organization, SoftwareApplication, FAQ)
     sitemap.ts  robots.ts
   components/
@@ -123,7 +125,7 @@ website/
     ProblemSection.tsx      three problems
     FeaturesSection.tsx     "What Holo does" — three cards, 1-px line icons
     HowItWorksSection.tsx   four static mockups with push-in
-    MeetHoloSection.tsx     mascot on a dark-ivory band
+    MeetHoloSection.tsx     Holo as a hologram (HoloHero: orb, particles, sweep)
     FinalCTA.tsx            "Holo." with the single turquoise underline
     Footer.tsx
     MetaPixel.tsx           consent bar + pixel loader

@@ -8,7 +8,7 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 /**
- * OG image: hero mockup on ivory with the one-line tagline.
+ * OG image: hero mockup on the pearl gradient with the one-line tagline.
  * English on every locale until the copy is native-reviewed.
  */
 export default async function OG() {
@@ -33,24 +33,51 @@ export default async function OG() {
           alignItems: "center",
           justifyContent: "space-between",
           padding: "72px 88px",
-          background: "#F7F5F0",
+          background: "linear-gradient(180deg, #F8FCFF 0%, #ECF5F7 50%, #F5F7FA 100%)",
           fontFamily: "Inter, system-ui, sans-serif",
-          color: "#24221F",
+          color: "#262626",
           position: "relative",
           overflow: "hidden",
         }}
       >
+        {/* Top-right halo */}
+        <div
+          style={{
+            position: "absolute",
+            top: -220,
+            right: -180,
+            width: 820,
+            height: 820,
+            borderRadius: 9999,
+            background:
+              "radial-gradient(circle, rgba(166,245,232,0.55) 0%, rgba(166,245,232,0) 70%)",
+            display: "flex",
+          }}
+        />
         {/* Copy */}
         <div style={{ display: "flex", flexDirection: "column", maxWidth: 640 }}>
           <div
             style={{
               display: "flex",
-              fontSize: 26,
+              alignItems: "center",
+              gap: 10,
+              fontSize: 20,
               fontWeight: 600,
-              letterSpacing: -0.5,
-              color: "#24221F",
+              letterSpacing: 4,
+              textTransform: "uppercase",
+              color: "#1E8E86",
             }}
           >
+            <div
+              style={{
+                width: 10,
+                height: 10,
+                borderRadius: 9999,
+                background: "#32C0B5",
+                boxShadow: "0 0 18px rgba(50,192,181,0.9)",
+                display: "flex",
+              }}
+            />
             Holo
           </div>
 
@@ -66,7 +93,16 @@ export default async function OG() {
             }}
           >
             <span style={{ display: "flex" }}>Not just</span>
-            <span style={{ display: "flex" }}>a fridge app.</span>
+            <span
+              style={{
+                display: "flex",
+                background: "linear-gradient(120deg, #1E8E86 0%, #32C0B5 55%, #5ED6CC 100%)",
+                backgroundClip: "text",
+                color: "transparent",
+              }}
+            >
+              a fridge app.
+            </span>
           </div>
 
           <div
@@ -75,26 +111,16 @@ export default async function OG() {
               display: "flex",
               fontSize: 26,
               lineHeight: 1.4,
-              color: "#6F6A62",
+              color: "#6B7280",
               maxWidth: 560,
             }}
           >
             Holo knows what&apos;s in your fridge, what&apos;s running out, and what&apos;s for dinner.
           </div>
 
-          {/* Single turquoise rule — the accent device */}
-          <div
-            style={{
-              marginTop: 36,
-              width: 72,
-              height: 3,
-              background: "#32C0B5",
-              display: "flex",
-            }}
-          />
         </div>
 
-        {/* Mockup — cropped at the bottom edge */}
+        {/* Mockup — glowing shell, cropped at the bottom edge */}
         <div
           style={{
             position: "absolute",
@@ -103,10 +129,11 @@ export default async function OG() {
             width: 300,
             height: 650,
             borderRadius: 48,
-            background: "#1A1917",
+            background: "#262626",
             padding: 8,
             display: "flex",
-            boxShadow: "0 30px 60px -30px rgba(36,34,31,0.35)",
+            boxShadow:
+              "0 40px 80px -20px rgba(38,38,38,0.3), 0 0 0 1px rgba(166,245,232,0.35), 0 0 24px rgba(50,192,181,0.35), 0 0 60px rgba(50,192,181,0.2)",
           }}
         >
           <div
@@ -115,7 +142,7 @@ export default async function OG() {
               height: "100%",
               borderRadius: 40,
               overflow: "hidden",
-              background: "#0F0E0C",
+              background: "#000",
               display: "flex",
             }}
           >

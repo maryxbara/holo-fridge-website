@@ -11,26 +11,26 @@ type FooterProps = {
 export default function Footer({ locale }: FooterProps) {
   const year = new Date().getFullYear();
   const linkClass =
-    "transition-colors duration-200 hover:text-charcoal dark:hover:text-[#f3f1ec]";
+    "transition-colors duration-300 hover:text-charcoal dark:hover:text-pearl1";
 
   return (
-    <footer className="relative w-full border-t border-divider dark:border-white/10">
+    <footer className="relative w-full border-t border-divider/80 bg-white/40 backdrop-blur-md dark:border-white/10 dark:bg-black/20">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-12 sm:px-8 md:flex-row md:items-center md:justify-between">
-        <Link href={`/${locale}`} className="flex items-center gap-3">
+        <Link href={`/${locale}`} className="group flex items-center gap-3">
           <Image
             src="/holo-logo.png"
             alt="Holo"
             width={300}
             height={300}
-            className="h-9 w-[90px] object-cover object-center"
+            className="h-11 w-[110px] object-cover object-center transition-transform duration-500 group-hover:scale-105"
           />
-          <p className="text-[13px] text-bodyGray dark:text-[#f3f1ec]/60">
+          <p className="text-[13px] text-bodyGray dark:text-pearl1/60">
             {t(locale, "footerTagline")}
           </p>
         </Link>
 
         <nav
-          className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-bodyGray dark:text-[#f3f1ec]/60"
+          className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-bodyGray dark:text-pearl1/60"
           aria-label="Footer"
         >
           <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={linkClass}>
@@ -59,8 +59,8 @@ export default function Footer({ locale }: FooterProps) {
         </nav>
       </div>
 
-      <div className="border-t border-divider dark:border-white/10">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5 text-xs text-bodyGray dark:text-[#f3f1ec]/50 sm:px-8">
+      <div className="border-t border-divider/60 dark:border-white/10">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5 text-xs text-bodyGray dark:text-pearl1/50 sm:px-8">
           <p>{t(locale, "footerCopyright", { year: year.toString() })}</p>
           <p>{t(locale, "footerMadeIn")}</p>
         </div>

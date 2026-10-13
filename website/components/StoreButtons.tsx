@@ -20,9 +20,9 @@ export default function StoreButtons({
   locale,
 }: StoreButtonsProps) {
   const isCompact = variant === "compact";
-  const base = `inline-flex items-center gap-3 rounded-2xl bg-[#1a1917] px-6 ${
-    isCompact ? "py-3 text-[15px]" : "py-3.5 text-base"
-  } font-semibold tracking-tight text-white transition-colors duration-200 hover:bg-[#2a2825] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deepTurquoise focus-visible:ring-offset-2 focus-visible:ring-offset-ivory dark:bg-[#f3f1ec] dark:text-[#0f0e0c] dark:hover:bg-white dark:focus-visible:ring-offset-ink`;
+  const base = `glass-dark group inline-flex items-center gap-3 rounded-2xl px-5 ${
+    isCompact ? "py-2.5 text-[15px]" : "py-3.5 text-base"
+  } font-semibold tracking-tight text-white transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deepTurquoise focus-visible:ring-offset-2`;
 
   return (
     <div className={`flex flex-wrap items-center gap-3 ${className}`}>
@@ -46,8 +46,8 @@ function AppleGlyph() {
     <svg
       aria-hidden
       viewBox="0 0 24 24"
-      width="20"
-      height="20"
+      width="22"
+      height="22"
       fill="currentColor"
       className="shrink-0 -translate-y-[1px]"
     >
@@ -58,18 +58,29 @@ function AppleGlyph() {
 
 function PlayGlyph() {
   return (
-    <svg
-      aria-hidden
-      viewBox="0 0 24 24"
-      width="20"
-      height="20"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinejoin="round"
-      className="shrink-0"
-    >
-      <path d="M4 3.5v17L19.5 12 4 3.5z" />
+    <svg aria-hidden viewBox="0 0 24 24" width="22" height="22" className="shrink-0">
+      <defs>
+        <linearGradient id="play-a" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#A6F5E8" />
+          <stop offset="100%" stopColor="#32C0B5" />
+        </linearGradient>
+        <linearGradient id="play-b" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#FFFFFF" />
+          <stop offset="100%" stopColor="#A6F5E8" />
+        </linearGradient>
+        <linearGradient id="play-c" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#32C0B5" />
+          <stop offset="100%" stopColor="#1E8E86" />
+        </linearGradient>
+        <linearGradient id="play-d" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#FFFFFF" />
+          <stop offset="100%" stopColor="#DDE3EA" />
+        </linearGradient>
+      </defs>
+      <path d="M3.6 1.5C3.2 1.8 3 2.3 3 2.9v18.2c0 .6.2 1.1.6 1.4l10-10.5L3.6 1.5z" fill="url(#play-a)" />
+      <path d="M16.6 8.3 13.6 12l3 3.7 4.4-2.6c1-.6 1-2 0-2.6l-4.4-2.2z" fill="url(#play-c)" />
+      <path d="M3.6 1.5c.4-.3 1-.4 1.6-.1l11.4 6.9-3 3.7L3.6 1.5z" fill="url(#play-b)" />
+      <path d="M3.6 22.5c.4.3 1 .4 1.6.1l11.4-6.9-3-3.7L3.6 22.5z" fill="url(#play-d)" />
     </svg>
   );
 }

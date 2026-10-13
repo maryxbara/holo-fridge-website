@@ -356,7 +356,6 @@ export const translations = {
     navTerms: 'Умови використання',
     
     // Hero
-    heroFreeToStart: 'Безкоштовний старт. Преміум-функції доступні в додатку.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -633,7 +632,6 @@ export const translations = {
     navTerms: 'Termeni de utilizare',
     
     // Hero
-    heroFreeToStart: 'Gratuit la start. Funcții premium disponibile în aplicație.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -910,7 +908,6 @@ export const translations = {
     navTerms: 'Regulamin',
     
     // Hero
-    heroFreeToStart: 'Start za darmo. Funkcje premium dostępne w aplikacji.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -1187,7 +1184,6 @@ export const translations = {
     navTerms: 'Nutzungsbedingungen',
     
     // Hero
-    heroFreeToStart: 'Kostenlos starten. Premium-Funktionen in der App verfügbar.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -1464,7 +1460,6 @@ export const translations = {
     navTerms: 'Términos de uso',
     
     // Hero
-    heroFreeToStart: 'Gratis para empezar. Funciones premium disponibles en la app.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -1741,7 +1736,6 @@ export const translations = {
     navTerms: 'Termini di utilizzo',
     
     // Hero
-    heroFreeToStart: 'Gratuito per iniziare. Funzioni premium disponibili nell\'app.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -2018,7 +2012,6 @@ export const translations = {
     navTerms: 'Conditions d\'utilisation',
     
     // Hero
-    heroFreeToStart: 'Gratuit pour commencer. Fonctions premium disponibles dans l\'app.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -2295,7 +2288,6 @@ export const translations = {
     navTerms: 'Условия использования',
     
     // Hero
-    heroFreeToStart: 'Бесплатный старт. Премиум-функции доступны в приложении.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -2572,7 +2564,6 @@ export const translations = {
     navTerms: 'Naudojimo sąlygos',
     
     // Hero
-    heroFreeToStart: 'Nemokamas startas. Premium funkcijos programėlėje.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -2849,7 +2840,6 @@ export const translations = {
     navTerms: 'Gebruiksvoorwaarden',
     
     // Hero
-    heroFreeToStart: 'Gratis starten. Premiumfuncties beschikbaar in de app.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -3126,7 +3116,6 @@ export const translations = {
     navTerms: 'Användarvillkor',
     
     // Hero
-    heroFreeToStart: 'Gratis att börja. Premiumfunktioner tillgängliga i appen.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -3403,7 +3392,6 @@ export const translations = {
     navTerms: 'Brugsvilkår',
     
     // Hero
-    heroFreeToStart: 'Gratis at starte. Premiumfunktioner tilgængelige i appen.',
     
     // Store Buttons
     appStore: 'App Store',
@@ -3680,7 +3668,6 @@ export const translations = {
     navTerms: 'Käyttöehdot',
     
     // Hero
-    heroFreeToStart: 'Ilmainen aloitus. Premium-ominaisuudet sovelluksessa.',
     
     // Store Buttons
     appStore: 'App Storesta',
@@ -3957,7 +3944,6 @@ export const translations = {
     navTerms: 'Termos de Uso',
     
     // Hero
-    heroFreeToStart: 'Grátis para começar. Recursos premium disponíveis no app.',
     
     // Store Buttons
     appStore: 'App Store',

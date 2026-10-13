@@ -57,7 +57,7 @@ export async function generateMetadata({
 }
 
 export const viewport: Viewport = {
-  themeColor: "#F7F5F0",
+  themeColor: "#F8FCFF",
   width: "device-width",
   initialScale: 1,
 };
@@ -97,7 +97,7 @@ export default async function LocaleLayout({
           }}
         />
       </head>
-      <body className="font-sans antialiased text-charcoal dark:text-[#f3f1ec]">
+      <body className="font-sans antialiased text-charcoal dark:text-pearl1">
         <StructuredData />
         {children}
         <MetaPixel
