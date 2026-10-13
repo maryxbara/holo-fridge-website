@@ -95,6 +95,13 @@ export const translations = {
     guidesSubtitle: 'Practical advice for reducing food waste and making the most of your kitchen.',
     guidesAvailableInEnglish: 'Guides are currently available in English.',
     guidesMinRead: 'min read',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Use by, best before: what the dates on food actually mean',
+    guideArticleDescription: 'A calm, factual guide to food date labels — which dates are about safety, which are about quality, and how much good food is thrown away because of the confusion.',
+    guideKicker: 'Guide',
+    guideUpdated: 'Updated',
+    guideQuestions: 'Questions',
+    guideSources: 'Sources',
     // Theme
     lightMode: 'Light mode',
     darkMode: 'Dark mode',
@@ -411,6 +418,13 @@ export const translations = {
     guidesSubtitle: 'Практичні поради, як викидати менше їжі та краще використовувати продукти, які вже є вдома.',
     guidesAvailableInEnglish: 'Поради наразі доступні англійською мовою.',
     guidesMinRead: 'хв читання',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Вжити до, краще спожити до: що насправді означають дати на продуктах',
+    guideArticleDescription: 'Спокійний і фактологічний посібник про дати на етикетках продуктів: які стосуються безпеки, які — якості та скільки доброї їжі викидають через непорозуміння.',
+    guideKicker: 'Порада',
+    guideUpdated: 'Оновлено',
+    guideQuestions: 'Запитання',
+    guideSources: 'Джерела',
     // Theme
     lightMode: 'Світла тема',
     darkMode: 'Темна тема',
@@ -727,6 +741,13 @@ export const translations = {
     guidesSubtitle: 'Sfaturi practice pentru reducerea risipei alimentare și utilizarea eficientă a bucătăriei.',
     guidesAvailableInEnglish: 'Ghidurile sunt disponibile momentan în engleză.',
     guidesMinRead: 'min de lectură',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'A se consuma până la, a se consuma de preferință înainte de: ce înseamnă datele de pe alimente',
+    guideArticleDescription: 'Un ghid clar despre datele de pe etichetele alimentelor: care țin de siguranță, care de calitate și câtă mâncare bună se aruncă din cauza confuziei.',
+    guideKicker: 'Ghid',
+    guideUpdated: 'Actualizat',
+    guideQuestions: 'Întrebări',
+    guideSources: 'Surse',
     // Theme
     lightMode: 'Temă deschisă',
     darkMode: 'Temă întunecată',
@@ -1043,6 +1064,13 @@ export const translations = {
     guidesSubtitle: 'Praktyczne wskazówki, jak marnować mniej jedzenia i lepiej wykorzystywać produkty, które masz w domu.',
     guidesAvailableInEnglish: 'Poradniki są obecnie dostępne w języku angielskim.',
     guidesMinRead: 'min czytania',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Należy spożyć do i najlepiej spożyć przed: co naprawdę oznaczają daty na żywności',
+    guideArticleDescription: 'Spokojny, rzeczowy przewodnik po datach na etykietach: które dotyczą bezpieczeństwa, które jakości i ile dobrego jedzenia trafia do kosza z powodu nieporozumień.',
+    guideKicker: 'Poradnik',
+    guideUpdated: 'Zaktualizowano',
+    guideQuestions: 'Pytania',
+    guideSources: 'Źródła',
     // Theme
     lightMode: 'Tryb jasny',
     darkMode: 'Tryb ciemny',
@@ -1359,6 +1387,13 @@ export const translations = {
     guidesSubtitle: 'Praktische Tipps zur Reduzierung von Lebensmittelverschwendung und effizienten Nutzung Ihrer Küche.',
     guidesAvailableInEnglish: 'Ratgeber sind derzeit auf Englisch verfügbar.',
     guidesMinRead: 'Min. Lesezeit',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Zu verbrauchen bis, mindestens haltbar bis: Was die Daten auf Lebensmitteln wirklich bedeuten',
+    guideArticleDescription: 'Ein ruhiger, sachlicher Leitfaden zu Lebensmitteldaten: Was Sicherheit betrifft, was Qualität betrifft und wie viel gutes Essen wegen Missverständnissen weggeworfen wird.',
+    guideKicker: 'Ratgeber',
+    guideUpdated: 'Aktualisiert',
+    guideQuestions: 'Fragen',
+    guideSources: 'Quellen',
     // Theme
     lightMode: 'Heller Modus',
     darkMode: 'Dunkler Modus',
@@ -1675,6 +1710,13 @@ export const translations = {
     guidesSubtitle: 'Consejos prácticos para reducir el desperdicio de alimentos y aprovechar al máximo tu cocina.',
     guidesAvailableInEnglish: 'Las guías están disponibles actualmente en inglés.',
     guidesMinRead: 'min de lectura',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Fecha de caducidad y de consumo preferente: qué significan realmente las fechas de los alimentos',
+    guideArticleDescription: 'Una guía clara sobre las fechas de las etiquetas: cuáles indican seguridad, cuáles calidad y cuánta comida en buen estado se tira por confusión.',
+    guideKicker: 'Guía',
+    guideUpdated: 'Actualizado',
+    guideQuestions: 'Preguntas',
+    guideSources: 'Fuentes',
     // Theme
     lightMode: 'Modo claro',
     darkMode: 'Modo oscuro',
@@ -1991,6 +2033,13 @@ export const translations = {
     guidesSubtitle: 'Consigli pratici per ridurre lo spreco alimentare e sfruttare al meglio la tua cucina.',
     guidesAvailableInEnglish: 'Le guide sono attualmente disponibili in inglese.',
     guidesMinRead: 'min di lettura',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Da consumarsi entro e preferibilmente entro: cosa significano davvero le date sugli alimenti',
+    guideArticleDescription: 'Una guida chiara alle date sulle etichette: quali riguardano la sicurezza, quali la qualità e quanto cibo ancora buono viene buttato per confusione.',
+    guideKicker: 'Guida',
+    guideUpdated: 'Aggiornato',
+    guideQuestions: 'Domande',
+    guideSources: 'Fonti',
     // Theme
     lightMode: 'Modalità chiara',
     darkMode: 'Modalità scura',
@@ -2307,6 +2356,13 @@ export const translations = {
     guidesSubtitle: 'Conseils pratiques pour réduire le gaspillage alimentaire et tirer le meilleur parti de votre cuisine.',
     guidesAvailableInEnglish: 'Les guides sont actuellement disponibles en anglais.',
     guidesMinRead: 'min de lecture',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'À consommer jusqu\'au et à consommer de préférence avant : ce que signifient vraiment les dates sur les aliments',
+    guideArticleDescription: 'Un guide clair sur les dates des étiquettes : lesquelles concernent la sécurité, lesquelles la qualité et combien de bons aliments sont jetés par confusion.',
+    guideKicker: 'Guide',
+    guideUpdated: 'Mis à jour',
+    guideQuestions: 'Questions',
+    guideSources: 'Sources',
     // Theme
     lightMode: 'Mode clair',
     darkMode: 'Mode sombre',
@@ -2623,6 +2679,13 @@ export const translations = {
     guidesSubtitle: 'Практические советы, как выбрасывать меньше еды и использовать продукты, которые уже есть дома.',
     guidesAvailableInEnglish: 'Руководства пока доступны на английском языке.',
     guidesMinRead: 'мин чтения',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Срок годности и срок лучшего качества: что на самом деле означают даты на продуктах',
+    guideArticleDescription: 'Спокойный и понятный разбор дат на упаковке: какие относятся к безопасности, какие к качеству и сколько хороших продуктов выбрасывают из-за путаницы.',
+    guideKicker: 'Гид',
+    guideUpdated: 'Обновлено',
+    guideQuestions: 'Вопросы',
+    guideSources: 'Источники',
     // Theme
     lightMode: 'Светлая тема',
     darkMode: 'Тёмная тема',
@@ -2939,6 +3002,13 @@ export const translations = {
     guidesSubtitle: 'Praktiški patarimai, kaip išmesti mažiau maisto ir geriau panaudoti namuose turimus produktus.',
     guidesAvailableInEnglish: 'Gidai šiuo metu prieinami anglų kalba.',
     guidesMinRead: 'min skaitymo',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Tinka vartoti iki ir geriausias iki: ką iš tikrųjų reiškia datos ant maisto',
+    guideArticleDescription: 'Aiškus vadovas apie datas ant maisto etikečių: kurios susijusios su saugumu, kurios su kokybe ir kiek gero maisto išmetama dėl nesusipratimų.',
+    guideKicker: 'Gidas',
+    guideUpdated: 'Atnaujinta',
+    guideQuestions: 'Klausimai',
+    guideSources: 'Šaltiniai',
     // Theme
     lightMode: 'Šviesi tema',
     darkMode: 'Tamsi tema',
@@ -3255,6 +3325,13 @@ export const translations = {
     guidesSubtitle: 'Praktisch advies om voedselverspilling te verminderen en het meeste uit je keuken te halen.',
     guidesAvailableInEnglish: 'Gidsen zijn momenteel beschikbaar in het Engels.',
     guidesMinRead: 'min leestijd',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Te gebruiken tot en ten minste houdbaar tot: wat de datums op voedsel echt betekenen',
+    guideArticleDescription: 'Een rustige, feitelijke gids over datums op voedseletiketten: welke over veiligheid gaan, welke over kwaliteit en hoeveel goed voedsel door verwarring wordt weggegooid.',
+    guideKicker: 'Gids',
+    guideUpdated: 'Bijgewerkt',
+    guideQuestions: 'Vragen',
+    guideSources: 'Bronnen',
     // Theme
     lightMode: 'Lichte modus',
     darkMode: 'Donkere modus',
@@ -3571,6 +3648,13 @@ export const translations = {
     guidesSubtitle: 'Praktiska råd för att minska matsvinn och få ut det mesta av ditt kök.',
     guidesAvailableInEnglish: 'Guider finns för närvarande på engelska.',
     guidesMinRead: 'min läsning',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Bäst före och sista förbrukningsdag: vad datumen på maten faktiskt betyder',
+    guideArticleDescription: 'En tydlig guide till datummärkning: vilka datum som gäller säkerhet, vilka som gäller kvalitet och hur mycket bra mat som slängs på grund av missförstånd.',
+    guideKicker: 'Guide',
+    guideUpdated: 'Uppdaterad',
+    guideQuestions: 'Frågor',
+    guideSources: 'Källor',
     // Theme
     lightMode: 'Ljust läge',
     darkMode: 'Mörkt läge',
@@ -3887,6 +3971,13 @@ export const translations = {
     guidesSubtitle: 'Praktiske råd til at reducere madspild og få mest muligt ud af dit køkken.',
     guidesAvailableInEnglish: 'Guider er i øjeblikket tilgængelige på engelsk.',
     guidesMinRead: 'min læsning',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Sidste anvendelsesdato og bedst før: hvad datoerne på maden virkelig betyder',
+    guideArticleDescription: 'En rolig og faktuel guide til datomærkning: hvilke datoer der handler om sikkerhed, hvilke om kvalitet, og hvor meget god mad der smides ud på grund af forvirring.',
+    guideKicker: 'Guide',
+    guideUpdated: 'Opdateret',
+    guideQuestions: 'Spørgsmål',
+    guideSources: 'Kilder',
     // Theme
     lightMode: 'Lys tilstand',
     darkMode: 'Mørk tilstand',
@@ -4203,6 +4294,13 @@ export const translations = {
     guidesSubtitle: 'Käytännön neuvoja ruokahävikin vähentämiseen ja keittiön tehokkaaseen käyttöön.',
     guidesAvailableInEnglish: 'Oppaat ovat tällä hetkellä saatavilla englanniksi.',
     guidesMinRead: 'min lukemista',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Viimeinen käyttöpäivä ja parasta ennen: mitä ruoan päivämäärät todella tarkoittavat',
+    guideArticleDescription: 'Selkeä opas elintarvikkeiden päiväysmerkintöihin: mitkä päivät liittyvät turvallisuuteen, mitkä laatuun ja kuinka paljon hyvää ruokaa heitetään pois epäselvyyksien vuoksi.',
+    guideKicker: 'Opas',
+    guideUpdated: 'Päivitetty',
+    guideQuestions: 'Kysymykset',
+    guideSources: 'Lähteet',
     // Theme
     lightMode: 'Vaalea tila',
     darkMode: 'Tumma tila',
@@ -4519,6 +4617,13 @@ export const translations = {
     guidesSubtitle: 'Dicas práticas para reduzir o desperdício de alimentos e aproveitar ao máximo sua cozinha.',
     guidesAvailableInEnglish: 'Os guias estão atualmente disponíveis em inglês.',
     guidesMinRead: 'min de leitura',
+    // Guide article UI and localized article metadata
+    guideArticleTitle: 'Consumir até e de preferência antes de: o que as datas dos alimentos realmente significam',
+    guideArticleDescription: 'Um guia claro sobre as datas nos rótulos: quais indicam segurança, quais indicam qualidade e quanta comida boa é descartada por causa da confusão.',
+    guideKicker: 'Guia',
+    guideUpdated: 'Atualizado',
+    guideQuestions: 'Perguntas',
+    guideSources: 'Fontes',
     // Theme
     lightMode: 'Modo claro',
     darkMode: 'Modo escuro',

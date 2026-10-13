@@ -17,9 +17,8 @@ export async function generateMetadata({
   const validLocale = isValidLocale(locale) ? locale : "en";
 
   return {
-    title: "Guides · Holo",
-    description:
-      "Practical guides to help you reduce food waste, understand expiry labels, and get the most from your kitchen.",
+    title: `${t(validLocale, "guidesTitle")} · Holo`,
+    description: t(validLocale, "guidesSubtitle"),
     alternates: {
       canonical: "https://www.holofridge.com/en/guides",
       languages: {
@@ -37,10 +36,10 @@ function GuideCard({ guide, locale }: { guide: Guide; locale: Locale }) {
       className="group block rounded-2xl border border-divider/60 dark:border-white/10 bg-white/50 dark:bg-white/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-glass"
     >
       <h2 className="text-xl font-semibold text-charcoal dark:text-white group-hover:text-deepTurquoise dark:group-hover:text-glowTurquoise transition-colors">
-        {guide.title}
+        {t(locale, "guideArticleTitle")}
       </h2>
       <p className="mt-2 text-bodyGray dark:text-white/70 line-clamp-2">
-        {guide.description}
+        {t(locale, "guideArticleDescription")}
       </p>
       <p className="mt-4 text-sm text-bodyGray/80 dark:text-white/50">
         {guide.readingMinutes} {t(locale, 'guidesMinRead')}

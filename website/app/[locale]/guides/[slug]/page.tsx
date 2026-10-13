@@ -11,6 +11,7 @@ import Reveal from "@/components/Reveal";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { t } from "@/lib/translations";
 
 const BASE_URL = "https://www.holofridge.com";
 
@@ -49,9 +50,10 @@ export async function generateMetadata({
 
   const canonicalUrl = `${BASE_URL}/en/guides/${slug}`;
 
+  const validLocale: Locale = isValidLocale(locale) ? locale : "en";
   return {
-    title: `${guide.title} · Holo`,
-    description: guide.description,
+    title: `${t(validLocale, "guideArticleTitle")} · Holo`,
+    description: t(validLocale, "guideArticleDescription"),
     alternates: {
       canonical: canonicalUrl,
       languages: Object.fromEntries([
@@ -70,9 +72,9 @@ export async function generateMetadata({
   };
 }
 
-function formatDate(isoDate: string): string {
+function formatDate(isoDate: string, locale: Locale): string {
   const date = new Date(isoDate);
-  return date.toLocaleDateString("en-GB", {
+  return date.toLocaleDateString(locale === "pt" ? "pt-BR" : locale, {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -175,15 +177,15 @@ export default async function GuidePage({
           {/* Eyebrow */}
           <Reveal y={14}>
             <p className="text-sm text-bodyGray dark:text-white/60">
-              Guide · {guide.readingMinutes} min read · Updated{" "}
-              {formatDate(guide.updatedAt)}
+              {t(locale, "guideKicker")} · {guide.readingMinutes} {t(locale, "guidesMinRead")} · {t(locale, "guideUpdated")} {" "}
+              {formatDate(guide.updatedAt, locale)}
             </p>
           </Reveal>
 
           {/* Title */}
           <Reveal delay={0.05} y={18}>
             <h1 className="mt-4 text-3xl font-semibold tracking-tightish text-charcoal dark:text-white sm:text-4xl lg:text-[2.5rem] leading-tight">
-              {guide.title}
+              {t(locale, "guideArticleTitle")}
             </h1>
           </Reveal>
 
@@ -229,7 +231,7 @@ export default async function GuidePage({
           <Reveal delay={0.22} y={14}>
             <section className="mt-14">
               <h2 className="text-xl font-semibold text-charcoal dark:text-white sm:text-2xl">
-                Questions
+                {t(locale, "guideQuestions")}
               </h2>
               <div className="mt-6 space-y-6">
                 {guide.faq.map((item, idx) => (
@@ -250,7 +252,7 @@ export default async function GuidePage({
           <Reveal delay={0.25} y={14}>
             <section className="mt-14">
               <h2 className="text-xl font-semibold text-charcoal dark:text-white sm:text-2xl">
-                Sources
+                {t(locale, "guideSources")}
               </h2>
               <ol className="mt-6 space-y-2 list-decimal list-inside text-sm text-bodyGray dark:text-white/70">
                 {guide.sources.map((source) => (
