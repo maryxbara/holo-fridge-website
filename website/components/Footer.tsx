@@ -24,7 +24,7 @@ export default function Footer({ locale }: FooterProps) {
             height={300}
             className="h-11 w-[110px] object-cover object-center transition-transform duration-500 group-hover:scale-105"
           />
-          <p className="text-[13px] text-bodyGray dark:text-pearl1/60">
+          <p className="text-sm text-bodyGray dark:text-pearl1/60">
             {t(locale, "footerTagline")}
           </p>
         </Link>
