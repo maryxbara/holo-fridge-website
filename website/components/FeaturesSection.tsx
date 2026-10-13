@@ -68,8 +68,8 @@ function FridgeIcon() {
 function SparkIcon() {
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path d="M12 4l1.6 4.2L18 10l-4.4 1.8L12 16l-1.6-4.2L6 10l4.4-1.8L12 4z" stroke={stroke} strokeWidth="1.4" strokeLinejoin="round" />
-      <path d="M19 4v3M20.5 5.5h-3" stroke={stroke} strokeWidth="1.4" strokeLinecap="round" />
+      <path d="M10.5 4.5l2.1 5.9 5.9 2.1-5.9 2.1-2.1 5.9-2.1-5.9-5.9-2.1 5.9-2.1 2.1-5.9z" stroke={stroke} strokeWidth="1.6" strokeLinejoin="round" />
+      <path d="M19 2.5v5M16.5 5h5" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" />
     </svg>
   );
 }
