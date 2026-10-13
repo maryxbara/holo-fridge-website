@@ -356,21 +356,23 @@
   }
   
   /* Phone mockups — soft turquoise halo plus a glowing shell edge */
+  /* closest-side reaches zero exactly at the box edge, so no blur filter is
+     needed and the glow can never show a rectangular boundary */
   .mockup-glow {
     background: radial-gradient(
-      55% 45% at 50% 55%,
-      rgba(166, 245, 232, 0.6) 0%,
-      rgba(166, 245, 232, 0) 70%
+      closest-side at 50% 55%,
+      rgba(166, 245, 232, 0.55) 0%,
+      rgba(166, 245, 232, 0.22) 55%,
+      rgba(166, 245, 232, 0) 100%
     );
-    filter: blur(40px);
   }
   .dark .mockup-glow {
     background: radial-gradient(
-      55% 45% at 50% 55%,
-      rgba(50, 192, 181, 0.4) 0%,
-      rgba(50, 192, 181, 0) 70%
+      closest-side at 50% 55%,
+      rgba(50, 192, 181, 0.36) 0%,
+      rgba(50, 192, 181, 0.14) 55%,
+      rgba(50, 192, 181, 0) 100%
     );
-    filter: blur(44px);
   }
 
   .phone-shell {

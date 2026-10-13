@@ -38,12 +38,14 @@ export default function PhoneMockup({
       {glow ? (
         <div
           aria-hidden
-          className="mockup-glow pointer-events-none absolute -inset-x-6 -inset-y-5"
+          className="mockup-glow pointer-events-none absolute -inset-x-12 -inset-y-10"
         />
       ) : null}
       <div className="relative w-full" style={{ aspectRatio: "9 / 19.5" }}>
         <div className="phone-shell absolute inset-0 overflow-hidden rounded-[2.75rem] p-[6px]">
-          <div className="relative h-full w-full overflow-hidden rounded-[2.4rem] bg-[#f8f7f5] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] dark:bg-black">
+          {/* Same near-black as the app screens, so nothing light shows before
+              the image arrives or along the anti-aliased rounded edge */}
+          <div className="relative h-full w-full overflow-hidden rounded-[2.4rem] bg-[#0b0b0b]">
             <Image
               src={src}
               alt={alt}
