@@ -69,9 +69,10 @@ export default function Hero({ locale }: HeroProps) {
             </div>
             <div className="relative -mb-2 -ml-2 w-[42%] max-w-[180px] shrink-0 lg:max-w-[220px]">
               <PhoneMockup
-                src="/screens/home-hero.png"
-                blurDataURL={SCREEN_PLACEHOLDERS["/screens/home-hero.png"]}
-                alt="Holo home screen: fridge overview with items, expiring-soon count and categories"
+                contain
+                src="/screens/hero-home.jpg"
+                blurDataURL={SCREEN_PLACEHOLDERS["/screens/hero-home.jpg"]}
+                alt="Holo home screen with expiring items, meal plan, shopping, and quick actions"
                 priority
                 glow
                 sizes="(max-width: 640px) 42vw, 220px"

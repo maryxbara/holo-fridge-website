@@ -118,6 +118,7 @@ export default function MockupCarousel({ screens }: { screens: Screen[] }) {
                 className="mr-8 w-[230px] shrink-0 sm:mr-10 sm:w-[260px]"
               >
                 <PhoneMockup
+                  poster
                   src={s.src}
                   alt={s.alt}
                   glow
@@ -125,12 +126,16 @@ export default function MockupCarousel({ screens }: { screens: Screen[] }) {
                   blurDataURL={s.blurDataURL}
                   sizes="(max-width: 640px) 230px, 260px"
                 />
-                <p className="mt-6 text-center text-xs font-semibold uppercase tracking-[0.2em] text-deepTurquoise">
-                  {String(screenIdx + 1).padStart(2, "0")}
-                </p>
-                <p className="mx-auto mt-2 max-w-[230px] text-balance text-center text-sm font-medium leading-snug text-charcoal/85 dark:text-pearl1/85 sm:text-base">
-                  {s.label}
-                </p>
+                {s.label ? (
+                  <>
+                    <p className="mt-6 text-center text-xs font-semibold uppercase tracking-[0.2em] text-deepTurquoise">
+                      {String(screenIdx + 1).padStart(2, "0")}
+                    </p>
+                    <p className="mx-auto mt-2 max-w-[230px] text-balance text-center text-sm font-medium leading-snug text-charcoal/85 dark:text-pearl1/85 sm:text-base">
+                      {s.label}
+                    </p>
+                  </>
+                ) : null}
               </div>
             ))
           )}

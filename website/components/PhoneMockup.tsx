@@ -18,6 +18,17 @@ type PhoneMockupProps = {
   blurDataURL?: string;
   /** Start loading immediately instead of when near the viewport. */
   eager?: boolean;
+  /**
+   * Full lifestyle poster (phone, kitchen and mascot already in the art).
+   * Skips the extra phone shell so the image is shown as sent.
+   */
+  poster?: boolean;
+  /** CSS aspect-ratio when the file is not a 9:19.5 screenshot. */
+  aspectRatio?: string;
+  /** Poster with square corners, so the file is not clipped. */
+  sharp?: boolean;
+  /** Fit the whole image inside the screen so side details stay visible. */
+  contain?: boolean;
 };
 
 /**
@@ -36,6 +47,10 @@ export default function PhoneMockup({
   pushIn = false,
   blurDataURL,
   eager = false,
+  poster = false,
+  aspectRatio,
+  sharp = false,
+  contain = false,
 }: PhoneMockupProps) {
   const { ref, inView } = useInView<HTMLDivElement>("-10% 0px");
 
@@ -47,11 +62,14 @@ export default function PhoneMockup({
           className="mockup-glow pointer-events-none absolute -inset-x-12 -inset-y-10"
         />
       ) : null}
-      <div className="relative w-full" style={{ aspectRatio: "9 / 19.5" }}>
-        <div className="phone-shell absolute inset-0 overflow-hidden rounded-[2.75rem] p-[6px]">
-          {/* Same near-black as the app screens, so nothing light shows before
-              the image arrives or along the anti-aliased rounded edge */}
-          <div className="relative h-full w-full overflow-hidden rounded-[2.4rem] bg-[#0b0b0b]">
+      <div
+        className="relative w-full"
+        style={{ aspectRatio: aspectRatio ?? (poster ? "470 / 1024" : "9 / 19.5") }}
+      >
+        {poster ? (
+          <div
+            className={`absolute inset-0 overflow-hidden bg-[#0b0b0b] ${sharp ? "" : "rounded-[1.75rem] shadow-phone"}`}
+          >
             <Image
               src={src}
               alt={alt}
@@ -61,10 +79,32 @@ export default function PhoneMockup({
               loading={priority || eager ? "eager" : "lazy"}
               placeholder={blurDataURL ? "blur" : "empty"}
               blurDataURL={blurDataURL}
-              className="object-cover"
+              className={contain ? "object-contain object-center" : "object-cover"}
             />
           </div>
-        </div>
+        ) : (
+          <div
+            className={`phone-shell absolute inset-0 overflow-hidden p-[6px] ${contain ? "rounded-[1.6rem]" : "rounded-[2.75rem]"}`}
+          >
+            {/* Same near-black as the app screens, so nothing light shows before
+                the image arrives or along the anti-aliased rounded edge */}
+            <div
+              className={`relative h-full w-full bg-[#0b0b0b] ${contain ? "overflow-hidden rounded-2xl" : "overflow-hidden rounded-[2.4rem]"}`}
+            >
+              <Image
+                src={src}
+                alt={alt}
+                fill
+                sizes={sizes}
+                priority={priority}
+                loading={priority || eager ? "eager" : "lazy"}
+                placeholder={blurDataURL ? "blur" : "empty"}
+                blurDataURL={blurDataURL}
+                className={contain ? "object-contain object-center" : "object-cover"}
+              />
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

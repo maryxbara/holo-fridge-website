@@ -140,7 +140,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Terms of service
 - `termsLastUpdated`: Last updated: September 2026
 - `termsIntro`: These Terms of Service ("Terms") are an agreement between you and:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: A small partnership (mažoji bendrija) registered in the Republic of Lithuania
 - `termsCompanyCode`: Company code: 305706222
 - `termsCompanyAddress`: Registered address: Liepų g. 8, Ketvergių k., Klaipėdos r., Lithuania
@@ -240,7 +240,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: The data controller responsible for your personal data is:
 - `privacySection1Email`: Email (privacy):
 - `privacySection1Support`: Email (support):
-- `privacySection1Ref`: "Holo Fridge," "HoloFridge," and "Holo" refer to the product operated by BML BIG, MB ("we," "us," "our," or "the Company").
+- `privacySection1Ref`: "Holo Fridge," "HoloFridge," and "Holo" refer to the product operated by UAB BML BIG ("we," "us," "our," or "the Company").
 - `privacySection2Title`: 2. Definitions
 - `privacySection2Def1`: "Personal Data" / "Personal Information" means information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked to you or your household.
 - `privacySection2Def2`: "Sensitive Data" includes categories treated as sensitive under applicable law (such as precise geolocation, biometrics used for identification, certain health data, children's data, or other protected categories).
@@ -498,7 +498,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Умови надання послуг
 - `termsLastUpdated`: Останнє оновлення: вересень 2026 року
 - `termsIntro`: Ці Умови надання послуг («Умови») є угодою між вами та:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: Юридична особа за законодавством Литви у формі mažoji bendrija (малого товариства), зареєстрована в Литовській Республіці
 - `termsCompanyCode`: Код компанії: 305706222
 - `termsCompanyAddress`: Юридична адреса: Liepų g. 8, Ketvergių k., Klaipėdos r., Литва
@@ -598,7 +598,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: Контролером даних, відповідальним за ваші персональні дані, є:
 - `privacySection1Email`: Електронна пошта (конфіденційність):
 - `privacySection1Support`: Електронна пошта (підтримка):
-- `privacySection1Ref`: «Holo Fridge», «HoloFridge» та «Holo» означають продукт, який надається BML BIG, MB («ми», «нас», «наш» або «Компанія»).
+- `privacySection1Ref`: «Holo Fridge», «HoloFridge» та «Holo» означають продукт, який надається UAB BML BIG («ми», «нас», «наш» або «Компанія»).
 - `privacySection2Title`: 2. Визначення
 - `privacySection2Def1`: «Персональні дані» / «Особиста інформація» означає інформацію, яка ідентифікує, стосується, описує, може бути обґрунтовано пов'язана або може бути обґрунтовано пов'язана з вами або вашим домогосподарством.
 - `privacySection2Def2`: «Чутливі дані» включають категорії, які вважаються чутливими відповідно до чинного законодавства (такі як точна геолокація, біометрія для ідентифікації, певні дані про здоров'я, дані дітей або інші захищені категорії).
@@ -856,7 +856,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Termeni și condiții
 - `termsLastUpdated`: Ultima actualizare: Septembrie 2026
 - `termsIntro`: Acești Termeni ai Serviciului („Termeni”) reprezintă un acord între dumneavoastră și:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: O entitate juridică de drept lituanian de tip mažoji bendrija, înregistrată în Republica Lituania
 - `termsCompanyCode`: Cod companie: 305706222
 - `termsCompanyAddress`: Adresă înregistrată: Liepų g. 8, Ketvergių k., Klaipėdos r., Lituania
@@ -956,7 +956,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: Operatorul de date responsabil pentru datele dumneavoastră personale este:
 - `privacySection1Email`: Email (confidențialitate):
 - `privacySection1Support`: Email (suport):
-- `privacySection1Ref`: „Holo Fridge”, „HoloFridge” și „Holo” se referă la produsul operat de BML BIG, MB („noi”, „ne”, „nostru” sau „Compania”).
+- `privacySection1Ref`: „Holo Fridge”, „HoloFridge” și „Holo” se referă la produsul operat de UAB BML BIG („noi”, „ne”, „nostru” sau „Compania”).
 - `privacySection2Title`: 2. Definiții
 - `privacySection2Def1`: „Date personale” / „Informații personale” înseamnă informații care identifică, se referă la, descriu, sunt în mod rezonabil capabile să fie asociate cu, sau ar putea fi în mod rezonabil legate de dumneavoastră sau gospodăria dumneavoastră.
 - `privacySection2Def2`: „Date sensibile” includ categorii tratate ca sensibile în temeiul legii aplicabile (cum ar fi geolocalizarea precisă, datele biometrice utilizate pentru identificare, anumite date de sănătate, datele copiilor sau alte categorii protejate).
@@ -1214,7 +1214,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Regulamin
 - `termsLastUpdated`: Ostatnia aktualizacja: Wrzesień 2026
 - `termsIntro`: Niniejszy Regulamin („Regulamin”) stanowi umowę między tobą a:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: Podmiot prawa litewskiego w formie mažoji bendrija, zarejestrowany w Republice Litewskiej
 - `termsCompanyCode`: Kod firmy: 305706222
 - `termsCompanyAddress`: Adres siedziby: Liepų g. 8, Ketvergių k., Klaipėdos r., Litwa
@@ -1314,7 +1314,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: Administratorem danych odpowiedzialnym za twoje dane osobowe jest:
 - `privacySection1Email`: E-mail (prywatność):
 - `privacySection1Support`: E-mail (wsparcie):
-- `privacySection1Ref`: „Holo Fridge”, „HoloFridge” i „Holo” oznaczają produkt obsługiwany przez BML BIG, MB („my”, „nas”, „nasz” lub „Firma”).
+- `privacySection1Ref`: „Holo Fridge”, „HoloFridge” i „Holo” oznaczają produkt obsługiwany przez UAB BML BIG („my”, „nas”, „nasz” lub „Firma”).
 - `privacySection2Title`: 2. Definicje
 - `privacySection2Def1`: „Dane osobowe” / „Informacje osobowe” oznaczają informacje, które identyfikują, dotyczą, opisują, mogą być racjonalnie powiązane lub mogą być racjonalnie połączone z tobą lub twoim gospodarstwem domowym.
 - `privacySection2Def2`: „Dane wrażliwe” obejmują kategorie traktowane jako wrażliwe zgodnie z obowiązującym prawem (takie jak precyzyjna geolokalizacja, dane biometryczne używane do identyfikacji, niektóre dane zdrowotne, dane dzieci lub inne chronione kategorie).
@@ -1572,7 +1572,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Nutzungsbedingungen
 - `termsLastUpdated`: Zuletzt aktualisiert: September 2026
 - `termsIntro`: Diese Nutzungsbedingungen („Bedingungen“) stellen eine Vereinbarung zwischen Ihnen und folgender Partei dar:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: Eine in der Republik Litauen eingetragene Gesellschaft litauischen Rechts in der Rechtsform mažoji bendrija
 - `termsCompanyCode`: Firmennummer: 305706222
 - `termsCompanyAddress`: Registrierte Adresse: Liepų g. 8, Ketvergių k., Klaipėdos r., Litauen
@@ -1672,7 +1672,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: Der für Ihre personenbezogenen Daten verantwortliche Datenverantwortliche ist:
 - `privacySection1Email`: E-Mail (Datenschutz):
 - `privacySection1Support`: E-Mail (Support):
-- `privacySection1Ref`: „Holo Fridge“, „HoloFridge“ und „Holo“ bezeichnen das von BML BIG, MB betriebene Produkt („wir“, „uns“, „unser“ oder „das Unternehmen“).
+- `privacySection1Ref`: „Holo Fridge“, „HoloFridge“ und „Holo“ bezeichnen das von UAB BML BIG betriebene Produkt („wir“, „uns“, „unser“ oder „das Unternehmen“).
 - `privacySection2Title`: 2. Definitionen
 - `privacySection2Def1`: „Personenbezogene Daten“ / „Persönliche Informationen“ bezeichnet Informationen, die Sie oder Ihren Haushalt identifizieren, sich auf diese beziehen, beschreiben, vernünftigerweise mit Ihnen in Verbindung gebracht werden können oder vernünftigerweise mit Ihnen verknüpft werden könnten.
 - `privacySection2Def2`: „Sensible Daten“ umfassen Kategorien, die nach geltendem Recht als sensibel behandelt werden (wie genaue Geolokalisierung, zur Identifizierung verwendete biometrische Daten, bestimmte Gesundheitsdaten, Kinderdaten oder andere geschützte Kategorien).
@@ -1930,7 +1930,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Términos de servicio
 - `termsLastUpdated`: Última actualización: Septiembre 2026
 - `termsIntro`: Estos Términos de Servicio ("Términos") constituyen un acuerdo entre usted y:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: Una entidad de derecho lituano con la forma jurídica mažoji bendrija, registrada en la República de Lituania
 - `termsCompanyCode`: Código de empresa: 305706222
 - `termsCompanyAddress`: Dirección registrada: Liepų g. 8, Ketvergių k., Klaipėdos r., Lituania
@@ -2030,7 +2030,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: El responsable del tratamiento de sus datos personales es:
 - `privacySection1Email`: Correo electrónico (privacidad):
 - `privacySection1Support`: Correo electrónico (soporte):
-- `privacySection1Ref`: "Holo Fridge", "HoloFridge" y "Holo" se refieren al producto operado por BML BIG, MB ("nosotros", "nos", "nuestro" o "la Empresa").
+- `privacySection1Ref`: "Holo Fridge", "HoloFridge" y "Holo" se refieren al producto operado por UAB BML BIG ("nosotros", "nos", "nuestro" o "la Empresa").
 - `privacySection2Title`: 2. Definiciones
 - `privacySection2Def1`: "Datos Personales" / "Información Personal" significa información que identifica, se relaciona con, describe, es razonablemente capaz de asociarse con, o podría razonablemente vincularse a usted o su hogar.
 - `privacySection2Def2`: "Datos Sensibles" incluye categorías tratadas como sensibles bajo la ley aplicable (como geolocalización precisa, biometría usada para identificación, ciertos datos de salud, datos de niños u otras categorías protegidas).
@@ -2288,7 +2288,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Termini di servizio
 - `termsLastUpdated`: Ultimo aggiornamento: Settembre 2026
 - `termsIntro`: I presenti Termini di Servizio ("Termini") costituiscono un accordo tra l'utente e:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: Un ente di diritto lituano con forma giuridica mažoji bendrija, registrato nella Repubblica di Lituania
 - `termsCompanyCode`: Codice azienda: 305706222
 - `termsCompanyAddress`: Sede legale: Liepų g. 8, Ketvergių k., Klaipėdos r., Lituania
@@ -2388,7 +2388,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: Il titolare del trattamento responsabile dei dati personali dell'utente è:
 - `privacySection1Email`: Email (privacy):
 - `privacySection1Support`: Email (supporto):
-- `privacySection1Ref`: "Holo Fridge", "HoloFridge" e "Holo" si riferiscono al prodotto gestito da BML BIG, MB ("noi", "ci", "nostro" o "la Società").
+- `privacySection1Ref`: "Holo Fridge", "HoloFridge" e "Holo" si riferiscono al prodotto gestito da UAB BML BIG ("noi", "ci", "nostro" o "la Società").
 - `privacySection2Title`: 2. Definizioni
 - `privacySection2Def1`: "Dati Personali" / "Informazioni Personali" indica informazioni che identificano, si riferiscono a, descrivono, sono ragionevolmente in grado di essere associate a, o potrebbero ragionevolmente essere collegate all'utente o alla sua famiglia.
 - `privacySection2Def2`: "Dati Sensibili" include categorie trattate come sensibili ai sensi della legge applicabile (come geolocalizzazione precisa, biometria utilizzata per l'identificazione, determinati dati sanitari, dati dei bambini o altre categorie protette).
@@ -2646,7 +2646,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Conditions de service
 - `termsLastUpdated`: Dernière mise à jour: Septembre 2026
 - `termsIntro`: Les présentes Conditions de Service (« Conditions ») constituent un accord entre vous et :
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: Une entité de droit lituanien de forme juridique mažoji bendrija, immatriculée en République de Lituanie
 - `termsCompanyCode`: Code d'entreprise : 305706222
 - `termsCompanyAddress`: Adresse enregistrée : Liepų g. 8, Ketvergių k., Klaipėdos r., Lituanie
@@ -2746,7 +2746,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: Le responsable du traitement de vos données personnelles est :
 - `privacySection1Email`: E-mail (confidentialité) :
 - `privacySection1Support`: E-mail (support) :
-- `privacySection1Ref`: « Holo Fridge », « HoloFridge » et « Holo » désignent le produit exploité par BML BIG, MB (« nous », « notre » ou « la Société »).
+- `privacySection1Ref`: « Holo Fridge », « HoloFridge » et « Holo » désignent le produit exploité par UAB BML BIG (« nous », « notre » ou « la Société »).
 - `privacySection2Title`: 2. Définitions
 - `privacySection2Def1`: « Données Personnelles » / « Informations Personnelles » désigne les informations qui identifient, se rapportent à, décrivent, sont raisonnablement susceptibles d'être associées à, ou pourraient raisonnablement être liées à vous ou à votre foyer.
 - `privacySection2Def2`: « Données Sensibles » comprend les catégories traitées comme sensibles en vertu de la loi applicable (comme la géolocalisation précise, la biométrie utilisée pour l'identification, certaines données de santé, les données des enfants ou d'autres catégories protégées).
@@ -3004,7 +3004,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Условия предоставления услуг
 - `termsLastUpdated`: Последнее обновление: сентябрь 2026 года
 - `termsIntro`: Настоящие Условия предоставления услуг («Условия») являются соглашением между вами и:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: Юридическое лицо по законодательству Литвы в форме mažoji bendrija (малого товарищества), зарегистрированное в Литовской Республике
 - `termsCompanyCode`: Код компании: 305706222
 - `termsCompanyAddress`: Юридический адрес: Liepų g. 8, Ketvergių k., Klaipėdos r., Литва
@@ -3104,7 +3104,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: Контролёром данных, ответственным за ваши персональные данные, является:
 - `privacySection1Email`: Электронная почта (конфиденциальность):
 - `privacySection1Support`: Электронная почта (поддержка):
-- `privacySection1Ref`: «Holo Fridge», «HoloFridge» и «Holo» относятся к продукту, управляемому BML BIG, MB («мы», «нас», «наш» или «Компания»).
+- `privacySection1Ref`: «Holo Fridge», «HoloFridge» и «Holo» относятся к продукту, управляемому UAB BML BIG («мы», «нас», «наш» или «Компания»).
 - `privacySection2Title`: 2. Определения
 - `privacySection2Def1`: «Персональные данные» / «Личная информация» означает информацию, которая идентифицирует, относится к, описывает, разумно способна быть связана с вами или вашим домохозяйством или может быть разумно связана с вами.
 - `privacySection2Def2`: «Чувствительные данные» включают категории, рассматриваемые как чувствительные в соответствии с применимым законодательством (такие как точная геолокация, биометрия, используемая для идентификации, определённые данные о здоровье, данные детей или другие защищённые категории).
@@ -3362,7 +3362,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Paslaugų teikimo sąlygos
 - `termsLastUpdated`: Paskutinis atnaujinimas: 2026 m. rugsėjis
 - `termsIntro`: Šios Paslaugų teikimo sąlygos („Sąlygos“) yra susitarimas tarp jūsų ir:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: Mažoji bendrija, registruota Lietuvos Respublikoje
 - `termsCompanyCode`: Įmonės kodas: 305706222
 - `termsCompanyAddress`: Registruotas adresas: Liepų g. 8, Ketvergių k., Klaipėdos r., Lietuva
@@ -3462,7 +3462,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: Duomenų valdytojas, atsakingas už jūsų asmens duomenis, yra:
 - `privacySection1Email`: El. paštas (privatumas):
 - `privacySection1Support`: El. paštas (palaikymas):
-- `privacySection1Ref`: „Holo Fridge“, „HoloFridge“ ir „Holo“ reiškia BML BIG, MB valdomą produktą („mes“, „mūsų“ arba „Įmonė“).
+- `privacySection1Ref`: „Holo Fridge“, „HoloFridge“ ir „Holo“ reiškia UAB BML BIG valdomą produktą („mes“, „mūsų“ arba „Įmonė“).
 - `privacySection2Title`: 2. Apibrėžimai
 - `privacySection2Def1`: „Asmens duomenys“ arba „Asmeninė informacija“ — informacija, pagal kurią galima nustatyti jūsų tapatybę, kuri yra susijusi su jumis ar jūsų namų ūkiu, jus apibūdina arba kurią pagrįstai galima su jumis ar jūsų namų ūkiu susieti.
 - `privacySection2Def2`: „Jautrūs duomenys“ apima kategorijas, laikomas jautriomis pagal taikytiną teisę (tokias kaip tiksli geografinė vieta, biometriniai duomenys, naudojami identifikavimui, tam tikri sveikatos duomenys, vaikų duomenys ar kitos apsaugotos kategorijos).
@@ -3720,7 +3720,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Servicevoorwaarden
 - `termsLastUpdated`: Laatst bijgewerkt: September 2026
 - `termsIntro`: Deze Servicevoorwaarden ("Voorwaarden") vormen een overeenkomst tussen u en:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: Een rechtspersoon naar Litouws recht in de rechtsvorm mažoji bendrija, geregistreerd in de Republiek Litouwen
 - `termsCompanyCode`: Bedrijfscode: 305706222
 - `termsCompanyAddress`: Geregistreerd adres: Liepų g. 8, Ketvergių k., Klaipėdos r., Litouwen
@@ -3820,7 +3820,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: De verwerkingsverantwoordelijke voor uw persoonlijke gegevens is:
 - `privacySection1Email`: E-mail (privacy):
 - `privacySection1Support`: E-mail (ondersteuning):
-- `privacySection1Ref`: "Holo Fridge", "HoloFridge" en "Holo" verwijzen naar het product dat wordt beheerd door BML BIG, MB ("wij", "ons", "onze" of "het Bedrijf").
+- `privacySection1Ref`: "Holo Fridge", "HoloFridge" en "Holo" verwijzen naar het product dat wordt beheerd door UAB BML BIG ("wij", "ons", "onze" of "het Bedrijf").
 - `privacySection2Title`: 2. Definities
 - `privacySection2Def1`: "Persoonlijke Gegevens" / "Persoonlijke Informatie" betekent informatie die identificeert, betrekking heeft op, beschrijft, redelijkerwijs in staat is om te worden geassocieerd met, of redelijkerwijs zou kunnen worden gekoppeld aan u of uw huishouden.
 - `privacySection2Def2`: "Gevoelige Gegevens" omvat categorieën die als gevoelig worden behandeld onder toepasselijke wetgeving (zoals precieze geolocatie, biometrie gebruikt voor identificatie, bepaalde gezondheidsgegevens, gegevens van kinderen of andere beschermde categorieën).
@@ -4078,7 +4078,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Användarvillkor
 - `termsLastUpdated`: Senast uppdaterad: September 2026
 - `termsIntro`: Dessa användarvillkor ("Villkor") utgör ett avtal mellan dig och:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: En juridisk person enligt litauisk rätt med bolagsformen mažoji bendrija, registrerad i Republiken Litauen
 - `termsCompanyCode`: Företagskod: 305706222
 - `termsCompanyAddress`: Registrerad adress: Liepų g. 8, Ketvergių k., Klaipėdos r., Litauen
@@ -4178,7 +4178,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: Den personuppgiftsansvarige för dina personuppgifter är:
 - `privacySection1Email`: E-post (integritet):
 - `privacySection1Support`: E-post (support):
-- `privacySection1Ref`: "Holo Fridge", "HoloFridge" och "Holo" avser produkten som drivs av BML BIG, MB ("vi", "oss", "vår" eller "Företaget").
+- `privacySection1Ref`: "Holo Fridge", "HoloFridge" och "Holo" avser produkten som drivs av UAB BML BIG ("vi", "oss", "vår" eller "Företaget").
 - `privacySection2Title`: 2. Definitioner
 - `privacySection2Def1`: "Personuppgifter" / "Personlig information" avser information som identifierar, relaterar till, beskriver, rimligen kan associeras med, eller rimligen kan kopplas till dig eller ditt hushåll.
 - `privacySection2Def2`: "Känsliga uppgifter" inkluderar kategorier som behandlas som känsliga enligt tillämplig lag (såsom precis geolokalisering, biometri som används för identifiering, vissa hälsodata, barns data eller andra skyddade kategorier).
@@ -4436,7 +4436,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Servicevilkår
 - `termsLastUpdated`: Sidst opdateret: September 2026
 - `termsIntro`: Disse servicevilkår ("Vilkår") udgør en aftale mellem dig og:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: En juridisk enhed efter litauisk ret med selskabsformen mažoji bendrija, registreret i Republikken Litauen
 - `termsCompanyCode`: Virksomhedskode: 305706222
 - `termsCompanyAddress`: Registreret adresse: Liepų g. 8, Ketvergių k., Klaipėdos r., Litauen
@@ -4536,7 +4536,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: Den dataansvarlige for dine personoplysninger er:
 - `privacySection1Email`: E-mail (privatliv):
 - `privacySection1Support`: E-mail (support):
-- `privacySection1Ref`: "Holo Fridge", "HoloFridge" og "Holo" henviser til produktet, der drives af BML BIG, MB ("vi", "os", "vores" eller "Virksomheden").
+- `privacySection1Ref`: "Holo Fridge", "HoloFridge" og "Holo" henviser til produktet, der drives af UAB BML BIG ("vi", "os", "vores" eller "Virksomheden").
 - `privacySection2Title`: 2. Definitioner
 - `privacySection2Def1`: "Personoplysninger" / "Personlige oplysninger" betyder oplysninger, der identificerer, relaterer til, beskriver, med rimelighed er i stand til at blive associeret med, eller med rimelighed kunne være forbundet med dig eller din husstand.
 - `privacySection2Def2`: "Følsomme data" inkluderer kategorier, der behandles som følsomme i henhold til gældende lovgivning (såsom præcis geolokalisering, biometri brugt til identifikation, visse sundhedsdata, børns data eller andre beskyttede kategorier).
@@ -4794,7 +4794,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Palveluehdot
 - `termsLastUpdated`: Päivitetty viimeksi: Syyskuu 2026
 - `termsIntro`: Nämä palveluehdot ("Ehdot") muodostavat sopimuksen sinun ja seuraavan välillä:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: Liettuan oikeuden mukainen, Liettuan tasavallassa rekisteröity mažoji bendrija -muotoinen oikeushenkilö
 - `termsCompanyCode`: Yrityskoodi: 305706222
 - `termsCompanyAddress`: Rekisteröity osoite: Liepų g. 8, Ketvergių k., Klaipėdos r., Liettua
@@ -4894,7 +4894,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: Rekisterinpitäjä, joka vastaa henkilötiedoistasi, on:
 - `privacySection1Email`: Sähköposti (yksityisyys):
 - `privacySection1Support`: Sähköposti (tuki):
-- `privacySection1Ref`: "Holo Fridge", "HoloFridge" ja "Holo" viittaavat BML BIG, MB:n ylläpitämään tuotteeseen ("me", "meitä", "meidän" tai "Yritys").
+- `privacySection1Ref`: "Holo Fridge", "HoloFridge" ja "Holo" viittaavat UAB BML BIG:n ylläpitämään tuotteeseen ("me", "meitä", "meidän" tai "Yritys").
 - `privacySection2Title`: 2. Määritelmät
 - `privacySection2Def1`: "Henkilötiedot" / "Henkilökohtaiset tiedot" tarkoittaa tietoja, jotka tunnistavat, liittyvät, kuvaavat, voidaan kohtuullisesti yhdistää tai voidaan kohtuullisesti linkittää sinuun tai kotitalouteesi.
 - `privacySection2Def2`: "Arkaluonteiset tiedot" sisältävät luokat, joita käsitellään arkaluonteisina sovellettavan lainsäädännön mukaan (kuten tarkka sijainti, biometriset tiedot tunnistamiseen, tietyt terveystiedot, lasten tiedot tai muut suojatut luokat).
@@ -5152,7 +5152,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `termsTitle`: Termos de uso
 - `termsLastUpdated`: Última atualização: Setembro de 2026
 - `termsIntro`: Estes Termos de Serviço ("Termos") constituem um acordo entre você e:
-- `termsCompanyName`: BML BIG, MB
+- `termsCompanyName`: UAB BML BIG
 - `termsCompanyDesc`: Uma pessoa jurídica de direito lituano, constituída sob a forma mažoji bendrija e registrada na República da Lituânia
 - `termsCompanyCode`: Código da empresa: 305706222
 - `termsCompanyAddress`: Endereço registrado: Liepų g. 8, Ketvergių k., Klaipėdos r., Lituânia
@@ -5252,7 +5252,7 @@ Languages: [English](#en) · [Українська](#uk) · [Română](#ro) · [
 - `privacySection1Intro`: O controlador de dados responsável por seus dados pessoais é:
 - `privacySection1Email`: E-mail (privacidade):
 - `privacySection1Support`: E-mail (suporte):
-- `privacySection1Ref`: "Holo Fridge", "HoloFridge" e "Holo" referem-se ao produto operado pela BML BIG, MB ("nós", "nos", "nosso" ou "a Empresa").
+- `privacySection1Ref`: "Holo Fridge", "HoloFridge" e "Holo" referem-se ao produto operado pela UAB BML BIG ("nós", "nos", "nosso" ou "a Empresa").
 - `privacySection2Title`: 2. Definições
 - `privacySection2Def1`: "Dados Pessoais" / "Informações Pessoais" significa informações que identificam, se relacionam, descrevem, são razoavelmente capazes de serem associadas, ou poderiam razoavelmente ser vinculadas a você ou sua família.
 - `privacySection2Def2`: "Dados Sensíveis" inclui categorias tratadas como sensíveis sob a lei aplicável (como geolocalização precisa, biometria usada para identificação, certos dados de saúde, dados de crianças ou outras categorias protegidas).
