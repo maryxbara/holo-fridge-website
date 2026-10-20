@@ -8,7 +8,8 @@
 const BASE_URL = "https://www.holofridge.com";
 // Neutral link — redirects to the visitor's own storefront.
 const APP_STORE_URL = "https://apps.apple.com/app/id6760011328";
-const PLAY_STORE_URL = ""; // Not yet available
+const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.holofridge.app";
 
 const organization = {
   "@context": "https://schema.org",
@@ -21,7 +22,7 @@ const organization = {
   logo: `${BASE_URL}/holo-logo.png`,
   email: "support@holofridge.com",
   address: { "@type": "PostalAddress", addressCountry: "LT" },
-  sameAs: [APP_STORE_URL],
+  sameAs: [APP_STORE_URL, PLAY_STORE_URL],
 };
 
 const website = {
@@ -52,13 +53,13 @@ const softwareApplication = {
     `${BASE_URL}/screens/list.jpg`,
     `${BASE_URL}/screens/assistant.jpg`,
   ],
-  sameAs: [APP_STORE_URL],
-  downloadUrl: APP_STORE_URL,
+  sameAs: [APP_STORE_URL, PLAY_STORE_URL],
+  downloadUrl: [APP_STORE_URL, PLAY_STORE_URL],
   applicationCategory: "LifestyleApplication",
   applicationSubCategory: "Food & Home Management",
-  operatingSystem: "iOS",
+  operatingSystem: "iOS, Android",
   publisher: { "@id": `${BASE_URL}/#organization` },
-  installUrl: [APP_STORE_URL].filter(Boolean),
+  installUrl: [APP_STORE_URL, PLAY_STORE_URL],
   inLanguage: [
     "en", "uk", "ro", "pl", "de", "es", "it", "fr",
     "ru", "lt", "nl", "sv", "da", "fi", "pt",
@@ -93,7 +94,7 @@ const faq = {
       name: "What is Holo?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Holo is a food and home management app for iPhone. It keeps track of what you have, warns you before food expires, suggests meals from your ingredients, and shares one shopping list across the household.",
+        text: "Holo is a food and home management app for iPhone and Android. It keeps track of what you have, warns you before food expires, suggests meals from your ingredients, and shares one shopping list across the household.",
       },
     },
     {
@@ -133,7 +134,7 @@ const faq = {
       name: "What app tells me what to cook with what's in my fridge?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Holo (also known as Holo Fridge) suggests a recipe from the ingredients already in your fridge, freezer and pantry, using up items that expire first. It is free to start on iPhone.",
+        text: "Holo (also known as Holo Fridge) suggests a recipe from the ingredients already in your fridge, freezer and pantry, using up items that expire first. It is free to start on iPhone and Android.",
       },
     },
     {
@@ -165,7 +166,7 @@ const faq = {
       name: "Is Holo free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Holo is free to download on the App Store. Premium features are available as an in-app subscription. An Android version is in preparation.",
+        text: "Holo is free to download on the App Store and Google Play. Premium features are available as an in-app subscription.",
       },
     },
   ],

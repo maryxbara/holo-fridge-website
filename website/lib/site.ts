@@ -12,8 +12,13 @@
 export const APP_STORE_URL =
   process.env.NEXT_PUBLIC_APP_STORE_URL || "https://apps.apple.com/app/id6760011328";
 
-/** Empty until the Android build ships. The Play button stays hidden while empty. */
-export const PLAY_STORE_URL = process.env.NEXT_PUBLIC_PLAY_STORE_URL || "";
+/**
+ * Google Play listing. Override with NEXT_PUBLIC_PLAY_STORE_URL if needed.
+ * The Play button and footer link render only when this is non-empty.
+ */
+export const PLAY_STORE_URL =
+  process.env.NEXT_PUBLIC_PLAY_STORE_URL ||
+  "https://play.google.com/store/apps/details?id=com.holofridge.app";
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.holofridge.com";
 

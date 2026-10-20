@@ -20,7 +20,7 @@ services:
       - key: NEXT_PUBLIC_APP_STORE_URL
         value: https://apps.apple.com/app/id6760011328
       - key: NEXT_PUBLIC_PLAY_STORE_URL
-        value: ""
+        value: https://play.google.com/store/apps/details?id=com.holofridge.app
       - key: NEXT_PUBLIC_SITE_URL
         value: https://www.holofridge.com
       # Proof strip under the hero button renders only when BOTH are set.

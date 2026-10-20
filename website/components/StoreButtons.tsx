@@ -10,9 +10,8 @@ type StoreButtonsProps = {
 };
 
 /**
- * One button until Google Play is live. The Play button is part of the
- * component but renders only when NEXT_PUBLIC_PLAY_STORE_URL is set — a dead
- * button is worse than no button.
+ * App Store + Google Play CTAs. The Play button renders only when
+ * PLAY_STORE_URL is set — a dead button is worse than no button.
  */
 export default function StoreButtons({
   className = "",

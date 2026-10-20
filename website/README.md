@@ -41,7 +41,7 @@ Deployed on Render from `../render.yaml` (Node 20, `npm ci && npm run build`).
 | Variable | Purpose |
 | --- | --- |
 | `NEXT_PUBLIC_APP_STORE_URL` | Neutral App Store link (`https://apps.apple.com/app/id6760011328`). Redirects by storefront. Append `?pt=…&ct=website&mt=8` once the Apple Ads account is live. |
-| `NEXT_PUBLIC_PLAY_STORE_URL` | Empty until Android ships. The Play button renders only when set. |
+| `NEXT_PUBLIC_PLAY_STORE_URL` | Google Play listing (`https://play.google.com/store/apps/details?id=com.holofridge.app`). Play button and footer link render when set. |
 | `NEXT_PUBLIC_SITE_URL` | Canonical origin for metadata, hreflang and OG. |
 | `NEXT_PUBLIC_APP_RATING` / `NEXT_PUBLIC_APP_RATING_COUNT` | Proof strip under the hero button. Renders only when **both** are set. Real figures only — never a placeholder. |
 | `NEXT_PUBLIC_META_PIXEL_ID` | Meta Pixel for the domain. Nothing loads until the visitor taps "Allow" (decline-by-default consent bar). `PageView` on load, `ViewContent` on store-button click. |
