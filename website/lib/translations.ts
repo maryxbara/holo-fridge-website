@@ -94,7 +94,7 @@ export const translations = {
     footerContact: 'Contact',
     footerSupport: 'Support',
     footerGuides: 'Guides',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     footerMadeIn: 'Made with love',
     // Consent (Meta Pixel) — decline by default; nothing is set until allowed
     consentText: 'Holo uses a Meta pixel to see which ads bring people here. Nothing is stored unless you allow it.',
@@ -432,7 +432,7 @@ export const translations = {
     footerContact: 'Контакти',
     footerSupport: 'Підтримка',
     footerGuides: 'Поради',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Поради',
     guidesSubtitle: 'Практичні поради, як викидати менше їжі та краще використовувати продукти, які вже є вдома.',
@@ -765,7 +765,7 @@ export const translations = {
     footerContact: 'Contact',
     footerSupport: 'Suport',
     footerGuides: 'Ghiduri',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Ghiduri',
     guidesSubtitle: 'Sfaturi practice pentru reducerea risipei alimentare și utilizarea eficientă a bucătăriei.',
@@ -1098,7 +1098,7 @@ export const translations = {
     footerContact: 'Kontakt',
     footerSupport: 'Wsparcie',
     footerGuides: 'Poradniki',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Poradniki',
     guidesSubtitle: 'Praktyczne wskazówki, jak marnować mniej jedzenia i lepiej wykorzystywać produkty, które masz w domu.',
@@ -1431,7 +1431,7 @@ export const translations = {
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Ratgeber',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Ratgeber',
     guidesSubtitle: 'Praktische Tipps zur Reduzierung von Lebensmittelverschwendung und effizienten Nutzung Ihrer Küche.',
@@ -1764,7 +1764,7 @@ export const translations = {
     footerContact: 'Contacto',
     footerSupport: 'Soporte',
     footerGuides: 'Guías',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Guías',
     guidesSubtitle: 'Consejos prácticos para reducir el desperdicio de alimentos y aprovechar al máximo tu cocina.',
@@ -2097,7 +2097,7 @@ export const translations = {
     footerContact: 'Contatto',
     footerSupport: 'Supporto',
     footerGuides: 'Guide',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Guide',
     guidesSubtitle: 'Consigli pratici per ridurre lo spreco alimentare e sfruttare al meglio la tua cucina.',
@@ -2430,7 +2430,7 @@ export const translations = {
     footerContact: 'Contact',
     footerSupport: 'Support',
     footerGuides: 'Guides',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Guides',
     guidesSubtitle: 'Conseils pratiques pour réduire le gaspillage alimentaire et tirer le meilleur parti de votre cuisine.',
@@ -2763,7 +2763,7 @@ export const translations = {
     footerContact: 'Контакты',
     footerSupport: 'Поддержка',
     footerGuides: 'Руководства',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Руководства',
     guidesSubtitle: 'Практические советы, как выбрасывать меньше еды и использовать продукты, которые уже есть дома.',
@@ -3096,7 +3096,7 @@ export const translations = {
     footerContact: 'Kontaktai',
     footerSupport: 'Pagalba',
     footerGuides: 'Gidai',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Gidai',
     guidesSubtitle: 'Praktiški patarimai, kaip išmesti mažiau maisto ir geriau panaudoti namuose turimus produktus.',
@@ -3429,7 +3429,7 @@ export const translations = {
     footerContact: 'Contact',
     footerSupport: 'Ondersteuning',
     footerGuides: 'Gidsen',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Gidsen',
     guidesSubtitle: 'Praktisch advies om voedselverspilling te verminderen en het meeste uit je keuken te halen.',
@@ -3762,7 +3762,7 @@ export const translations = {
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Guider',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Guider',
     guidesSubtitle: 'Praktiska råd för att minska matsvinn och få ut det mesta av ditt kök.',
@@ -4095,7 +4095,7 @@ export const translations = {
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Guider',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Guider',
     guidesSubtitle: 'Praktiske råd til at reducere madspild og få mest muligt ud af dit køkken.',
@@ -4428,7 +4428,7 @@ export const translations = {
     footerContact: 'Yhteystiedot',
     footerSupport: 'Tuki',
     footerGuides: 'Oppaat',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Oppaat',
     guidesSubtitle: 'Käytännön neuvoja ruokahävikin vähentämiseen ja keittiön tehokkaaseen käyttöön.',
@@ -4761,7 +4761,7 @@ export const translations = {
     footerContact: 'Contato',
     footerSupport: 'Suporte',
     footerGuides: 'Guias',
-    footerCopyright: '© {year} Holo Fridge',
+    footerCopyright: '© {year} Uždaroji akcinė bendrovė BML BIG (UAB BML BIG), įm. k. 305706222',
     // Guides
     guidesTitle: 'Guias',
     guidesSubtitle: 'Dicas práticas para reduzir o desperdício de alimentos e aproveitar ao máximo sua cozinha.',

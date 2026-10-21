@@ -75,7 +75,7 @@ export default function Footer({ locale }: FooterProps) {
       </div>
 
       <div className="border-t border-divider/60 dark:border-white/10">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5 text-xs text-bodyGray dark:text-pearl1/50 sm:px-8">
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-bodyGray dark:text-pearl1/50 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <p>{t(locale, "footerCopyright", { year: year.toString() })}</p>
           <p>{t(locale, "footerMadeIn")}</p>
         </div>
