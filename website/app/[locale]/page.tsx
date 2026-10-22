@@ -7,10 +7,9 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import MeetHoloSection from "@/components/MeetHoloSection";
 import Navbar from "@/components/Navbar";
 import ProblemSection from "@/components/ProblemSection";
-import { isValidLocale, locales, type Locale } from "@/lib/i18n";
-import { SITE_URL } from "@/lib/site";
+import { isValidLocale, type Locale } from "@/lib/i18n";
+import { localeAlternates } from "@/lib/site";
 
-// hreflang + canonical per language route (homepage only).
 export async function generateMetadata({
   params,
 }: {
@@ -19,18 +18,7 @@ export async function generateMetadata({
   const { locale: rawLocale } = await params;
   const locale: Locale = isValidLocale(rawLocale) ? rawLocale : "en";
 
-  const languages = Object.fromEntries(locales.map((l) => [l, `${SITE_URL}/${l}`])) as Record<
-    string,
-    string
-  >;
-  languages["x-default"] = `${SITE_URL}/en`;
-
-  return {
-    alternates: {
-      canonical: `${SITE_URL}/${locale}`,
-      languages,
-    },
-  };
+  return { alternates: localeAlternates(locale) };
 }
 
 // Order, top to bottom: Hero → (Proof strip, inside Hero) → Problems →

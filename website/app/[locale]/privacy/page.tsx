@@ -6,6 +6,7 @@ import Reveal from "@/components/Reveal";
 import SectionWrapper from "@/components/SectionWrapper";
 import type { Metadata } from "next";
 import { translations } from "@/lib/translations";
+import { localeAlternates } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -19,6 +20,7 @@ export async function generateMetadata({
   return {
     title: `${trans.privacyTitle} | Holo`,
     description: 'Privacy Policy for Holo Fridge',
+    alternates: localeAlternates(validLocale, '/privacy'),
   };
 }
 

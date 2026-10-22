@@ -3,6 +3,9 @@
  * (NEXT_PUBLIC_* values are inlined by Next).
  */
 
+import type { Metadata } from "next";
+import { defaultLocale, locales, type Locale } from "./i18n";
+
 /**
  * Neutral App Store link — redirects to the visitor's own storefront.
  * The old `/lt/app/holofridge/…` form pinned everyone to the Lithuanian store.
@@ -21,6 +24,23 @@ export const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.holofridge.app";
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.holofridge.com";
+
+/**
+ * Canonical + hreflang for a page that exists in every locale. `path` is the
+ * part after the locale, e.g. "/support" ("" for the homepage).
+ *
+ * Every language version must be its own canonical. Pointing translations at
+ * /en makes Google drop them from the index as alternates of the English page,
+ * and leaving the canonical out makes Google pick one itself.
+ */
+export function localeAlternates(locale: Locale, path = ""): Metadata["alternates"] {
+  const languages: Record<string, string> = Object.fromEntries(
+    locales.map((l) => [l, `${SITE_URL}/${l}${path}`])
+  );
+  languages["x-default"] = `${SITE_URL}/${defaultLocale}${path}`;
+
+  return { canonical: `${SITE_URL}/${locale}${path}`, languages };
+}
 
 /**
  * Proof strip inputs. Both must be set for the strip to render — never a

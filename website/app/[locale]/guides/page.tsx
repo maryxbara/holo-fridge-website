@@ -7,6 +7,7 @@ import Reveal from "@/components/Reveal";
 import SectionWrapper from "@/components/SectionWrapper";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { localeAlternates } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -19,13 +20,7 @@ export async function generateMetadata({
   return {
     title: `${t(validLocale, "guidesTitle")} · Holo`,
     description: t(validLocale, "guidesSubtitle"),
-    alternates: {
-      canonical: "https://www.holofridge.com/en/guides",
-      languages: {
-        "x-default": "https://www.holofridge.com/en/guides",
-        en: "https://www.holofridge.com/en/guides",
-      },
-    },
+    alternates: localeAlternates(validLocale, "/guides"),
   };
 }
 

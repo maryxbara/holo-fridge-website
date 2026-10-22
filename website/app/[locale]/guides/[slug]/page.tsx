@@ -12,8 +12,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { t } from "@/lib/translations";
-
-const BASE_URL = "https://www.holofridge.com";
+import { localeAlternates, SITE_URL } from "@/lib/site";
 
 // Generate static params for all locale × slug combinations
 export async function generateStaticParams() {
@@ -48,24 +47,16 @@ export async function generateMetadata({
     };
   }
 
-  const canonicalUrl = `${BASE_URL}/en/guides/${slug}`;
-
   const validLocale: Locale = isValidLocale(locale) ? locale : "en";
   return {
     title: `${t(validLocale, "guideArticleTitle")} · Holo`,
     description: t(validLocale, "guideArticleDescription"),
-    alternates: {
-      canonical: canonicalUrl,
-      languages: Object.fromEntries([
-        ["x-default", canonicalUrl],
-        ...locales.map((l) => [l, `${BASE_URL}/${l}/guides/${slug}`]),
-      ]),
-    },
+    alternates: localeAlternates(validLocale, `/guides/${slug}`),
     openGraph: {
       type: "article",
       title: guide.title,
       description: guide.description,
-      url: canonicalUrl,
+      url: `${SITE_URL}/${validLocale}/guides/${slug}`,
       publishedTime: guide.publishedAt,
       modifiedTime: guide.updatedAt,
     },
@@ -81,8 +72,8 @@ function formatDate(isoDate: string, locale: Locale): string {
   });
 }
 
-function GuideStructuredData({ guide }: { guide: Guide }) {
-  const canonicalUrl = `${BASE_URL}/en/guides/${guide.slug}`;
+function GuideStructuredData({ guide, locale }: { guide: Guide; locale: Locale }) {
+  const canonicalUrl = `${SITE_URL}/${locale}/guides/${guide.slug}`;
 
   const graph = [
     // Article
@@ -93,9 +84,9 @@ function GuideStructuredData({ guide }: { guide: Guide }) {
       description: guide.description,
       datePublished: guide.publishedAt,
       dateModified: guide.updatedAt,
-      inLanguage: "en",
-      author: { "@id": `${BASE_URL}/#organization` },
-      publisher: { "@id": `${BASE_URL}/#organization` },
+      inLanguage: guide.locale,
+      author: { "@id": `${SITE_URL}/#organization` },
+      publisher: { "@id": `${SITE_URL}/#organization` },
       mainEntityOfPage: canonicalUrl,
       citation: guide.sources.map((s) => s.url),
     },
@@ -121,13 +112,13 @@ function GuideStructuredData({ guide }: { guide: Guide }) {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: BASE_URL,
+          item: `${SITE_URL}/${locale}`,
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Guides",
-          item: `${BASE_URL}/en/guides`,
+          item: `${SITE_URL}/${locale}/guides`,
         },
         {
           "@type": "ListItem",
@@ -170,7 +161,7 @@ export default async function GuidePage({
   return (
     <>
       <Navbar locale={locale} />
-      <GuideStructuredData guide={guide} />
+      <GuideStructuredData guide={guide} locale={locale} />
 
       <main className="relative pb-24 pt-28 sm:pt-32">
         <article className="mx-auto max-w-[680px] px-5 sm:px-8">
@@ -219,7 +210,7 @@ export default async function GuidePage({
                 {renderMarkdownLite(guide.closing.text)}
               </p>
               <Link
-                href={`/${locale}${guide.closing.ctaHref}`}
+                href={`/${locale}${guide.closing.ctaHref.replace(/\/$/, "")}`}
                 className="mt-4 inline-block text-deepTurquoise dark:text-glowTurquoise font-medium hover:underline"
               >
                 {guide.closing.ctaLabel} →
