@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
-// Lives under [locale] on purpose: the middleware redirects every
-// unprefixed path to /{locale}/…, so a root-level /opengraph-image would 404.
+// Lives at the app root so there is one URL for every language. The
+// middleware explicitly skips /opengraph-image so it is not locale-redirected.
 export const runtime = "edge";
 export const alt = "Holo — Not just a fridge app";
 export const size = { width: 1200, height: 630 };
@@ -14,7 +14,7 @@ export const contentType = "image/png";
 export default async function OG() {
   let mockupSrc: string | null = null;
   try {
-    const res = await fetch(new URL("../../public/screens/home-hero.png", import.meta.url));
+    const res = await fetch(new URL("../public/screens/home-hero.png", import.meta.url));
     if (res.ok) {
       const buf = await res.arrayBuffer();
       mockupSrc = `data:image/png;base64,${bufferToBase64(buf)}`;
