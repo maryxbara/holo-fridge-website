@@ -17,15 +17,15 @@ This is a global policy. The Service is offered worldwide. Where local law provi
 
 The data controller responsible for your personal data is:
 
-**BML BIG, MB**
-A small partnership (mažoji bendrija) registered in the Republic of Lithuania
+**BML BIG, UAB**
+A private limited company (uždaroji akcinė bendrovė) registered in the Republic of Lithuania
 Company code: 305706222
 Registered address: Liepų g. 8, Ketvergių k., Klaipėdos r., Lithuania
 
 Email (privacy): privacy@holofridge.com
 Email (support): support@holofridge.com
 
-"Holo Fridge," "HoloFridge," and "Holo" refer to the product operated by BML BIG, MB ("we," "us," "our," or "the Company").
+"Holo Fridge," "HoloFridge," and "Holo" refer to the product operated by BML BIG, UAB ("we," "us," "our," or "the Company").
 
 ## 2. Definitions
 
@@ -149,6 +149,8 @@ Depending on your location, we process personal data under one or more legal bas
 
 **Ad measurement (Meta and RevenueCat):** to learn which of our ads bring people to Holo Fridge, the app uses the Meta SDK, which starts only after you accept this policy. It tells Meta when the app is installed and opened. RevenueCat, which records subscription purchases for us, tells Meta when a subscription starts or renews. Meta receives your device's advertising identifier (on iPhone only if you allow tracking when asked), an app-specific Meta identifier, a hashed account identifier, your IP address and, for subscriptions, the product and price. It never receives your name, email address, the contents of your fridge, health data, or anything you type, say or photograph. On iPhone, if you decline tracking, RevenueCat sends Meta nothing about your subscription; you can change your choice in Settings → Privacy & Security → Tracking. On Android you can delete or reset your advertising ID in your device settings. Meta also uses this data under its own Privacy Policy (https://www.facebook.com/privacy/policy/).
 
+**Website measurement (Meta Pixel):** holofridge.com uses the Meta Pixel only after you accept cookies in the site banner, to measure which of our ads bring visitors to the site. You can withdraw your consent in the banner.
+
 **Legal and safety disclosures:** we may disclose information to comply with law, enforce our agreements, or protect rights, safety, and security.
 
 **Corporate transactions:** information may be transferred as part of a merger, acquisition, or similar transaction. We will provide notice where required by law.
@@ -201,6 +203,8 @@ Where applicable, you may have rights to:
 - In the app (deletion, export, and withdrawing AI or health consent): Profile → Privacy & data
 - Email (access, correction, portability, and any other request): privacy@holofridge.com
 
+You can delete your account and all associated data yourself at any time — see https://holofridge.com/delete-account.
+
 We respond within the timeframes required by applicable law. We may need to verify your identity before fulfilling a request.
 
 You also have the right to lodge a complaint with a supervisory authority. In Lithuania, this is the State Data Protection Inspectorate (Valstybinė duomenų apsaugos inspekcija, vdai.lrv.lt). If you live elsewhere in the EU/EEA, you may contact your local data protection authority.
@@ -217,6 +221,6 @@ We may update this Policy from time to time. If changes are material, we will pr
 
 For privacy questions, requests, or complaints:
 
-**BML BIG, MB**
+**BML BIG, UAB**
 Liepų g. 8, Ketvergių k., Klaipėdos r., Lithuania
 Email: privacy@holofridge.com

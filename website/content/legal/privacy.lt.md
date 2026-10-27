@@ -19,15 +19,15 @@ Tai pasaulinė politika. Jei vietos teisė numato stipresnę apsaugą nei ši Po
 
 Už jūsų asmens duomenis atsakingas duomenų valdytojas:
 
-**BML BIG, MB**
-Lietuvos Respublikoje registruota mažoji bendrija
+**UAB „BML BIG“**
+Lietuvos Respublikoje registruota uždaroji akcinė bendrovė
 Įmonės kodas: 305706222
 Registruotas adresas: Liepų g. 8, Ketvergių k., Klaipėdos r., Lietuva
 
 El. paštas (privatumas): privacy@holofridge.com
 El. paštas (pagalba): support@holofridge.com
 
-„Holo Fridge", „HoloFridge" ir „Holo" reiškia produktą, kurį valdo BML BIG, MB („mes", „mūsų", „Bendrovė").
+„Holo Fridge", „HoloFridge" ir „Holo" reiškia produktą, kurį valdo UAB „BML BIG“ („mes", „mūsų", „Bendrovė").
 
 ## 2. Sąvokos
 
@@ -151,6 +151,8 @@ Priklausomai nuo jūsų vietos, asmens duomenis tvarkome remdamiesi vienu ar kel
 
 **Reklamos matavimas (Meta ir RevenueCat):** kad sužinotume, kurios mūsų reklamos atveda žmones į Holo Fridge, programėlė naudoja Meta SDK, kuris įsijungia tik jums sutikus su šia politika. Jis praneša Meta, kada programėlė įdiegiama ir atidaroma. RevenueCat, kuri mums registruoja prenumeratų pirkimus, praneša Meta, kada prenumerata prasideda ar atnaujinama. Meta gauna jūsų įrenginio reklamos identifikatorių (iPhone – tik jei leidžiate sekimą, kai to paklausiama), programėlei skirtą Meta identifikatorių, maišos funkcija užkoduotą paskyros identifikatorių, jūsų IP adresą, o prenumeratų atveju – produktą ir kainą. Meta niekada negauna jūsų vardo, el. pašto adreso, šaldytuvo turinio, sveikatos duomenų ar to, ką rašote, sakote ar fotografuojate. iPhone įrenginyje, jei atsisakote sekimo, RevenueCat nesiunčia Meta jokios informacijos apie jūsų prenumeratą; pasirinkimą galite pakeisti skiltyje Nustatymai → Privatumas ir saugumas → Sekimas. Android įrenginyje reklamos ID galite ištrinti arba atkurti įrenginio nustatymuose. Meta šiuos duomenis taip pat naudoja pagal savo Privatumo politiką (https://www.facebook.com/privacy/policy/).
 
+**Svetainės matavimas (Meta Pixel):** holofridge.com naudoja Meta Pixel tik jums sutikus su slapukais svetainės juostoje, kad įvertintume, kurios mūsų reklamos atveda lankytojus į svetainę. Sutikimą galite atšaukti toje pačioje juostoje.
+
 **Teisiniai ir saugumo atskleidimai:** informaciją galime atskleisti vykdydami teisę, gindami savo susitarimus arba saugodami teises, saugą ir saugumą.
 
 **Verslo sandoriai:** informacija gali būti perduota susijungimo, įsigijimo ar panašaus sandorio metu. Kur to reikalauja teisė, apie tai pranešime.
@@ -196,11 +198,14 @@ Kur taikoma, turite teisę:
 - **Perkelti:** gauti duomenis struktūrizuotu, įprastai naudojamu formatu.
 - **Apriboti ir nesutikti:** apriboti tam tikrą tvarkymą ar jam prieštarauti, įskaitant tvarkymą teisėtų interesų pagrindu.
 - **Atšaukti sutikimą:** kai tvarkymas grindžiamas sutikimu, nepaveikiant ankstesnio tvarkymo.
+- **Atsisakyti:** asmens informacijos „pardavimo" ar „dalijimosi" ja, kai tokios teisės taikomos (asmens duomenų neparduodame).
 
 **Kaip pasinaudoti teisėmis:**
 
 - Programėlėje (ištrynimas, eksportas ir DI ar sveikatos sutikimo atšaukimas): Profilis → Privatumas ir duomenys
 - El. paštu (susipažinimas, ištaisymas, perkeliamumas ir visi kiti prašymai): privacy@holofridge.com
+
+Savo paskyrą ir visus susijusius duomenis bet kada galite ištrinti patys — žr. https://holofridge.com/delete-account.
 
 Atsakome per taikytinos teisės nustatytus terminus. Prieš vykdydami prašymą galime paprašyti patvirtinti tapatybę.
 
@@ -218,6 +223,6 @@ Taip pat turite teisę pateikti skundą priežiūros institucijai. Lietuvoje tai
 
 Privatumo klausimais, prašymams ar skundams:
 
-**BML BIG, MB**
+**UAB „BML BIG“**
 Liepų g. 8, Ketvergių k., Klaipėdos r., Lietuva
 El. paštas: privacy@holofridge.com

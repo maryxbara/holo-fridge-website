@@ -23,7 +23,8 @@ export type LegalDoc = { title: string; lastUpdated: string; blocks: Block[] };
 
 const BOLD_LINE = /^\*\*([^*]+)\*\*$/;
 const BOLD_LABEL = /^\*\*([^*]+?)\s*:\*\*$/;
-const LINK = /([\w.+-]+@[\w-]+(?:\.[\w-]+)+|https?:\/\/[^\s)]+)/;
+// A URL never ends in punctuation, so "…/delete-account." links without the full stop.
+const LINK = /([\w.+-]+@[\w-]+(?:\.[\w-]+)+|https?:\/\/[^\s)]*[^\s).,;:!?])/;
 const EMAIL = /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/;
 
 export function loadLegalDoc(name: "privacy", locale: Locale): LegalDoc {

@@ -19,15 +19,15 @@ Dies ist eine globale Richtlinie. Wo lokales Recht stärkeren Schutz bietet als 
 
 Der für Ihre personenbezogenen Daten verantwortliche Verantwortliche ist:
 
-**BML BIG, MB**
-Eine in der Republik Litauen eingetragene Kleingesellschaft (mažoji bendrija)
+**BML BIG, UAB**
+Eine in der Republik Litauen eingetragene Gesellschaft mit beschränkter Haftung (uždaroji akcinė bendrovė)
 Unternehmenscode: 305706222
 Eingetragene Anschrift: Liepų g. 8, Ketvergių k., Klaipėdos r., Litauen
 
 E-Mail (Datenschutz): privacy@holofridge.com
 E-Mail (Support): support@holofridge.com
 
-„Holo Fridge", „HoloFridge" und „Holo" bezeichnen das von BML BIG, MB betriebene Produkt („wir", „uns", „das Unternehmen").
+„Holo Fridge", „HoloFridge" und „Holo" bezeichnen das von BML BIG, UAB betriebene Produkt („wir", „uns", „das Unternehmen").
 
 ## 2. Begriffsbestimmungen
 
@@ -151,6 +151,8 @@ Abhängig von Ihrem Standort verarbeiten wir personenbezogene Daten auf einer od
 
 **Werbemessung (Meta und RevenueCat):** Um zu erfahren, welche unserer Anzeigen Menschen zu Holo Fridge bringen, nutzt die App das Meta SDK, das erst startet, nachdem Sie diese Richtlinie akzeptiert haben. Es teilt Meta mit, wann die App installiert und geöffnet wird. RevenueCat, das für uns Abo-Käufe erfasst, teilt Meta mit, wann ein Abo beginnt oder sich verlängert. Meta erhält die Werbe-ID Ihres Geräts (auf dem iPhone nur, wenn Sie Tracking bei der Abfrage erlauben), eine app-spezifische Meta-Kennung, eine gehashte Kontokennung, Ihre IP-Adresse und bei Abos das Produkt und den Preis. Meta erhält niemals Ihren Namen, Ihre E-Mail-Adresse, den Inhalt Ihres Kühlschranks, Gesundheitsdaten oder etwas, das Sie eingeben, sagen oder fotografieren. Wenn Sie auf dem iPhone Tracking ablehnen, sendet RevenueCat Meta nichts über Ihr Abo; Sie können Ihre Wahl unter Einstellungen → Datenschutz & Sicherheit → Tracking ändern. Unter Android können Sie Ihre Werbe-ID in den Geräteeinstellungen löschen oder zurücksetzen. Meta nutzt diese Daten außerdem gemäß seiner eigenen Datenschutzrichtlinie (https://www.facebook.com/privacy/policy/).
 
+**Messung auf der Website (Meta Pixel):** holofridge.com verwendet das Meta Pixel erst, nachdem Sie im Banner der Website Cookies akzeptiert haben, um zu messen, welche unserer Anzeigen Besucher auf die Website bringen. Sie können Ihre Einwilligung im Banner widerrufen.
+
 **Rechtliche und Sicherheitsoffenlegungen:** Wir können Informationen offenlegen, um Gesetze einzuhalten, unsere Vereinbarungen durchzusetzen oder Rechte, Sicherheit und Schutz zu wahren.
 
 **Unternehmenstransaktionen:** Informationen können im Rahmen einer Fusion, Übernahme oder ähnlichen Transaktion übertragen werden. Wo gesetzlich erforderlich, informieren wir Sie.
@@ -196,11 +198,14 @@ Soweit anwendbar, haben Sie das Recht auf:
 - **Datenübertragbarkeit:** Ihre Daten in einem strukturierten, gängigen Format zu erhalten.
 - **Einschränkung und Widerspruch:** bestimmte Verarbeitungen einzuschränken oder ihnen zu widersprechen, einschließlich Verarbeitung auf Basis berechtigter Interessen.
 - **Widerruf der Einwilligung:** wo die Verarbeitung auf Einwilligung beruht, ohne die frühere Verarbeitung zu berühren.
+- **Opt-out:** dem „Verkauf" oder der „Weitergabe" personenbezogener Daten zu widersprechen, wo solche Rechte gelten (wir verkaufen keine personenbezogenen Daten).
 
 **So üben Sie Ihre Rechte aus:**
 
 - In der App (Löschung, Export und Widerruf der KI- oder Gesundheitseinwilligung): Profil → Datenschutz & Daten
 - E-Mail (Auskunft, Berichtigung, Datenübertragbarkeit und alle sonstigen Anfragen): privacy@holofridge.com
+
+Sie können Ihr Konto und alle zugehörigen Daten jederzeit selbst löschen — siehe https://holofridge.com/delete-account.
 
 Wir antworten innerhalb der gesetzlich vorgeschriebenen Fristen. Vor Erfüllung einer Anfrage können wir eine Identitätsprüfung verlangen.
 
@@ -218,6 +223,6 @@ Wir können diese Erklärung von Zeit zu Zeit aktualisieren. Über wesentliche �
 
 Für Datenschutzfragen, Anfragen oder Beschwerden:
 
-**BML BIG, MB**
+**BML BIG, UAB**
 Liepų g. 8, Ketvergių k., Klaipėdos r., Litauen
 E-Mail: privacy@holofridge.com

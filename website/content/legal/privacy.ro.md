@@ -19,15 +19,15 @@ Aceasta este o politică globală. Acolo unde legislația locală oferă o prote
 
 Operatorul de date responsabil pentru datele dvs. personale este:
 
-**BML BIG, MB**
-Societate mică (mažoji bendrija) înregistrată în Republica Lituania
+**BML BIG, UAB**
+Societate cu răspundere limitată (uždaroji akcinė bendrovė) înregistrată în Republica Lituania
 Cod de înregistrare: 305706222
 Sediu social: Liepų g. 8, Ketvergių k., Klaipėdos r., Lituania
 
 Email (confidențialitate): privacy@holofridge.com
 Email (asistență): support@holofridge.com
 
-„Holo Fridge", „HoloFridge" și „Holo" desemnează produsul operat de BML BIG, MB („noi", „nouă", „Compania").
+„Holo Fridge", „HoloFridge" și „Holo" desemnează produsul operat de BML BIG, UAB („noi", „nouă", „Compania").
 
 ## 2. Definiții
 
@@ -151,6 +151,8 @@ Cu permisiunea dvs., trimitem notificări push: alerte privind expirarea produse
 
 **Măsurarea reclamelor (Meta și RevenueCat):** pentru a afla care dintre reclamele noastre aduc oameni în Holo Fridge, aplicația folosește Meta SDK, care pornește numai după ce acceptați această politică. Acesta îi comunică lui Meta când aplicația este instalată și deschisă. RevenueCat, care înregistrează pentru noi achizițiile de abonamente, îi comunică lui Meta când un abonament începe sau se reînnoiește. Meta primește identificatorul de publicitate al dispozitivului dumneavoastră (pe iPhone numai dacă permiteți urmărirea atunci când vi se cere), un identificator Meta specific aplicației, un identificator de cont hash-uit, adresa dumneavoastră IP și, pentru abonamente, produsul și prețul. Meta nu primește niciodată numele, adresa de e-mail, conținutul frigiderului, date despre sănătate sau ceva ce scrieți, spuneți sau fotografiați. Pe iPhone, dacă refuzați urmărirea, RevenueCat nu îi trimite lui Meta nimic despre abonamentul dumneavoastră; vă puteți schimba alegerea în Configurări → Confidențialitate și securitate → Urmărire. Pe Android puteți șterge sau reseta ID-ul de publicitate din setările dispozitivului. Meta folosește aceste date și conform propriei Politici de confidențialitate (https://www.facebook.com/privacy/policy/).
 
+**Măsurarea pe site (Meta Pixel):** holofridge.com folosește Meta Pixel numai după ce acceptați cookie-urile în bannerul site-ului, pentru a măsura care dintre reclamele noastre aduc vizitatori pe site. Vă puteți retrage consimțământul din banner.
+
 **Divulgări legale și de securitate:** putem divulga informații pentru a respecta legea, a ne aplica acordurile sau a proteja drepturile, siguranța și securitatea.
 
 **Tranzacții corporative:** informațiile pot fi transferate în cadrul unei fuziuni, achiziții sau tranzacții similare. Acolo unde legea o cere, vă vom notifica.
@@ -196,11 +198,14 @@ Acolo unde se aplică, aveți dreptul la:
 - **Portabilitate:** să primiți datele într-un format structurat, utilizat în mod curent.
 - **Restricționare și opoziție:** să restricționați anumite prelucrări sau să vă opuneți acestora, inclusiv prelucrării bazate pe interese legitime.
 - **Retragerea consimțământului:** acolo unde prelucrarea se bazează pe consimțământ, fără a afecta prelucrarea anterioară.
+- **Renunțare (opt-out):** să refuzați „vânzarea" sau „partajarea" informațiilor personale, acolo unde se aplică astfel de drepturi (nu vindem date personale).
 
 **Cum vă exercitați drepturile:**
 
 - În aplicație (ștergere, export și retragerea consimțământului pentru AI sau sănătate): Profil → Confidențialitate și date
 - Email (acces, rectificare, portabilitate și orice altă solicitare): privacy@holofridge.com
+
+Vă puteți șterge singur contul și toate datele asociate în orice moment — consultați https://holofridge.com/delete-account.
 
 Răspundem în termenele prevăzute de legislația aplicabilă. Înainte de a îndeplini o solicitare, putem cere verificarea identității.
 
@@ -218,6 +223,6 @@ Putem actualiza periodic această Politică. Despre modificările semnificative 
 
 Pentru întrebări, solicitări sau plângeri privind confidențialitatea:
 
-**BML BIG, MB**
+**BML BIG, UAB**
 Liepų g. 8, Ketvergių k., Klaipėdos r., Lituania
 Email: privacy@holofridge.com

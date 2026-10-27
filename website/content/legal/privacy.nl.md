@@ -19,15 +19,15 @@ Dit is een wereldwijd beleid. Waar lokaal recht sterkere bescherming biedt dan d
 
 De verwerkingsverantwoordelijke voor uw persoonsgegevens is:
 
-**BML BIG, MB**
-Een kleine vennootschap (mažoji bendrija) geregistreerd in de Republiek Litouwen
+**BML BIG, UAB**
+Een besloten vennootschap (uždaroji akcinė bendrovė) geregistreerd in de Republiek Litouwen
 Bedrijfscode: 305706222
 Statutair adres: Liepų g. 8, Ketvergių k., Klaipėdos r., Litouwen
 
 E-mail (privacy): privacy@holofridge.com
 E-mail (support): support@holofridge.com
 
-„Holo Fridge", „HoloFridge" en „Holo" verwijzen naar het product dat wordt geëxploiteerd door BML BIG, MB („wij", „ons", „het Bedrijf").
+„Holo Fridge", „HoloFridge" en „Holo" verwijzen naar het product dat wordt geëxploiteerd door BML BIG, UAB („wij", „ons", „het Bedrijf").
 
 ## 2. Definities
 
@@ -151,6 +151,8 @@ Afhankelijk van uw locatie verwerken wij persoonsgegevens op een of meer rechtsg
 
 **Advertentiemeting (Meta en RevenueCat):** om te weten welke van onze advertenties mensen naar Holo Fridge brengen, gebruikt de app de Meta SDK, die pas start nadat u dit beleid hebt geaccepteerd. Deze laat Meta weten wanneer de app wordt geïnstalleerd en geopend. RevenueCat, dat voor ons abonnementsaankopen registreert, laat Meta weten wanneer een abonnement begint of wordt verlengd. Meta ontvangt de advertentie-ID van uw apparaat (op iPhone alleen als u tracking toestaat wanneer daarom wordt gevraagd), een app-specifieke Meta-ID, een gehashte account-ID, uw IP-adres en, bij abonnementen, het product en de prijs. Meta ontvangt nooit uw naam, uw e-mailadres, de inhoud van uw koelkast, gezondheidsgegevens of iets wat u typt, zegt of fotografeert. Als u op iPhone tracking weigert, stuurt RevenueCat Meta niets over uw abonnement; u kunt uw keuze wijzigen via Instellingen → Privacy en beveiliging → Tracking. Op Android kunt u uw advertentie-ID verwijderen of opnieuw instellen in de instellingen van uw apparaat. Meta gebruikt deze gegevens ook volgens zijn eigen privacybeleid (https://www.facebook.com/privacy/policy/).
 
+**Meting op de website (Meta Pixel):** holofridge.com gebruikt de Meta Pixel pas nadat u cookies hebt geaccepteerd in de banner van de site, om te meten welke van onze advertenties bezoekers naar de site brengen. U kunt uw toestemming intrekken in de banner.
+
 **Juridische en veiligheidsgerelateerde verstrekkingen:** wij kunnen informatie verstrekken om de wet na te leven, onze overeenkomsten af te dwingen of rechten, veiligheid en beveiliging te beschermen.
 
 **Bedrijfstransacties:** informatie kan worden overgedragen in het kader van een fusie, overname of vergelijkbare transactie. Waar de wet dit vereist, stellen wij u op de hoogte.
@@ -196,11 +198,14 @@ Waar van toepassing heeft u recht op:
 - **Overdraagbaarheid:** uw gegevens ontvangen in een gestructureerd, gangbaar formaat.
 - **Beperking en bezwaar:** bepaalde verwerkingen beperken of er bezwaar tegen maken, waaronder verwerking op basis van gerechtvaardigde belangen.
 - **Intrekking van toestemming:** waar verwerking op toestemming berust, zonder gevolgen voor eerdere verwerking.
+- **Opt-out:** bezwaar maken tegen „verkoop" of „delen" van persoonsgegevens, waar zulke rechten gelden (wij verkopen geen persoonsgegevens).
 
 **Zo oefent u uw rechten uit:**
 
 - In de app (verwijdering, export en intrekking van AI- of gezondheidstoestemming): Profiel → Privacy & gegevens
 - E-mail (inzage, correctie, overdraagbaarheid en alle andere verzoeken): privacy@holofridge.com
+
+U kunt uw account en alle bijbehorende gegevens op elk moment zelf verwijderen — zie https://holofridge.com/delete-account.
 
 Wij reageren binnen de door het toepasselijke recht vereiste termijnen. Voordat wij een verzoek uitvoeren, kunnen wij om identiteitsverificatie vragen.
 
@@ -218,6 +223,6 @@ Wij kunnen dit Beleid van tijd tot tijd bijwerken. Bij wezenlijke wijzigingen in
 
 Voor privacyvragen, verzoeken of klachten:
 
-**BML BIG, MB**
+**BML BIG, UAB**
 Liepų g. 8, Ketvergių k., Klaipėdos r., Litouwen
 E-mail: privacy@holofridge.com

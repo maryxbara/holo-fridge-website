@@ -19,15 +19,15 @@ Tämä on maailmanlaajuinen käytäntö. Jos paikallinen laki tarjoaa vahvemman 
 
 Henkilötietojesi rekisterinpitäjä on:
 
-**BML BIG, MB**
-Liettuan tasavallassa rekisteröity pienyhtiö (mažoji bendrija)
+**BML BIG, UAB**
+Liettuan tasavallassa rekisteröity osakeyhtiö (uždaroji akcinė bendrovė)
 Yritystunnus: 305706222
 Rekisteröity osoite: Liepų g. 8, Ketvergių k., Klaipėdos r., Liettua
 
 Sähköposti (tietosuoja): privacy@holofridge.com
 Sähköposti (tuki): support@holofridge.com
 
-„Holo Fridge", „HoloFridge" ja „Holo" tarkoittavat BML BIG, MB:n ylläpitämää tuotetta („me", „Yhtiö").
+„Holo Fridge", „HoloFridge" ja „Holo" tarkoittavat BML BIG, UAB:n ylläpitämää tuotetta („me", „Yhtiö").
 
 ## 2. Määritelmät
 
@@ -151,6 +151,8 @@ Sijainnistasi riippuen käsittelemme henkilötietoja yhdellä tai useammalla oik
 
 **Mainosten mittaus (Meta ja RevenueCat):** jotta tietäisimme, mitkä mainoksistamme tuovat ihmisiä Holo Fridgeen, sovellus käyttää Meta SDK:ta, joka käynnistyy vasta, kun olet hyväksynyt tämän käytännön. Se kertoo Metalle, kun sovellus asennetaan ja avataan. RevenueCat, joka kirjaa puolestamme tilausostot, kertoo Metalle, kun tilaus alkaa tai uusiutuu. Meta saa laitteesi mainostunnisteen (iPhonessa vain, jos sallit seurannan, kun sitä kysytään), sovelluskohtaisen Meta-tunnisteen, tiivistetyn tilitunnisteen, IP-osoitteesi sekä tilauksista tuotteen ja hinnan. Meta ei koskaan saa nimeäsi, sähköpostiosoitettasi, jääkaappisi sisältöä, terveystietoja eikä mitään, mitä kirjoitat, sanot tai valokuvaat. Jos kiellät seurannan iPhonessa, RevenueCat ei lähetä Metalle mitään tilauksestasi; voit muuttaa valintaasi kohdassa Asetukset → Tietosuoja ja turvallisuus → Seuranta. Androidissa voit poistaa tai nollata mainostunnuksesi laitteen asetuksista. Meta käyttää näitä tietoja myös oman tietosuojakäytäntönsä mukaisesti (https://www.facebook.com/privacy/policy/).
 
+**Mittaus verkkosivustolla (Meta Pixel):** holofridge.com käyttää Meta Pixeliä vasta, kun olet hyväksynyt evästeet sivuston bannerissa, mitataksemme, mitkä mainoksistamme tuovat kävijöitä sivustolle. Voit peruuttaa suostumuksesi bannerissa.
+
 **Oikeudelliset ja turvallisuusluovutukset:** voimme luovuttaa tietoja lain noudattamiseksi, sopimustemme täytäntöönpanemiseksi tai oikeuksien, turvallisuuden ja suojauksen suojaamiseksi.
 
 **Yritysjärjestelyt:** tiedot voidaan siirtää sulautumisen, yrityskaupan tai vastaavan järjestelyn yhteydessä. Ilmoitamme sinulle, jos laki niin vaatii.
@@ -196,11 +198,14 @@ Soveltuvin osin sinulla on oikeus:
 - **Siirrettävyys:** saada tietosi jäsennellyssä, yleisesti käytetyssä muodossa.
 - **Rajoittaminen ja vastustaminen:** rajoittaa tiettyä käsittelyä tai vastustaa sitä, mukaan lukien oikeutettuihin etuihin perustuva käsittely.
 - **Suostumuksen peruuttaminen:** kun käsittely perustuu suostumukseen, vaikuttamatta aiempaan käsittelyyn.
+- **Kieltäytyminen:** kieltää henkilötietojen „myynti" tai „jakaminen", kun tällaiset oikeudet ovat voimassa (emme myy henkilötietoja).
 
 **Näin käytät oikeuksiasi:**
 
 - Sovelluksessa (poisto, vienti sekä tekoäly- tai terveyssuostumuksen peruuttaminen): Profiili → Yksityisyys ja tiedot
 - Sähköposti (tarkastusoikeus, oikaisu, siirrettävyys ja kaikki muut pyynnöt): privacy@holofridge.com
+
+Voit poistaa tilisi ja kaikki siihen liittyvät tiedot itse milloin tahansa — katso https://holofridge.com/delete-account.
 
 Vastaamme sovellettavan lain edellyttämissä määräajoissa. Ennen pyynnön täyttämistä voimme pyytää henkilöllisyyden vahvistamista.
 
@@ -218,6 +223,6 @@ Voimme päivittää tätä Käytäntöä ajoittain. Olennaisista muutoksista ilm
 
 Tietosuojakysymykset, pyynnöt ja valitukset:
 
-**BML BIG, MB**
+**BML BIG, UAB**
 Liepų g. 8, Ketvergių k., Klaipėdos r., Liettua
 Sähköposti: privacy@holofridge.com
