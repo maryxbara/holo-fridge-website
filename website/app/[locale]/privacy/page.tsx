@@ -51,7 +51,10 @@ export default async function PrivacyPage({
             </Reveal>
 
             <div className="legal mt-12 max-w-none text-bodyGray dark:text-white/70">
-              <LegalDocBody blocks={doc.blocks} />
+              <LegalDocBody
+                blocks={doc.blocks}
+                cards={[{ section: 0, heading: "inside", className: "glass-strong rounded-3xl p-8 mb-8" }]}
+              />
             </div>
           </div>
         </SectionWrapper>

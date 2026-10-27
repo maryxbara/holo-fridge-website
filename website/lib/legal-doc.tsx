@@ -7,7 +7,7 @@ import type { Locale } from "@/lib/i18n";
 /**
  * Legal documents rendered verbatim from content/legal/<name>.<locale>.md.
  * Those files are byte-for-byte copies of holo-fridge-app/docs/legal/<name>_<locale>.md
- * (Ukrainian: privacy_ua.md → privacy.uk.md) — update them by copying, never by editing.
+ * (Ukrainian: <name>_ua.md → <name>.uk.md) — update them by copying, never by editing.
  *
  * Supported markdown: "# " title, a bold "Last updated" line, "## " headings,
  * standalone "**Label:**" lines (rendered as h3), "- " lists, paragraphs, **bold**, *italic*.
@@ -27,7 +27,7 @@ const BOLD_LABEL = /^\*\*([^*]+?)\s*:\*\*$/;
 const LINK = /([\w.+-]+@[\w-]+(?:\.[\w-]+)+|https?:\/\/[^\s)]*[^\s).,;:!?])/;
 const EMAIL = /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/;
 
-export function loadLegalDoc(name: "privacy", locale: Locale): LegalDoc {
+export function loadLegalDoc(name: "privacy" | "terms", locale: Locale): LegalDoc {
   const file = path.join(process.cwd(), "content/legal", `${name}.${locale}.md`);
   const chunks = readFileSync(file, "utf8")
     .trim()
@@ -99,32 +99,19 @@ function renderBlock(block: Block, key: number, className?: string): ReactNode {
 }
 
 /**
- * Body of a legal document in the site's existing legal layout: the first
- * "## " section sits in the summary card, and the company block (a paragraph
- * that opens with a bold name line, plus a directly following paragraph of
- * email lines) sits in the company card.
+ * The company block — a multi-line paragraph opening with a bold name line
+ * (no trailing colon), plus a directly following paragraph of email lines —
+ * sits in the company card.
  */
-export function LegalDocBody({ blocks }: { blocks: Block[] }) {
-  const firstH2 = blocks.findIndex((b) => b.type === "h2");
-  const secondH2 = blocks.findIndex((b, i) => i > firstH2 && b.type === "h2");
+function renderBlocks(blocks: Block[], inCard: boolean): ReactNode[] {
   const out: ReactNode[] = [];
 
   for (let i = 0; i < blocks.length; i++) {
     const block = blocks[i];
 
-    if (firstH2 >= 0 && i === firstH2) {
-      const end = secondH2 === -1 ? blocks.length : secondH2;
-      out.push(
-        <div key={i} className="glass-strong rounded-3xl p-8 mb-8">
-          {blocks.slice(i, end).map((b, j) => renderBlock(b, j, j === 0 ? "!mt-0" : undefined))}
-        </div>
-      );
-      i = end - 1;
-      continue;
-    }
-
-    const name = block.type === "p" ? BOLD_LINE.exec(block.lines[0]) : null;
-    if (block.type === "p" && name) {
+    const name =
+      block.type === "p" && block.lines.length > 1 ? BOLD_LINE.exec(block.lines[0]) : null;
+    if (block.type === "p" && name && !name[1].endsWith(":")) {
       const next = blocks[i + 1];
       const contactLines =
         next?.type === "p" && next.lines.every((line) => EMAIL.test(line)) ? next.lines : [];
@@ -145,8 +132,44 @@ export function LegalDocBody({ blocks }: { blocks: Block[] }) {
       continue;
     }
 
-    out.push(renderBlock(block, i));
+    out.push(renderBlock(block, i, inCard && i === 0 ? "!mt-0" : undefined));
   }
 
-  return <>{out}</>;
+  return out;
+}
+
+/**
+ * A "## " section (counted from 0) rendered inside a card, with its heading
+ * either inside the card or above it.
+ */
+export type LegalCard = { section: number; heading: "inside" | "above"; className: string };
+
+/** Body of a legal document in the site's existing legal layout. */
+export function LegalDocBody({ blocks, cards = [] }: { blocks: Block[]; cards?: LegalCard[] }) {
+  const starts = blocks.flatMap((b, i) => (b.type === "h2" ? [i] : []));
+  const bounds = [0, ...starts, blocks.length];
+  // segments[0] is the text before the first heading (possibly empty); segments[k] is section k - 1.
+  const segments = bounds.slice(0, -1).map((start, k) => blocks.slice(start, bounds[k + 1]));
+
+  return (
+    <>
+      {segments.map((segment, k) => {
+        const card = k > 0 ? cards.find((c) => c.section === k - 1) : undefined;
+        if (!card) return <Fragment key={k}>{renderBlocks(segment, false)}</Fragment>;
+        if (card.heading === "inside") {
+          return (
+            <div key={k} className={card.className}>
+              {renderBlocks(segment, true)}
+            </div>
+          );
+        }
+        return (
+          <Fragment key={k}>
+            {renderBlock(segment[0], 0)}
+            <div className={card.className}>{renderBlocks(segment.slice(1), false)}</div>
+          </Fragment>
+        );
+      })}
+    </>
+  );
 }
