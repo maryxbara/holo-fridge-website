@@ -3,22 +3,40 @@
 import Script from "next/script";
 import { useEffect, useState } from "react";
 import { META_PIXEL_ID } from "@/lib/site";
+import { CONSENT_SETTINGS_EVENT } from "@/lib/tracking";
 
 const CONSENT_KEY = "holo_pixel_consent"; // "granted" | "denied"
+const PIXEL_COOKIES = ["_fbp", "_fbc"];
 
 type Consent = "granted" | "denied" | "unset";
+
+/** Expire the pixel's first-party cookies on this host and every parent domain. */
+function clearPixelCookies() {
+  const parts = window.location.hostname.split(".");
+  const domains = [""];
+  for (let i = 0; i < parts.length - 1; i++) domains.push(`; domain=.${parts.slice(i).join(".")}`);
+  for (const name of PIXEL_COOKIES) {
+    for (const domain of domains) {
+      document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/${domain}`;
+    }
+  }
+}
 
 /**
  * Meta Pixel with a decline-by-default consent pattern.
  * - Renders nothing while NEXT_PUBLIC_META_PIXEL_ID is empty.
  * - The pixel script loads only after the visitor taps "Allow"; until then
- *   nothing is set. "Decline" is remembered and the bar never returns.
+ *   nothing is set. The choice is remembered; the footer's "Cookie settings"
+ *   link reopens the bar.
+ * - Withdrawing consent revokes the pixel, deletes its cookies and reloads the
+ *   page, because a loaded fbevents.js cannot be unloaded.
  * - PageView fires on load; store-button clicks fire ViewContent (lib/tracking.ts).
  */
 export type ConsentLabels = { text: string; allow: string; decline: string };
 
 export default function MetaPixel({ labels }: { labels: ConsentLabels }) {
   const [consent, setConsent] = useState<Consent>("unset");
+  const [reopened, setReopened] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -29,6 +47,9 @@ export default function MetaPixel({ labels }: { labels: ConsentLabels }) {
     } catch {
       /* storage unavailable — stay unset, nothing loads */
     }
+    const reopen = () => setReopened(true);
+    window.addEventListener(CONSENT_SETTINGS_EVENT, reopen);
+    return () => window.removeEventListener(CONSENT_SETTINGS_EVENT, reopen);
   }, []);
 
   if (!META_PIXEL_ID || !mounted) return null;
@@ -39,7 +60,14 @@ export default function MetaPixel({ labels }: { labels: ConsentLabels }) {
     } catch {
       /* ignore */
     }
+    if (consent === "granted" && value === "denied") {
+      window.fbq?.("consent", "revoke");
+      clearPixelCookies();
+      window.location.reload();
+      return;
+    }
     setConsent(value);
+    setReopened(false);
   };
 
   return (
@@ -55,7 +83,7 @@ fbq('init','${META_PIXEL_ID}');fbq('track','PageView');`}
         </Script>
       ) : null}
 
-      {consent === "unset" ? (
+      {consent === "unset" || reopened ? (
         <div
           role="dialog"
           aria-live="polite"

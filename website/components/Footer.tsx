@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
+import CookieSettingsButton from "./CookieSettingsButton";
 import { type Locale } from "@/lib/i18n";
-import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/site";
+import { APP_STORE_URL, META_PIXEL_ID, PLAY_STORE_URL } from "@/lib/site";
 import { t } from "@/lib/translations";
 
 type FooterProps = {
@@ -67,6 +68,12 @@ export default function Footer({ locale }: FooterProps) {
             <Link href={`/${locale}/terms`} className={linkClass}>
               {t(locale, "footerTerms")}
             </Link>
+            {META_PIXEL_ID ? (
+              <CookieSettingsButton
+                label={t(locale, "footerCookieSettings")}
+                className={linkClass}
+              />
+            ) : null}
             <a href="mailto:support@holofridge.com" className={linkClass}>
               {t(locale, "footerContact")}
             </a>

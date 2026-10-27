@@ -91,6 +91,7 @@ export const translations = {
     footerTagline: 'Not just a fridge app.',
     footerPrivacy: 'Privacy policy',
     footerTerms: 'Terms of service',
+    footerCookieSettings: 'Cookie settings',
     footerContact: 'Contact',
     footerSupport: 'Support',
     footerGuides: 'Guides',
@@ -218,6 +219,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Політика конфіденційності',
     footerTerms: 'Умови надання послуг',
+    footerCookieSettings: 'Налаштування cookie',
     footerContact: 'Контакти',
     footerSupport: 'Підтримка',
     footerGuides: 'Поради',
@@ -340,6 +342,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Politica de confidențialitate',
     footerTerms: 'Termeni și condiții',
+    footerCookieSettings: 'Setări cookie',
     footerContact: 'Contact',
     footerSupport: 'Suport',
     footerGuides: 'Ghiduri',
@@ -462,6 +465,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Polityka prywatności',
     footerTerms: 'Regulamin',
+    footerCookieSettings: 'Ustawienia cookies',
     footerContact: 'Kontakt',
     footerSupport: 'Wsparcie',
     footerGuides: 'Poradniki',
@@ -584,6 +588,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Datenschutzrichtlinie',
     footerTerms: 'Nutzungsbedingungen',
+    footerCookieSettings: 'Cookie-Einstellungen',
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Ratgeber',
@@ -706,6 +711,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Política de privacidad',
     footerTerms: 'Términos de servicio',
+    footerCookieSettings: 'Configuración de cookies',
     footerContact: 'Contacto',
     footerSupport: 'Soporte',
     footerGuides: 'Guías',
@@ -828,6 +834,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Informativa sulla privacy',
     footerTerms: 'Termini di servizio',
+    footerCookieSettings: 'Impostazioni cookie',
     footerContact: 'Contatto',
     footerSupport: 'Supporto',
     footerGuides: 'Guide',
@@ -950,6 +957,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Politique de confidentialité',
     footerTerms: 'Conditions de service',
+    footerCookieSettings: 'Paramètres des cookies',
     footerContact: 'Contact',
     footerSupport: 'Support',
     footerGuides: 'Guides',
@@ -1072,6 +1080,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Политика конфиденциальности',
     footerTerms: 'Условия предоставления услуг',
+    footerCookieSettings: 'Настройки cookie',
     footerContact: 'Контакты',
     footerSupport: 'Поддержка',
     footerGuides: 'Руководства',
@@ -1194,6 +1203,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Privatumo politika',
     footerTerms: 'Paslaugų teikimo sąlygos',
+    footerCookieSettings: 'Slapukų nustatymai',
     footerContact: 'Kontaktai',
     footerSupport: 'Pagalba',
     footerGuides: 'Gidai',
@@ -1316,6 +1326,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Privacybeleid',
     footerTerms: 'Servicevoorwaarden',
+    footerCookieSettings: 'Cookie-instellingen',
     footerContact: 'Contact',
     footerSupport: 'Ondersteuning',
     footerGuides: 'Gidsen',
@@ -1438,6 +1449,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Integritetspolicy',
     footerTerms: 'Användarvillkor',
+    footerCookieSettings: 'Cookie-inställningar',
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Guider',
@@ -1560,6 +1572,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Privatlivspolitik',
     footerTerms: 'Servicevilkår',
+    footerCookieSettings: 'Cookie-indstillinger',
     footerContact: 'Kontakt',
     footerSupport: 'Support',
     footerGuides: 'Guider',
@@ -1682,6 +1695,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Tietosuojakäytäntö',
     footerTerms: 'Palveluehdot',
+    footerCookieSettings: 'Evästeasetukset',
     footerContact: 'Yhteystiedot',
     footerSupport: 'Tuki',
     footerGuides: 'Oppaat',
@@ -1804,6 +1818,7 @@ export const translations = {
     // Footer
     footerPrivacy: 'Política de privacidade',
     footerTerms: 'Termos de uso',
+    footerCookieSettings: 'Configurações de cookies',
     footerContact: 'Contato',
     footerSupport: 'Suporte',
     footerGuides: 'Guias',
