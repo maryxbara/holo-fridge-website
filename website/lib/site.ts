@@ -51,3 +51,19 @@ export const APP_RATING_COUNT = process.env.NEXT_PUBLIC_APP_RATING_COUNT || "";
 
 /** Meta Pixel ID for the domain. Pixel is not loaded while this is empty. */
 export const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || "";
+
+/** Official @holofridge profiles. Order matches the footer icon row. */
+export const SOCIAL_LINKS = [
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/holofridge/",
+  },
+  {
+    name: "TikTok",
+    href: "https://www.tiktok.com/@holofridge",
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@holofridge",
+  },
+] as const;

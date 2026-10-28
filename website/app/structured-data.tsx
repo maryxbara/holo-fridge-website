@@ -22,7 +22,13 @@ const organization = {
   logo: `${BASE_URL}/holo-logo.png`,
   email: "support@holofridge.com",
   address: { "@type": "PostalAddress", addressCountry: "LT" },
-  sameAs: [APP_STORE_URL, PLAY_STORE_URL],
+  sameAs: [
+    APP_STORE_URL,
+    PLAY_STORE_URL,
+    "https://www.instagram.com/holofridge/",
+    "https://www.tiktok.com/@holofridge",
+    "https://www.youtube.com/@holofridge",
+  ],
 };
 
 const website = {
@@ -53,7 +59,13 @@ const softwareApplication = {
     `${BASE_URL}/screens/list.jpg`,
     `${BASE_URL}/screens/assistant.jpg`,
   ],
-  sameAs: [APP_STORE_URL, PLAY_STORE_URL],
+  sameAs: [
+    APP_STORE_URL,
+    PLAY_STORE_URL,
+    "https://www.instagram.com/holofridge/",
+    "https://www.tiktok.com/@holofridge",
+    "https://www.youtube.com/@holofridge",
+  ],
   downloadUrl: [APP_STORE_URL, PLAY_STORE_URL],
   applicationCategory: "LifestyleApplication",
   applicationSubCategory: "Food & Home Management",
